@@ -191,7 +191,7 @@ export const PageNotFound = () => {
                                     className="text-sm md:text-base text-yellow-300 p-2 mb-4"
                                 >
                                     If anybody asks where this page is,<br/>
-                                    It's left th country...
+                                    It's left the country...
                                 </Typography>
                                 <Link to="/"
                                     className="btn btn-outline-warning hover:bg-warning hover-text-light rounded shadow-sm hover-shadow-lg py-2 px-4">
