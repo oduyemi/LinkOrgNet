@@ -1,7 +1,7 @@
-const { override, addBabelPlugins } = require('customize-cra');
+// const { override, addBabelPlugins } = require('customize-cra');
 
-module.exports = override(
-  ...addBabelPlugins(
-    ['@babel/plugin-transform-react-jsx', { throwIfNamespace: false }]
-  )
-);
+// module.exports = override(
+//   ...addBabelPlugins(
+//     ['@babel/plugin-transform-react-jsx', { throwIfNamespace: false }]
+//   )
+// );
