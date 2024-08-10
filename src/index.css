@@ -1,0 +1,19 @@
+
+
+
+@media (max-width: 768px) {  
+    /* .mobile-sbar{
+        display: none !important;
+    } */
+    .dashboardImg img{
+        width: 40px !important;
+        margin-left: 10% !important;
+    }
+    .input-group {
+        width: 50% !important;
+    }
+
+    .input-group .form-control {
+        font-size: 14px;
+    }
+}
