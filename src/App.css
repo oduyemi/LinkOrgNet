@@ -1,9 +1,44 @@
 *{
   box-sizing: border-box;
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
 }
 
 body{
-  overflow-x: hidden !important;
+  overflow-x: hidden;
+  /* background-color: #000; */
+}
+
+
+/* body.admin {
+  background-color: #010156;
+  background-size: cover;
+} */
+
+.sidebar-full-height {
+  height: 100vh;
+  padding-top: 20px;
+}
+
+.sidebar-full-height ul {
+  padding-left: 0;
+}
+
+.sideicon-full-height {
+  height: 100vh;
+  width:5px !important;
+}
+
+
+.blu {
+  background-color: #010156 !important;
+  color: #fff;
+}
+
+.blutext {
+  color: #010156 !important;
+}
+
+.orange {
+  background-color: #E65D0F !important;
 }

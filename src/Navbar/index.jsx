@@ -6,7 +6,8 @@ import About from "../pages/About";
 import Services from "../pages/Services";
 import Contact from "../pages/Contact";
 import Admin from "../pages/Admin";
-import AdminDashboard from "../pages/AdminDashboard";
+import AdminContactList from "../pages/AdminContactList";
+import { SendMail } from "../components/Admin/SendMail";
 import Error404 from "../pages/404";
 
 export const Navbar = () => {
@@ -19,7 +20,8 @@ export const Navbar = () => {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/services" element={<Services />} />
                 <Route path="/admin" element={<Admin />} />
-                <Route path="/admin-dashboard" element={<AdminDashboard />} />
+                <Route path="/admin/contacts" element={<AdminContactList/>} />
+                <Route path="/admin/send-email" element={<SendMail/>} />
                 {/* Fallback route */}
                 <Route path="*" element={<Error404 />} />
             </Routes>
