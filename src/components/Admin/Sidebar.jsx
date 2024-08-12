@@ -5,6 +5,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import EmailIcon from '@mui/icons-material/Email';
 import { Person2 } from "@mui/icons-material";
 import SendIcon from '@mui/icons-material/Send';
+import HistoryIcon from '@mui/icons-material/History';
 import TuneIcon from '@mui/icons-material/Tune';
 
 
@@ -119,6 +120,7 @@ export const Sidebar = () => {
                             />&emsp;
                             <Link to="/admin/profile" className="text-light text-decoration-none fw-semibold hover-text-danger">Profile</Link>
                         </li>
+
                         <li className="d-flex align-items-center mt-3 cursor-pointer">
                             <SendIcon
                                 sx={{
@@ -127,6 +129,16 @@ export const Sidebar = () => {
                                 }}
                             />&emsp;
                             <Link to="/admin/send-email" className="text-light text-decoration-none fw-semibold hover-text-danger">Send Email</Link>
+                        </li>
+
+                        <li className="d-flex align-items-center mt-3 cursor-pointer">
+                            <HistoryIcon
+                                sx={{
+                                    fontSize: 50,
+                                    color: "#fff"
+                                }}
+                            />&emsp;
+                            <Link to="/admin/sent-mails" className="text-light text-decoration-none fw-semibold hover-text-danger">Sent Email History</Link>
                         </li>
                         <li className="d-flex align-items-center mt-3 cursor-pointer">
                         <TuneIcon
