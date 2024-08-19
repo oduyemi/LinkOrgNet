@@ -1,46 +1,51 @@
 import React from 'react';
+import { Box } from "@mui/material";
 import { Link } from 'react-router-dom';
+import ITSolution1 from "../../assets/images/ITSolution1.jpg"
+import ITSolution2 from "../../assets/images/ITSolution2.jpg"
 
 const AboutSection = () => {
   return (
-    <section className="about-section section-padding">
-      <div className="container">
-        <div className="about-wrapper-2">
-          <div className="row">
-            <div className="col-lg-6">
-              <div className="about-image-items">
-                <div
+    <Box className="about-section section-padding">
+      <Box className="container">
+        <Box className="about-wrapper-2">
+          <Box className="row">
+            <Box className="col-lg-6">
+              <Box className="about-image-items">
+                <Box
                   className="about-image-1 bg-cover wow fadeInLeft"
                   data-wow-delay=".3s"
-                  style={{ backgroundImage: "url('assets/img/about/about-5.jpg')" }}
+                  style={{ 
+                    backgroundImage: `url(${ITSolution1}`
+                    }}
                 >
-                  <div className="about-image-2 wow fadeInUp" data-wow-delay=".5s">
-                    <img src="assets/img/about/about-6.jpg" alt="about-img" />
-                  </div>
-                </div>
-                <div className="circle-shape">
+                  <Box className="about-image-2 wow fadeInUp" data-wow-delay=".5s">
+                    <img src={ITSolution2} alt="about-img" />
+                  </Box>
+                </Box>
+                <Box className="circle-shape">
                   <img src="assets/img/about/circle-2.png" alt="img" className="text-circle" />
-                  <div className="about-title">
+                  <Box className="about-title">
                     <h2>
                       <span className="count">13</span>
                     </h2>
                     <p>Years of Experience</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6 mt-5 mt-lg-0">
-              <div className="about-content">
-                <div className="section-title style-2">
+                  </Box>
+                </Box>
+              </Box>
+            </Box>
+            <Box className="col-lg-6 mt-5 mt-lg-0">
+              <Box className="about-content">
+                <Box className="section-title style-2">
                   <span className="wow fadeInUp">BEST IT SOLUTIONS</span>
                   <h2 className="wow fadeInUp" data-wow-delay=".3s">
                     Best Internet <span>Agency</span> For People
                   </h2>
-                </div>
+                </Box>
                 <p className="mt-4 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
                   Transmds is the world’s leading global logistics provider. We support industry and trade in the global exchange of goods. 
                 </p>
-                <div className="single-tab-items">
+                <Box className="single-tab-items">
                   <ul className="nav mb-4" role="tablist">
                     <li className="nav-item wow fadeInUp" data-wow-delay=".3s" role="presentation">
                       <Link
@@ -75,22 +80,22 @@ const AboutSection = () => {
                       </Link>
                     </li>
                   </ul>
-                </div>
-                <div className="tab-content">
-                  <div id="integrity" className="tab-pane fade show active" role="tabpanel">
-                    <div className="about-tabs-area">
-                      <div className="about-list-items">
-                        <div className="video-image wow fadeInUp" data-wow-delay=".3s">
+                </Box>
+                <Box className="tab-content">
+                  <Box id="integrity" className="tab-pane fade show active" role="tabpanel">
+                    <Box className="about-tabs-area">
+                      <Box className="about-list-items">
+                        <Box className="video-image wow fadeInUp" data-wow-delay=".3s">
                           <img src="assets/img/about/video.jpg" alt="img" />
-                          <div className="video-box">
+                          <Box className="video-box">
                             <a
                               href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I"
                               className="video-btn ripple video-popup"
                             >
                               <i className="fas fa-play"></i>
                             </a>
-                          </div>
-                        </div>
+                          </Box>
+                        </Box>
                         <ul className="wow fadeInUp" data-wow-delay=".4s">
                           <li>
                             <i className="far fa-check"></i>
@@ -109,42 +114,42 @@ const AboutSection = () => {
                             Customer Oriented Program
                           </li>
                         </ul>
-                      </div>
-                      <div className="about-author">
-                        <div className="author-image wow fadeInUp" data-wow-delay=".3s">
+                      </Box>
+                      <Box className="about-author">
+                        <Box className="author-image wow fadeInUp" data-wow-delay=".3s">
                           <img src="assets/img/about/client-2.png" alt="author-img" />
-                          <div className="content">
+                          <Box className="content">
                             <h6>5m+ Customer</h6>
-                          </div>
-                        </div>
-                        <div className="author-contact wow fadeInUp" data-wow-delay=".5s">
-                          <div className="icon">
+                          </Box>
+                        </Box>
+                        <Box className="author-contact wow fadeInUp" data-wow-delay=".5s">
+                          <Box className="icon">
                             <img src="assets/img/contact.png" alt="img" />
-                          </div>
-                          <div className="content">
+                          </Box>
+                          <Box className="content">
                             <p>Phone:</p>
                             <h6>
                               <a href="tel:++23645689622">+236 (456) 896 22</a>
                             </h6>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="objectives" className="tab-pane fade" role="tabpanel">
-                    <div className="about-tabs-area">
-                      <div className="about-list-items">
-                        <div className="video-image">
+                          </Box>
+                        </Box>
+                      </Box>
+                    </Box>
+                  </Box>
+                  <Box id="objectives" className="tab-pane fade" role="tabpanel">
+                    <Box className="about-tabs-area">
+                      <Box className="about-list-items">
+                        <Box className="video-image">
                           <img src="assets/img/about/video.jpg" alt="img" />
-                          <div className="video-box">
+                          <Box className="video-box">
                             <a
                               href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I"
                               className="video-btn ripple video-popup"
                             >
                               <i className="fas fa-play"></i>
                             </a>
-                          </div>
-                        </div>
+                          </Box>
+                        </Box>
                         <ul>
                           <li>
                             <i className="far fa-check"></i>
@@ -163,42 +168,42 @@ const AboutSection = () => {
                             Customer Oriented Program
                           </li>
                         </ul>
-                      </div>
-                      <div className="about-author">
-                        <div className="author-image">
+                      </Box>
+                      <Box className="about-author">
+                        <Box className="author-image">
                           <img src="assets/img/about/client-2.png" alt="author-img" />
-                          <div className="content">
+                          <Box className="content">
                             <h6>5m+ Customer</h6>
-                          </div>
-                        </div>
-                        <div className="author-contact">
-                          <div className="icon">
+                          </Box>
+                        </Box>
+                        <Box className="author-contact">
+                          <Box className="icon">
                             <img src="assets/img/contact.png" alt="img" />
-                          </div>
-                          <div className="content">
+                          </Box>
+                          <Box className="content">
                             <p>Phone:</p>
                             <h6>
                               <a href="tel:++23645689622">+236 (456) 896 22</a>
                             </h6>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="excellence" className="tab-pane fade" role="tabpanel">
-                    <div className="about-tabs-area">
-                      <div className="about-list-items">
-                        <div className="video-image">
+                          </Box>
+                        </Box>
+                      </Box>
+                    </Box>
+                  </Box>
+                  <Box id="excellence" className="tab-pane fade" role="tabpanel">
+                    <Box className="about-tabs-area">
+                      <Box className="about-list-items">
+                        <Box className="video-image">
                           <img src="assets/img/about/video.jpg" alt="img" />
-                          <div className="video-box">
+                          <Box className="video-box">
                             <a
                               href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I"
                               className="video-btn ripple video-popup"
                             >
                               <i className="fas fa-play"></i>
                             </a>
-                          </div>
-                        </div>
+                          </Box>
+                        </Box>
                         <ul>
                           <li>
                             <i className="far fa-check"></i>
@@ -217,35 +222,35 @@ const AboutSection = () => {
                             Customer Oriented Program
                           </li>
                         </ul>
-                      </div>
-                      <div className="about-author">
-                        <div className="author-image">
+                      </Box>
+                      <Box className="about-author">
+                        <Box className="author-image">
                           <img src="assets/img/about/client-2.png" alt="author-img" />
-                          <div className="content">
+                          <Box className="content">
                             <h6>5m+ Customer</h6>
-                          </div>
-                        </div>
-                        <div className="author-contact">
-                          <div className="icon">
+                          </Box>
+                        </Box>
+                        <Box className="author-contact">
+                          <Box className="icon">
                             <img src="assets/img/contact.png" alt="img" />
-                          </div>
-                          <div className="content">
+                          </Box>
+                          <Box className="content">
                             <p>Phone:</p>
                             <h6>
                               <a href="tel:++23645689622">+236 (456) 896 22</a>
                             </h6>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+                          </Box>
+                        </Box>
+                      </Box>
+                    </Box>
+                  </Box>
+                </Box>
+              </Box>
+            </Box>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
   );
 };
 

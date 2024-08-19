@@ -2,6 +2,7 @@ import React,{ useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import WOW from 'wowjs';
 import { Link } from "react-router-dom";
+import Logo from "../assets/images/logo/logo.png"
 
 const Footer = () => {
 
@@ -18,7 +19,7 @@ const Footer = () => {
         <div className="footer-top text-center mb-5">
           <div className="footer-logo wow fadeInUp" data-wow-delay=".3s">
             <a href="index.html">
-              <img src="assets/img/logo/footer-logo-2.svg" alt="Footer Logo" />
+              <img src={Logo} alt="Footer Logo" style={{width:"50%"}}/>
             </a>
           </div>
           <ul className="wow fadeInUp" data-wow-delay=".5s">
@@ -77,12 +78,12 @@ const Footer = () => {
               </div>
        
               <ul className="list-items">
-                <li><a href="service-details.html" className="text-white">Web (UX/UI) Design</a></li>
-                <li><a href="service-details.html" className="text-white">Machine Learning & AI</a></li>
-                <li><a href="service-details.html" className="text-white">Web Development</a></li>
-                <li><a href="service-details.html" className="text-white">IT Cyber Security</a></li>
-                <li><a href="service-details.html" className="text-white">Cloud Computing</a></li>
-                <li><a href="service-details.html" className="text-white">Analytic & Engineering</a></li>
+                <li><a href="service-details.html" className="text-white">VSAT</a></li>
+                <li><a href="service-details.html" className="text-white">VOIP Services</a></li>
+                <li><a href="service-details.html" className="text-white">Marine VSAT</a></li>
+                <li><a href="service-details.html" className="text-white">Internet Services</a></li>
+                {/* <li><a href="service-details.html" className="text-white">Cloud Computing</a></li>
+                <li><a href="service-details.html" className="text-white">Analytic & Engineering</a></li> */}
               </ul>
             </div>
           </div>
@@ -93,13 +94,13 @@ const Footer = () => {
               </div>
               <div className="footer-address-text">
               <p>
-                55 Main Street, 2nd Block, <br />
-                Malborne, Australia
+              177B Sinari Daranijo Street, <br />
+              Victoria Island, Lagos
               </p>
               <h5>Contact</h5>
-              <a href="mailto:info@example.com" className="text-white">info@example.com</a>
+              <a href="mailto:info@example.com" className="text-white">info@linkorgnet.com</a>
               <h5 className="pt-3">
-                <a href="tel:+88012345688" className="text-white">+880 (123) 456 88</a>
+                <a href="tel:+88012345688" className="text-white">+09 354 587 874</a>
               </h5>
             </div>
             </div>
@@ -111,7 +112,7 @@ const Footer = () => {
         <div className="container">
         <div className="footer-wrapper d-flex align-items-center justify-content-between">
           <p className="wow fadeInUp color-2" data-wow-delay=".4s">
-          Copyright © 2024 <a href="index.html" className="text-white">Modinatheme</a>. All Rights Reserved.
+          Copyright © 2024 <a href="index.html" className="text-white">Linkorg Networks</a>. All Rights Reserved.
           </p>
         </div>
         </div>
