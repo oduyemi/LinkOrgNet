@@ -9,7 +9,7 @@ import CounterSection from "../components/Home/CounterSection";
 import GrowSection from "../components/Home/GrowSection";
 import TestimonialSection from "../components/Home/TestimonialSection";
 import TeamSection from "../components/Home/TeamSection";
-import PricingSection from "../components/Home/PricingSection";
+// import PricingSection from "../components/Home/PricingSection";
 import ProductSection from "../components/Home/ProductSection";
 import ContactSection from "../components/Home/ContactSection";
 import BrandSection from "../components/Home/BrandSection";
@@ -29,7 +29,7 @@ const Home = () => {
     <GrowSection/>
     <TestimonialSection/>
     <TeamSection/>
-    <PricingSection/>
+    {/* <PricingSection/> */}
     <ProductSection/>
     <ContactSection/>
     <BrandSection/>

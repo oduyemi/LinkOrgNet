@@ -1,10 +1,9 @@
 import React from 'react';
 import Swiper from 'swiper';
-import 'swiper/swiper-bundle.min.css'; // Import Swiper styles if not already imported
+// import 'swiper/swiper-bundle.min.css'; 
 
 const BrandSection = () => {
   React.useEffect(() => {
-    // Initialize Swiper after component mounts
     new Swiper('.brand-slider-2', {
       slidesPerView: 3,
       spaceBetween: 30,

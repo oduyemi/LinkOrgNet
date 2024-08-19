@@ -43,39 +43,36 @@ const AboutSection = () => {
                 <div className="single-tab-items">
                   <ul className="nav mb-4" role="tablist">
                     <li className="nav-item wow fadeInUp" data-wow-delay=".3s" role="presentation">
-                      <a
-                        href="#integrity"
-                        data-bs-toggle="tab"
+                      <Link
+                        to="#integrity"
                         className="nav-link active"
                         aria-selected="true"
                         role="tab"
                       >
                         Integrity
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item wow fadeInUp" data-wow-delay=".5s" role="presentation">
-                      <a
-                        href="#objectives"
-                        data-bs-toggle="tab"
+                      <Link
+                        to="#objectives"
                         className="nav-link"
                         aria-selected="false"
                         role="tab"
                         tabIndex="-1"
                       >
                         Objectives
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item wow fadeInUp" data-wow-delay=".7s" role="presentation">
-                      <a
-                        href="#excellence"
-                        data-bs-toggle="tab"
+                      <Link
+                        to="#excellence"
                         className="nav-link"
                         aria-selected="false"
                         role="tab"
                         tabIndex="-1"
                       >
                         Excellence
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>

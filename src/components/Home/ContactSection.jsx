@@ -36,7 +36,9 @@ const ContactSection = () => {
                     <div className="content">
                       <p>Call For Inquiry</p>
                       <h3>
-                        <a href="tel:+23645689622">+236 (456) 896 22</a>
+                        <Link to="tel:+23645689622">
+                        +236 (456) 896 22
+                        </Link>
                       </h3>
                     </div>
                   </div>
@@ -47,7 +49,9 @@ const ContactSection = () => {
                     <div className="content">
                       <p>Send Us Email</p>
                       <h3>
-                        <a href="mailto:info@example.com">info@example.com</a>
+                      <Link to="mailto:info@example.com">
+                         info@example.com
+                      </Link>
                       </h3>
                     </div>
                   </div>
