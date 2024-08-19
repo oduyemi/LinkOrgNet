@@ -1,11 +1,24 @@
 import React from "react";
+import { Hero } from "../components/About/Hero";
+import { Intro } from "../components/About/Intro";
+import { AboutServices } from "../components/About/AboutServices";
+import { Guide } from "../components/About/Guide";
+import { Ad } from "../components/About/Ad";
+import { Testimonials } from "../components/About/Testimonials";
 
 
 
 
 const About = () => {
     return(
-        <p>This is the About us page</p>
+        <>
+            <Hero />
+            <Intro />
+            <AboutServices />
+            <Guide />
+            <Ad />
+            <Testimonials />
+        </>
     )
 }
 
