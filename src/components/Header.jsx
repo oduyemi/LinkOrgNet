@@ -1,17 +1,15 @@
-import React from "react"
-import { Box, Typography } from "@mui/material";
+import React from "react";
+import { Box } from "@mui/material";
+import { NavMenu } from "./NavMenu";
+import { TopHeader } from "./TopHeader";
+import { Offcanvas } from "./Offcanvas";
 
-
-
-export const Header = () => {
-    return(
-       <Box className="bg-primary">
-            <Typography
-                variant="body1"
-                className="text-light"
-            >
-                Header Here..
-            </Typography>
-        </Box>
-    )
-}
+export const Header = ({ children }) => {
+  return (
+    <Box>
+        <TopHeader />
+        <NavMenu />
+        <Offcanvas />
+    </Box>
+  );
+};
