@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import abtHero  from "../../assets/images/abtHero.jpg";
+import servicesHero  from "../../assets/images/servicesHero.png";
 
 
 
@@ -9,7 +9,7 @@ export const Hero = () => {
     return(
         <Box className="breadcrumb-wrapper section-padding bg-cover" 
             style={{
-                backgroundImage: `url(${abtHero}`
+                backgroundImage: `url(${servicesHero}`
             }}
         >
             <Box className="container">
@@ -19,7 +19,7 @@ export const Hero = () => {
                         className="wow fadeInUp" 
                         data-wow-delay=".3s"
                     >
-                        about us
+                        Services
                     </Typography>
                     <ul className="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                         <li>
@@ -31,7 +31,7 @@ export const Hero = () => {
                             <i className="fal fa-minus"></i>
                         </li>
                         <li>
-                            About Us
+                            Services
                         </li>
                     </ul>
                 </Box>

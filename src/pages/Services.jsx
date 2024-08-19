@@ -4,14 +4,22 @@ import { AboutServices } from "../components/About/AboutServices";
 import { Testimonials } from "../components/About/Testimonials";
 import Footer from "../components/Footer";
 import ContactSection from "../components/Home/ContactSection";
-
-
+import { Hero } from "../components/Services/Hero";
+import NeedAdvisor from "../components/Services/NeedAdvisor";
+import FeatureIconBoxSection from "../components/Services/FeatureIconBoxSection";
+import FaqSection from "../components/Services/FaqSection";
 
 
 const Services = () => {
     return(
         <Box>
+        <Hero/>
+        <Box style={{height: "100px"}}> 
+        </Box>
         <AboutServices />
+        <NeedAdvisor/> ;
+        <FeatureIconBoxSection/>
+        <FaqSection/>
         <Testimonials />
         <ContactSection/>
         <Footer />

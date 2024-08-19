@@ -33,7 +33,7 @@ export const AboutServices = () => {
                             <Box className="icon">
                                 <CellTowerIcon 
                                         sx={{
-                                            fontSize: 40,
+                                            fontSize: 70,
                                             color: "#010156",
                                             // paddingTop: "20px"
                                         }}
@@ -53,7 +53,7 @@ export const AboutServices = () => {
                                 <Link to="" className="arrow-icon">
                                     <ChevronRightIcon 
                                         sx={{
-                                            fontSize: 40,
+                                            fontSize: 70,
                                             color: "#010156"
                                         }}
                                     />
@@ -66,7 +66,7 @@ export const AboutServices = () => {
                             <Box className="icon d-inline">
                                 <SpeakerPhoneIcon 
                                     sx={{
-                                        fontSize: 30,
+                                        fontSize: 70,
                                         color: "#010156"
                                     }}
                                     className="d-inline"
@@ -85,7 +85,7 @@ export const AboutServices = () => {
                                 <Link to="service-details.html" className="arrow-icon">
                                     <ChevronRightIcon 
                                         sx={{
-                                            fontSize: 40,
+                                            fontSize: 70,
                                             color: "#010156"
                                         }}
                                     />
@@ -98,7 +98,7 @@ export const AboutServices = () => {
                             <Box className="icon">
                                 <StreamIcon 
                                     sx={{
-                                        fontSize: 30,
+                                        fontSize: 70,
                                         color: "#010156"
                                     }}
                                     className="d-inline"
@@ -117,7 +117,7 @@ export const AboutServices = () => {
                                 <Link to="service-details.html" className="arrow-icon">
                                     <ChevronRightIcon 
                                         sx={{
-                                            fontSize: 40,
+                                            fontSize: 70,
                                             color: "#010156"
                                         }}
                                     />
@@ -130,7 +130,7 @@ export const AboutServices = () => {
                             <Box className="icon">
                                 <SettingsInputAntennaIcon 
                                     sx={{
-                                        fontSize: 30,
+                                        fontSize: 70,
                                         color: "#010156"
                                     }}
                                     className="d-inline"
@@ -149,7 +149,7 @@ export const AboutServices = () => {
                                 <Link to="service-details.html" className="arrow-icon">
                                     <ChevronRightIcon 
                                         sx={{
-                                            fontSize: 40,
+                                            fontSize: 70,
                                             color: "#010156"
                                         }}
                                     />
