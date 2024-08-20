@@ -10,7 +10,7 @@ const TeamSection = () => {
   }, []);
 
   return (
-    <Box className="team-section section-padding pt-0 section-bg-3">
+    <Box className="team-section section-padding pt-0" style={{ backgroundColor: "#34113F"}}>
       <Box className="dot-shape-2">
         <img src="assets/img/team/dot-shape-2.png" alt="shape-img" />
       </Box>
@@ -113,7 +113,7 @@ const TeamSection = () => {
           </Box>
         </Box>
         <Box className="team-button text-center mt-5 wow fadeInUp" data-wow-delay=".4s">
-          <Link to="/team" className="theme-btn theme-btn-2 hover-white">
+          <Link to="/team" className="theme-btn theme-btn-2">
             <span>
               Explore more team
               <i className="fas fa-chevron-right"></i>

@@ -4,7 +4,7 @@ const CounterSection = () => {
   return (
     <section className="counter-section-2">
       <div className="container">
-        <div className="counter-wrapper-2">
+        <div className="counter-wrapper">
           <div className="counter-items wow fadeInUp" data-wow-delay=".3s">
             <div className="content">
               <h2><span className="count">50</span>k+</h2>
