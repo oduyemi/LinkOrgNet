@@ -1,19 +1,20 @@
+import { Typography } from '@mui/material';
 import React from 'react';
 
 const GrowSection = () => {
   return (
-    <section className="grow-section section-padding section-bg-3">
+    <section className="grow-section section-padding section-bg-3" style={{ backgroundColor: "#34113F"}}>
       <div className="container">
         <div className="grow-wrapper">
           <div className="title-section-area">
-            <div className="section-title style-2">
-              <span className="text-white wow fadeInUp">Business strategy we need</span>
+            <div className="section-title">
+              <span className="wow fadeInUp" style={{ textDecoration: "none" }}>Business strategy we need</span>
               <h2 className="text-white wow fadeInUp" data-wow-delay=".3s">
                 GROW COMMUNITY & EXPERIENCE <br />
                 ENDLESS POSSIBILITIES
               </h2>
             </div>
-            <a href="about.html" className="theme-btn theme-btn-2 hover-white wow fadeInUp" data-wow-delay=".5s">
+            <a href="/about" className="theme-btn theme-btn-2 wow fadeInUp" data-wow-delay=".5s">
               <span>
                 Discover More
                 <i className="fas fa-chevron-right"></i>
@@ -26,11 +27,26 @@ const GrowSection = () => {
                 {/* Circle Bar Animation/Progress Code Here */}
               </div>
               <div className="content">
-                <h6>Business Strategy</h6>
-                <p>
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontFamily: "Museo Slabs",
+                    fontWeight: 300,
+                  }}
+                >
+                  Business Strategy
+                </Typography>
+                <Typography
+                  variant="body1"
+                  sx={{
+                    fontFamily: "Museo Sans",
+                    fontWeight: 300,
+                    color: "#fff",
+                  }}
+                >
                   End to end fiber optic cable <br />
                   connectivity for stable
-                </p>
+                </Typography>
               </div>
             </div>
             <div className="single-circle-bar wow fadeInUp" data-wow-delay=".5s">
@@ -38,11 +54,26 @@ const GrowSection = () => {
                 {/* Circle Bar Animation/Progress Code Here */}
               </div>
               <div className="content">
-                <h6>Guaranteed Uptime</h6>
-                <p>
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontFamily: "Museo Slabs",
+                    fontWeight: 300,
+                  }}
+                >
+                  Guaranteed Uptime
+                </Typography>
+                <Typography
+                  variant="body1"
+                  sx={{
+                    fontFamily: "Museo Sans",
+                    fontWeight: 300,
+                    color: "#fff",
+                  }}
+                >
                   End to end fiber optic cable <br />
                   connectivity for stable
-                </p>
+                </Typography>
               </div>
             </div>
             <div className="single-circle-bar wow fadeInUp" data-wow-delay=".7s">
@@ -50,11 +81,26 @@ const GrowSection = () => {
                 {/* Circle Bar Animation/Progress Code Here */}
               </div>
               <div className="content">
-                <h6>Proactive Monitoring</h6>
-                <p>
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontFamily: "Museo Slabs",
+                    fontWeight: 300,
+                  }}
+                >
+                  Proactive Monitoring
+                </Typography>
+                <Typography
+                  variant="body1"
+                  sx={{
+                    fontFamily: "Museo Sans",
+                    fontWeight: 300,
+                    color: "#fff",
+                  }}
+                >
                   End to end fiber optic cable <br />
                   connectivity for stable
-                </p>
+                </Typography>
               </div>
             </div>
           </div>

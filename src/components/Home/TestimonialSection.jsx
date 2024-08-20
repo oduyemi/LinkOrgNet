@@ -3,6 +3,10 @@ import Slider from "react-slick";
 import { Box } from "@mui/material";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import defaultAvatar from "../../assets/images/defaultAvatar.png";
+
+
+
 
 const TestimonialSection = () => {
   return (
@@ -15,7 +19,7 @@ const TestimonialSection = () => {
               <div className="testimonial-image-area">
                 <div
                   className="testimonial-image bg-cover"
-                  style={{ backgroundImage: "url('assets/img/testimonial/06.jpg')" }}
+                  style={{ backgroundImage: `${defaultAvatar}` }}
                 >
                   <div className="icon">
                     <svg
@@ -59,7 +63,7 @@ const TestimonialSection = () => {
               <div className="testimonial-image-area">
                 <div
                   className="testimonial-image bg-cover"
-                  style={{ backgroundImage: "url('assets/img/testimonial/07.jpg')" }}
+                  style={{ backgroundImage: `${defaultAvatar}` }}
                 >
                   <div className="icon">
                     <svg

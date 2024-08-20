@@ -1,10 +1,130 @@
-import React from 'react';
-import { Box } from "@mui/material";
+import React, { useState } from 'react';
+import { Box, Typography } from "@mui/material";
 import { Link } from 'react-router-dom';
-import ITSolution1 from "../../assets/images/ITSolution1.jpg"
-import ITSolution2 from "../../assets/images/ITSolution2.jpg"
+import ITSolution1 from "../../assets/images/ITSolution1.jpg";
+import ITSolution2 from "../../assets/images/ITSolution2.jpg";
+import CheckIcon from '@mui/icons-material/Check';
 
 const AboutSection = () => {
+  const [activeTab, setActiveTab] = useState('internet');
+
+  const renderBulletPoints = () => {
+    switch (activeTab) {
+      case 'internet':
+        return (
+          <Box>
+            <Typography 
+              variant="body1" 
+              className="wow fadeInUp" 
+              data-wow-delay=".4s"
+              sx={{
+                fontSize: "16px",
+                fontWeight: "400",
+                fontFamily: "Museo Sans"
+              }}
+            >
+              Experience lightning-fast, reliable internet 
+              tailored just for you. Whether you're 
+              streaming, working, or gaming, our 
+              high-speed connectivity keeps you 
+              seamlessly connected to the world.
+            </Typography>
+            <ul>
+              <li><CheckIcon sx={{ fontSize: 14 }}/> Reliable, high-speed internet for seamless online experiences.</li>
+              <li><CheckIcon sx={{ fontSize: 14 }}/> Scalable bandwidth options to match your business or personal needs.</li>
+              <li><CheckIcon sx={{ fontSize: 14 }}/> Consistent connectivity for remote work, streaming, and more.</li>
+              <li><CheckIcon sx={{ fontSize: 14 }}/> Dedicated support to ensure uninterrupted service.</li>
+            </ul>
+          </Box>
+        );
+      case 'vpn':
+        return (
+          <Box>
+            <Typography
+              variant="body1" 
+              className="wow fadeInUp" 
+              data-wow-delay=".4s"
+              sx={{
+                fontSize: "16px",
+                fontWeight: "400",
+                fontFamily: "Museo Sans"
+              }}
+            >
+              Protect your data and privacy with our 
+              top-tier VPN services. Access your network 
+              securely from anywhere in the world, 
+              ensuring your sensitive information stays 
+              safe and your online activities remain 
+              private.
+            </Typography>
+            <ul>
+              <li><CheckIcon sx={{ fontSize: 14 }}/> Secure access to your network from any location.</li>
+              <li><CheckIcon sx={{ fontSize: 14 }}/> Protect sensitive data with encrypted connections.</li>
+              <li><CheckIcon sx={{ fontSize: 14 }}/> Ensure privacy while browsing or conducting business online.</li>
+              <li><CheckIcon sx={{ fontSize: 14 }}/> Custom VPN solutions for individual users and corporate teams.</li>
+            </ul>
+          </Box>
+        );
+      case 'voip':
+        return (
+          <Box>
+            <Typography 
+              variant="body1" 
+              className="wow fadeInUp" 
+              data-wow-delay=".4s"
+              sx={{
+                fontSize: "16px",
+                fontWeight: "400",
+                fontFamily: "Museo Sans"
+              }}
+            >
+              Revolutionize your communication with our 
+              crystal-clear VoIP solutions. Say goodbye 
+              to traditional phone lines and enjoy cost-effective, 
+              feature-rich calls that enhance your personal or 
+              business communication.
+            </Typography>
+            <ul>
+              <li><CheckIcon sx={{ fontSize: 14 }}/> Clear, cost-effective communication via internet calls.</li>
+              <li><CheckIcon sx={{ fontSize: 14 }}/> Scalable VoIP systems for businesses of all sizes.</li>
+              <li><CheckIcon sx={{ fontSize: 14 }}/> Advanced features like call forwarding, voicemail, and conferencing.</li>
+              <li><CheckIcon sx={{ fontSize: 14 }}/> Easy integration with existing communication tools.</li>
+            </ul>
+          </Box>
+        );
+      case 'vsat':
+        return (
+          <Box>
+            <Typography 
+              variant="body1" 
+              className="wow fadeInUp" 
+              data-wow-delay=".4s"
+              sx={{
+                fontSize: "16px",
+                fontWeight: "400",
+                fontFamily: "Museo Sans"
+              }}
+            >
+              Stay connected no matter where you are with 
+              our cutting-edge VSAT services. Perfect for 
+              remote and maritime locations, our satellite 
+              solutions ensure uninterrupted internet and 
+              communication, even in the most challenging 
+              environments.
+            </Typography>
+            <ul>
+              <li><CheckIcon sx={{ fontSize: 14 }}/> Reliable satellite internet for remote and maritime locations.</li>
+              <li><CheckIcon sx={{ fontSize: 14 }}/> Consistent connectivity where traditional internet isn’t available.</li>
+              <li><CheckIcon sx={{ fontSize: 14 }}/> Custom VSAT setups for individual needs and corporate operations.</li>
+              <li><CheckIcon sx={{ fontSize: 14 }}/> 24/7 support for continuous communication, no matter the location.</li>
+            </ul>
+          </Box>
+        );
+      default:
+        return null;
+    }
+  };
+
   return (
     <Box className="about-section section-padding">
       <Box className="container">
@@ -16,233 +136,115 @@ const AboutSection = () => {
                   className="about-image-1 bg-cover wow fadeInLeft"
                   data-wow-delay=".3s"
                   style={{ 
-                    backgroundImage: `url(${ITSolution1}`
-                    }}
+                    backgroundImage: `url(${ITSolution1})`
+                  }}
                 >
                   <Box className="about-image-2 wow fadeInUp" data-wow-delay=".5s">
                     <img src={ITSolution2} alt="about-img" />
-                  </Box>
-                </Box>
-                <Box className="circle-shape">
-                  <img src="assets/img/about/circle-2.png" alt="img" className="text-circle" />
-                  <Box className="about-title">
-                    <h2>
-                      <span className="count">13</span>
-                    </h2>
-                    <p>Years of Experience</p>
                   </Box>
                 </Box>
               </Box>
             </Box>
             <Box className="col-lg-6 mt-5 mt-lg-0">
               <Box className="about-content">
-                <Box className="section-title style-2">
-                  <span className="wow fadeInUp">BEST IT SOLUTIONS</span>
-                  <h2 className="wow fadeInUp" data-wow-delay=".3s">
-                    Best Internet <span>Agency</span> For People
-                  </h2>
+                <Box className="section-title">
+                  <span className="wow fadeInUp" style={{ textDecoration: "none" }}>Leading IT &amp; Telecom Services</span>
+                  <Typography
+                    variant="h2" 
+                    className="wow fadeInUp" 
+                    data-wow-delay=".3s"
+                    sx={{
+                      color: "#010156",
+                      fontWeight: 300,
+                      fontSize: "30px",
+                      fontFamily: "Museo Slab",
+                    }}
+                  >
+                    Empower Your {" "}
+                    <span style={{ textDecoration: "none" }}>
+                      Digital Presence {" "}
+                    </span> 
+                    with LinkOrg Networks
+                  </Typography>
                 </Box>
-                <p className="mt-4 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                  Transmds is the world’s leading global logistics provider. We support industry and trade in the global exchange of goods. 
-                </p>
+                <Typography
+                  variant="body1" 
+                  className="mt-4 mt-md-0 wow fadeInUp" 
+                  data-wow-delay=".5s"
+                  style={{ 
+                    fontWeight: 300,
+                    fontFamily: "Museo Sans",
+                    fontSize: "17px"
+                  }}
+                >
+                  We are your trusted partner for all things IT 
+                  and telecommunications. From VoIP and VPN 
+                  services to ISP solutions, VSAT hardware for 
+                  both terrestrial and maritime needs, and robust 
+                  terrestrial communications, we provide the 
+                  technology and expertise you need to succeed. 
+                  Our dedicated team delivers reliable and 
+                  efficient Field Telecommunication Engineering 
+                  Support Services, ensuring your operations run 
+                  smoothly, no matter the scale. Let us transform 
+                  your ideas into powerful digital experiences.
+                </Typography>
                 <Box className="single-tab-items">
                   <ul className="nav mb-4" role="tablist">
                     <li className="nav-item wow fadeInUp" data-wow-delay=".3s" role="presentation">
                       <Link
-                        to="#integrity"
-                        className="nav-link active"
-                        aria-selected="true"
-                        role="tab"
+                        to="#"
+                        className={`nav-link ${activeTab === 'internet' ? 'active' : ''}`}
+                        onClick={() => setActiveTab('internet')}
+                        style={{ fontFamily: "Museo Sans", fontSize: "11px" }}
                       >
-                        Integrity
+                        Internet
                       </Link>
                     </li>
                     <li className="nav-item wow fadeInUp" data-wow-delay=".5s" role="presentation">
                       <Link
-                        to="#objectives"
-                        className="nav-link"
-                        aria-selected="false"
-                        role="tab"
-                        tabIndex="-1"
+                        to="#"
+                        className={`nav-link ${activeTab === 'vpn' ? 'active' : ''}`}
+                        onClick={() => setActiveTab('vpn')}
+                        style={{ fontFamily: "Museo Sans", fontSize: "11px" }}
                       >
-                        Objectives
+                        VPN
                       </Link>
                     </li>
                     <li className="nav-item wow fadeInUp" data-wow-delay=".7s" role="presentation">
                       <Link
-                        to="#excellence"
-                        className="nav-link"
-                        aria-selected="false"
-                        role="tab"
-                        tabIndex="-1"
+                        to="#"
+                        className={`nav-link ${activeTab === 'voip' ? 'active' : ''}`}
+                        onClick={() => setActiveTab('voip')}
+                        style={{ fontFamily: "Museo Sans", fontSize: "11px" }}
                       >
-                        Excellence
+                        VoIP Solutions
+                      </Link>
+                    </li>
+                    <li className="nav-item wow fadeInUp" data-wow-delay=".5s" role="presentation">
+                      <Link
+                        to="#"
+                        className={`nav-link ${activeTab === 'vsat' ? 'active' : ''}`}
+                        onClick={() => setActiveTab('vsat')}
+                        style={{ fontFamily: "Museo Sans", fontSize: "11px" }}
+                      >
+                        VSAT
                       </Link>
                     </li>
                   </ul>
                 </Box>
                 <Box className="tab-content">
-                  <Box id="integrity" className="tab-pane fade show active" role="tabpanel">
-                    <Box className="about-tabs-area">
-                      <Box className="about-list-items">
-                        <Box className="video-image wow fadeInUp" data-wow-delay=".3s">
-                          <img src="assets/img/about/video.jpg" alt="img" />
-                          <Box className="video-box">
-                            <a
-                              href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I"
-                              className="video-btn ripple video-popup"
-                            >
-                              <i className="fas fa-play"></i>
-                            </a>
-                          </Box>
-                        </Box>
-                        <ul className="wow fadeInUp" data-wow-delay=".4s">
-                          <li>
-                            <i className="far fa-check"></i>
-                            Technology Growth
-                          </li>
-                          <li>
-                            <i className="far fa-check"></i>
-                            Customer Oriented Program
-                          </li>
-                          <li>
-                            <i className="far fa-check"></i>
-                            Dedicated Team Member
-                          </li>
-                          <li>
-                            <i className="far fa-check"></i>
-                            Customer Oriented Program
-                          </li>
-                        </ul>
-                      </Box>
-                      <Box className="about-author">
-                        <Box className="author-image wow fadeInUp" data-wow-delay=".3s">
-                          <img src="assets/img/about/client-2.png" alt="author-img" />
-                          <Box className="content">
-                            <h6>5m+ Customer</h6>
-                          </Box>
-                        </Box>
-                        <Box className="author-contact wow fadeInUp" data-wow-delay=".5s">
-                          <Box className="icon">
-                            <img src="assets/img/contact.png" alt="img" />
-                          </Box>
-                          <Box className="content">
-                            <p>Phone:</p>
-                            <h6>
-                              <a href="tel:++23645689622">+236 (456) 896 22</a>
-                            </h6>
-                          </Box>
-                        </Box>
-                      </Box>
-                    </Box>
+                  <Box className={`tab-pane fade ${activeTab === 'internet' ? 'show active' : ''}`} role="tabpanel">
+                    {renderBulletPoints()}
                   </Box>
-                  <Box id="objectives" className="tab-pane fade" role="tabpanel">
-                    <Box className="about-tabs-area">
-                      <Box className="about-list-items">
-                        <Box className="video-image">
-                          <img src="assets/img/about/video.jpg" alt="img" />
-                          <Box className="video-box">
-                            <a
-                              href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I"
-                              className="video-btn ripple video-popup"
-                            >
-                              <i className="fas fa-play"></i>
-                            </a>
-                          </Box>
-                        </Box>
-                        <ul>
-                          <li>
-                            <i className="far fa-check"></i>
-                            Technology Growth
-                          </li>
-                          <li>
-                            <i className="far fa-check"></i>
-                            Customer Oriented Program
-                          </li>
-                          <li>
-                            <i className="far fa-check"></i>
-                            Dedicated Team Member
-                          </li>
-                          <li>
-                            <i className="far fa-check"></i>
-                            Customer Oriented Program
-                          </li>
-                        </ul>
-                      </Box>
-                      <Box className="about-author">
-                        <Box className="author-image">
-                          <img src="assets/img/about/client-2.png" alt="author-img" />
-                          <Box className="content">
-                            <h6>5m+ Customer</h6>
-                          </Box>
-                        </Box>
-                        <Box className="author-contact">
-                          <Box className="icon">
-                            <img src="assets/img/contact.png" alt="img" />
-                          </Box>
-                          <Box className="content">
-                            <p>Phone:</p>
-                            <h6>
-                              <a href="tel:++23645689622">+236 (456) 896 22</a>
-                            </h6>
-                          </Box>
-                        </Box>
-                      </Box>
-                    </Box>
+                  <Box className={`tab-pane fade ${activeTab === 'vpn' ? 'show active' : ''}`} role="tabpanel">
+                    {renderBulletPoints()}
                   </Box>
-                  <Box id="excellence" className="tab-pane fade" role="tabpanel">
-                    <Box className="about-tabs-area">
-                      <Box className="about-list-items">
-                        <Box className="video-image">
-                          <img src="assets/img/about/video.jpg" alt="img" />
-                          <Box className="video-box">
-                            <a
-                              href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I"
-                              className="video-btn ripple video-popup"
-                            >
-                              <i className="fas fa-play"></i>
-                            </a>
-                          </Box>
-                        </Box>
-                        <ul>
-                          <li>
-                            <i className="far fa-check"></i>
-                            Technology Growth
-                          </li>
-                          <li>
-                            <i className="far fa-check"></i>
-                            Customer Oriented Program
-                          </li>
-                          <li>
-                            <i className="far fa-check"></i>
-                            Dedicated Team Member
-                          </li>
-                          <li>
-                            <i className="far fa-check"></i>
-                            Customer Oriented Program
-                          </li>
-                        </ul>
-                      </Box>
-                      <Box className="about-author">
-                        <Box className="author-image">
-                          <img src="assets/img/about/client-2.png" alt="author-img" />
-                          <Box className="content">
-                            <h6>5m+ Customer</h6>
-                          </Box>
-                        </Box>
-                        <Box className="author-contact">
-                          <Box className="icon">
-                            <img src="assets/img/contact.png" alt="img" />
-                          </Box>
-                          <Box className="content">
-                            <p>Phone:</p>
-                            <h6>
-                              <a href="tel:++23645689622">+236 (456) 896 22</a>
-                            </h6>
-                          </Box>
-                        </Box>
-                      </Box>
-                    </Box>
+                  <Box className={`tab-pane fade ${activeTab === 'voip' ? 'show active' : ''}`} role="tabpanel">
+                    {renderBulletPoints()}
+                  </Box>
+                  <Box className={`tab-pane fade ${activeTab === 'vsat' ? 'show active' : ''}`} role="tabpanel">
+                    {renderBulletPoints()}
                   </Box>
                 </Box>
               </Box>
