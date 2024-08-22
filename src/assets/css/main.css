@@ -668,6 +668,10 @@ input.main-search-input::placeholder {
   background-color: var(--bg4);
 }
 
+.footerbg{
+  background-color: #4E4A59;
+}
+
 .section-padding {
   padding: 120px 0;
 }
@@ -10946,7 +10950,7 @@ p.sticky-label {
 }
 
 .footer-top {
-  padding: 80px 0;
+  padding: 40px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11106,7 +11110,7 @@ p.sticky-label {
   padding: 18px 30px;
   border: none;
   outline: none;
-  background: rgba(255, 255, 255, 0.03);
+  background: #4E4A59;
   border: 1.2px solid rgba(255, 255, 255, 0.1);
   border-radius: 6px;
   width: 100%;
