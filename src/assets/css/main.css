@@ -46,13 +46,30 @@ Version: 1.0.0
   text-transform: capitalize;
   position: relative;
   overflow: hidden;
-  font-size: 16px;
-  padding: 21px 42px;
+  font-size: 14px; /* Reduced font size */
+  padding: 14px 28px; /* Reduced padding */
   border-radius: 7px;
   z-index: 9;
   display: inline-block;
   line-height: 1;
 }
+
+@media (max-width: 767px) {
+  .theme-btn {
+    padding: 16px 24px; /* Adjusted padding for smaller screens */
+  }
+}
+
+@media (max-width: 575px) {
+  .theme-btn {
+    padding: 12px 20px; /* Further reduced padding for mobile screens */
+    font-size: 12px; /* Reduced font size for mobile screens */
+  }
+  .theme-btn span {
+    font-size: 12px; /* Reduced font size for text inside button */
+  }
+}
+
 .theme-btn i {
   margin-left: 8px;
   transition: all 0.4s ease-in-out;
@@ -649,6 +666,10 @@ input.main-search-input::placeholder {
 
 .footer-bg {
   background-color: var(--bg4);
+}
+
+.footerbg{
+  background-color: #4E4A59;
 }
 
 .section-padding {
@@ -2868,7 +2889,7 @@ input.main-search-input::placeholder {
   top: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, rgb(34, 34, 34) 0%, rgba(9, 9, 121, 0) 75%);
+  background: linear-gradient(90deg, #010156 0%, rgba(9, 9, 121, 0) 75%);
   content: "";
   z-index: -1;
 }
@@ -10929,7 +10950,7 @@ p.sticky-label {
 }
 
 .footer-top {
-  padding: 80px 0;
+  padding: 40px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11089,7 +11110,7 @@ p.sticky-label {
   padding: 18px 30px;
   border: none;
   outline: none;
-  background: rgba(255, 255, 255, 0.03);
+  background: #4E4A59;
   border: 1.2px solid rgba(255, 255, 255, 0.1);
   border-radius: 6px;
   width: 100%;
@@ -11415,4 +11436,7 @@ p.sticky-label {
 .footer-bottom-4 p a {
   color: var(--theme);
 }
+
+
+
 

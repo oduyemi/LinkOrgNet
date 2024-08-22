@@ -1,6 +1,6 @@
 import React from 'react';
 import Swiper from 'swiper';
-// import 'swiper/swiper-bundle.min.css'; 
+import { Box, Typography } from '@mui/material';
 
 const BrandSection = () => {
   React.useEffect(() => {
@@ -27,45 +27,53 @@ const BrandSection = () => {
   }, []);
 
   return (
-    <div className="brand-section-5 section-padding">
-      <div className="container">
-        <h5 className="text-center pb-5">Trusted by the world’s best</h5>
-        <div className="swiper brand-slider-2">
-          <div className="swiper-wrapper">
-            <div className="swiper-slide">
-              <div className="brand-img center">
+    <Box className="brand-section-5 section-padding">
+      <Box className="container">
+        <Typography
+          variant="h5" 
+          className="text-center pb-5"
+          sx={{
+            color: "#010156"
+          }}
+        >
+          Trusted by the world’s best
+        </Typography>
+        <Box className="swiper brand-slider-2">
+          <Box className="swiper-wrapper">
+            <Box className="swiper-slide">
+              <Box className="brand-img center">
                 <img src="assets/img/brand/client-1.png" alt="Brand 1"/>
-              </div>
-            </div>
-            <div className="swiper-slide">
-              <div className="brand-img center">
+              </Box>
+            </Box>
+            <Box className="swiper-slide">
+              <Box className="brand-img center">
                 <img src="assets/img/brand/client-2.png" alt="Brand 2"/>
-              </div>
-            </div>
-            <div className="swiper-slide">
-              <div className="brand-img center">
+              </Box>
+            </Box>
+            <Box className="swiper-slide">
+              <Box className="brand-img center">
                 <img src="assets/img/brand/client-3.png" alt="Brand 3"/>
-              </div>
-            </div>
-            <div className="swiper-slide">
-              <div className="brand-img center">
+              </Box>
+            </Box>
+            <Box className="swiper-slide">
+              <Box className="brand-img center">
                 <img src="assets/img/brand/client-4.png" alt="Brand 4"/>
-              </div>
-            </div>
-            <div className="swiper-slide">
-              <div className="brand-img center">
+              </Box>
+            </Box>
+            <Box className="swiper-slide">
+              <Box className="brand-img center">
                 <img src="assets/img/brand/client-5.png" alt="Brand 5"/>
-              </div>
-            </div>
-            <div className="swiper-slide">
-              <div className="brand-img center">
+              </Box>
+            </Box>
+            <Box className="swiper-slide">
+              <Box className="brand-img center">
                 <img src="assets/img/brand/client-6.png" alt="Brand 6"/>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+              </Box>
+            </Box>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
   );
 };
 

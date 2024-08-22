@@ -12,20 +12,39 @@ export const AboutServices = () => {
         <section className="service-section-3 fix section-padding pt-0">
             <Box className="container">
                 <Box className="section-title text-center">
-                    <span className="wow fadeInUp" style={{ textDecoration: "none"}}>our services</span>  
+                    <span className="wow fadeInUp" style={{ textDecoration: "none"}}>Empower Your Digital Transformation</span>  
                     <Typography
                         variant="h2" 
                         className="wow fadeInUp" 
                         data-wow-delay=".3s"
                         sx={{
-                            fontSize: "30px",
-                            fontWeight: "400",
+                            fontSize: "40px",
+                            fontWeight: "300",
                             color: "#010156"
                         }}
                     >
-                        How do we work to help you <br />
-                        in Startup Business
-                    </Typography>  
+                        Comprehensive IT And  <br />
+                        Telecom Solutions
+                    </Typography> 
+                    <Typography
+                        variant="body1"
+                        className="wow fadeInUp w-75 mx-auto" 
+                        data-wow-delay=".4s"
+                        sx={{
+                            fontSize: "18px",
+                            fontWeight: "300",
+                            fontFamily: "Museo Sans"
+                        }}
+                    >
+                        Our wide range of services is designed to 
+                        address the unique needs of both individuals 
+                        and businesses. Whether you need high-speed 
+                        internet, secure VPNs, or advanced VoIP solutions, 
+                        LinkOrg Networks has you covered. We offer 
+                        tailored services that not only meet but exceed 
+                        industry standards, ensuring that you have the 
+                        tools you need to stay ahead in a digital world.
+                    </Typography> 
                 </Box>
                 <Box className="row">
                     <Box className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
@@ -46,10 +65,17 @@ export const AboutServices = () => {
                                         VSAT
                                     </Link>
                                 </h3>
-                                <p>
-                                    We approached WiaTech with
-                                    complex project deliver
-                                </p>
+                                <Typography
+                                variant="body1" 
+                                sx={{
+                                     fontSize: "16px",
+                                     fontWeight: "300",
+                                     lineHeight: "1.5", 
+                                     fontFamily: "Museo Sans"    
+                                }}
+                                >
+                                    Stay Connected, Even Off-Grid
+                                </Typography>
                                 <Link to="" className="arrow-icon">
                                     <ChevronRightIcon 
                                         sx={{
@@ -78,10 +104,17 @@ export const AboutServices = () => {
                                         VOIP Services
                                     </Link>
                                 </h3>
-                                <p>
-                                    We approached WiaTech with
-                                    complex project deliver
-                                </p>
+                                <Typography
+                                variant="body1" 
+                                sx={{
+                                     fontSize: "16px",
+                                     fontWeight: "300",
+                                     lineHeight: "1.5", 
+                                     fontFamily: "Museo Sans"    
+                                }}
+                                >
+                                    Crystal Clear Calls, Anywhere
+                                </Typography>
                                 <Link to="service-details.html" className="arrow-icon">
                                     <ChevronRightIcon 
                                         sx={{
@@ -106,14 +139,21 @@ export const AboutServices = () => {
                             </Box>
                             <Box className="content">
                                 <h3>
-                                    <Link to="service-details.html">
+                                    <Link to="">
                                         Maritime VSAT
                                     </Link>
                                 </h3>
-                                <p>
-                                    We approached WiaTech with
-                                    complex project deliver
-                                </p>
+                                <Typography
+                                variant="body1" 
+                                sx={{
+                                     fontSize: "16px",
+                                     fontWeight: "300",
+                                     lineHeight: "1.5", 
+                                     fontFamily: "Museo Sans"    
+                                }}
+                                >
+                                    Seamless Connectivity at Sea
+                                </Typography>
                                 <Link to="service-details.html" className="arrow-icon">
                                     <ChevronRightIcon 
                                         sx={{
@@ -142,10 +182,17 @@ export const AboutServices = () => {
                                         Network Services
                                     </Link>
                                 </h3>
-                                <p>
-                                    We approached WiaTech with
-                                    complex project deliver
-                                </p>
+                                <Typography
+                                variant="body1" 
+                                sx={{
+                                     fontSize: "16px",
+                                     fontWeight: "300",
+                                     lineHeight: "1.5", 
+                                     fontFamily: "Museo Sans"    
+                                }}
+                                >
+                                    Reliable Networks, Anytime, Anywhere
+                                </Typography>
                                 <Link to="service-details.html" className="arrow-icon">
                                     <ChevronRightIcon 
                                         sx={{
@@ -157,8 +204,18 @@ export const AboutServices = () => {
                             </Box>
                         </Box>
                     </Box>
+                    
                 </Box>
-            </Box>
-        </section>
+                <Box maxWidth="sm" className="team-button text-center mx-auto mt-5 wow fadeInUp" data-wow-delay=".4s">
+                <Link to="/services" className="theme-btn theme-btn-2">
+                    <span>
+                    Explore Services
+                    <i className="fas fa-chevron-right"></i>
+                    </span>
+                </Link>
+                </Box>
+            </Box></section>
+        //     </Box>
+        // </section>
     )
 }
