@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import WOW from 'wowjs';
 import { Link } from 'react-router-dom';
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
+import CallIcon from '@mui/icons-material/Call';
+import MailIcon from '@mui/icons-material/Mail';
+import ShareLocationIcon from '@mui/icons-material/ShareLocation';
+
+
 
 const ContactSection = () => {
   useEffect(() => {
@@ -33,45 +38,89 @@ const ContactSection = () => {
           <Box className="row align-items-center">
             <Box className="col-lg-6">
               <Box className="contact-content">
-                <Box className="section-title style-2">
-                  <span className="wow fadeInUp">IT Support Help</span>
-                  <h2 className="wow fadeInUp" data-wow-delay=".3s">Let's Work Together</h2>
+                <Box className="section-title">
+                  <span className="wow fadeInUp" style={{ textDecoration: "none" }}>Contact Us</span>
+                  <Typography
+                    variant="h2" 
+                    className="wow fadeInUp" 
+                    data-wow-delay=".3s"
+                    sx={{
+                      color: "#010156",
+                      fontSize: "24px"
+                    }}
+                  >
+                    We&apos;d Love To Hear From You
+                  </Typography>
                 </Box>
-                <p className="mt-4 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                  We denounce with righteous indignation and like men <br />
-                  beguiled and demoralized by the charms
-                </p>
+                <Typography
+                  variant="body1" 
+                  className="mt-4 mt-md-0 wow fadeInUp" 
+                  data-wow-delay=".5s"
+                  sx={{
+                    fontSize: "16px"
+                  }}
+                >
+                  Whether you&apos;re curious about features,
+                  a free trial, or even press - we&apos;re 
+                  ready to answer any and all quetions. 
+                </Typography>
                 <Box className="contact-info-area">
                   <Box className="contact-info-items mb-4 wow fadeInUp" data-wow-delay=".7s">
                     <Box className="icon">
-                      <i className="far fa-phone"></i>
+                      <CallIcon
+                        sx={{
+                          fontSize: 16,
+                          color: "#010156"
+                        }}
+                      />
                     </Box>
                     <Box className="content">
-                      <p>Call For Inquiry</p>
-                      <h3>
-                        <Link to="tel: +01 368 567 894">
-                        +09 354 587 874
-                        </Link>
-                        <br/>
-                        <Link to="tel: +01 368 567 8942">
-                         +01 368 567 894
-                        </Link>
+                      <Typography
+                        variant="body1"
+                        sx={{
+                          fontSize: "16px"
+                        }}
+                      >
+                        Call For Inquiry
+                      </Typography>
+                      <Typography
+                        variant="h3"
+                      >
+                          <Link to="tel: +01 368 567 894" style={{ color: "#4E4A59", fontSize: "14px"}}>
+                            +123456789
+                          </Link>
+                          <br/>
+                          <Link to="tel: +01 368 567 8942" style={{ color: "#4E4A59", fontSize: "14px"}}>
+                          +01 368 567 894
+                          </Link>
                        
-                      </h3>
+                      </Typography>
                     </Box>
                   </Box>
                   <Box className="contact-info-items mb-4 wow fadeInUp" data-wow-delay=".8s">
                     <Box className="icon">
-                      <i className="fal fa-envelope"></i>
+                      <MailIcon
+                        sx={{
+                          fontSize: 16,
+                          color: "#010156"
+                        }}
+                      />
                     </Box>
                     <Box className="content">
-                      <p>Send Us Email</p>
+                    <Typography
+                      variant="body1"
+                      sx={{
+                        fontSize: "18px"
+                      }}
+                    >
+                      Send Us Email
+                    </Typography>
                       <h3>
-                      <Link to="mailto:info@linkorgnet.com">
+                      <Link to="mailto:info@linkorgnet.com" style={{ color: "#4E4A59", fontSize: "14px"}}>
                       info@linkorgnet.com
                       </Link>
                       <br/>
-                      <Link to="mailto:support@linkorgnet.com">
+                      <Link to="mailto:support@linkorgnet.com" style={{ color: "#4E4A59", fontSize: "14px"}}>
                       support@linkorgnet.com
                       </Link>
                       </h3>
@@ -79,11 +128,32 @@ const ContactSection = () => {
                   </Box>
                   <Box className="contact-info-items wow fadeInUp" data-wow-delay=".9s">
                     <Box className="icon">
-                      <i className="fas fa-map-marker-alt"></i>
+                      <ShareLocationIcon
+                        sx={{
+                          fontSize: 16,
+                          color: "#010156"
+                        }}
+                      />
                     </Box>
                     <Box className="content">
-                      <p>Location</p>
-                      <h3>177B Sinari Daranijo Street, <br/> Victoria Island, Lagos</h3>
+                      <Typography
+                        variant="body1"
+                        sx={{
+                          fontSize: "18px"
+                        }}
+                      >Location
+                      </Typography>
+                      <Typography
+                        variant="h3"
+                        sx={{ 
+                          color: "#4E4A59", 
+                          fontSize: "16px",
+                          fontWeight: 300
+                        }}
+                      >
+                        177B Sinari Daranijo Street, 
+                        <br/> Victoria Island, Lagos
+                      </Typography>
                     </Box>
                   </Box>
                 </Box>
@@ -92,10 +162,25 @@ const ContactSection = () => {
             <Box className="col-lg-6 mt-5 mt-lg-0">
               <Box className="contact-box">
                 <Box className="contact-title">
-                  <h3 className="wow fadeInUp" data-wow-delay=".3s">Need Help For Project!</h3>
-                  <p className="wow fadeInUp" data-wow-delay=".5s">
-                    We are ready to help with your next project. Let’s work together!
-                  </p>
+                  <Typography 
+                    variant="h3" 
+                    className="wow fadeInUp" 
+                    data-wow-delay=".3s"
+                    sx={{
+                      color: "#010156",
+                      fontWeight: 300,
+                      fontSize: "30px"
+                    }}
+                  >
+                    Make an Enquiry
+                  </Typography>
+                  <Typography
+                    variant="body1" 
+                    className="wow fadeInUp" 
+                    data-wow-delay=".5s"
+                  >
+                    We are ready to help with your next project. Let&apos;s work together on it.
+                  </Typography>
                 </Box>
                 <Box className="contact-form-items">
                   <form action="#" id="contact-form" method="POST">

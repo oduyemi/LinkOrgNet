@@ -18,7 +18,7 @@ const FeatureIconSection = () => {
               <SpeedIcon 
                 sx={{ 
                   fontSize: 50,
-                  color: "#010156",
+                  color: "#E65D0F",
                   transition: 'color 0.3s ease'
                 }}
               />
@@ -40,7 +40,7 @@ const FeatureIconSection = () => {
               <PhonelinkRingIcon 
                 sx={{ 
                   fontSize: 50,
-                  color: "#010156",
+                  color: "#E65D0F",
                   transition: 'color 0.3s ease'
                 }}
               />
@@ -62,7 +62,7 @@ const FeatureIconSection = () => {
               <ChangeCircleIcon 
                 sx={{ 
                   fontSize: 50,
-                  color: "#010156",
+                  color: "#E65D0F",
                   transition: 'color 0.3s ease'
                 }}
               />
@@ -84,7 +84,7 @@ const FeatureIconSection = () => {
               <PsychologyAltIcon 
                 sx={{ 
                   fontSize: 50,
-                  color: "#010156",
+                  color: "#E65D0F",
                   transition: 'color 0.3s ease'
                 }}
               />
@@ -106,7 +106,7 @@ const FeatureIconSection = () => {
               <OfflineBoltIcon 
                 sx={{ 
                   fontSize: 50,
-                  color: "#010156",
+                  color: "#E65D0F",
                   transition: 'color 0.3s ease'
                 }}
               />
@@ -128,7 +128,7 @@ const FeatureIconSection = () => {
               <PublicIcon 
                 sx={{ 
                   fontSize: 50,
-                  color: "#010156",
+                  color: "#E65D0F",
                   transition: 'color 0.3s ease'
                 }}
               />

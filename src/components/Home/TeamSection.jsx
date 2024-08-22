@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import WOW from 'wowjs';
 import { Link } from 'react-router-dom';
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import TeamMember from "../../assets/images/team5.jpg"
 
 const TeamSection = () => {
@@ -15,12 +15,16 @@ const TeamSection = () => {
         <img src="assets/img/team/dot-shape-2.png" alt="shape-img" />
       </Box>
       <Box className="container">
-        <Box className="section-title style-2 text-center">
-          <span className="wow fadeInUp">IT Support Help</span>
-          <h2 className="text-white wow fadeInUp" data-wow-delay=".3s">
+        <Box className="section-title text-center">
+          <span className="wow fadeInUp" style={{ textDecoration: "none" }}>IT Support Help</span>
+          <Typography
+            variant="h2" 
+            className="text-white wow fadeInUp" 
+            data-wow-delay=".3s"
+          >
             We’ve Exclusive real <br />
             Team member
-          </h2>
+          </Typography>
         </Box>
         <Box className="row">
           <Box className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">

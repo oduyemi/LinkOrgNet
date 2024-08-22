@@ -1,32 +1,69 @@
-import { Typography } from '@mui/material';
 import React from 'react';
+import { Box, Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 const GrowSection = () => {
   return (
-    <section className="grow-section section-padding section-bg-3" style={{ backgroundColor: "#34113F"}}>
-      <div className="container">
-        <div className="grow-wrapper">
-          <div className="title-section-area">
-            <div className="section-title">
-              <span className="wow fadeInUp" style={{ textDecoration: "none" }}>Business strategy we need</span>
-              <h2 className="text-white wow fadeInUp" data-wow-delay=".3s">
-                GROW COMMUNITY & EXPERIENCE <br />
-                ENDLESS POSSIBILITIES
-              </h2>
-            </div>
-            <a href="/about" className="theme-btn theme-btn-2 wow fadeInUp" data-wow-delay=".5s">
-              <span>
-                Discover More
-                <i className="fas fa-chevron-right"></i>
+    <section className="grow-section section-padding section-bg-3" style={{ backgroundColor: "#34113F" }}>
+      <Box className="container">
+        <Box className="grow-wrapper">
+          <Box className="title-section-area">
+            <Box className="section-title">
+              <span className="wow fadeInUp" style={{ textDecoration: "none" }}>
+                Get Started with Linkorg Networks
               </span>
-            </a>
-          </div>
-          <div className="circle-progress-bar-wrapper">
-            <div className="single-circle-bar wow fadeInUp" data-wow-delay=".3s">
-              <div className="circle-bar" data-percent="89" data-duration="1000">
+              <Typography
+                variant="h2"
+                className="text-white wow fadeInUp"
+                data-wow-delay=".3s"
+                sx={{
+                  fontSize: "30px",
+                  fontWeight: 400,
+                  color: "#fff",
+                  textTransform: "uppercase",
+                  lineHeight: "1.3",
+                }}
+              >
+                READY TO ELEVATE YOUR <br />
+                DIGITAL EXPERIENCE?
+              </Typography>
+              <Typography
+                variant="body1"
+                className="w-75"
+                sx={{
+                  fontSize: "16px",
+                  fontFamily: "Museo Sans",
+                  fontWeight: 300,
+                  color: "#fff",
+                  lineHeight: "1.5",
+                  marginTop: "20px",
+                  marginBottom: "20px", // This margin brings the button closer
+                }}
+              >
+                Whether you’re looking to upgrade your 
+                internet connectivity, enhance your 
+                communication systems, or need a 
+                comprehensive IT solution, we’re here 
+                to help. Reach out to us today, and 
+                let’s start a conversation about how we 
+                can empower your business with the latest 
+                in technology and telecom services. 
+                Your digital future starts here.
+              </Typography>
+            </Box>
+
+            <Link to="" className="theme-btn theme-btn-2 wow fadeInUp px-5 text-center mx-auto" data-wow-delay=".5s">
+              <span className="">
+                Talk to an Expert
+              </span>
+            </Link>
+          </Box>
+          <Box className="circle-progress-bar-wrapper">
+            <Box className="single-circle-bar wow fadeInUp" data-wow-delay=".3s">
+              <Box className="circle-bar" data-percent="89" data-duration="1000">
                 {/* Circle Bar Animation/Progress Code Here */}
-              </div>
-              <div className="content">
+              </Box>
+              <Box className="content">
                 <Typography
                   variant="h6"
                   sx={{
@@ -47,13 +84,13 @@ const GrowSection = () => {
                   End to end fiber optic cable <br />
                   connectivity for stable
                 </Typography>
-              </div>
-            </div>
-            <div className="single-circle-bar wow fadeInUp" data-wow-delay=".5s">
-              <div className="circle-bar" data-percent="77" data-duration="1000">
+              </Box>
+            </Box>
+            <Box className="single-circle-bar wow fadeInUp" data-wow-delay=".5s">
+              <Box className="circle-bar" data-percent="77" data-duration="1000">
                 {/* Circle Bar Animation/Progress Code Here */}
-              </div>
-              <div className="content">
+              </Box>
+              <Box className="content">
                 <Typography
                   variant="h6"
                   sx={{
@@ -74,13 +111,13 @@ const GrowSection = () => {
                   End to end fiber optic cable <br />
                   connectivity for stable
                 </Typography>
-              </div>
-            </div>
-            <div className="single-circle-bar wow fadeInUp" data-wow-delay=".7s">
-              <div className="circle-bar" data-percent="85" data-duration="1000">
+              </Box>
+            </Box>
+            <Box className="single-circle-bar wow fadeInUp" data-wow-delay=".7s">
+              <Box className="circle-bar" data-percent="85" data-duration="1000">
                 {/* Circle Bar Animation/Progress Code Here */}
-              </div>
-              <div className="content">
+              </Box>
+              <Box className="content">
                 <Typography
                   variant="h6"
                   sx={{
@@ -101,11 +138,11 @@ const GrowSection = () => {
                   End to end fiber optic cable <br />
                   connectivity for stable
                 </Typography>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+              </Box>
+            </Box>
+          </Box>
+        </Box>
+      </Box>
     </section>
   );
 };

@@ -29,7 +29,7 @@ export const Intro = () => {
                                 }}
                             >
                                 <Box className="about-image-2 wow fadeInUp" data-wow-delay=".5s">
-                                    <img src={require("../../assets/images/engineer.png")} alt="about-img" />
+                                    <img src={require("../../assets/images/field.png")} alt="about-img" />
                                 </Box>
                             </Box>
                         </Box>

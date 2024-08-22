@@ -7,6 +7,7 @@ import { Ad } from "../components/About/Ad";
 import { Testimonials } from "../components/About/Testimonials";
 import Footer from "../components/Footer";
 import Brand from "../components/About/Brand";
+import LinkOrg from "../components/About/LinkOrg";
 
 
 

@@ -16,7 +16,7 @@ const ServiceSection = () => {
           <Box className="section-title">
             <span className="wow fadeInUp"  
               style={{ textDecoration: "none" }}>
-              Our Services Area
+              Your IT & Telecom Partner
             </span> 
             <Typography
                 variant="h2" 
@@ -30,33 +30,31 @@ const ServiceSection = () => {
                   color: "#010156"
                 }}
             >
-                 Best Digital Broadband<br />
-                 Service For People
+                 Unlock Seamless<br />
+                 Connectivity and Innovation
             </Typography> 
              
           </Box>
           <Typography
             variant="body1" 
-            className="wow fadeInUp" 
+            className="wow fadeInUp w-75" 
             data-wow-delay=".5s"
             sx={{
               fontFamily: "Museo Sans",
               fontWeight: 300,
-              fontSize: "17px",
-              marginTop: "-10px"
+              fontSize: "18px",
             }}
           >
-            Our support is delivered by a network 
-            of skilled and talented engineers 
-            and technicians. <br /> 
-            We pride ourselves on offering a 
-            customer-centric approach, ensuring 
-            that each client's unique needs are met 
-            with tailored solutions. <br />
-            Our state-of-the-art technology and 
-            innovative solutions keep us at the 
-            forefront of the telecommunications 
-            industry.
+            We don't just provide IT and telecom solutions — we 
+            revolutionize your digital experience. Whether 
+            you&apos;re an individual or a business, our 
+            cutting-edge services, from ultra-fast internet to 
+            secure VPNs and reliable VoIP, empower you to stay 
+            connected and thrive in a constantly evolving digital world. 
+            <br/><br/>With over a decade of expertise, we&apos;re 
+            committed to delivering flexible, scalable solutions 
+            that grow with you. Let us be your partner in 
+            driving your digital future.
           </Typography>
         </Box>
         <Box className="row">
@@ -67,7 +65,6 @@ const ServiceSection = () => {
                               sx={{
                                   fontSize: 70,
                                   color: "#010156",
-                                  // paddingTop: "20px"
                               }}
                               className=""
                           />
@@ -188,8 +185,17 @@ const ServiceSection = () => {
                       </Link>
                   </Box>
               </Box>
+              
           </Box>
-        </Box>
+            <Box maxWidth="sm" className="team-button text-center mx-auto mt-5 wow fadeInUp" data-wow-delay=".4s">
+                <Link to="/services" className="theme-btn theme-btn-2">
+                    <span>
+                    Explore Services
+                    <i className="fas fa-chevron-right"></i>
+                    </span>
+                </Link>
+                </Box>
+            </Box>
       </Box> 
     </Box>
   );
