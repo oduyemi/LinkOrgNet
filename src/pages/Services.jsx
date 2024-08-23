@@ -1,6 +1,5 @@
 import React from "react";
 import { Box } from "@mui/material";
-import { AboutServices } from "../components/About/AboutServices";
 import { Testimonials } from "../components/About/Testimonials";
 import Footer from "../components/Footer";
 import ContactSection from "../components/Home/ContactSection";
@@ -8,6 +7,7 @@ import { Hero } from "../components/Services/Hero";
 import NeedAdvisor from "../components/Services/NeedAdvisor";
 import FeatureIconBoxSection from "../components/Services/FeatureIconBoxSection";
 import FaqSection from "../components/Services/FaqSection";
+import { ServicesSection } from "../components/Services/ServicesSection";
 
 
 const Services = () => {
@@ -16,8 +16,8 @@ const Services = () => {
         <Hero/>
         <Box style={{height: "100px"}}> 
         </Box>
-        <AboutServices />
-        <NeedAdvisor/> ;
+        <ServicesSection/>
+        <NeedAdvisor/>
         <FeatureIconBoxSection/>
         <FaqSection/>
         <Testimonials />

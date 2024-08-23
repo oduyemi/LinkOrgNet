@@ -2,7 +2,6 @@ import React,{ useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import WOW from 'wowjs';
 import { Link } from "react-router-dom";
-import Logo from "../assets/images/logo/logo.png"
 import { Box, Typography} from "@mui/material"
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
