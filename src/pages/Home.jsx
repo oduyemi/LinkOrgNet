@@ -21,20 +21,21 @@ import Brand from "../components/About/Brand";
 const Home = () => {
     return(
         <Box>
-
-    <HeroSection/>
-    <ServiceSection/>
-    <AboutSection/>
-    <FeatureIconSection/>
-    <CounterSection/>
-    <GrowSection/>
-    <Testimonials/>
-    <TeamSection/>
-    {/* <PricingSection/> */}
-    {/* <ProductSection/> */}
-    <ContactSection/>
-    <Brand/>
-    <Footer />
+            <HeroSection/>
+            <Box className="mt-5">
+            <ServiceSection/>
+            </Box>
+            <AboutSection/>
+            <FeatureIconSection/>
+            <CounterSection/>
+            <GrowSection/>
+            <Testimonials/>
+            <TeamSection/>
+            {/* <PricingSection/> */}
+            {/* <ProductSection/> */}
+            <ContactSection/>
+            <Brand/>
+            <Footer />
 
         </Box>
     )
