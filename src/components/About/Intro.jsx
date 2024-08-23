@@ -96,9 +96,9 @@ export const Intro = () => {
                             
                             <Box className="about-author">
                                 <Box className="">
-                                    <Link to="/about">
+                                    <Link to="/contact">
                                         <button className="theme-btn d-inline about-button wow fadeInUp" data-wow-delay=".8s">
-                                            Explore Services
+                                            Contact Us
                                             <ChevronRightIcon
                                                 sx={{
                                                     fontSize: 40
