@@ -12,6 +12,7 @@ export const NavMenu = () => {
   const [isOffcanvasVisible, setIsOffcanvasVisible] = useState(false);
   const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 768);
   const [servicesAnchorEl, setServicesAnchorEl] = useState(null);
+  const [productsAnchorEl, setProductsAnchorEl] = useState(null);
 
   const handleResize = () => {
     setIsMobileView(window.innerWidth <= 768);
@@ -23,7 +24,15 @@ export const NavMenu = () => {
   }, []);
 
   const toggleOffcanvas = () => {
-    setIsOffcanvasVisible(prevState => !prevState);
+    setIsOffcanvasVisible((prevState) => !prevState);
+  };
+
+  const handleProductsMenuOpen = (event) => {
+    setProductsAnchorEl(event.currentTarget);
+  };
+
+  const handleProductsMenuClose = () => {
+    setProductsAnchorEl(null);
   };
 
   const handleServicesMenuOpen = (event) => {
@@ -34,7 +43,8 @@ export const NavMenu = () => {
     setServicesAnchorEl(null);
   };
 
-  const open = Boolean(servicesAnchorEl);
+  const isProductsMenuOpen = Boolean(productsAnchorEl);
+  const isServicesMenuOpen = Boolean(servicesAnchorEl);
 
   return (
     <>
@@ -66,6 +76,35 @@ export const NavMenu = () => {
                             </li>
                             <li
                               className="has-dropdown"
+                              onMouseEnter={handleProductsMenuOpen}
+                              onMouseLeave={handleProductsMenuClose}
+                            >
+                              <Link to="/products">
+                                Products
+                                <ExpandMoreIcon sx={{ fontSize: 30 }} />
+                              </Link>
+                              <Menu
+                                anchorEl={productsAnchorEl}
+                                open={isProductsMenuOpen}
+                                onClose={handleProductsMenuClose}
+                                PaperProps={{
+                                  style: {
+                                    width: 200,
+                                  },
+                                }}
+                              >
+                                <MenuItem onClick={handleProductsMenuClose}>
+                                  <Link to="/products/voip-hardware" className="text-black">
+                                    VoIP Hardware
+                                  </Link>
+                                </MenuItem>
+                                <MenuItem onClick={handleProductsMenuClose}>
+                                  <Link to="/products/packages" className="text-black">Packages</Link>
+                                </MenuItem>
+                              </Menu>
+                            </li>
+                            <li
+                              className="has-dropdown"
                               onMouseEnter={handleServicesMenuOpen}
                               onMouseLeave={handleServicesMenuClose}
                             >
@@ -75,36 +114,31 @@ export const NavMenu = () => {
                               </Link>
                               <Menu
                                 anchorEl={servicesAnchorEl}
-                                open={open}
+                                open={isServicesMenuOpen}
                                 onClose={handleServicesMenuClose}
                                 PaperProps={{
                                   style: {
-                                    width: 200, // Adjust width as needed
+                                    width: 240,
                                   },
                                 }}
                               >
                                 <MenuItem onClick={handleServicesMenuClose}>
-                                  <Link to="/services/maritime-vsat">
+                                  <Link to="/services/maritime-vsat" className="text-black">
                                     Maritime VSAT
                                   </Link>
                                 </MenuItem>
                                 <MenuItem onClick={handleServicesMenuClose}>
-                                  <Link to="/service/networks">
+                                  <Link to="/service/networks" className="text-black">
                                     Network Services
                                   </Link>
                                 </MenuItem>
                                 <MenuItem onClick={handleServicesMenuClose}>
-                                  <Link to="/services/terrestial-comms">
+                                  <Link to="/services/terrestial-comms" className="text-black">
                                     Terrestrial Communication
                                   </Link>
                                 </MenuItem>
                                 <MenuItem onClick={handleServicesMenuClose}>
-                                  <Link to="/service/vpn">VPN Services</Link>
-                                </MenuItem>
-                                <MenuItem onClick={handleServicesMenuClose}>
-                                  <Link to="/service/voip-services">
-                                    VOIP Services
-                                  </Link>
+                                  <Link to="/service/vpn" className="text-black">VPN Services</Link>
                                 </MenuItem>
                               </Menu>
                             </li>
@@ -114,18 +148,18 @@ export const NavMenu = () => {
                     </Box>
                   </Box>
                 )}
-                <Box class="header-right d-flex justify-content-end align-items-center">
+                <Box className="header-right d-flex justify-content-end align-items-center">
                   <Box className="header-button">
-                      <Link to="/contact" className="theme-btn theme-btn-2">
-                          <span>
-                              contact us
-                              <ChevronRightIcon
-                                sx={{
-                                  fontSize: 20
-                                }}
-                              />
-                          </span>
-                        </Link>
+                    <Link to="/contact" className="theme-btn theme-btn-2">
+                      <span>
+                        contact us
+                        <ChevronRightIcon
+                          sx={{
+                            fontSize: 20,
+                          }}
+                        />
+                      </span>
+                    </Link>
                   </Box>
                   <IconButton
                     edge="end"
@@ -145,13 +179,23 @@ export const NavMenu = () => {
 
       {/* Offcanvas and Mobile Menu */}
       {isMobileView && (
-        <Box className={`offcanvas__info ${isOffcanvasVisible ? 'info-open' : ''}`}>
+        <Box
+          className={`offcanvas__info ${
+            isOffcanvasVisible ? "info-open" : ""
+          }`}
+        >
           <Offcanvas onClose={toggleOffcanvas} />
         </Box>
       )}
       {isMobileView && (
-        <Box className={`offcanvas__overlay ${isOffcanvasVisible ? 'overlay-open' : ''}`} onClick={toggleOffcanvas} />
+        <Box
+          className={`offcanvas__overlay ${
+            isOffcanvasVisible ? "overlay-open" : ""
+          }`}
+          onClick={toggleOffcanvas}
+        />
       )}
     </>
   );
 };
+

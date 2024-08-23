@@ -13,6 +13,7 @@ import AdminChangePassword from "../pages/AdminChangePassword"
 import { SendMail } from "../components/Admin/SendMail";
 import  AdminSentMails  from "../pages/AdminSentMails";
 import Error404 from "../pages/404";
+import Voip from "../pages/Voip";
 
 export const Navbar = () => {
     return (
@@ -23,6 +24,7 @@ export const Navbar = () => {
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/services" element={<Services />} />
+                <Route path="/products/voip-hardware" element={<Voip />} />
                 <Route path="/admin" element={<Admin />} />
                 <Route path="/admin/contacts" element={<AdminContactList/>} />
                 <Route path="/admin/profile" element={<AdminProfile/>} />
