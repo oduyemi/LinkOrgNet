@@ -1,7 +1,7 @@
 import React from "react";
 import { Box } from "@mui/material";
 import { Link } from "react-router-dom";
-import contacthero from "../../assets/images/contacthero.png";
+import contactHero from "../../assets/images/contactHero.png";
 
 
 
@@ -10,7 +10,7 @@ export const ContactBanner = () => {
     return(
         <Box className="breadcrumb-wrapper section-padding bg-cover" 
             style= {{
-                backgroundImage: `url(${contacthero})`
+                backgroundImage: `url(${contactHero})`
             }}
         >
             <Box className="container">
