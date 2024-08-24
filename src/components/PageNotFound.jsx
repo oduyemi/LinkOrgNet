@@ -198,7 +198,6 @@ export const PageNotFound = () => {
                                         Go Home?
                                     </button>
                                 </Link>
-
                     </Box>
                 </Box>
             </Box>
