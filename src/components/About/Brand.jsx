@@ -41,7 +41,10 @@ const Brand = () => {
   return (
     <Box className="brand-section-3 fix section-padding pt-0">
     <Box className="container">
-        <Slider {...brandSettings} className="brand-carousel-active">
+    <Slider {...brandSettings} 
+                    className="brand-carousel-active"
+                    sx={{ marginTop: "100px" }}
+                >  
             <Box className="brand-image center">
                 <img src="assets/img/brand/01.png" alt="brand-img" />
             </Box>

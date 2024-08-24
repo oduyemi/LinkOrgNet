@@ -14,7 +14,7 @@ const ContactSection = () => {
   }, []);
 
       const [isOpen, setIsOpen] = useState(false);
-      const [selectedOption, setSelectedOption] = useState('Choose Services');
+      const [selectedOption, setSelectedOption] = useState('Choose Topic');
     
       const toggleDropdown = () => {
         setIsOpen(!isOpen);
@@ -78,7 +78,8 @@ const ContactSection = () => {
                       <Typography
                         variant="body1"
                         sx={{
-                          fontSize: "16px"
+                          fontSize: "18px",
+                          fontWeight: "800"
                         }}
                       >
                         Call For Inquiry
@@ -110,7 +111,8 @@ const ContactSection = () => {
                     <Typography
                       variant="body1"
                       sx={{
-                        fontSize: "18px"
+                        fontSize: "18px",
+                        fontWeight: "800"
                       }}
                     >
                       Send Us Email
@@ -139,16 +141,16 @@ const ContactSection = () => {
                       <Typography
                         variant="body1"
                         sx={{
-                          fontSize: "18px"
+                          fontSize: "18px",
+                          fontWeight: "800"
                         }}
                       >Location
                       </Typography>
                       <Typography
-                        variant="h3"
+                        variant="h5"
                         sx={{ 
                           color: "#4E4A59", 
-                          fontSize: "16px",
-                          fontWeight: 300
+                          fontSize: "14px"
                         }}
                       >
                         177B Sinari Daranijo Street, 
@@ -187,7 +189,15 @@ const ContactSection = () => {
                     <Box className="row g-3">
                       <Box className="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
                         <Box className="form-clt">
-                          <input type="text" name="name" id="name" placeholder="Name" />
+                          <input type="text" name="Firstname" id="Firstname" placeholder="Firstname" />
+                          <Box className="icon">
+                            <i className="far fa-user"></i>
+                          </Box>
+                        </Box>
+                      </Box>
+                      <Box className="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
+                        <Box className="form-clt">
+                          <input type="text" name="Lastname" id="Lastname" placeholder="Lastname" />
                           <Box className="icon">
                             <i className="far fa-user"></i>
                           </Box>
@@ -201,16 +211,42 @@ const ContactSection = () => {
                           </Box>
                         </Box>
                       </Box>
+                      <Box className="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
+                        <Box className="form-clt">
+                          <input type="text" name="Companyname" id="Companyname" placeholder="Company Name" />
+                          <Box className="icon">
+                            <i className="far fa-envelope"></i>
+                          </Box>
+                        </Box>
+                      </Box>
+                      <Box className="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
+                        <Box className="form-clt">
+                          <input type="text" name="Address" id="Address" placeholder="Address" />
+                          <Box className="icon">
+                            <i className="far fa-envelope"></i>
+                          </Box>
+                        </Box>
+                      </Box>
+                      <Box className="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
+                        <Box className="form-clt">
+                          <input type="text" name="PhoneNumber" id="PhoneNumber" placeholder="Phone Number" />
+                          <Box className="icon">
+                            <i className="far fa-envelope"></i>
+                          </Box>
+                        </Box>
+                      </Box>
                       <Box className="col-lg-12 wow fadeInUp" data-wow-delay=".3s">
                         <Box className="form-clt">
                         <Box className={`nice-select ${isOpen ? 'open' : ''}`} tabIndex="0" onClick={toggleDropdown}>
                           <span className="current">{selectedOption}</span>
                           {isOpen && (
-                            <ul className="list">
-                              <li data-value="1" className="option" onClick={() => selectOption('Default sorting')}>VSAT</li>
-                              <li data-value="2" className="option" onClick={() => selectOption('Sort by popularity')}>VOIP Services</li>
-                              <li data-value="3" className="option" onClick={() => selectOption('Sort by average rating')}>Maritime VSAT</li>
-                              <li data-value="4" className="option" onClick={() => selectOption('Sort by latest')}>Network Services</li>
+                            <ul className="list" style={{zIndex:"1000"}}>
+                              <li data-value="1" className="option" onClick={() => selectOption('VSAT')}>VSAT</li>
+                              <li data-value="2" className="option" onClick={() => selectOption('VOIP')}>VOIP</li>
+                              <li data-value="3" className="option" onClick={() => selectOption('Maritime VSAT')}>Maritime VSAT</li>
+                              <li data-value="4" className="option" onClick={() => selectOption('Network Services')}>Network Services</li>
+                              <li data-value="5" className="option" onClick={() => selectOption('Terrestrial Comm.')}>Terrestrial Comm.</li>
+                              <li data-value="6" className="option" onClick={() => selectOption('Packaging')}>Packaging</li>
                             </ul>
                           )}
                         </Box>
@@ -218,7 +254,7 @@ const ContactSection = () => {
                       </Box>
                       <Box className="col-lg-12 wow fadeInUp" data-wow-delay=".5s">
                         <Box className="form-clt">
-                          <textarea name="message" id="message" placeholder="Write Your Message"></textarea>
+                          <textarea name="Description" id="Description" placeholder="Write Your Message"></textarea>
                         </Box>
                       </Box>
                       <Box className="col-lg-12 wow fadeInUp" data-wow-delay=".4s">

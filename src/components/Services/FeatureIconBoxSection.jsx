@@ -1,48 +1,51 @@
 import React from 'react';
+import { Box, Typography } from "@mui/material";
+import BackupIcon from '@mui/icons-material/Backup';
+import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
+import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
 
-const FeatureIconBox = ({ iconClass, title, description, delay }) => (
-    <div className={`col-xl-4 col-lg-6 col-md-6 wow fadeInUp`} data-wow-delay={delay}>
-        <div className="icon-box-items">
-            <div className="icon">
-                <i className={iconClass}></i>
-            </div>
-            <div className="content">
-                <h3>{title}</h3>
-                <p>{description}</p>
-            </div>
-        </div>
-    </div>
+const FeatureIconBox = ({ IconComponent, title, description, delay }) => (
+    <Box className={`col-xl-4 col-lg-6 col-md-6 wow fadeInUp`} data-wow-delay={delay}>
+        <Box className="icon-box-items">
+            <Box className="icon">
+                <IconComponent style={{ fontSize: '48px', color: '#E65D0F' }} />
+            </Box>
+            <Box className="content">
+                <Typography variant="h6">{title}</Typography>
+                <Typography variant="body2">{description}</Typography>
+            </Box>
+        </Box>
+    </Box>
 );
 
 const FeatureIconBoxSection = () => {
     return (
-        <section className="feature-icon-box-area-2">
-            <div className="container">
-                <div className="feature-icon-box-wrapper">
-                    <div className="row g-4">
+        <Box className="feature-icon-box-area-2">
+            <Box className="container">
+                <Box className="feature-icon-box-wrapper">
+                    <Box className="row g-4">
                         <FeatureIconBox
-                            iconClass="flaticon-database"
+                            IconComponent={PhoneInTalkIcon}
                             title="Voice Over Protocol"
-                            description="Average time to resolve a cyber attack."
+                            description="Providing seamless and reliable voice communication solutions tailored to your business needs."
                             delay=".3s"
                         />
                         <FeatureIconBox
-                            iconClass="flaticon-server"
+                            IconComponent={BackupIcon}
                             title="Data Backup"
-                            description="Average time to resolve a cyber attack."
+                            description="Secure and efficient data backup solutions ensuring the safety of your critical information."
                             delay=".5s"
-                            active={true}
                         />
                         <FeatureIconBox
-                            iconClass="flaticon-connection"
+                            IconComponent={ConnectWithoutContactIcon}
                             title="Fast Connected"
-                            description="Average time to resolve a cyber attack."
+                            description="Experience high-speed, uninterrupted connectivity across all your operations."
                             delay=".7s"
                         />
-                    </div>
-                </div>
-            </div>
-        </section>
+                    </Box>
+                </Box>
+            </Box>
+        </Box>
     );
 };
 

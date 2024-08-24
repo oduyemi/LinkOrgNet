@@ -21,7 +21,7 @@ const CircularProgressWithLabel = ({ value }) => {
         alignItems="center"
         justifyContent="center"
       >
-        <Typography variant="caption" component="div" color="textSecondary">
+        <Typography variant="caption" component="div" color="textSecondary"  sx={{ fontSize: "20px", fontWeight: "600" }} >
           {`${Math.round(value)}%`}
         </Typography>
       </Box>

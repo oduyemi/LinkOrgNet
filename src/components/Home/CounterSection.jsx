@@ -2,7 +2,7 @@ import React from 'react';
 
 const CounterSection = () => {
   return (
-    <section className="counter-section-2">
+    <section className="counter-section-2" style={{marginTop: "50px"}}>
       <div className="container">
         <div className="counter-wrapper">
           <div className="counter-items wow fadeInUp" data-wow-delay=".3s">

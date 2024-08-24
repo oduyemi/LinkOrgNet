@@ -100,7 +100,7 @@ export const AboutServices = () => {
                             </Box>
                             <Box className="content">
                                 <h3>
-                                    <Link to="service-details.html">
+                                    <Link to="service-details">
                                         VOIP Services
                                     </Link>
                                 </h3>
@@ -115,7 +115,7 @@ export const AboutServices = () => {
                                 >
                                     Crystal Clear Calls, Anywhere
                                 </Typography>
-                                <Link to="service-details.html" className="arrow-icon">
+                                <Link to="service-details" className="arrow-icon">
                                     <ChevronRightIcon 
                                         sx={{
                                             fontSize: 70,
@@ -154,7 +154,7 @@ export const AboutServices = () => {
                                 >
                                     Seamless Connectivity at Sea
                                 </Typography>
-                                <Link to="service-details.html" className="arrow-icon">
+                                <Link to="service-details" className="arrow-icon">
                                     <ChevronRightIcon 
                                         sx={{
                                             fontSize: 70,
@@ -178,7 +178,7 @@ export const AboutServices = () => {
                             </Box>
                             <Box className="content">
                                 <h3>
-                                    <Link to="service-details.html">
+                                    <Link to="service-details">
                                         Network Services
                                     </Link>
                                 </h3>
@@ -193,7 +193,7 @@ export const AboutServices = () => {
                                 >
                                     Reliable Networks, Anytime, Anywhere
                                 </Typography>
-                                <Link to="service-details.html" className="arrow-icon">
+                                <Link to="service-details" className="arrow-icon">
                                     <ChevronRightIcon 
                                         sx={{
                                             fontSize: 70,

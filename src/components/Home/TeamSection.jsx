@@ -11,12 +11,9 @@ const TeamSection = () => {
 
   return (
     <Box className="team-section section-padding pt-0" style={{ backgroundColor: "#34113F"}}>
-      <Box className="dot-shape-2">
-        <img src="assets/img/team/dot-shape-2.png" alt="shape-img" />
-      </Box>
       <Box className="container">
         <Box className="section-title text-center">
-          <span className="wow fadeInUp" style={{ textDecoration: "none" }}>IT Support Help</span>
+          <span className="wow fadeInUp" style={{ textDecoration: "none", marginTop: "30px" }}>IT Support Help</span>
           <Typography
             variant="h2" 
             className="text-white wow fadeInUp" 
@@ -33,7 +30,7 @@ const TeamSection = () => {
                 <h4>
                   <Link to="/team-details">Tommie J.</Link>
                 </h4>
-                <p>Senior Consultant</p>
+                <p style={{color:"white"}}>Senior Consultant</p>
               </Box>
               <Box className="team-image">
                <img src={TeamMember} alt="team-img" />
@@ -55,7 +52,7 @@ const TeamSection = () => {
                 <h4>
                   <Link to="/team-details">Jackson Saruman</Link>
                 </h4>
-                <p>Senior Development</p>
+                <p style={{color:"white"}}>Senior Development</p>
               </Box>
               <Box className="team-image">
                 <img src={TeamMember} alt="team-img" />
@@ -77,7 +74,7 @@ const TeamSection = () => {
                 <h4>
                   <Link to="/team-details">Wesley Colton</Link>
                 </h4>
-                <p>Senior Developer</p>
+                <p style={{color:"white"}}>Senior Developer</p>
               </Box>
               <Box className="team-image">
               <img src={TeamMember} alt="team-img" />
@@ -99,7 +96,7 @@ const TeamSection = () => {
                 <h4>
                   <Link to="/team-details">David Suarez</Link>
                 </h4>
-                <p>Team Leader</p>
+                <p style={{color:"white"}}>Team Leader</p>
               </Box>
               <Box className="team-image">
              <img src={TeamMember} alt="team-img" />

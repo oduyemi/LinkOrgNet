@@ -1,7 +1,7 @@
 import React from "react";
 import { Box } from "@mui/material";
 import { Link } from "react-router-dom";
-import contactHero from "../../assets/images/contactHero.png";
+import contactHero from "../../assets/images/contacthero.jpg";
 
 
 

@@ -23,7 +23,7 @@ const ServiceSection = () => {
                 className="wow fadeInUp" 
                 data-wow-delay=".3s"
                 sx={{
-                  fontSize: "48px",
+                  fontSize: "35px",
                   fontWeight: 300,
                   lineHeight: "1.3",
                   fontFamily: "Museo Slab",
@@ -103,15 +103,15 @@ const ServiceSection = () => {
                   </Box>
                   <Box className="content">
                       <h3>
-                          <Link to="service-details.html">
-                              VOIP Services
+                          <Link to="service-details">
+                          Terrestrial Communication
                           </Link>
                       </h3>
                       <p>
                           We approached WiaTech with
                           complex project deliver
                       </p>
-                      <Link to="service-details.html" className="arrow-icon">
+                      <Link to="service-details" className="arrow-icon">
                           <ChevronRightIcon 
                               sx={{
                                   fontSize: 70,
@@ -135,7 +135,7 @@ const ServiceSection = () => {
                   </Box>
                   <Box className="content">
                       <h3>
-                          <Link to="service-details.html">
+                          <Link to="service-details">
                               Maritime VSAT
                           </Link>
                       </h3>
@@ -143,7 +143,7 @@ const ServiceSection = () => {
                           We approached WiaTech with
                           complex project deliver
                       </p>
-                      <Link to="service-details.html" className="arrow-icon">
+                      <Link to="service-details" className="arrow-icon">
                           <ChevronRightIcon 
                               sx={{
                                   fontSize: 70,
@@ -167,7 +167,7 @@ const ServiceSection = () => {
                   </Box>
                   <Box className="content">
                       <h3>
-                          <Link to="service-details.html">
+                          <Link to="service-details">
                               Network Services
                           </Link>
                       </h3>
@@ -175,7 +175,7 @@ const ServiceSection = () => {
                           We approached WiaTech with
                           complex project deliver
                       </p>
-                      <Link to="service-details.html" className="arrow-icon">
+                      <Link to="service-details" className="arrow-icon">
                           <ChevronRightIcon 
                               sx={{
                                   fontSize: 70,

@@ -67,7 +67,7 @@ const HeroSection = () => {
                     </Typography>
                   </Typography>
                   <Link
-                    to="/"
+                    to="/about"
                     className="theme-btn theme-btn-2"
                     data-animation="fadeInUp"
                     data-delay="1.9s"
@@ -125,7 +125,7 @@ const HeroSection = () => {
                     </Typography>
                   </Typography>
                   <Link
-                    to="/"
+                    to="/about"
                     className="theme-btn theme-btn-2"
                     data-animation="fadeInUp"
                     data-delay="1.9s"
