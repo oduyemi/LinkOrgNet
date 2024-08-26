@@ -26,7 +26,7 @@ const ServiceSection = () => {
                   fontSize: "35px",
                   fontWeight: 300,
                   lineHeight: "1.3",
-                  fontFamily: "Museo Slab",
+                  fontFamily: "Montserrat",
                   color: "#010156"
                 }}
             >
@@ -40,7 +40,7 @@ const ServiceSection = () => {
             className="wow fadeInUp w-75" 
             data-wow-delay=".5s"
             sx={{
-              fontFamily: "Museo Sans",
+              fontFamily: "Montserrat",
               fontWeight: 300,
               fontSize: "18px",
             }}

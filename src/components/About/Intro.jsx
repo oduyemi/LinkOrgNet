@@ -51,7 +51,7 @@ export const Intro = () => {
                                         fontSize: "32px",
                                         fontWeight: 300,
                                         lineHeight: "1.3",
-                                        fontFamily: "Museo Slab",
+                                        fontFamily: "Montserrat",
                                         color: "#010156"
                                     }}
                                 >
@@ -63,7 +63,7 @@ export const Intro = () => {
                                 className=" mt-4 mt-md-0 wow fadeInUp" 
                                 data-wow-delay=".5s"
                                 sx={{
-                                    fontFamily: "Museo Sans",
+                                    fontFamily: "Montserrat",
                                 }}
                                 gutterBottom
                             >
