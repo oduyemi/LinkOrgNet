@@ -7,9 +7,9 @@ import CellTowerIcon from '@mui/icons-material/CellTower';
 import SettingsInputAntennaIcon from '@mui/icons-material/SettingsInputAntenna';
 import StreamIcon from '@mui/icons-material/Stream';
 
-export const AboutServices = () => {
+export const ServicesSection = () => {
     return(
-        <section className="service-section-3 fix section-padding pt-0">
+        <Box className="service-section-3 fix section-padding pt-0">
             <Box className="container">
                 <Box className="section-title text-center">
                     <span className="wow fadeInUp" style={{ textDecoration: "none"}}>Empower Your Digital Transformation</span>  
@@ -46,6 +46,8 @@ export const AboutServices = () => {
                         tools you need to stay ahead in a digital world.
                     </Typography> 
                 </Box>
+
+
                 <Box className="row">
                     <Box className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
                         <Box className="service-box-items">
@@ -100,8 +102,8 @@ export const AboutServices = () => {
                             </Box>
                             <Box className="content">
                                 <h3>
-                                    <Link to="service-details">
-                                        VOIP Services
+                                    <Link to="service-details.html">
+                                        Terrestrial Communication
                                     </Link>
                                 </h3>
                                 <Typography
@@ -115,7 +117,7 @@ export const AboutServices = () => {
                                 >
                                     Crystal Clear Calls, Anywhere
                                 </Typography>
-                                <Link to="service-details" className="arrow-icon">
+                                <Link to="service-details.html" className="arrow-icon">
                                     <ChevronRightIcon 
                                         sx={{
                                             fontSize: 70,
@@ -154,7 +156,7 @@ export const AboutServices = () => {
                                 >
                                     Seamless Connectivity at Sea
                                 </Typography>
-                                <Link to="service-details" className="arrow-icon">
+                                <Link to="service-details.html" className="arrow-icon">
                                     <ChevronRightIcon 
                                         sx={{
                                             fontSize: 70,
@@ -178,7 +180,7 @@ export const AboutServices = () => {
                             </Box>
                             <Box className="content">
                                 <h3>
-                                    <Link to="service-details">
+                                    <Link to="service-details.html">
                                         Network Services
                                     </Link>
                                 </h3>
@@ -193,7 +195,7 @@ export const AboutServices = () => {
                                 >
                                     Reliable Networks, Anytime, Anywhere
                                 </Typography>
-                                <Link to="service-details" className="arrow-icon">
+                                <Link to="service-details.html" className="arrow-icon">
                                     <ChevronRightIcon 
                                         sx={{
                                             fontSize: 70,
@@ -206,16 +208,8 @@ export const AboutServices = () => {
                     </Box>
                     
                 </Box>
-                <Box maxWidth="sm" className="team-button text-center mx-auto mt-5 wow fadeInUp" data-wow-delay=".4s">
-                <Link to="/services" className="theme-btn theme-btn-2">
-                    <span>
-                    Explore Services
-                    <i className="fas fa-chevron-right"></i>
-                    </span>
-                </Link>
-                </Box>
-            </Box></section>
-        //     </Box>
-        // </section>
+            </Box>
+            </Box>
+
     )
 }

@@ -2,7 +2,6 @@ import React,{ useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import WOW from 'wowjs';
 import { Link } from "react-router-dom";
-import Logo from "../assets/images/logo/logo.png"
 import { Box, Typography} from "@mui/material"
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -20,23 +19,28 @@ const Footer = () => {
     <>
       <Box className="footer-section footerbg">
         <Box className="container">
-          <Box className="footer-top text-center mb-5">
-            <Box className="footer-logo wow fadeInUp" data-wow-delay=".3s">
+          <Box className="footer-top text-center mb-3">
+            <Box 
+            className="footer-logo wow fadeInUp text-left" 
+            data-wow-delay=".3s" 
+            sx={{ textAlign: 'left' }} 
+            >
               <Link to="/">
                 <img src={require("../assets/images/logo/logo_whitebg.png")} 
                 alt="Footer Logo" 
-                style={{width:"35%"}}
-                className='ms-0'/>
+                style={{width:"50%"}}
+                className='ms-0'
+                />
               </Link >
             </Box>
             <Box>
               <Typography
                 variant="body2"
-                className="text-center"
-                sx={{ color: "white"}}
+                className="text-left"
+                sx={{ color: "white", textAlign: 'left' }}
 
               >
-                Our operational history reflects a continuous pursuit of excellence, resulting in a wealth of industry experience.
+                Our operational history reflects a continuous pursuit of excellence, <br/> resulting in a wealth of industry experience.
 
               </Typography>
             </Box>
@@ -91,12 +95,11 @@ const Footer = () => {
                 </Box>
         
                 <ul className="list-items">
-                  <li><Link to="service-details.html" className="text-white">VSAT</Link ></li>
-                  <li><Link to="service-details.html" className="text-white">VOIP Services</Link ></li>
-                  <li><Link to="service-details.html" className="text-white">Marine VSAT</Link ></li>
-                  <li><Link to="service-details.html" className="text-white">Internet Services</Link ></li>
-                  {/* <li><Link to="service-details.html" className="text-white">Cloud Computing</Link ></li>
-                  <li><Link to="service-details.html" className="text-white">Analytic & Engineering</Link ></li> */}
+                  <li><Link to="service-details" className="text-white">VSAT</Link ></li>
+                  <li><Link to="service-details" className="text-white">VOIP Services</Link ></li>
+                  <li><Link to="service-details" className="text-white">Marine VSAT</Link ></li>
+                  <li><Link to="service-details" className="text-white">Internet Services</Link ></li>
+
                 </ul>
               </Box>
             </Box>

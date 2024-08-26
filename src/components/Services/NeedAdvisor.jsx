@@ -4,7 +4,7 @@ import Advisor from "../../assets/images/advisor.jpg"
 const NeedAdvisor = () => {
     return (
         <section 
-            className="cta-banner-section bg-cover section-padding" 
+            className="bg-cover section-padding" 
             style={{ backgroundImage: `url(${Advisor})` }}
         >
             <div className="container">
@@ -17,7 +17,7 @@ const NeedAdvisor = () => {
                             <a href="tel:123884400" className="theme-color-1">(123) 884400</a>
                         </h2>
                     </div>
-                    <a href="contact.html" className="theme-btn hover-white wow fadeInUp" data-wow-delay=".5s">
+                    <a href="/contact" className="theme-btn hover-white wow fadeInUp" data-wow-delay=".5s">
                         <span>
                             Get a Free Quote
                             <i className="fas fa-chevron-right"></i>

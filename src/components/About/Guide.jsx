@@ -197,7 +197,6 @@ export const Guide = () => {
                                                 aria-controls="values-content"
                                                 id="values-tab"
                                                 style={{
-                                                    color: "#000",
                                                     padding: "10px 20px",
                                                     textDecoration: "none",
                                                     borderRadius: "4px",
@@ -218,7 +217,6 @@ export const Guide = () => {
                                                 aria-controls="vision-content"
                                                 id="vision-tab"
                                                 style={{
-                                                    color: "#000",
                                                     padding: "10px 20px",
                                                     textDecoration: "none",
                                                     borderRadius: "4px",
@@ -239,7 +237,6 @@ export const Guide = () => {
                                                 aria-controls="mission-content"
                                                 id="mission-tab"
                                                 style={{
-                                                    color: "#000",
                                                     padding: "10px 20px",
                                                     textDecoration: "none",
                                                     borderRadius: "4px",
