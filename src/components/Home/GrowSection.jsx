@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const GrowSection = () => {
   return (
-    <section className="grow-section section-padding section-bg-3" style={{ backgroundColor: "#34113F" }}>
+    <section className="grow-section section-padding section-bg-3" style={{ backgroundColor: "#F9F8F8" }}>
       <Box className="container">
         <Box className="grow-wrapper">
           <Box className="title-section-area">
@@ -14,12 +14,12 @@ const GrowSection = () => {
               </span>
               <Typography
                 variant="h2"
-                className="text-white wow fadeInUp"
+                className="wow fadeInUp"
                 data-wow-delay=".3s"
                 sx={{
                   fontSize: "30px",
                   fontWeight: 400,
-                  color: "#fff",
+                  color: "#010156",
                   textTransform: "uppercase",
                   lineHeight: "1.3",
                 }}
@@ -32,12 +32,12 @@ const GrowSection = () => {
                 className="w-75"
                 sx={{
                   fontSize: "16px",
-                  fontFamily: "Museo Sans",
+                  fontFamily: "Montserrat",
                   fontWeight: 300,
-                  color: "#fff",
+                  color: "#000",
                   lineHeight: "1.5",
                   marginTop: "20px",
-                  marginBottom: "20px", // This margin brings the button closer
+                  marginBottom: "20px", 
                 }}
               >
                 Whether you’re looking to upgrade your 
@@ -58,27 +58,26 @@ const GrowSection = () => {
               </span>
             </Link>
           </Box>
-          <Box className="circle-progress-bar-wrapper">
+          <Box className="circle-progress-bar-wrapper" style={{marginTop:"-10px"}}>
             <Box className="single-circle-bar wow fadeInUp" data-wow-delay=".3s">
-              <Box className="circle-bar" data-percent="89" data-duration="1000">
-                {/* Circle Bar Animation/Progress Code Here */}
-              </Box>
+              
               <Box className="content">
                 <Typography
                   variant="h6"
                   sx={{
-                    fontFamily: "Museo Slabs",
+                    fontFamily: "Montserrat",
                     fontWeight: 300,
                   }}
+                  className="blutext"
                 >
                   Business Strategy
                 </Typography>
                 <Typography
                   variant="body1"
                   sx={{
-                    fontFamily: "Museo Sans",
+                    fontFamily: "Montserrat",
                     fontWeight: 300,
-                    color: "#fff",
+                    color: "#000",
                   }}
                 >
                   End to end fiber optic cable <br />
@@ -94,18 +93,19 @@ const GrowSection = () => {
                 <Typography
                   variant="h6"
                   sx={{
-                    fontFamily: "Museo Slabs",
+                    fontFamily: "Montserrat",
                     fontWeight: 300,
                   }}
+                  className="blutext"
                 >
                   Guaranteed Uptime
                 </Typography>
                 <Typography
                   variant="body1"
                   sx={{
-                    fontFamily: "Museo Sans",
+                    fontFamily: "Montserrat",
                     fontWeight: 300,
-                    color: "#fff",
+                    color: "#000",
                   }}
                 >
                   End to end fiber optic cable <br />
@@ -121,18 +121,19 @@ const GrowSection = () => {
                 <Typography
                   variant="h6"
                   sx={{
-                    fontFamily: "Museo Slabs",
+                    fontFamily: "Montserrat",
                     fontWeight: 300,
                   }}
+                  className="blutext"
                 >
                   Proactive Monitoring
                 </Typography>
                 <Typography
                   variant="body1"
                   sx={{
-                    fontFamily: "Museo Sans",
+                    fontFamily: "Montserrat",
                     fontWeight: 300,
-                    color: "#fff",
+                    color: "#000",
                   }}
                 >
                   End to end fiber optic cable <br />

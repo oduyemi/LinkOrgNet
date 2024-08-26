@@ -11,12 +11,12 @@ const ProductSection = () => {
   }, []);
 
   return (
-    <Box className="product-section fix section-padding section-bg-2">
+    <Box className="product-section fix section-padding">
       <Box className="container">
         <Box className="title-section-area">
           <Box className="section-title">
-            <span className="wow fadeInUp">Top Sales</span>
-            <h2 className="wow fadeInUp" data-wow-delay=".3s">Our Top Products</h2>
+            <span className="wow fadeInUp" style={{ textDecoration: "none"}}>Top Sales</span>
+            <h2 className="wow fadeInUp" data-wow-delay=".3s" style={{ color: "#010156"}}>Our Top Products</h2>
           </Box>
         </Box>
         <Box className="row">

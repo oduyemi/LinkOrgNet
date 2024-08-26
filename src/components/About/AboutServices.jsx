@@ -33,7 +33,7 @@ export const AboutServices = () => {
                         sx={{
                             fontSize: "18px",
                             fontWeight: "300",
-                            fontFamily: "Museo Sans"
+                            fontFamily: "Montserrat"
                         }}
                     >
                         Our wide range of services is designed to 
@@ -71,7 +71,7 @@ export const AboutServices = () => {
                                      fontSize: "16px",
                                      fontWeight: "300",
                                      lineHeight: "1.5", 
-                                     fontFamily: "Museo Sans"    
+                                     fontFamily: "Montserrat"    
                                 }}
                                 >
                                     Stay Connected, Even Off-Grid
@@ -110,7 +110,7 @@ export const AboutServices = () => {
                                      fontSize: "16px",
                                      fontWeight: "300",
                                      lineHeight: "1.5", 
-                                     fontFamily: "Museo Sans"    
+                                     fontFamily: "Montserrat"    
                                 }}
                                 >
                                     Crystal Clear Calls, Anywhere
@@ -149,7 +149,7 @@ export const AboutServices = () => {
                                      fontSize: "16px",
                                      fontWeight: "300",
                                      lineHeight: "1.5", 
-                                     fontFamily: "Museo Sans"    
+                                     fontFamily: "Montserrat"    
                                 }}
                                 >
                                     Seamless Connectivity at Sea
@@ -188,7 +188,7 @@ export const AboutServices = () => {
                                      fontSize: "16px",
                                      fontWeight: "300",
                                      lineHeight: "1.5", 
-                                     fontFamily: "Museo Sans"    
+                                     fontFamily: "Montserrat"    
                                 }}
                                 >
                                     Reliable Networks, Anytime, Anywhere

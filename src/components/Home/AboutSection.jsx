@@ -20,7 +20,7 @@ const AboutSection = () => {
               sx={{
                 fontSize: "16px",
                 fontWeight: "400",
-                fontFamily: "Museo Sans"
+                fontFamily: "Montserrat"
               }}
             >
               Experience lightning-fast, reliable internet 
@@ -47,7 +47,7 @@ const AboutSection = () => {
               sx={{
                 fontSize: "16px",
                 fontWeight: "400",
-                fontFamily: "Museo Sans"
+                fontFamily: "Montserrat"
               }}
             >
               Protect your data and privacy with our 
@@ -75,7 +75,7 @@ const AboutSection = () => {
               sx={{
                 fontSize: "16px",
                 fontWeight: "400",
-                fontFamily: "Museo Sans"
+                fontFamily: "Montserrat"
               }}
             >
               Revolutionize your communication with our 
@@ -102,7 +102,7 @@ const AboutSection = () => {
               sx={{
                 fontSize: "16px",
                 fontWeight: "400",
-                fontFamily: "Museo Sans"
+                fontFamily: "Montserrat"
               }}
             >
               Stay connected no matter where you are with 
@@ -157,7 +157,7 @@ const AboutSection = () => {
                       color: "#010156",
                       fontWeight: 300,
                       fontSize: "30px",
-                      fontFamily: "Museo Slab",
+                      fontFamily: "Montserrat",
                     }}
                   >
                     Empower Your {" "}
@@ -173,7 +173,7 @@ const AboutSection = () => {
                   data-wow-delay=".5s"
                   style={{ 
                     fontWeight: 300,
-                    fontFamily: "Museo Sans",
+                    fontFamily: "Montserrat",
                     fontSize: "17px"
                   }}
                 >
@@ -196,7 +196,7 @@ const AboutSection = () => {
                         to="#"
                         className={`nav-link ${activeTab === 'internet' ? 'active' : ''}`}
                         onClick={() => setActiveTab('internet')}
-                        style={{ fontFamily: "Museo Sans", fontSize: "11px" }}
+                        style={{ fontFamily: "Montserrat", fontSize: "11px" }}
                       >
                         Internet
                       </Link>
@@ -206,7 +206,7 @@ const AboutSection = () => {
                         to="#"
                         className={`nav-link ${activeTab === 'vpn' ? 'active' : ''}`}
                         onClick={() => setActiveTab('vpn')}
-                        style={{ fontFamily: "Museo Sans", fontSize: "11px" }}
+                        style={{ fontFamily: "Montserrat", fontSize: "11px" }}
                       >
                         VPN
                       </Link>
@@ -216,7 +216,7 @@ const AboutSection = () => {
                         to="#"
                         className={`nav-link ${activeTab === 'voip' ? 'active' : ''}`}
                         onClick={() => setActiveTab('voip')}
-                        style={{ fontFamily: "Museo Sans", fontSize: "11px" }}
+                        style={{ fontFamily: "Montserrat", fontSize: "11px" }}
                       >
                         VoIP Solutions
                       </Link>
@@ -226,7 +226,7 @@ const AboutSection = () => {
                         to="#"
                         className={`nav-link ${activeTab === 'vsat' ? 'active' : ''}`}
                         onClick={() => setActiveTab('vsat')}
-                        style={{ fontFamily: "Museo Sans", fontSize: "11px" }}
+                        style={{ fontFamily: "Montserrat", fontSize: "11px" }}
                       >
                         VSAT
                       </Link>

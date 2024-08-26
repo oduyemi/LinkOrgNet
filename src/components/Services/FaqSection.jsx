@@ -101,11 +101,11 @@ const FaqSection = () => {
                     answer="LinkOrg Networks primarily serves maritime and offshore industries, providing satellite communication services to ships, vessels, jack-up barges, and other offshore bases. Additionally, we offer IT and telecommunications solutions for businesses and individuals looking for secure and high-speed connectivity."
                     isOpen={expanded === 'panel1'}
                     toggleAccordion={handleChange('panel1')}
-                    style={{marginBottom: "20px", fontFamily: "Museo Sans"}}
+                    style={{marginBottom: "20px", fontFamily: "Montserrat"}}
                     sx={{
                         fontSize: "18px",
                         fontWeight: "300",
-                        fontFamily: "Museo Sans"
+                        fontFamily: "Montserrat"
                     }}
                   />
                   <FaqItem

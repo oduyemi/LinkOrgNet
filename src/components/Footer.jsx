@@ -37,7 +37,7 @@ const Footer = () => {
               <Typography
                 variant="body2"
                 className="text-left"
-                sx={{ color: "white", textAlign: 'left' }}
+                sx={{ color: "black", textAlign: 'left' }}
 
               >
                 Our operational history reflects a continuous pursuit of excellence, <br/> resulting in a wealth of industry experience.
@@ -47,16 +47,16 @@ const Footer = () => {
             <ul className="wow fadeInUp" data-wow-delay=".5s">
 
             <li>
-              <FacebookIcon sx={{ color: "white", fontSize: 20}}/>
-              <Link to="" > Facebook</Link>
+              <FacebookIcon sx={{ color: "#E65D0F", fontSize: 20}}/>
+              <Link to=""className="blutext" > Facebook</Link>
             </li>
               <li>
-                <InstagramIcon sx={{ color: "white", fontSize: 20}}/>
-                <Link to=""> Instagram</Link>
+                <InstagramIcon sx={{ color: "#E65D0F", fontSize: 20}}/>
+                <Link to="" className="blutext"> Instagram</Link>
               </li>
               <li>
-                <PinterestIcon sx={{ color: "white", fontSize: 20}}/>
-                <Link to=""> Pinterest</Link>
+                <PinterestIcon sx={{ color: "#E65D0F", fontSize: 20}}/>
+                <Link to="" className="blutext"> Pinterest</Link>
               </li>
             </ul>
           </Box>
@@ -65,7 +65,13 @@ const Footer = () => {
           <Box className="col-xl-6 col-sm-12 col-md-8 col-lg-6 wow fadeInUp" data-wow-delay=".3s">
               <Box className="single-footer-widget me-4">
                 <Box className="widget-head">
-                <h3>Subscribe Newsletter</h3>
+                <Typography
+                  variant="h3"
+                  sx={{
+                  }}
+                  className="blutext"
+                >Subscribe Newsletter
+                </Typography>
                 </Box>
 
                 <Box className="footer-content">
@@ -74,15 +80,15 @@ const Footer = () => {
                 </p>
                 <Box className="newsletter-items">
                   <Box className="form-clt">
-                  <input type="text" name="email" id="email2" placeholder="Email Address" />
+                  <input type="text" name="email" id="email2" className="bg-white" placeholder="Email Address" />
                   </Box>
                 
-                  <button className="theme-btn hover-white" type="submit">
+                  <button className="theme-btn hover-black" type="submit">
                   <span>Sign Up <i className="fas fa-chevron-right"></i></span> 
                   </button>
                 </Box>
                 <h6 className="label-text">
-                  By subscribing, you accept our <Link to="#" className="text-white">Privacy Policy</Link>
+                  By subscribing, you accept our <Link to="" className="text-black">Privacy Policy</Link>
                 </h6>
                 </Box>
               </Box>
@@ -91,14 +97,22 @@ const Footer = () => {
             <Box className="col-xl-3 col-sm-6 col-md-6 col-lg-3 mb-4">
               <Box className="single-footer-widget">
                 <Box className="widget-head">
-                <h5>Services</h5>
+                <Typography
+                  variant="h5"
+                  sx={{
+                    color: "#010156"
+                  }}
+                  className="blutext"
+                >
+                  Services
+                </Typography>
                 </Box>
         
                 <ul className="list-items">
-                  <li><Link to="service-details" className="text-white">VSAT</Link ></li>
-                  <li><Link to="service-details" className="text-white">VOIP Services</Link ></li>
-                  <li><Link to="service-details" className="text-white">Marine VSAT</Link ></li>
-                  <li><Link to="service-details" className="text-white">Internet Services</Link ></li>
+                  <li><Link to="service-details" className="text-black">VSAT</Link ></li>
+                  <li><Link to="service-details" className="text-black">VOIP Services</Link ></li>
+                  <li><Link to="service-details" className="text-black">Marine VSAT</Link ></li>
+                  <li><Link to="service-details" className="text-black">Internet Services</Link ></li>
 
                 </ul>
               </Box>
@@ -106,17 +120,33 @@ const Footer = () => {
             <Box className="col-xl-3 col-sm-6 col-md-6 col-lg-3 mb-4">
               <Box className="single-footer-widget">
                 <Box className="widget-head">
-                <h5>Locations:</h5>
+                <Typography
+                  variant="h5"
+                  sx={{
+                    color: "#010156"
+                  }}
+                  className="blutext"
+                >
+                  Locations:
+                </Typography>
                 </Box>
                 <Box className="footer-address-text">
                 <p>
                 177B Sinari Daranijo Street, <br />
                 Victoria Island, Lagos
                 </p>
-                <h5>Contact</h5>
-                <Link to="mailto:info@example.com" className="text-white">info@linkorgnet.com</Link >
+                <Typography
+                  variant="h5"
+                  sx={{
+                    color: "#010156"
+                  }}
+                  className="blutext"
+                >
+                  Contact
+                </Typography>
+                <Link to="mailto:info@example.com" className="text-black">info@linkorgnet.com</Link >
                 <h5 className="pt-3">
-                  <Link to="tel:+88012345688" className="text-white">+09 354 587 874</Link >
+                  <Link to="tel:+88012345688" className="blutext">+09 354 587 874</Link >
                 </h5>
               </Box>
               </Box>
@@ -128,7 +158,7 @@ const Footer = () => {
           <Box className="container">
           <Box className="footer-wrapper d-flex align-items-center justify-content-between">
             <p className="wow fadeInUp color-2" data-wow-delay=".4s">
-            Copyright © 2024 <Link to="index.html" className="text-white">Linkorg Networks</Link >. All Rights Reserved.
+            Copyright © 2024 <Link to="index.html" className="text-black">Linkorg Networks</Link >. All Rights Reserved.
             </p>
           </Box>
           </Box>
