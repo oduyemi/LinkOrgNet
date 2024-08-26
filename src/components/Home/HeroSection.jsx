@@ -55,7 +55,7 @@ const HeroSection = () => {
                       sx={{
                         fontSize: "16px",
                         color: "#fff",
-                        fontFamily: "Museo sans"
+                        fontFamily: "Montserrat"
 
                       }}
                       className="text-white fw-light w-75"
@@ -114,7 +114,7 @@ const HeroSection = () => {
                       sx={{
                         fontSize: "16px",
                         color: "#fff",
-                        fontFamily: "Museo sans",
+                        fontFamily: "Montserrat",
                       }}
                       className="text-white fw-light w-75"
                     >

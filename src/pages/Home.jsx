@@ -5,7 +5,7 @@ import ServiceSection from "../components/Home/ServiceSection"
 import HeroSection from "../components/Home/HeroSection";
 import AboutSection from "../components/Home/AboutSection"
 import FeatureIconSection from "../components/Home/FeatureIconSection";
-import CounterSection from "../components/Home/CounterSection";
+// import CounterSection from "../components/Home/CounterSection";
 import GrowSection from "../components/Home/GrowSection";
 // import TeamSection from "../components/Home/TeamSection";
 // import PricingSection from "../components/Home/PricingSection";

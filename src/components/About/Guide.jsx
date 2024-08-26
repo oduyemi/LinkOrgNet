@@ -18,7 +18,7 @@ export const Guide = () => {
                                     sx={{
                                         fontSize: "14px",
                                         fontWeight: "300",
-                                        fontFamily: "Museo Slab",
+                                        fontFamily: "Montserrat",
                                         color: "#010156"
                                     }}
                                     gutterBottom
@@ -32,7 +32,7 @@ export const Guide = () => {
                                         fontSize: "15px",
                                         fontWeight: "300",
                                         lineHeight: "1.2", 
-                                        fontFamily: "Museo Sans"    
+                                        fontFamily: "Montserrat"    
                                     }}
                                     gutterBottom
                                 >
@@ -49,7 +49,7 @@ export const Guide = () => {
                                     sx={{
                                         fontSize: "14px",
                                         fontWeight: "300",
-                                        fontFamily: "Museo Slab",
+                                        fontFamily: "Montserrat",
                                         color: "#010156"
                                     }}
                                     gutterBottom
@@ -63,7 +63,7 @@ export const Guide = () => {
                                         fontSize: "15px",
                                         fontWeight: "300",
                                         lineHeight: "1.2", 
-                                        fontFamily: "Museo Sans"    
+                                        fontFamily: "Montserrat"    
                                     }}
                                 >
                                     Our customers are important to us, so 
@@ -81,7 +81,7 @@ export const Guide = () => {
                                     sx={{
                                         fontSize: "14px",
                                         fontWeight: "300",
-                                        fontFamily: "Museo Slab",
+                                        fontFamily: "Montserrat",
                                         color: "#010156"
                                     }}
                                     gutterBottom
@@ -95,7 +95,7 @@ export const Guide = () => {
                                         fontSize: "15px",
                                         fontWeight: "300",
                                         lineHeight: "1.2", 
-                                        fontFamily: "Museo Sans"    
+                                        fontFamily: "Montserrat"    
                                     }}
                                 >
                                     In the fast-paced IT industry, staying updated 
@@ -117,7 +117,7 @@ export const Guide = () => {
                             sx={{
                                 fontSize: "16px",
                                 fontWeight: "400",
-                                fontFamily: "Museo Sans"
+                                fontFamily: "Montserrat"
                             }}
                         >
                             To be the most trusted and reliable partner in 
@@ -139,7 +139,7 @@ export const Guide = () => {
                             sx={{
                                 fontSize: "16px",
                                 fontWeight: "400",
-                                fontFamily: "Museo Sans"
+                                fontFamily: "Montserrat"
                             }}
                         >
                             At LinkOrg Net, we are committed to delivering 
