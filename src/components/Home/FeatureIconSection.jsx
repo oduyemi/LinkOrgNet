@@ -27,7 +27,7 @@ const FeatureIconSection = () => {
               variant="h4"
               sx={{
                 fontSize: "16px",
-                fontWeight: "400",
+                fontWeight: "600",
                 color: "#010156",
                 transition: 'color 0.3s ease'
               }}
@@ -49,7 +49,7 @@ const FeatureIconSection = () => {
               variant="h4"
               sx={{
                 fontSize: "16px",
-                fontWeight: "400",
+                fontWeight: "600",
                 color: "#010156",
                 transition: 'color 0.3s ease'
               }}
@@ -71,7 +71,7 @@ const FeatureIconSection = () => {
               variant="h4"
               sx={{
                 fontSize: "16px",
-                fontWeight: "400",
+                fontWeight: "600",
                 color: "#010156",
                 transition: 'color 0.3s ease'
               }}
@@ -93,7 +93,7 @@ const FeatureIconSection = () => {
               variant="h4"
               sx={{
                 fontSize: "16px",
-                fontWeight: "400",
+                fontWeight: "600",
                 color: "#010156",
                 transition: 'color 0.3s ease'
               }}
@@ -115,7 +115,7 @@ const FeatureIconSection = () => {
               variant="h4"
               sx={{
                 fontSize: "16px",
-                fontWeight: "400",
+                fontWeight: "600",
                 color: "#010156",
                 transition: 'color 0.3s ease'
               }}
@@ -137,7 +137,7 @@ const FeatureIconSection = () => {
               variant="h4"
               sx={{
                 fontSize: "16px",
-                fontWeight: "400",
+                fontWeight: "600",
                 color: "#010156",
                 transition: 'color 0.3s ease'
               }}

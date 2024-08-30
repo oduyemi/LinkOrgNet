@@ -46,20 +46,32 @@ const Brand = () => {
                     sx={{ marginTop: "100px" }}
                 >  
             <Box className="brand-image center">
-                <img src="assets/img/brand/01.png" alt="brand-img" />
+                <img src={require("../../assets/images/brands/cambium.png")} 
+                    width="40%" 
+                    alt="cambium" 
+                    className="mt-4"
+                />
             </Box>
             <Box className="brand-image center">
-                <img src="assets/img/brand/01.png" alt="brand-img" />
+                <img src={require("../../assets/images/brands/cisco.png")} 
+                    width="40%" 
+                    alt="cisco" 
+                    className="mt-2"
+                />
             </Box>
             <Box className="brand-image center">
-                <img src="assets/img/brand/01.png" alt="brand-img" />
+                <img src={require("../../assets/images/brands/telesat.png")} 
+                    width="40%" 
+                    alt="telesat" 
+                    className="mt-4"
+                />
             </Box>
             <Box className="brand-image center">
-                <img src="assets/img/brand/01.png" alt="brand-img" />
+                <img src={require("../../assets/images/brands/intellian.png")} width="40%" alt="intellian" />
             </Box>
-            <Box className="brand-image center">
-                <img src="assets/img/brand/01.png" alt="brand-img" />
-            </Box>
+            {/* <Box className="brand-image center">
+                <img src={require("../../assets/images/brands/fortnite.png")} width="40%" alt="fortnite" />
+            </Box> */}
         </Slider>
     </Box>
 </Box>

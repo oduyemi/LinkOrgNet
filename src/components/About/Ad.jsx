@@ -31,10 +31,10 @@ export const Ad = () => {
                 <Box className="container">
                     <Box className="counter-wrapper">
                         <Box className="counter-items">
-                            <h2><span className="count">15</span>+</h2>
+                            <h2><span className="count">40</span>+</h2>
                             <p>
                                 YEARS OF <br />
-                                EXPERIENCE
+                                <span className="d-inline" style={{ fontSize: "10px" }}>combined<br/></span>EXPERIENCE
                             </p>
                         </Box>
                         <Box className="counter-items">

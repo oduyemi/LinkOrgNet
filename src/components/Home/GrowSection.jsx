@@ -18,7 +18,7 @@ const GrowSection = () => {
                 data-wow-delay=".3s"
                 sx={{
                   fontSize: "30px",
-                  fontWeight: 400,
+                  fontWeight: 800,
                   color: "#010156",
                   textTransform: "uppercase",
                   lineHeight: "1.3",
@@ -66,7 +66,7 @@ const GrowSection = () => {
                   variant="h6"
                   sx={{
                     fontFamily: "Montserrat",
-                    fontWeight: 300,
+                    fontWeight: 600,
                   }}
                   className="blutext"
                 >
@@ -80,25 +80,25 @@ const GrowSection = () => {
                     color: "#000",
                   }}
                 >
-                  End to end fiber optic cable <br />
-                  connectivity for stable
+                  Advanced IT solutions 
+                  you<br />
+                  need to stay ahead of the competition.
                 </Typography>
               </Box>
             </Box>
             <Box className="single-circle-bar wow fadeInUp" data-wow-delay=".5s">
               <Box className="circle-bar" data-percent="77" data-duration="1000">
-                {/* Circle Bar Animation/Progress Code Here */}
               </Box>
               <Box className="content">
                 <Typography
                   variant="h6"
                   sx={{
                     fontFamily: "Montserrat",
-                    fontWeight: 300,
+                    fontWeight: 600,
                   }}
                   className="blutext"
                 >
-                  Guaranteed Uptime
+                  Fast. Secure. Reliable
                 </Typography>
                 <Typography
                   variant="body1"
@@ -108,25 +108,25 @@ const GrowSection = () => {
                     color: "#000",
                   }}
                 >
-                  End to end fiber optic cable <br />
-                  connectivity for stable
+                  We are here for you! Meet the<br/>
+                  unique needs of your business with the<br />
+                  speed, security, and reliability that you can trust.
                 </Typography>
               </Box>
             </Box>
             <Box className="single-circle-bar wow fadeInUp" data-wow-delay=".7s">
               <Box className="circle-bar" data-percent="85" data-duration="1000">
-                {/* Circle Bar Animation/Progress Code Here */}
               </Box>
               <Box className="content">
                 <Typography
                   variant="h6"
                   sx={{
                     fontFamily: "Montserrat",
-                    fontWeight: 300,
+                    fontWeight: 600,
                   }}
                   className="blutext"
                 >
-                  Proactive Monitoring
+                  Seamless Connectivity
                 </Typography>
                 <Typography
                   variant="body1"
@@ -136,8 +136,9 @@ const GrowSection = () => {
                     color: "#000",
                   }}
                 >
-                  End to end fiber optic cable <br />
-                  connectivity for stable
+                  Goodbye Downtime...<br/>
+                  Hello Productivity!<br/>
+                  Now, you can focus on what matters.
                 </Typography>
               </Box>
             </Box>

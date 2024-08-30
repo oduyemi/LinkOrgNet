@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Box, Typography } from "@mui/material";
 import { Link } from 'react-router-dom';
-import ITSolution1 from "../../assets/images/ITSolution1.jpg";
+import hero0 from "../../assets/images/hero0.jpg";
 import ITSolution2 from "../../assets/images/ITSolution2.jpg";
 import CheckIcon from '@mui/icons-material/Check';
 
@@ -136,7 +136,7 @@ const AboutSection = () => {
                   className="about-image-1 bg-cover wow fadeInLeft"
                   data-wow-delay=".3s"
                   style={{ 
-                    backgroundImage: `url(${ITSolution1})`
+                    backgroundImage: `url(${hero0})`
                   }}
                 >
                   <Box className="about-image-2 wow fadeInUp" data-wow-delay=".5s">
@@ -155,13 +155,13 @@ const AboutSection = () => {
                     data-wow-delay=".3s"
                     sx={{
                       color: "#010156",
-                      fontWeight: 300,
+                      fontWeight: 800,
                       fontSize: "30px",
                       fontFamily: "Montserrat",
                     }}
                   >
                     Empower Your {" "}
-                    <span style={{ textDecoration: "none" }}>
+                    <span style={{ textDecoration: "none", fontWeight: 800 }}>
                       Digital Presence {" "}
                     </span> 
                     with LinkOrg Networks

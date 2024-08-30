@@ -16,7 +16,7 @@ const ProductSection = () => {
         <Box className="title-section-area">
           <Box className="section-title">
             <span className="wow fadeInUp" style={{ textDecoration: "none"}}>Top Sales</span>
-            <h2 className="wow fadeInUp" data-wow-delay=".3s" style={{ color: "#010156"}}>Our Top Products</h2>
+            <h2 className="wow fadeInUp" data-wow-delay=".3s" style={{ color: "#010156", fontWeight: 800 }}>Our Top Products</h2>
           </Box>
         </Box>
         <Box className="row">
