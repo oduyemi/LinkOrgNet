@@ -7,26 +7,26 @@ const CounterSection = () => {
         <div className="counter-wrapper">
           <div className="counter-items wow fadeInUp" data-wow-delay=".3s">
             <div className="content">
-              <h2><span className="count">50</span>k+</h2>
-              <p>Project Complete</p>
+              <h2><span className="count">VSAT</span> Internet</h2>
+              <p> on IDirect Dedicated Services</p>
             </div>
           </div>
           <div className="counter-items wow fadeInUp" data-wow-delay=".5s">
             <div className="content">
-              <h2><span className="count">5</span>k+</h2>
-              <p>Project Complete</p>
+              <h2><span className="count">Phone</span> Services</h2>
+              <p> Dedicated Landline for Business</p>
             </div>
           </div>
           <div className="counter-items wow fadeInUp" data-wow-delay=".7s">
             <div className="content">
-              <h2><span className="count">3</span>k+</h2>
-              <p>Satisfied Clients</p>
+              <h2><span className="count">VPN</span>Services</h2>
+              <p> Stay safe online comfortably</p>
             </div>
           </div>
           <div className="counter-items wow fadeInUp" data-wow-delay=".9s">
             <div className="content">
-              <h2><span className="count">85</span>+</h2>
-              <p>Awards Winning</p>
+              <h2><span className="count">Offshore Platforms</span>+</h2>
+              <p>Fixed and stabilized antennae.</p>
             </div>
           </div>
         </div>

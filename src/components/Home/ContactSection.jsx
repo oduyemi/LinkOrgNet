@@ -30,9 +30,6 @@ const ContactSection = () => {
       className="contact-section-2 fix section-padding bg-cover"
       style={{ backgroundImage: 'url(assets/img/contact-bg.jpg)' }}
     >
-      <Box className="contact-image">
-        <img src="assets/img/contact-2.png" alt="Contact" />
-      </Box>
       <Box className="container">
         <Box className="contact-wrapper-2">
           <Box className="row align-items-center">
@@ -47,6 +44,7 @@ const ContactSection = () => {
                     sx={{
                       color: "#010156",
                       fontSize: "24px",
+                      fontWeight: "600",
                       position: "relative",
                       top:"-50px"
                     }}
@@ -84,7 +82,7 @@ const ContactSection = () => {
                         variant="body1"
                         sx={{
                           fontSize: "18px",
-                          fontWeight: "800"
+                          fontWeight: "700"
                         }}
                       >
                         Call For Inquiry
@@ -117,7 +115,7 @@ const ContactSection = () => {
                       variant="body1"
                       sx={{
                         fontSize: "18px",
-                        fontWeight: "800"
+                        fontWeight: "700"
                       }}
                     >
                       Send Us Email
@@ -147,7 +145,7 @@ const ContactSection = () => {
                         variant="body1"
                         sx={{
                           fontSize: "18px",
-                          fontWeight: "800"
+                          fontWeight: "700"
                         }}
                       >Location
                       </Typography>
@@ -175,7 +173,7 @@ const ContactSection = () => {
                     data-wow-delay=".3s"
                     sx={{
                       color: "#010156",
-                      fontWeight: 300,
+                      fontWeight: 800,
                       fontSize: "30px"
                     }}
                   >
