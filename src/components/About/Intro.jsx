@@ -29,7 +29,7 @@ export const Intro = () => {
                                 }}
                             >
                                 <Box className="about-image-2 wow fadeInUp" data-wow-delay=".5s">
-                                    <img src={require("../../assets/images/engineer.png")} alt="about-img" />
+                                    <img src={require("../../assets/images/field.png")} alt="about-img" />
                                 </Box>
                             </Box>
                         </Box>
@@ -51,7 +51,7 @@ export const Intro = () => {
                                         fontSize: "32px",
                                         fontWeight: 300,
                                         lineHeight: "1.3",
-                                        fontFamily: "Museo Slab",
+                                        fontFamily: "Montserrat",
                                         color: "#010156"
                                     }}
                                 >
@@ -63,7 +63,7 @@ export const Intro = () => {
                                 className=" mt-4 mt-md-0 wow fadeInUp" 
                                 data-wow-delay=".5s"
                                 sx={{
-                                    fontFamily: "Museo Sans",
+                                    fontFamily: "Montserrat",
                                 }}
                                 gutterBottom
                             >
@@ -96,9 +96,9 @@ export const Intro = () => {
                             
                             <Box className="about-author">
                                 <Box className="">
-                                    <Link to="/about">
+                                    <Link to="/contact">
                                         <button className="theme-btn d-inline about-button wow fadeInUp" data-wow-delay=".8s">
-                                            Explore Services
+                                            Contact Us
                                             <ChevronRightIcon
                                                 sx={{
                                                     fontSize: 40

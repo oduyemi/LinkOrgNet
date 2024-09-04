@@ -1,6 +1,7 @@
 import React from "react";
 import { Box } from "@mui/material";
-import callcentre from "../../assets/images/callcentre.png"
+import callcentre from "../../assets/images/callcentre.png";
+import { Link } from "react-router-dom";
 
 
 
@@ -18,9 +19,9 @@ export const Ad = () => {
                             Make Every Interaction Count <br /> With LinkOrg VOIP Services
                         </h2>
                         <Box className="button-items">
-                            <a href="pricing.html" className="theme-btn"><span>Learn More <i className="fas fa-chevron-right"></i></span></a>
+                            <Link to="" className="theme-btn"><span>Learn More <i className="fas fa-chevron-right"></i></span></Link>
                             <span className="or">or</span>
-                            <a href="tel:+1718-904-4450" className="theme-btn bg-white"><span>+1234-567-4450 <i className="fas fa-chevron-right"></i></span></a>
+                            <Link to="tel:+1718-904-4450" className="theme-btn bg-white"><span>+1234-567-4450 <i className="fas fa-chevron-right"></i></span></Link>
                         </Box>
                     </Box>
                 </Box>
@@ -30,10 +31,10 @@ export const Ad = () => {
                 <Box className="container">
                     <Box className="counter-wrapper">
                         <Box className="counter-items">
-                            <h2><span className="count">15</span>+</h2>
+                            <h2><span className="count">40</span>+</h2>
                             <p>
                                 YEARS OF <br />
-                                EXPERIENCE
+                                <span className="d-inline" style={{ fontSize: "10px" }}>combined<br/></span>EXPERIENCE
                             </p>
                         </Box>
                         <Box className="counter-items">
