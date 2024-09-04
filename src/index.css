@@ -1,4 +1,16 @@
-
+.icon-items {
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .icon-items:hover {
+    transform: scale(1.1);
+    color: #E65D0F !important;
+  }
+  
+  .icon-items:hover .icon {
+    color: #E65D0F !important;
+  }
+  
 
 
 @media (max-width: 768px) {  

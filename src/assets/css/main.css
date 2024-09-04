@@ -7,8 +7,9 @@ Version: 1.0.0
 */
 /*CSS Table Of Content Ends Here*/
 /* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kode+Mono:wght@400..700&display=swap"); */
-@import url('https://fonts.cdnfonts.com/css/museo-slab');
-@import url("https://fonts.cdnfonts.com/css/museo-sans-rounded");
+/* @import url('https://fonts.cdnfonts.com/css/museo-slab');
+@import url("https://fonts.cdnfonts.com/css/museo-sans-rounded"); */
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
                 
 :root {
   --body: #fff;
@@ -46,13 +47,30 @@ Version: 1.0.0
   text-transform: capitalize;
   position: relative;
   overflow: hidden;
-  font-size: 16px;
-  padding: 21px 42px;
+  font-size: 14px; /* Reduced font size */
+  padding: 14px 28px; /* Reduced padding */
   border-radius: 7px;
   z-index: 9;
   display: inline-block;
   line-height: 1;
 }
+
+@media (max-width: 767px) {
+  .theme-btn {
+    padding: 16px 24px; /* Adjusted padding for smaller screens */
+  }
+}
+
+@media (max-width: 575px) {
+  .theme-btn {
+    padding: 12px 20px; /* Further reduced padding for mobile screens */
+    font-size: 12px; /* Reduced font size for mobile screens */
+  }
+  .theme-btn span {
+    font-size: 12px; /* Reduced font size for text inside button */
+  }
+}
+
 .theme-btn i {
   margin-left: 8px;
   transition: all 0.4s ease-in-out;
@@ -188,8 +206,8 @@ Version: 1.0.0
     Template Default Fonts & Fonts Styles
  ---------------------------------------------- */
 body {
-  font-family: 'Museo Sans Rounded', sans-serif;                                         
-  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;                                         
+  font-size: 17px;
   font-weight: 300;
   line-height: 28px;
   color: var(--text);
@@ -226,7 +244,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Museo Slab" !important;
+  font-family: "Montserrat" !important;
   font-weight: 700;
   margin: 0px;
   padding: 0;
@@ -381,7 +399,7 @@ p {
   content: attr(data-text-preloader);
   left: 0;
   opacity: 0;
-  font-family: 'Museo Slab', sans-serif;
+  font-family: "Montserrat";
   position: absolute;
   top: -3px;
   transform: rotateY(-90deg);
@@ -649,6 +667,10 @@ input.main-search-input::placeholder {
 
 .footer-bg {
   background-color: var(--bg4);
+}
+
+.footerbg{
+  background-color: #DFE0E2;
 }
 
 .section-padding {
@@ -1565,7 +1587,7 @@ input.main-search-input::placeholder {
 .header-2 .header-main .header-right .menu-cart .cart-box ul li a::after {
   position: absolute;
   content: "\f00d";
-  font-family: 'Museo Slab', sans-serif;
+  font-family: "Montserrat";
   font-weight: 600;
   top: 15px;
   right: -88px;
@@ -2490,7 +2512,7 @@ input.main-search-input::placeholder {
   width: 100%;
   height: 100%;
   content: "";
-  background-color: rgb(3, 0, 17);
+  /* background-color: rgb(3, 0, 17); */
   opacity: 0.749;
 }
 .hero-1 .hero-content {
@@ -2520,7 +2542,7 @@ input.main-search-input::placeholder {
   margin-bottom: 15px;
 }
 .hero-1 .hero-content h1 {
-  font-size: 90px;
+  font-size: 75px;
 }
 @media (max-width: 1399px) {
   .hero-1 .hero-content h1 {
@@ -2868,7 +2890,7 @@ input.main-search-input::placeholder {
   top: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, rgb(34, 34, 34) 0%, rgba(9, 9, 121, 0) 75%);
+  background: linear-gradient(90deg, #010156 0%, rgba(9, 9, 121, 0) 75%);
   content: "";
   z-index: -1;
 }
@@ -3586,7 +3608,7 @@ input.main-search-input::placeholder {
   width: 100%;
   height: 100%;
   content: "";
-  background-color: var(--header);
+  background-color: #F9F8F8;
   z-index: -1;
   top: 60%;
 }
@@ -4484,7 +4506,7 @@ input.main-search-input::placeholder {
   position: absolute;
   right: 4px;
   top: 0px;
-  font-family: 'Museo Sans Rounded', sans-serif;
+  font-family: "Montserrat";
   content: "\f005";
   font-size: 14px;
   color: var(--theme);
@@ -6792,7 +6814,7 @@ input.main-search-input::placeholder {
 .faq-content .accordion-item .accordion-header .accordion-button::after {
   content: "\f067";
   background: transparent;
-  font-family: 'Museo Slab', sans-serif;
+  font-family: "Montserrat";
   font-weight: 300;
   transition: all 0.3s ease-in-out !important;
   color: var(--header);
@@ -6806,7 +6828,7 @@ input.main-search-input::placeholder {
 }
 .faq-content .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
   content: "\f068";
-  font-family: 'Museo Slab', sans-serif;
+  font-family: "Montserrat";
   font-weight: 300;
 }
 .faq-content .accordion-item .accordion-collapse .accordion-body {
@@ -9754,7 +9776,7 @@ input.main-search-input::placeholder {
   color: var(--white);
   font-size: 26px;
   line-height: 1.4;
-  font-family: 'Museo Sans Rounded', sans-serif;
+  font-family: "Montserrat";
   font-weight: 400;
   padding: 60px;
   text-align: center;
@@ -9779,7 +9801,7 @@ input.main-search-input::placeholder {
   right: 30px;
   font-size: 110px;
   line-height: 1;
-  font-family: 'Museo Slab', sans-serif;
+  font-family: "Montserrat";
   position: absolute;
   content: "\f10d";
   bottom: -20px;
@@ -9958,7 +9980,7 @@ input.main-search-input::placeholder {
   transition: all 0.3s ease-in-out;
   margin-bottom: 20px;
   text-transform: capitalize;
-  font-family: 'Museo Sans Rounded', sans-serif;
+  font-family: "Montserrat";
 }
 @media (max-width: 767px) {
   .blog-wrapper .single-blog-post .post-content .post-cat a {
@@ -9992,7 +10014,7 @@ input.main-search-input::placeholder {
   position: absolute;
   left: 0;
   top: 0;
-  font-family: 'Museo Sans Rounded', sans-serif;
+  font-family: "Montserrat";
   content: "\f00c";
   color: var(--theme);
 }
@@ -10929,7 +10951,7 @@ p.sticky-label {
 }
 
 .footer-top {
-  padding: 80px 0;
+  padding: 40px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11089,7 +11111,7 @@ p.sticky-label {
   padding: 18px 30px;
   border: none;
   outline: none;
-  background: rgba(255, 255, 255, 0.03);
+  background: #4E4A59;
   border: 1.2px solid rgba(255, 255, 255, 0.1);
   border-radius: 6px;
   width: 100%;
@@ -11415,3 +11437,7 @@ p.sticky-label {
 .footer-bottom-4 p a {
   color: var(--theme);
 }
+
+
+
+

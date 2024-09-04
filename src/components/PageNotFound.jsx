@@ -193,11 +193,11 @@ export const PageNotFound = () => {
                                     If anybody asks where this page is,<br/>
                                     It's left the country...
                                 </Typography>
-                                <Link to="/"
-                                    className="btn btn-outline-warning hover:bg-warning hover-text-light rounded shadow-sm hover-shadow-lg py-2 px-4">
-                                    Go Home?
+                                <Link to="/">
+                                    <button type="submit" className="theme-btn">
+                                        Go Home?
+                                    </button>
                                 </Link>
-
                     </Box>
                 </Box>
             </Box>

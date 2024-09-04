@@ -1,11 +1,31 @@
 import React from "react";
-
-
+import { Box } from "@mui/material";
+import { Testimonials } from "../components/About/Testimonials";
+import Footer from "../components/Footer";
+import ContactSection from "../components/Home/ContactSection";
+import { Hero } from "../components/Services/Hero";
+import NeedAdvisor from "../components/Services/NeedAdvisor";
+import FeatureIconBoxSection from "../components/Services/FeatureIconBoxSection";
+import FaqSection from "../components/Services/FaqSection";
+import { ServicesSection } from "../components/Services/ServicesSection";
 
 
 const Services = () => {
     return(
-        <p>This is the Services page</p>
+        <Box>
+        <Hero/>
+        <Box style={{height: "100px"}}> 
+        </Box>
+        <ServicesSection/>
+        <NeedAdvisor/>
+        <FeatureIconBoxSection/>
+        <FaqSection/>
+        <Testimonials />
+        <ContactSection/>
+        <Footer />
+        </Box>
+      
+
     )
 }
 
