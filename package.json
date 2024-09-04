@@ -49,14 +49,22 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },  
+  },
   "devDependencies": {
+    "@aws-amplify/backend": "^1.2.0",
+    "@aws-amplify/backend-cli": "^1.2.5",
     "@babel/core": "^7.21.0",
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@babel/plugin-transform-react-jsx": "^7.21.0",
     "@babel/preset-env": "^7.21.0",
     "@babel/preset-react": "^7.21.0",
+    "aws-cdk": "^2.155.0",
+    "aws-cdk-lib": "^2.155.0",
+    "constructs": "^10.3.0",
     "customize-cra": "^1.0.0",
-    "react-app-rewired": "^2.1.9"
+    "esbuild": "^0.23.1",
+    "react-app-rewired": "^2.1.9",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4"
   }
 }

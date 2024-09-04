@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import abtHero  from "../../assets/images/abtHero.jpg";
+import agree  from "../../assets/images/agree.jpg";
 
 
 
@@ -9,7 +9,7 @@ export const Hero = () => {
     return(
         <Box className="breadcrumb-wrapper section-padding bg-cover" 
             style={{
-                backgroundImage: `url(${abtHero}`
+                backgroundImage: `url(${agree}`
             }}
         >
             <Box className="container">
