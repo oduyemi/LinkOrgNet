@@ -2163,6 +2163,7 @@ input.main-search-input::placeholder {
   visibility: visible;
 }
 
+
 @media (max-width: 450px) {
   .offcanvas__info {
     width: 300px;
@@ -2173,6 +2174,17 @@ input.main-search-input::placeholder {
     padding: 20px;
   }
 }
+
+/* .offcanvas__info.mobile-menu {
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.offcanvas__overlay {
+  z-index: 0;
+} */
+
 .breadcrumb-wrapper {
   position: relative;
   overflow: hidden;
