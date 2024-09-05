@@ -53,28 +53,27 @@ export const AboutServices = () => {
                                 <CellTowerIcon 
                                         sx={{
                                             fontSize: 70,
-                                            color: "#010156",
-                                            // paddingTop: "20px"
+                                            color: "#E65D0F",
                                         }}
-                                        className=""
+                                        className="whitaker"
                                     />
                             </Box>
                             <Box className="content">
                                 <h3>
-                                    <Link to="">
-                                        VSAT
+                                    <Link to="" className="blutext whitaker">
+                                        Internet
                                     </Link>
                                 </h3>
                                 <Typography
                                 variant="body1" 
                                 sx={{
-                                     fontSize: "16px",
+                                     fontSize: "14px",
                                      fontWeight: "300",
                                      lineHeight: "1.5", 
                                      fontFamily: "Montserrat"    
                                 }}
                                 >
-                                    Stay Connected, Even Off-Grid
+                                    Reliable Networks, Anywhere
                                 </Typography>
                                 <Link to="" className="arrow-icon">
                                     <ChevronRightIcon 
@@ -93,7 +92,7 @@ export const AboutServices = () => {
                                 <SpeakerPhoneIcon 
                                     sx={{
                                         fontSize: 70,
-                                        color: "#010156"
+                                        color: "#ffffff"
                                     }}
                                     className="d-inline"
                                 />
@@ -101,13 +100,13 @@ export const AboutServices = () => {
                             <Box className="content">
                                 <h3>
                                     <Link to="service-details">
-                                        VOIP Services
+                                        VPN
                                     </Link>
                                 </h3>
                                 <Typography
                                 variant="body1" 
                                 sx={{
-                                     fontSize: "16px",
+                                     fontSize: "14px",
                                      fontWeight: "300",
                                      lineHeight: "1.5", 
                                      fontFamily: "Montserrat"    
@@ -129,30 +128,30 @@ export const AboutServices = () => {
                     <Box className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
                         <Box className="service-box-items">
                             <Box className="icon">
-                                <StreamIcon 
+                                <SpeakerPhoneIcon 
                                     sx={{
                                         fontSize: 70,
-                                        color: "#010156"
+                                        color: "#E65D0F"
                                     }}
-                                    className="d-inline"
+                                    className="d-inline whitaker"
                                 />
                             </Box>
                             <Box className="content">
                                 <h3>
-                                    <Link to="">
-                                        Maritime VSAT
+                                    <Link to="" className="blutext whitaker">
+                                        VOIP Services
                                     </Link>
                                 </h3>
                                 <Typography
                                 variant="body1" 
                                 sx={{
-                                     fontSize: "16px",
+                                     fontSize: "14px",
                                      fontWeight: "300",
                                      lineHeight: "1.5", 
                                      fontFamily: "Montserrat"    
                                 }}
                                 >
-                                    Seamless Connectivity at Sea
+                                    Crystal Clear Calls, Anywhere
                                 </Typography>
                                 <Link to="service-details" className="arrow-icon">
                                     <ChevronRightIcon 
@@ -171,27 +170,27 @@ export const AboutServices = () => {
                                 <SettingsInputAntennaIcon 
                                     sx={{
                                         fontSize: 70,
-                                        color: "#010156"
+                                        color: "#E65D0F"
                                     }}
-                                    className="d-inline"
+                                    className="d-inline whitaker"
                                 />
                             </Box>
                             <Box className="content">
                                 <h3>
-                                    <Link to="service-details">
-                                        Network Services
+                                    <Link to="service-details" className="blutext whitaker">
+                                        VSAT
                                     </Link>
                                 </h3>
                                 <Typography
                                 variant="body1" 
                                 sx={{
-                                     fontSize: "16px",
+                                     fontSize: "14px",
                                      fontWeight: "300",
                                      lineHeight: "1.5", 
                                      fontFamily: "Montserrat"    
                                 }}
                                 >
-                                    Reliable Networks, Anytime, Anywhere
+                                    Stay Connected, Even Off-Grid
                                 </Typography>
                                 <Link to="service-details" className="arrow-icon">
                                     <ChevronRightIcon 
