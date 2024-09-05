@@ -1,6 +1,5 @@
 import React from "react";
 import { Box } from "@mui/material";
-import { Testimonials } from "../components/About/Testimonials";
 import Footer from "../components/Footer";
 import ContactSection from "../components/Home/ContactSection";
 import { Hero } from "../components/Services/Hero";
@@ -20,7 +19,6 @@ const Services = () => {
         <NeedAdvisor/>
         <FeatureIconBoxSection/>
         <FaqSection/>
-        <Testimonials />
         <ContactSection/>
         <Footer />
         </Box>

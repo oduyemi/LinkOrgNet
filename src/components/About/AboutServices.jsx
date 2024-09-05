@@ -3,9 +3,10 @@ import { Box, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import SpeakerPhoneIcon from '@mui/icons-material/SpeakerPhone';
-import CellTowerIcon from '@mui/icons-material/CellTower';
+import LanguageIcon from '@mui/icons-material/Language';
 import SettingsInputAntennaIcon from '@mui/icons-material/SettingsInputAntenna';
-import StreamIcon from '@mui/icons-material/Stream';
+import VpnLockIcon from '@mui/icons-material/VpnLock';
+
 
 export const AboutServices = () => {
     return(
@@ -50,7 +51,7 @@ export const AboutServices = () => {
                     <Box className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
                         <Box className="service-box-items">
                             <Box className="icon">
-                                <CellTowerIcon 
+                                <LanguageIcon
                                         sx={{
                                             fontSize: 70,
                                             color: "#E65D0F",
@@ -89,7 +90,7 @@ export const AboutServices = () => {
                     <Box className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
                         <Box className="service-box-items active">
                             <Box className="icon d-inline">
-                                <SpeakerPhoneIcon 
+                                <VpnLockIcon
                                     sx={{
                                         fontSize: 70,
                                         color: "#ffffff"
@@ -203,18 +204,18 @@ export const AboutServices = () => {
                             </Box>
                         </Box>
                     </Box>
-                    
+                    <Box maxWidth="sm" className="team-button text-center mx-auto mt-5 wow fadeInUp" data-wow-delay=".4s">
+                    <Link to="/services" className="theme-btn theme-btn-2">
+                        <span>
+                        Explore Services
+                        <ChevronRightIcon />
+                        </span>
+                    </Link>
                 </Box>
-                <Box maxWidth="sm" className="team-button text-center mx-auto mt-5 wow fadeInUp" data-wow-delay=".4s">
-                <Link to="/services" className="theme-btn theme-btn-2">
-                    <span>
-                    Explore Services
-                    <i className="fas fa-chevron-right"></i>
-                    </span>
-                </Link>
                 </Box>
-            </Box></section>
-        //     </Box>
-        // </section>
+                
+            </Box>
+        </section>
+
     )
 }

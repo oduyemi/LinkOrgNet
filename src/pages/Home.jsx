@@ -10,7 +10,7 @@ import GrowSection from "../components/Home/GrowSection";
 import ProductSection from "../components/Home/ProductSection";
 import ContactSection from "../components/Home/ContactSection";
 import Brand from "../components/About/Brand";
-
+import FaqSection from "../components/Services/FaqSection";
 
 
 
@@ -23,6 +23,7 @@ const Home = () => {
             </Box>
             <AboutSection/>
             <FeatureIconSection/>
+            <FaqSection />
             <CounterSection/>
             <GrowSection/>
             <ProductSection/>

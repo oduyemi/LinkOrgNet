@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const GrowSection = () => {
   return (
-    <section className="grow-section section-padding section-bg-3" style={{ backgroundColor: "#F9F8F8" }}>
+    <section className="grow-section section-padding" style={{ backgroundColor: "#F9F8F8" }}>
       <Box className="container">
         <Box className="grow-wrapper">
           <Box className="title-section-area">
