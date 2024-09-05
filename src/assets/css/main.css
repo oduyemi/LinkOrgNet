@@ -2175,16 +2175,6 @@ input.main-search-input::placeholder {
   }
 }
 
-/* .offcanvas__info.mobile-menu {
-  display: block;
-  position: relative;
-  z-index: 1;
-}
-
-.offcanvas__overlay {
-  z-index: 0;
-} */
-
 .breadcrumb-wrapper {
   position: relative;
   overflow: hidden;
