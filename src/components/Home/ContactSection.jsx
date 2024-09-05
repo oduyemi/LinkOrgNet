@@ -13,17 +13,53 @@ const ContactSection = () => {
     new WOW.WOW({ live: false }).init();
   }, []);
 
-      const [isOpen, setIsOpen] = useState(false);
-      const [selectedOption, setSelectedOption] = useState('Choose Topic');
-    
-      const toggleDropdown = () => {
-        setIsOpen(!isOpen);
-      };
-    
-      const selectOption = (option) => {
-        setSelectedOption(option);
-        setIsOpen(false);
-      };
+  const [states] = useState([
+    'Abia', 'Adamawa', 'AkwaIbom', 'Anambra', 'Bauchi', 'Bayelsa', 'Benue', 'Borno', 
+    'Cross River', 'Delta', 'Ebonyi', 'Edo', 'Ekiti', 'Enugu', 'FCT', 'Gombe', 'Imo',
+    'Jigawa', 'Kaduna', 'Kano', 'Katsina', 'Kebbi', 'Kogi', 'Kwara', 'Lagos', 
+    'Nasarawa', 'Niger', 'Ogun', 'Ondo', 'Osun', 'Oyo', 'Plateau', 'Rivers', 'Sokoto',
+    'Taraba', 'Yobe', 'Zamfara'
+  ]);
+
+  const [selectedState, setSelectedState] = useState('');
+  const [lgas, setLgas] = useState([]);
+  const [selectedLga, setSelectedLga] = useState('');
+  
+  const [isStateOpen, setIsStateOpen] = useState(false);
+  const [isLgaOpen, setIsLgaOpen] = useState(false);
+  const [isTopicOpen, setIsTopicOpen] = useState(false);
+  const [selectedTopic, setSelectedTopic] = useState('Choose Topic');
+
+  const toggleDropdown = (dropdown) => {
+    if (dropdown === 'state') setIsStateOpen(!isStateOpen);
+    if (dropdown === 'lga') setIsLgaOpen(!isLgaOpen);
+    if (dropdown === 'topic') setIsTopicOpen(!isTopicOpen);
+  };
+
+  const selectOption = (option, dropdown) => {
+    if (dropdown === 'state') {
+      setSelectedState(option);
+      fetchLgas(option);  // Fetch LGAs after selecting state
+      setIsStateOpen(false);
+    } else if (dropdown === 'lga') {
+      setSelectedLga(option);
+      setIsLgaOpen(false);
+    } else if (dropdown === 'topic') {
+      setSelectedTopic(option);
+      setIsTopicOpen(false);
+    }
+  };
+
+  const fetchLgas = (state) => {
+    // In the future, connect this to your API. For now, use dummy LGAs
+    const dummyLgas = {
+      Lagos: ['Ikeja', 'Surulere', 'Epe'],
+      Abia: ['Aba North', 'Aba South', 'Arochukwu'],
+      // Add more dummy LGAs for other states...
+    };
+    setLgas(dummyLgas[state] || []);
+  };
+
 
     return (
     <Box 
@@ -238,23 +274,62 @@ const ContactSection = () => {
                           </Box>
                         </Box>
                       </Box>
-                      <Box className="col-lg-12 wow fadeInUp" data-wow-delay=".3s">
+                      
+                      <Box className="col-lg-6">
                         <Box className="form-clt">
-                        <Box className={`nice-select ${isOpen ? 'open' : ''}`} tabIndex="0" onClick={toggleDropdown}>
-                          <span className="current">{selectedOption}</span>
-                          {isOpen && (
-                            <ul className="list" style={{zIndex:"1000"}}>
-                              <li data-value="1" className="option" onClick={() => selectOption('VSAT')}>VSAT</li>
-                              <li data-value="2" className="option" onClick={() => selectOption('VOIP')}>VOIP</li>
-                              <li data-value="3" className="option" onClick={() => selectOption('Maritime VSAT')}>Maritime VSAT</li>
-                              <li data-value="4" className="option" onClick={() => selectOption('Network Services')}>Network Services</li>
-                              <li data-value="5" className="option" onClick={() => selectOption('Terrestrial Comm.')}>Terrestrial Comm.</li>
-                              <li data-value="6" className="option" onClick={() => selectOption('Packaging')}>Packaging</li>
-                            </ul>
-                          )}
-                        </Box>
+                          <Box className={`nice-select ${isStateOpen ? 'open' : ''}`} tabIndex="0" onClick={() => toggleDropdown('state')}>
+                            <span className="current">{selectedState || "Select State"}</span>
+                            {isStateOpen && (
+                              <ul className="list">
+                                {states.map((state, index) => (
+                                  <li key={index} className="option" onClick={() => selectOption(state, 'state')}>
+                                    {state}
+                                  </li>
+                                ))}
+                              </ul>
+                            )}
+                          </Box>
                         </Box>
                       </Box>
+
+                      {/* LGA Dropdown */}
+                      {lgas.length > 0 && (
+                        <Box className="col-lg-6">
+                          <Box className="form-clt">
+                            <Box className={`nice-select ${isLgaOpen ? 'open' : ''}`} tabIndex="0" onClick={() => toggleDropdown('lga')}>
+                              <span className="current">{selectedLga || "Select LGA"}</span>
+                              {isLgaOpen && (
+                                <ul className="list">
+                                  {lgas.map((lga, index) => (
+                                    <li key={index} className="option" onClick={() => selectOption(lga, 'lga')}>
+                                      {lga}
+                                    </li>
+                                  ))}
+                                </ul>
+                              )}
+                            </Box>
+                          </Box>
+                        </Box>
+                      )}
+
+                      {/* Topic Dropdown */}
+                      <Box className="col-lg-12">
+                        <Box className="form-clt">
+                          <Box className={`nice-select ${isTopicOpen ? 'open' : ''}`} tabIndex="0" onClick={() => toggleDropdown('topic')}>
+                            <span className="current">{selectedTopic}</span>
+                            {isTopicOpen && (
+                              <ul className="list">
+                                {['VSAT', 'VOIP', 'Maritime VSAT', 'Network Services', 'Terrestrial Comm.', 'Packaging'].map((topic, index) => (
+                                  <li key={index} className="option" onClick={() => selectOption(topic, 'topic')}>
+                                    {topic}
+                                  </li>
+                                ))}
+                              </ul>
+                            )}
+                          </Box>
+                        </Box>
+                      </Box>
+
                       <Box className="col-lg-12 wow fadeInUp" data-wow-delay=".5s">
                         <Box className="form-clt">
                           <textarea name="Description" id="Description" placeholder="Write Your Message"></textarea>
