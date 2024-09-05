@@ -26,7 +26,7 @@ const ProductSection = () => {
                 <img src={Voip} alt="Product" />
                 <Box className="product-content">
                   <h6>
-                    <Link to="/shop-details" className='blutext' style={{fontWeight: "600"}}>Voip</Link>
+                    <Link to="/shop-details" className="blutext">Voip</Link>
                   </h6>
                 </Box>
               </Box>
@@ -39,7 +39,7 @@ const ProductSection = () => {
               </Box>
               <Box className="product-content">
                 <h6>
-                  <Link to="/shop-details">Packages</Link>
+                  <Link to="/shop-details" className="blutext">Packages</Link>
                 </h6>
               </Box>
             </Box>

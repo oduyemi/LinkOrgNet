@@ -67,3 +67,14 @@ body{
   color: #ffffff !important;
 }
 
+@media screen and (max-width: 768px) {
+  .hero-content h1{
+    font-size: large !important;
+  }
+  .hero-content p{
+    font-size: small !important;
+    margin: auto !important;
+    padding-top: 10px !important;
+  }
+}
+

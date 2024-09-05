@@ -10,9 +10,19 @@ const FaqItem = ({ question, answer, isOpen, toggleAccordion }) => {
   return (
     <Accordion expanded={isOpen} onChange={toggleAccordion} className="wow fadeInUp">
       <AccordionSummary
-        expandIcon={isOpen ? <BiSolidMinusCircle size={"25px"} color={"#E65D0F"} /> : <BsFillPlusCircleFill size={"25px"} color={"#E65D0F"} />}
+        expandIcon={isOpen ? <BiSolidMinusCircle size={"20px"} color={"#E65D0F"} /> : <BsFillPlusCircleFill size={"20px"} color={"#010156"} />}
       >
-        <Typography variant="h6" className="accordion-header">
+        <Typography 
+          variant="h6" 
+          className="accordion-header"
+          sx={{
+            fontSize: "18px",
+            fontWeight: "500",
+            fontFamily: "montesserat",
+            color: "black",
+            transition: 'color 0.3s ease'
+          }}
+        >
           {question}
         </Typography>
       </AccordionSummary>
@@ -31,24 +41,46 @@ const FaqSection = () => {
   };
 
   return (
-    <Box className="faq-section section-padding section-bg-2">
+    <Box className="faq-section section-padding" style={{ backgroundColor: "#FFFAFF"}}>
       <Box className="container">
         <Box className="about-wrapper">
           <Box className="row">
             <Box className="col-lg-6">
               <Box className="about-content">
                 <Box className="section-title">
-                  <span className="wow fadeInUp">Frequently Asked Questions</span>
-                  <Typography variant="h2" className="wow fadeInUp" data-wow-delay=".3s">
+                  <span className="wow fadeInUp" style={{ textDecoration: "none"}}>Frequently Asked Questions</span>
+                  <Typography 
+                    variant="h2" 
+                    className="wow fadeInUp blutext" 
+                    data-wow-delay=".3s"
+                    sx={{
+                      fontSize: "40px",
+                      fontWeight: 800,
+                      color: "#010156",
+                      fontFamily: "montserrat",
+                    }}
+                  >
                     Have a question in <br />
                     your mind?
                   </Typography>
                 </Box>
-                <Typography className="mt-4 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                LinkOrg Networks is a premier provider of advanced satellite communication and IT solutions, dedicated to empowering industries and supporting global connectivity. 
+                <Typography 
+                  className="mt-4 mt-md-0 wow fadeInUp" 
+                  data-wow-delay=".5s"
+                  sx={{
+                    fontSize: "16px",
+                    fontFamily: "montesserat"
+                  }}
+                >
+                  LinkOrg Networks is a premier provider of 
+                  advanced satellite communication and IT 
+                  solutions, dedicated to empowering industries 
+                  and supporting global connectivity. 
                 <br/> 
                 <br/> 
-                We deliver reliable, high-performance services tailored to meet the unique demands of businesses across various sectors.
+                We deliver reliable, high-performance services 
+                tailored to meet the unique demands of businesses 
+                across various sectors.
                 </Typography>
 
               <Box 
@@ -66,7 +98,14 @@ const FaqSection = () => {
                     {/* Custom Circle Progress with Value */}
                     <CircularProgressWithLabel value={88} />
                     <Box className="content" mt={2}>
-                      <Typography variant="h6">
+                      <Typography 
+                        variant="h6"
+                        sx={{
+                          fontSize: "18px",
+                          fontWeight: "500",
+                          fontFamily: "montserrat"
+                        }}
+                      >
                         Organizations <br />
                         work support
                       </Typography>
@@ -82,7 +121,14 @@ const FaqSection = () => {
                     {/* Custom Circle Progress with Value */}
                     <CircularProgressWithLabel value={93} />
                     <Box className="content" mt={2}>
-                      <Typography variant="h6">
+                      <Typography 
+                        variant="h6"
+                        sx={{
+                          fontSize: "18px",
+                          fontWeight: "500",
+                          fontFamily: "montserrat"
+                        }}
+                      >
                         Management & <br />
                         Support Services
                       </Typography>
@@ -103,7 +149,7 @@ const FaqSection = () => {
                     toggleAccordion={handleChange('panel1')}
                     style={{marginBottom: "20px", fontFamily: "Montserrat"}}
                     sx={{
-                        fontSize: "18px",
+                        fontSize: "14px",
                         fontWeight: "300",
                         fontFamily: "Montserrat"
                     }}

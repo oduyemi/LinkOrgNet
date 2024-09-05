@@ -183,7 +183,7 @@ const HeroSection = () => {
                         fontFamily: "Montserrat"
 
                       }}
-                      className="text-white fw-light w-75"
+                      className="text-white fw-light w-75 pee"
                     >
                       At the intersection of innovation and quality, 
                       our services deliver exceptional performance. 
