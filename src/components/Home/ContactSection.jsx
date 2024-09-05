@@ -5,6 +5,9 @@ import { Box, Typography } from "@mui/material";
 import CallIcon from '@mui/icons-material/Call';
 import MailIcon from '@mui/icons-material/Mail';
 import ShareLocationIcon from '@mui/icons-material/ShareLocation';
+import AccountBoxIcon from '@mui/icons-material/AccountBox';
+import { LocationCity } from '@mui/icons-material';
+
 
 
 
@@ -230,7 +233,14 @@ const ContactSection = () => {
                         <Box className="form-clt">
                           <input type="text" name="Firstname" id="Firstname" placeholder="Firstname" />
                           <Box className="icon">
-                            <i className="far fa-user"></i>
+                            <AccountBoxIcon
+                              sx={{
+                                fontSize: 18,
+                                color: "#010156",
+                                marginLeft:'-14px',
+                                marginTop: "-5px"
+                              }}
+                            />
                           </Box>
                         </Box>
                       </Box>
@@ -238,7 +248,14 @@ const ContactSection = () => {
                         <Box className="form-clt">
                           <input type="text" name="Lastname" id="Lastname" placeholder="Lastname" />
                           <Box className="icon">
-                            <i className="far fa-user"></i>
+                            <AccountBoxIcon
+                              sx={{
+                                fontSize: 18,
+                                color: "#010156",
+                                marginLeft:'-14px',
+                                marginTop: "-5px"
+                              }}
+                            />
                           </Box>
                         </Box>
                       </Box>
@@ -246,7 +263,14 @@ const ContactSection = () => {
                         <Box className="form-clt">
                           <input type="text" name="email" id="email" placeholder="Email" />
                           <Box className="icon">
-                            <i className="far fa-envelope"></i>
+                            <MailIcon
+                              sx={{
+                                fontSize: 18,
+                                color: "#010156",
+                                marginLeft:'-14px',
+                                marginTop: "-5px"
+                              }}
+                            />
                           </Box>
                         </Box>
                       </Box>
@@ -254,7 +278,14 @@ const ContactSection = () => {
                         <Box className="form-clt">
                           <input type="text" name="Companyname" id="Companyname" placeholder="Company Name" />
                           <Box className="icon">
-                            <i className="far fa-envelope"></i>
+                            <LocationCity
+                              sx={{
+                                fontSize: 18,
+                                color: "#010156",
+                                marginLeft:'-14px',
+                                marginTop: "-5px"
+                              }}
+                            />
                           </Box>
                         </Box>
                       </Box>
@@ -262,7 +293,14 @@ const ContactSection = () => {
                         <Box className="form-clt">
                           <input type="text" name="Address" id="Address" placeholder="Address" />
                           <Box className="icon">
-                            <i className="far fa-envelope"></i>
+                            <ShareLocationIcon
+                              sx={{
+                                fontSize: 18,
+                                color: "#010156",
+                                marginLeft:'-14px',
+                                marginTop: "-5px"
+                              }}
+                            />
                           </Box>
                         </Box>
                       </Box>
@@ -270,12 +308,19 @@ const ContactSection = () => {
                         <Box className="form-clt">
                           <input type="text" name="PhoneNumber" id="PhoneNumber" placeholder="Phone Number" />
                           <Box className="icon">
-                            <i className="far fa-envelope"></i>
+                            <CallIcon
+                              sx={{
+                                fontSize: 18,
+                                color: "#010156",
+                                marginLeft:'-14px',
+                                marginTop: "-5px"
+                              }}
+                            />
                           </Box>
                         </Box>
                       </Box>
                       
-                      <Box className="col-lg-6">
+                      <Box className="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
                         <Box className="form-clt">
                           <Box className={`nice-select ${isStateOpen ? 'open' : ''}`} tabIndex="0" onClick={() => toggleDropdown('state')}>
                             <span className="current">{selectedState || "Select State"}</span>
@@ -296,7 +341,7 @@ const ContactSection = () => {
                       {lgas.length > 0 && (
                         <Box className="col-lg-6">
                           <Box className="form-clt">
-                            <Box className={`nice-select ${isLgaOpen ? 'open' : ''}`} tabIndex="0" onClick={() => toggleDropdown('lga')}>
+                            <Box className={`nice-select ${isLgaOpen ? 'open' : ''}`} style={{ width: "100%"}} tabIndex="0" onClick={() => toggleDropdown('lga')}>
                               <span className="current">{selectedLga || "Select LGA"}</span>
                               {isLgaOpen && (
                                 <ul className="list">
@@ -313,9 +358,9 @@ const ContactSection = () => {
                       )}
 
                       {/* Topic Dropdown */}
-                      <Box className="col-lg-12">
+                      <Box className="col-lg-6" >
                         <Box className="form-clt">
-                          <Box className={`nice-select ${isTopicOpen ? 'open' : ''}`} tabIndex="0" onClick={() => toggleDropdown('topic')}>
+                          <Box className={`nice-select ${isTopicOpen ? 'open' : ''}`} style={{ width: "100%"}} tabIndex="0" onClick={() => toggleDropdown('topic')}>
                             <span className="current">{selectedTopic}</span>
                             {isTopicOpen && (
                               <ul className="list">

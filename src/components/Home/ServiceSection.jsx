@@ -123,7 +123,7 @@ const ServiceSection = () => {
                                      fontFamily: "Montserrat"    
                                 }}
                                 >
-                                    Crystal Clear Calls, Anywhere
+                                    Private &amp; Secure Internet Access
                                 </Typography>
                                 <Link to="service-details" className="arrow-icon">
                                     <ChevronRightIcon 

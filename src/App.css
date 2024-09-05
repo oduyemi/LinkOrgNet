@@ -59,6 +59,10 @@ body{
   background-color: #E65D0F !important;
 }
 
+.orangetext{
+  color: #E65D0F !important;
+}
+
 .service-box-items {
   transition: color 0.3s ease;
 }

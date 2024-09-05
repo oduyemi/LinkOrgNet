@@ -136,7 +136,8 @@ const AboutSection = () => {
                   className="about-image-1 bg-cover wow fadeInLeft"
                   data-wow-delay=".3s"
                   style={{ 
-                    backgroundImage: `url(${hero0})`
+                    backgroundImage: `url(${hero0})`,
+                    backgroundSize: "cover"
                   }}
                 >
                   <Box className="about-image-2 wow fadeInUp" data-wow-delay=".5s">

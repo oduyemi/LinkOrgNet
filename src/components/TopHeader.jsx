@@ -13,8 +13,8 @@ export const TopHeader = () => {
             <ul className="contact-list">
               <li>
                 <Typography component="span">Call</Typography>
-                Consult With IT Advisor?{" "}
-                <Link to="/contact">Click Now</Link>
+                Want to know more about us?{" "}
+                <Link to="/about" className="orangetext">Click Now</Link>
               </li>
               <li>
                 <i className="fas fa-map-marker-alt"></i>
