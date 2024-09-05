@@ -58,3 +58,12 @@ body{
 .orange {
   background-color: #E65D0F !important;
 }
+
+.service-box-items {
+  transition: color 0.3s ease;
+}
+
+.service-box-items:hover .whitaker{
+  color: #ffffff !important;
+}
+

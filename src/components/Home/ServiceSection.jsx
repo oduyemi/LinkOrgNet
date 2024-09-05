@@ -24,7 +24,7 @@ const ServiceSection = () => {
                 data-wow-delay=".3s"
                 sx={{
                   fontSize: "35px",
-                  fontWeight: 300,
+                  fontWeight: 800,
                   lineHeight: "1.3",
                   fontFamily: "Montserrat",
                   color: "#010156"

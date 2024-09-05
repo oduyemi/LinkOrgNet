@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Box, Grid, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
-import staff from "../../assets/images/staff.png";
+import hero1 from "../../assets/images/hero1.jpg";
 
 export const Guide = () => {
     const [activeTab, setActiveTab] = useState('values');
@@ -258,7 +258,7 @@ export const Guide = () => {
                             <Box
                                 className="manage-image"
                                 sx={{
-                                    backgroundImage: `url(${staff})`,
+                                    backgroundImage: `url(${hero1})`,
                                     backgroundSize: 'cover',
                                     backgroundPosition: 'center',
                                     minHeight: '400px',

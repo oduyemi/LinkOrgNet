@@ -3,13 +3,10 @@ import { Box, IconButton, Menu, MenuItem } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Link } from "react-router-dom";
-import { Offcanvas } from "./Offcanvas";
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
 
-
-export const NavMenu = () => {
-  const [isOffcanvasVisible, setIsOffcanvasVisible] = useState(false);
+export const NavMenu = ({ onOpenOffcanvas }) => {
   const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 768);
   const [servicesAnchorEl, setServicesAnchorEl] = useState(null);
   const [productsAnchorEl, setProductsAnchorEl] = useState(null);
@@ -20,12 +17,9 @@ export const NavMenu = () => {
 
   useEffect(() => {
     window.addEventListener("resize", handleResize);
+    handleResize(); 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
-  const toggleOffcanvas = () => {
-    setIsOffcanvasVisible((prevState) => !prevState);
-  };
 
   const handleProductsMenuOpen = (event) => {
     setProductsAnchorEl(event.currentTarget);
@@ -165,7 +159,7 @@ export const NavMenu = () => {
                     edge="end"
                     color="inherit"
                     aria-label="menu"
-                    onClick={toggleOffcanvas}
+                    onClick={onOpenOffcanvas}
                     className="header__hamburger d-xl-block my-auto"
                   >
                     <MenuIcon sx={{ fontSize: 30 }} />
@@ -177,25 +171,28 @@ export const NavMenu = () => {
         </Box>
       </header>
 
-      {/* Offcanvas and Mobile Menu */}
+      {/* Render mobile menu in Offcanvas */}
       {isMobileView && (
-        <Box
-          className={`offcanvas__info ${
-            isOffcanvasVisible ? "info-open" : ""
-          }`}
-        >
-          <Offcanvas onClose={toggleOffcanvas} />
+        <Box className={`offcanvas__info ${isMobileView ? 'mobile-menu' : ''}`}>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/products">Products</Link>
+            </li>
+            <li>
+              <Link to="/services">Services</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+          </ul>
         </Box>
-      )}
-      {isMobileView && (
-        <Box
-          className={`offcanvas__overlay ${
-            isOffcanvasVisible ? "overlay-open" : ""
-          }`}
-          onClick={toggleOffcanvas}
-        />
       )}
     </>
   );
 };
-
