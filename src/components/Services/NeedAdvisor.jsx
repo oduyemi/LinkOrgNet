@@ -10,7 +10,6 @@ const NeedAdvisor = () => {
             <div className="container">
                 <div className="cta-banner-wrapper section-padding pt-0">
                     <div className="section-title mb-0">
-                        <span className="wow fadeInUp">5m+ Trusted Our Clients</span>
                         <h2 className="text-white wow fadeInUp" data-wow-delay=".3s">
                             Need It advisor For your business? <br />
                             Please Call: 
