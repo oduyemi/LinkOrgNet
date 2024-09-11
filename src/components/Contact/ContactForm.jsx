@@ -160,7 +160,7 @@ export const ContactForm = () => {
                                 </Box>
                                 <Box className="contact-image wow fadeInUp" data-wow-delay=".4s">
                                     <img 
-                                        src={require("../../assets/images/mail.png")} 
+                                        src={require("../../assets/images/mail.jpg")} 
                                         alt="contact-us-img" />
                                 </Box>
                             </Box>
@@ -175,7 +175,7 @@ export const ContactForm = () => {
                                         sx={{
                                             color: "#010156",
                                             fontWeight: 300,
-                                            fontSize: "30px"
+                                            fontSize: "30px", 
                                         }}
                                     >
                                         Fill Up The Form
@@ -239,9 +239,9 @@ export const ContactForm = () => {
                                                 </Box>
                                             </Box>
                                         </Box>
-                                        <Box className="col-lg-6 wow fadeInUp" data-wow-delay=".8s">
+                                        <Box className="col-lg-6 wow fadeInUp mt-5" data-wow-delay=".8s">
                                             <button type="submit" className="theme-btn">
-                                                <span><i className="fal fa-paper-plane"></i>Get In Touch</span>
+                                                Get In Touch
                                             </button>
                                         </Box>
                                     </Box>

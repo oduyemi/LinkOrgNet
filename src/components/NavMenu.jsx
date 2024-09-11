@@ -9,7 +9,7 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 export const NavMenu = ({ onOpenOffcanvas }) => {
   const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 768);
   const [servicesAnchorEl, setServicesAnchorEl] = useState(null);
-  const [productsAnchorEl, setProductsAnchorEl] = useState(null);
+  const [faqsAnchorEl, setFaqsAnchorEl] = useState(null);
 
   const handleResize = () => {
     setIsMobileView(window.innerWidth <= 768);
@@ -21,12 +21,12 @@ export const NavMenu = ({ onOpenOffcanvas }) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const handleProductsMenuOpen = (event) => {
-    setProductsAnchorEl(event.currentTarget);
+  const handleFaqsMenuOpen = (event) => {
+    setFaqsAnchorEl(event.currentTarget);
   };
 
-  const handleProductsMenuClose = () => {
-    setProductsAnchorEl(null);
+  const handleFaqsMenuClose = () => {
+    setFaqsAnchorEl(null);
   };
 
   const handleServicesMenuOpen = (event) => {
@@ -37,7 +37,7 @@ export const NavMenu = ({ onOpenOffcanvas }) => {
     setServicesAnchorEl(null);
   };
 
-  const isProductsMenuOpen = Boolean(productsAnchorEl);
+  const isFaqsMenuOpen = Boolean(faqsAnchorEl);
   const isServicesMenuOpen = Boolean(servicesAnchorEl);
 
   return (
@@ -70,31 +70,67 @@ export const NavMenu = ({ onOpenOffcanvas }) => {
                             </li>
                             <li
                               className="has-dropdown"
-                              onMouseEnter={handleProductsMenuOpen}
-                              onMouseLeave={handleProductsMenuClose}
+                              onMouseEnter={handleFaqsMenuOpen}
+                              onMouseLeave={handleFaqsMenuClose}
                             >
-                              <Link to="/products">
-                                Products
+                              <Link to="/faqs">
+                                FAQs
                                 <ExpandMoreIcon sx={{ fontSize: 30 }} />
                               </Link>
                               <Menu
-                                anchorEl={productsAnchorEl}
-                                open={isProductsMenuOpen}
-                                onClose={handleProductsMenuClose}
+                                anchorEl={faqsAnchorEl}
+                                open={isFaqsMenuOpen}
+                                onClose={handleFaqsMenuClose}
                                 PaperProps={{
                                   style: {
-                                    width: 200,
+                                    width: 240,
                                   },
                                 }}
                               >
-                                <MenuItem onClick={handleProductsMenuClose}>
-                                  <Link to="/products/voip-hardware" className="text-black">
-                                    VoIP Hardware
+                                <MenuItem onClick={handleFaqsMenuClose}>
+                                  <Link to="/faqs" className="text-black">
+                                    General Questions
                                   </Link>
                                 </MenuItem>
-                                <MenuItem onClick={handleProductsMenuClose}>
-                                  <Link to="/products/packages" className="text-black">Packages</Link>
+                                <MenuItem onClick={handleFaqsMenuClose}>
+                                  <Link to="/faqs/collocation-data-center" className="text-black">
+                                    Collocation &amp; Data Center</Link>
                                 </MenuItem>
+                                <MenuItem onClick={handleFaqsMenuClose}>
+                                  <Link to="/faqs/internet-connectivity" className="text-black">
+                                    Internet Connectivity
+                                  </Link>
+                                </MenuItem> 
+                                <MenuItem onClick={handleFaqsMenuClose}>
+                                  <Link to="/faqs/it-networks" className="text-black">
+                                    IT &amp; Networks Solutions
+                                  </Link>
+                                </MenuItem> 
+                                <MenuItem onClick={handleFaqsMenuClose}>
+                                  <Link to="/faqs/software-services" className="text-black">
+                                    Software Services
+                                  </Link>
+                                </MenuItem> 
+                                <MenuItem onClick={handleFaqsMenuClose}>
+                                  <Link to="/faqs/storage-services" className="text-black">
+                                    Storage Services
+                                  </Link>
+                                </MenuItem> 
+                                <MenuItem onClick={handleFaqsMenuClose}>
+                                  <Link to="/faqs/vpn" className="text-black">
+                                    VPN Solutions
+                                  </Link>
+                                </MenuItem>
+                                <MenuItem onClick={handleFaqsMenuClose}>
+                                  <Link to="/faqs/voip" className="text-black">
+                                    VOIP Solutions
+                                  </Link>
+                                </MenuItem>  
+                                <MenuItem onClick={handleFaqsMenuClose}>
+                                  <Link to="/faqs/vsat-satelite" className="text-black">
+                                    VSAT/Satelite Services
+                                  </Link>
+                                </MenuItem> 
                               </Menu>
                             </li>
                             <li
@@ -117,22 +153,44 @@ export const NavMenu = ({ onOpenOffcanvas }) => {
                                 }}
                               >
                                 <MenuItem onClick={handleServicesMenuClose}>
-                                  <Link to="/services/maritime-vsat" className="text-black">
-                                    Maritime VSAT
+                                  <Link to="/services/collocation-and-data-center" className="text-black">
+                                    Collocation &amp; Datacenter
                                   </Link>
                                 </MenuItem>
                                 <MenuItem onClick={handleServicesMenuClose}>
-                                  <Link to="/service/networks" className="text-black">
-                                    Network Services
+                                  <Link to="/service/internet" className="text-black">
+                                    Internet Connectivity
                                   </Link>
                                 </MenuItem>
                                 <MenuItem onClick={handleServicesMenuClose}>
-                                  <Link to="/services/terrestial-comms" className="text-black">
-                                    Terrestrial Communication
+                                  <Link to="/services/it-networks" className="text-black">
+                                    IT &amp; Network Solutions
                                   </Link>
                                 </MenuItem>
                                 <MenuItem onClick={handleServicesMenuClose}>
-                                  <Link to="/service/vpn" className="text-black">VPN Services</Link>
+                                  <Link to="/service/software-services" className="text-black">
+                                    Software Services
+                                  </Link>
+                                </MenuItem>
+                                <MenuItem onClick={handleServicesMenuClose}>
+                                  <Link to="/service/storage-solutions" className="text-black">
+                                    Storage Solutions
+                                  </Link>
+                                </MenuItem>
+                                <MenuItem onClick={handleServicesMenuClose}>
+                                  <Link to="/service/vpn-solutions" className="text-black">
+                                    VPN Solutions
+                                  </Link>
+                                </MenuItem>
+                                <MenuItem onClick={handleServicesMenuClose}>
+                                  <Link to="/service/voip-solutions" className="text-black">
+                                    VOIP Solutions
+                                  </Link>
+                                </MenuItem>
+                                <MenuItem onClick={handleServicesMenuClose}>
+                                  <Link to="/service/vsat" className="text-black">
+                                    VSAT/Satelite Services
+                                  </Link>
                                 </MenuItem>
                               </Menu>
                             </li>
@@ -182,7 +240,7 @@ export const NavMenu = ({ onOpenOffcanvas }) => {
               <Link to="/about">About</Link>
             </li>
             <li>
-              <Link to="/products">Products</Link>
+              <Link to="/faqs">FAQs</Link>
             </li>
             <li>
               <Link to="/services">Services</Link>
