@@ -5,6 +5,7 @@ import CallIcon from '@mui/icons-material/Call';
 import MailIcon from '@mui/icons-material/Mail';
 import ShareLocationIcon from '@mui/icons-material/ShareLocation';
 import { ContactForm } from '../ContactForm';
+import { PaddingSharp } from '@mui/icons-material';
 
 
 
@@ -14,7 +15,7 @@ const ContactSection = () => {
     return (
     <Box 
       className="contact-section-2 fix section-padding bg-cover"
-      style={{ backgroundImage: 'url(assets/img/contact-bg.jpg)' }}
+      style={{ Padding: "10px" }}
     >
       <Box className="container">
         <Box className="contact-wrapper-2">

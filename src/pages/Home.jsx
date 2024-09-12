@@ -7,7 +7,7 @@ import AboutSection from "../components/Home/AboutSection"
 import FeatureIconSection from "../components/Home/FeatureIconSection";
 import CounterSection from "../components/Home/CounterSection";
 import GrowSection from "../components/Home/GrowSection";
-import ProductSection from "../components/Home/ProductSection";
+// import ProductSection from "../components/Home/ProductSection";
 import ContactSection from "../components/Home/ContactSection";
 import Brand from "../components/About/Brand";
 import FaqSection from "../components/Services/FaqSection";
@@ -26,7 +26,7 @@ const Home = () => {
             <FaqSection />
             <CounterSection/>
             <GrowSection/>
-            <ProductSection/>
+            {/* <ProductSection/> */}
             <ContactSection/>
             <Brand/>
             <Footer />

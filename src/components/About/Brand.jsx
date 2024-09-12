@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -39,11 +39,18 @@ const Brand = () => {
     };
 
   return (
-    <Box className="brand-section-3 fix section-padding pt-0">
-    <Box className="container">
+    <Box   sx={{height: "300px"}} className="brand-section-3 fix section-padding pt-0">
+    <Box  className="container"  sx={{ marginTop: "50px"}}>
+    <Typography
+          variant="h5" 
+          className="text-center pb-5"
+          sx={{ color: '#010156', zIndex: 1, position: 'relative', fontWeight: "600"}}
+        >
+          Trusted by the world’s best
+        </Typography>
     <Slider {...brandSettings} 
                     className="brand-carousel-active"
-                    sx={{ marginTop: "100px" }}
+                   
                 >  
             <Box className="brand-image center">
                 <img src={require("../../assets/images/brands/cambium.png")} 
