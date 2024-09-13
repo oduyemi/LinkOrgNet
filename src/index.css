@@ -7,8 +7,22 @@
     color: #E65D0F !important;
   }
   
-  .icon-items:hover .icon {
+  .items:hover {
     color: #E65D0F !important;
+  }
+
+  .items {
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: #010156 !important
+  }
+  
+  .items:hover {
+    transform: scale(1.1);
+    color: #ffffff !important;
+  }
+  
+  .items:hover .icon {
+    color: #ffffff !important;
   }
   
 
