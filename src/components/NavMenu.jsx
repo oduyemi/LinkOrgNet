@@ -158,7 +158,7 @@ export const NavMenu = ({ onOpenOffcanvas }) => {
                                   </Link>
                                 </MenuItem>
                                 <MenuItem onClick={handleServicesMenuClose}>
-                                  <Link to="/service/internet" className="text-black">
+                                  <Link to="/services/internet" className="text-black">
                                     Internet Connectivity
                                   </Link>
                                 </MenuItem>
@@ -168,27 +168,27 @@ export const NavMenu = ({ onOpenOffcanvas }) => {
                                   </Link>
                                 </MenuItem>
                                 <MenuItem onClick={handleServicesMenuClose}>
-                                  <Link to="/service/software-services" className="text-black">
+                                  <Link to="/services/software-services" className="text-black">
                                     Software Services
                                   </Link>
                                 </MenuItem>
                                 <MenuItem onClick={handleServicesMenuClose}>
-                                  <Link to="/service/storage-solutions" className="text-black">
+                                  <Link to="/services/storage-solutions" className="text-black">
                                     Storage Solutions
                                   </Link>
                                 </MenuItem>
                                 <MenuItem onClick={handleServicesMenuClose}>
-                                  <Link to="/service/vpn-solutions" className="text-black">
+                                  <Link to="/services/vpn-solutions" className="text-black">
                                     VPN Solutions
                                   </Link>
                                 </MenuItem>
                                 <MenuItem onClick={handleServicesMenuClose}>
-                                  <Link to="/service/voip-solutions" className="text-black">
+                                  <Link to="/services/voip-services" className="text-black">
                                     VOIP Solutions
                                   </Link>
                                 </MenuItem>
                                 <MenuItem onClick={handleServicesMenuClose}>
-                                  <Link to="/service/vsat" className="text-black">
+                                  <Link to="/services/vsat" className="text-black">
                                     VSAT/Satelite Services
                                   </Link>
                                 </MenuItem>
