@@ -1,11 +1,15 @@
-import React from "react";
+import React from 'react';
 import { Box, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import LanguageIcon from '@mui/icons-material/Language';
+import VpnLockIcon from '@mui/icons-material/VpnLock';
 import SpeakerPhoneIcon from '@mui/icons-material/SpeakerPhone';
-import CellTowerIcon from '@mui/icons-material/CellTower';
 import SettingsInputAntennaIcon from '@mui/icons-material/SettingsInputAntenna';
-import StreamIcon from '@mui/icons-material/Stream';
+import SettingsIcon from '@mui/icons-material/Settings';
+import StorageIcon from '@mui/icons-material/Storage';
+import DataUsageIcon from '@mui/icons-material/DataUsage';
+import CodeIcon from '@mui/icons-material/Code';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 
 export const ServicesSection = () => {
     return(
@@ -46,168 +50,320 @@ export const ServicesSection = () => {
                         tools you need to stay ahead in a digital world.
                     </Typography> 
                 </Box>
-
-
                 <Box className="row">
-                    <Box className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                        <Box className="service-box-items">
-                            <Box className="icon">
-                                <CellTowerIcon 
-                                        sx={{
-                                            fontSize: 70,
-                                            color: "#010156",
-                                            // paddingTop: "20px"
-                                        }}
-                                        className=""
-                                    />
-                            </Box>
-                            <Box className="content">
-                                <h3>
-                                    <Link to="">
-                                        VSAT
-                                    </Link>
-                                </h3>
-                                <Typography
-                                variant="body1" 
-                                sx={{
-                                     fontSize: "16px",
-                                     fontWeight: "300",
-                                     lineHeight: "1.5", 
-                                     fontFamily: "Montserrat"    
-                                }}
-                                >
-                                    Stay Connected, Even Off-Grid
-                                </Typography>
-                                <Link to="" className="arrow-icon">
-                                    <ChevronRightIcon 
-                                        sx={{
-                                            fontSize: 70,
-                                            color: "#010156"
-                                        }}
-                                    />
-                                </Link>
-                            </Box>
-                        </Box>
+            {/* Existing Services */}
+            <Box className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                <Box className="service-box-items">
+                    <Box className="icon">
+                        <LanguageIcon
+                            sx={{
+                                fontSize: 70,
+                                color: "#E65D0F",
+                            }}
+                            className="whitaker"
+                        />
                     </Box>
-                    <Box className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                        <Box className="service-box-items active">
-                            <Box className="icon d-inline">
-                                <SpeakerPhoneIcon 
-                                    sx={{
-                                        fontSize: 70,
-                                        color: "#010156"
-                                    }}
-                                    className="d-inline"
-                                />
-                            </Box>
-                            <Box className="content">
-                                <h3>
-                                    <Link to="service-details.html">
-                                        Terrestrial Communication
-                                    </Link>
-                                </h3>
-                                <Typography
-                                variant="body1" 
+                    <Box className="content">
+                        <h3>
+                            <Link to="" className="blutext whitaker">
+                                Connectivity Services
+                            </Link>
+                        </h3>
+                        <Typography
+                            variant="body1"
+                            sx={{
+                                fontSize: "14px",
+                                fontWeight: "300",
+                                lineHeight: "1.5",
+                                fontFamily: "Montserrat"
+                            }}
+                        >
+                            Reliable Networks, Anywhere
+                        </Typography>
+                        <Link to="" className="arrow-icon">
+                            <ChevronRightIcon
                                 sx={{
-                                     fontSize: "16px",
-                                     fontWeight: "300",
-                                     lineHeight: "1.5", 
-                                     fontFamily: "Montserrat"    
+                                    fontSize: 70,
+                                    color: "#010156"
                                 }}
-                                >
-                                    Crystal Clear Calls, Anywhere
-                                </Typography>
-                                <Link to="service-details.html" className="arrow-icon">
-                                    <ChevronRightIcon 
-                                        sx={{
-                                            fontSize: 70,
-                                            color: "#010156"
-                                        }}
-                                    />
-                                </Link>
-                            </Box>
-                        </Box>
+                            />
+                        </Link>
                     </Box>
-                    <Box className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
-                        <Box className="service-box-items">
-                            <Box className="icon">
-                                <StreamIcon 
-                                    sx={{
-                                        fontSize: 70,
-                                        color: "#010156"
-                                    }}
-                                    className="d-inline"
-                                />
-                            </Box>
-                            <Box className="content">
-                                <h3>
-                                    <Link to="">
-                                        Maritime VSAT
-                                    </Link>
-                                </h3>
-                                <Typography
-                                variant="body1" 
-                                sx={{
-                                     fontSize: "16px",
-                                     fontWeight: "300",
-                                     lineHeight: "1.5", 
-                                     fontFamily: "Montserrat"    
-                                }}
-                                >
-                                    Seamless Connectivity at Sea
-                                </Typography>
-                                <Link to="service-details.html" className="arrow-icon">
-                                    <ChevronRightIcon 
-                                        sx={{
-                                            fontSize: 70,
-                                            color: "#010156"
-                                        }}
-                                    />
-                                </Link>
-                            </Box>
-                        </Box>
-                    </Box>
-                    <Box className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".9s">
-                        <Box className="service-box-items">
-                            <Box className="icon">
-                                <SettingsInputAntennaIcon 
-                                    sx={{
-                                        fontSize: 70,
-                                        color: "#010156"
-                                    }}
-                                    className="d-inline"
-                                />
-                            </Box>
-                            <Box className="content">
-                                <h3>
-                                    <Link to="service-details.html">
-                                        Network Services
-                                    </Link>
-                                </h3>
-                                <Typography
-                                variant="body1" 
-                                sx={{
-                                     fontSize: "16px",
-                                     fontWeight: "300",
-                                     lineHeight: "1.5", 
-                                     fontFamily: "Montserrat"    
-                                }}
-                                >
-                                    Reliable Networks, Anytime, Anywhere
-                                </Typography>
-                                <Link to="service-details.html" className="arrow-icon">
-                                    <ChevronRightIcon 
-                                        sx={{
-                                            fontSize: 70,
-                                            color: "#010156"
-                                        }}
-                                    />
-                                </Link>
-                            </Box>
-                        </Box>
-                    </Box>
-                    
                 </Box>
+            </Box>
+            <Box className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                <Box className="service-box-items active">
+                    <Box className="icon d-inline">
+                        <VpnLockIcon
+                            sx={{
+                                fontSize: 70,
+                                color: "#ffffff"
+                            }}
+                            className="d-inline"
+                        />
+                    </Box>
+                    <Box className="content">
+                        <h3>
+                            <Link to="service-details">
+                                VPN
+                            </Link>
+                        </h3>
+                        <Typography
+                            variant="body1"
+                            sx={{
+                                fontSize: "14px",
+                                fontWeight: "300",
+                                lineHeight: "1.5",
+                                fontFamily: "Montserrat"
+                            }}
+                        >
+                            Private & Secure Internet Access
+                        </Typography>
+                        <Link to="service-details" className="arrow-icon">
+                            <ChevronRightIcon
+                                sx={{
+                                    fontSize: 70,
+                                    color: "#010156"
+                                }}
+                            />
+                        </Link>
+                    </Box>
+                </Box>
+            </Box>
+            <Box className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                <Box className="service-box-items">
+                    <Box className="icon">
+                        <SpeakerPhoneIcon
+                            sx={{
+                                fontSize: 70,
+                                color: "#E65D0F"
+                            }}
+                            className="d-inline whitaker"
+                        />
+                    </Box>
+                    <Box className="content">
+                        <h3>
+                            <Link to="" className="blutext whitaker">
+                                VOIP Solutions
+                            </Link>
+                        </h3>
+                        <Typography
+                            variant="body1"
+                            sx={{
+                                fontSize: "14px",
+                                fontWeight: "300",
+                                lineHeight: "1.5",
+                                fontFamily: "Montserrat"
+                            }}
+                        >
+                            Crystal Clear Calls, Anywhere
+                        </Typography>
+                        <Link to="service-details" className="arrow-icon">
+                            <ChevronRightIcon
+                                sx={{
+                                    fontSize: 70,
+                                    color: "#010156"
+                                }}
+                            />
+                        </Link>
+                    </Box>
+                </Box>
+            </Box>
+            <Box className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".9s">
+                <Box className="service-box-items">
+                    <Box className="icon">
+                        <SettingsInputAntennaIcon
+                            sx={{
+                                fontSize: 70,
+                                color: "#E65D0F"
+                            }}
+                            className="d-inline whitaker"
+                        />
+                    </Box>
+                    <Box className="content">
+                        <h3>
+                            <Link to="service-details" className="blutext whitaker">
+                                Satellite Solution
+                            </Link>
+                        </h3>
+                        <Typography
+                            variant="body1"
+                            sx={{
+                                fontSize: "14px",
+                                fontWeight: "300",
+                                lineHeight: "1.5",
+                                fontFamily: "Montserrat"
+                            }}
+                        >
+                            Stay Connected, Even Off-Grid
+                        </Typography>
+                        <Link to="service-details" className="arrow-icon">
+                            <ChevronRightIcon
+                                sx={{
+                                    fontSize: 70,
+                                    color: "#010156"
+                                }}
+                            />
+                        </Link>
+                    </Box>
+                </Box>
+            </Box>
+
+            {/* Additional Services */}
+            <Box className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="1.1s">
+                <Box className="service-box-items">
+                    <Box className="icon">
+                        <SettingsIcon
+                            sx={{
+                                fontSize: 70,
+                                color: "#E65D0F"
+                            }}
+                        />
+                    </Box>
+                    <Box className="content">
+                        <h3>
+                            <Link to="service-details" className="blutext whitaker">
+                                IT & Network Solutions
+                            </Link>
+                        </h3>
+                        <Typography
+                            variant="body1"
+                            sx={{
+                                fontSize: "14px",
+                                fontWeight: "300",
+                                lineHeight: "1.5",
+                                fontFamily: "Montserrat"
+                            }}
+                        >
+                            Seamless IT Infrastructure and Network Management
+                        </Typography>
+                        <Link to="service-details" className="arrow-icon">
+                            <ChevronRightIcon
+                                sx={{
+                                    fontSize: 70,
+                                    color: "#010156"
+                                }}
+                            />
+                        </Link>
+                    </Box>
+                </Box>
+            </Box>
+            <Box className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="1.3s">
+                <Box className="service-box-items">
+                    <Box className="icon">
+                        <StorageIcon
+                            sx={{
+                                fontSize: 70,
+                                color: "#E65D0F"
+                            }}
+                        />
+                    </Box>
+                    <Box className="content">
+                        <h3>
+                            <Link to="service-details" className="blutext whitaker">
+                                Storage Solutions
+                            </Link>
+                        </h3>
+                        <Typography
+                            variant="body1"
+                            sx={{
+                                fontSize: "14px",
+                                fontWeight: "300",
+                                lineHeight: "1.5",
+                                fontFamily: "Montserrat"
+                            }}
+                        >
+                            Secure and Scalable Data Storage
+                        </Typography>
+                        <Link to="service-details" className="arrow-icon">
+                            <ChevronRightIcon
+                                sx={{
+                                    fontSize: 70,
+                                    color: "#010156"
+                                }}
+                            />
+                        </Link>
+                    </Box>
+                </Box>
+            </Box>
+            <Box className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="1.5s">
+                <Box className="service-box-items">
+                    <Box className="icon">
+                        <DataUsageIcon
+                            sx={{
+                                fontSize: 70,
+                                color: "#E65D0F"
+                            }}
+                        />
+                    </Box>
+                    <Box className="content">
+                        <h3>
+                            <Link to="service-details" className="blutext whitaker">
+                                Colocation & Datacenter Services
+                            </Link>
+                        </h3>
+                        <Typography
+                            variant="body1"
+                            sx={{
+                                fontSize: "14px",
+                                fontWeight: "300",
+                                lineHeight: "1.5",
+                                fontFamily: "Montserrat"
+                            }}
+                        >
+                            Secure, Reliable Hosting for Your Critical Data
+                        </Typography>
+                        <Link to="service-details" className="arrow-icon">
+                            <ChevronRightIcon
+                                sx={{
+                                    fontSize: 70,
+                                    color: "#010156"
+                                }}
+                            />
+                        </Link>
+                    </Box>
+                </Box>
+            </Box>
+            <Box className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="1.7s">
+                <Box className="service-box-items">
+                    <Box className="icon">
+                        <CodeIcon
+                            sx={{
+                                fontSize: 70,
+                                color: "#E65D0F"
+                            }}
+                        />
+                    </Box>
+                    <Box className="content">
+                        <h3>
+                            <Link to="service-details" className="blutext whitaker">
+                                Software Services
+                            </Link>
+                        </h3>
+                        <Typography
+                            variant="body1"
+                            sx={{
+                                fontSize: "14px",
+                                fontWeight: "300",
+                                lineHeight: "1.5",
+                                fontFamily: "Montserrat"
+                            }}
+                        >
+                            Custom Software Development and Integration
+                        </Typography>
+                        <Link to="service-details" className="arrow-icon">
+                            <ChevronRightIcon
+                                sx={{
+                                    fontSize: 70,
+                                    color: "#010156"
+                                }}
+                            />
+                        </Link>
+                    </Box>
+                </Box>
+            </Box>
+        
+        </Box>
             </Box>
             </Box>
 

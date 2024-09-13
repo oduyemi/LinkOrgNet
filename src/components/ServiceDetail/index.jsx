@@ -8,13 +8,13 @@ const ServiceDetail = ({
   imageSrc,
   imageAlt,
   description,
-  subtitle,
+  // subtitle,
   videoTitle,
   videoContent,
   videoBenefits,
-  carouselItems,
+  // carouselItems,
   sidebarItems,
-  additionalImages
+  // additionalImages
 }) => {
   return (
     <section className="service-details fix section-padding">
@@ -42,7 +42,7 @@ const ServiceDetail = ({
                     {title}
                   </Typography>
                   <Typography variant="body1">{description}</Typography>
-                  <Typography
+                  {/* <Typography
                     variant="h4"
                     className="blutext"
                     sx={{
@@ -53,7 +53,7 @@ const ServiceDetail = ({
                     }}
                   >
                     {subtitle}
-                  </Typography>
+                  </Typography> */}
                   {/* Video section */}
                   <Box className="service-details-video">
                     <Box className="row g-4 align-items-center">
@@ -89,28 +89,28 @@ const ServiceDetail = ({
                     </Box>
                   </Box>
                   {/* Additional description */}
-                  <Typography variant="body1">
+                  {/* <Typography variant="body1">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat qui ducimus illum modi? Perspiciatis accusamus soluta perferendis...
-                  </Typography>
+                  </Typography> */}
                   {/* Additional images */}
                   <Box className="details-image-2">
-                    <Box className="row g-4">
+                    {/* <Box className="row g-4">
                       {additionalImages.map((image, index) => (
                         <Box className="col-lg-6" key={index}>
                           <img src={image.src} alt={image.alt} />
                         </Box>
                       ))}
-                    </Box>
+                    </Box> */}
                   </Box>
                 </Box>
                 {/* Carousel section */}
                 <Box className="section">
                   <Box className="container">
-                    <Typography variant="h2" className="blutext">
+                    {/* <Typography variant="h2" className="blutext">
                       VOIP Services
-                    </Typography>
+                    </Typography> */}
                     <Box className="image-carousel style2">
-                      <Box className="grid-container">
+                      {/* <Box className="grid-container">
                         {carouselItems.map((item, index) => (
                           <Box className="grid-item" key={index}>
                             <article className="box">
@@ -135,7 +135,7 @@ const ServiceDetail = ({
                             </article>
                           </Box>
                         ))}
-                      </Box>
+                      </Box> */}
                     </Box>
                   </Box>
                 </Box>

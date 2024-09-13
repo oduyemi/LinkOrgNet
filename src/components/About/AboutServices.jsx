@@ -62,7 +62,7 @@ export const AboutServices = () => {
                             <Box className="content">
                                 <h3>
                                     <Link to="" className="blutext whitaker">
-                                        Internet
+                                        Connectivity Services
                                     </Link>
                                 </h3>
                                 <Typography
@@ -140,7 +140,7 @@ export const AboutServices = () => {
                             <Box className="content">
                                 <h3>
                                     <Link to="" className="blutext whitaker">
-                                        VOIP Services
+                                        VOIP Solutions
                                     </Link>
                                 </h3>
                                 <Typography
@@ -179,7 +179,7 @@ export const AboutServices = () => {
                             <Box className="content">
                                 <h3>
                                     <Link to="service-details" className="blutext whitaker">
-                                        VSAT
+                                        Satellite Solution
                                     </Link>
                                 </h3>
                                 <Typography

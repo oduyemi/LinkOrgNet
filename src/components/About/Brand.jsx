@@ -42,11 +42,11 @@ const Brand = () => {
     <Box   sx={{height: "300px"}} className="brand-section-3 fix section-padding pt-0">
     <Box  className="container"  sx={{ marginTop: "50px"}}>
     <Typography
-          variant="h5" 
+          variant="h6" 
           className="text-center pb-5"
-          sx={{ color: '#010156', zIndex: 1, position: 'relative', fontWeight: "600"}}
+          sx={{ color: '#010156', zIndex: 1, position: 'relative', fontWeight: "800"}}
         >
-          Trusted by the world’s best
+         Our Partners
         </Typography>
     <Slider {...brandSettings} 
                     className="brand-carousel-active"
@@ -76,9 +76,9 @@ const Brand = () => {
             <Box className="brand-image center">
                 <img src={require("../../assets/images/brands/intellian.png")} width="40%" alt="intellian" />
             </Box>
-            {/* <Box className="brand-image center">
-                <img src={require("../../assets/images/brands/fortnite.png")} width="40%" alt="fortnite" />
-            </Box> */}
+            <Box className="brand-image center">
+                <img src={require("../../assets/images/brands/Fortinet.png")} width="60%" alt="fortnite" style={{marginTop:"-10px"}}/>
+            </Box>
         </Slider>
     </Box>
 </Box>
