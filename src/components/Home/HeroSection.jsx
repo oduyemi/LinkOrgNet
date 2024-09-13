@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Box, Typography } from "@mui/material";
 import Slider from "react-slick";
 import techy from "../../assets/images/techy.jpg";
-import connected from "../../assets/images/connected.jpg";
+import connected from "../../assets/images/homeHero1.jpg";
 import future from "../../assets/images/future.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
