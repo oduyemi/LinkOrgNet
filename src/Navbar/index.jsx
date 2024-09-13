@@ -18,6 +18,7 @@ import VoipPage from "../pages/VoipPage";
 import ConnectPage from "../pages/ConnectPage";
 import SatellitePage from "../pages/SatellitePage";
 import VPNPage from "../pages/VPNPage";
+import ITNetworkPage from "../pages/ITNetworkPage";
 
 export const Navbar = () => {
     return (
@@ -32,6 +33,7 @@ export const Navbar = () => {
                 <Route path="/services/connectivity" element={<ConnectPage />} />
                 <Route path="/services/satellite" element={<SatellitePage />} />
                 <Route path="/services/vpn-solutions" element={<VPNPage />} />
+                <Route path="/services/it-networks" element={<ITNetworkPage />} />
                 <Route path="/admin" element={<Admin />} />
                 <Route path="/admin/contacts" element={<AdminContactList/>} />
                 <Route path="/admin/profile" element={<AdminProfile/>} />

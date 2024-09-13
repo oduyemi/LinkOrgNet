@@ -6,6 +6,7 @@ import SpeakerPhoneIcon from '@mui/icons-material/SpeakerPhone';
 import LanguageIcon from '@mui/icons-material/Language';
 import SettingsInputAntennaIcon from '@mui/icons-material/SettingsInputAntenna';
 import VpnLockIcon from '@mui/icons-material/VpnLock';
+// import { LineStyle } from '@mui/icons-material';
 
 
 const ServiceSection = () => {
@@ -58,7 +59,9 @@ const ServiceSection = () => {
           </Typography>
         </Box>
         <Box className="row">
+                   
                     <Box className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                    <Link to='/services/connectivity'>
                         <Box className="service-box-items">
                             <Box className="icon">
                                 <LanguageIcon
@@ -72,7 +75,7 @@ const ServiceSection = () => {
                             <Box className="content">
                                 <h3>
                                     <Link to="" className="blutext whitaker">
-                                        Internet
+                                        Connectivity Services
                                     </Link>
                                 </h3>
                                 <Typography
@@ -96,8 +99,12 @@ const ServiceSection = () => {
                                 </Link>
                             </Box>
                         </Box>
+                        </Link>
                     </Box>
+                 
+                    
                     <Box className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                    <Link to='/services/vpn-solutions'>
                         <Box className="service-box-items active">
                             <Box className="icon d-inline">
                                 <VpnLockIcon
@@ -135,8 +142,11 @@ const ServiceSection = () => {
                                 </Link>
                             </Box>
                         </Box>
+                        </Link>
                     </Box>
+                  
                     <Box className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                        <Link to='/services/voip-services'>
                         <Box className="service-box-items">
                             <Box className="icon">
                                 <SpeakerPhoneIcon 
@@ -150,7 +160,7 @@ const ServiceSection = () => {
                             <Box className="content">
                                 <h3>
                                     <Link to="" className="blutext whitaker">
-                                        VOIP Services
+                                        VOIP Solutions
                                     </Link>
                                 </h3>
                                 <Typography
@@ -174,8 +184,11 @@ const ServiceSection = () => {
                                 </Link>
                             </Box>
                         </Box>
+                        </Link>
+
                     </Box>
                     <Box className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".9s">
+                        <Link to='/services/satellite'>
                         <Box className="service-box-items">
                             <Box className="icon">
                                 <SettingsInputAntennaIcon 
@@ -189,7 +202,7 @@ const ServiceSection = () => {
                             <Box className="content">
                                 <h3>
                                     <Link to="service-details" className="blutext whitaker">
-                                        VSAT
+                                        Satellite Solution
                                     </Link>
                                 </h3>
                                 <Typography
@@ -213,16 +226,17 @@ const ServiceSection = () => {
                                 </Link>
                             </Box>
                         </Box>
+                        </Link>
+
                     </Box>
-                    
-                </Box>
-                <Box maxWidth="sm" className="team-button text-center mx-auto mt-5 wow fadeInUp" data-wow-delay=".4s">
+                    <Box maxWidth="sm" className="team-button text-center mx-auto mt-5 wow fadeInUp" data-wow-delay=".4s">
                     <Link to="/services" className="theme-btn theme-btn-2">
                         <span>
                         Explore Services
                         <ChevronRightIcon />
                         </span>
                     </Link>
+                </Box>
                 </Box>
             </Box>
       </Box> 
