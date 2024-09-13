@@ -13,11 +13,11 @@ import AdminChangePassword from "../pages/AdminChangePassword"
 import { SendMail } from "../components/Admin/SendMail";
 import  AdminSentMails  from "../pages/AdminSentMails";
 import Error404 from "../pages/404";
-// import Voip from "../pages/Voip";
 // import { ServiceDetail } from "../components/ServiceDetail";
 import VoipPage from "../pages/VoipPage";
 import ConnectPage from "../pages/ConnectPage";
 import SatellitePage from "../pages/SatellitePage";
+import VPNPage from "../pages/VPNPage";
 
 export const Navbar = () => {
     return (
@@ -30,9 +30,8 @@ export const Navbar = () => {
                 <Route path="/services" element={<Services />} />
                 <Route path="/services/voip-services" element={<VoipPage />} />
                 <Route path="/services/connectivity" element={<ConnectPage />} />
-                {/* <Route path="/products/voip-hardware" element={<Voip />} /> */}
                 <Route path="/services/satellite" element={<SatellitePage />} />
-                SatellitePage
+                <Route path="/services/vpn-solutions" element={<VPNPage />} />
                 <Route path="/admin" element={<Admin />} />
                 <Route path="/admin/contacts" element={<AdminContactList/>} />
                 <Route path="/admin/profile" element={<AdminProfile/>} />
