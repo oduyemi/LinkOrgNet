@@ -2,17 +2,17 @@ import React from "react";
 import ServiceDetail from "../ServiceDetail";
 
 const serviceData = {
-  title: "VOIP Solutions",
-  imageSrc: require("../../assets/images/callcentre.png"),
-  imageAlt: "VOIP Service",
-  description: "•	Cut down on communication costs without compromising quality. Linkorg Network’s VoIP solutions provide crystal-clear voice calls over the internet, ensuring you stay connected with clients and colleagues effortlessly",
+  title: "Connectivity Services",
+  imageSrc: require("../../assets/images/services/connectivity.jpg"),
+  imageAlt: "Connectivity Service",
+  description: "Highlight benefits like high-speed wireless internet, fiber-optic speeds, and community connectivity for residential estates.",
   // subtitle: "Sed ut perspiciatis unde omnis iste natus et",
-  videoTitle: "VOIP Benefits",
-  videoContent: "Here are three key benefits of VoIP (Voice over Internet Protocol):",
+  videoTitle: "Connectivity Services Benefits",
+  videoContent: "Here are three key benefits of Connectivity Services:",
   videoBenefits: [
-    "Cost Savings: Lower communication expenses, particularly for long-distance and international calls.",
-    "Scalability: Easily adjustable to add or remove lines and features without extensive infrastructure.",
-    "Flexibility and Mobility: Enables communication from any location with internet access, ideal for remote work.",
+    "High-Speed Wireless: Stay connected with fast, reliable wireless internet.",
+    "Fiber to Home: Ultra-fast fiber-optic speeds for seamless online activities.",
+    "Estate Connect: Connect entire residential communities with high-speed internet access.",
   ],
 //   carouselItems: [
 //     { imgSrc: require("../../assets/images/products/yealink0.png"), title: "Hotel Hilton", location: "Albufeira", reviews: "170", description: "For what reason would it be advisable for me to think about business content?" },
@@ -20,7 +20,7 @@ const serviceData = {
 //     { imgSrc: require("../../assets/images/products/yealink2.png"), title: "Hotel Hilton", location: "Albufeira", reviews: "170", description: "For what reason would it be advisable for me to think about business content?" }
 // ],
   sidebarItems: [
-    { name: "Connectivity Services", link: "/services/connectivity", active: true },
+    { name: "Voip Solutions", link: "/services/voip-services", active: true },
     { name: "Satellite Solution", link: "/services/satellite" },
     { name: "VPN Solutions", link: "/services/vpn-solutions" },
     { name: "IT & Network Solutions", link: "/services/it-networks" },
