@@ -1,17 +1,13 @@
 import React from "react";
 import { Box } from "@mui/material";
-import VoipDetails from "../components/ServiceDetail/VoipDetails";
-import Footer from "../components/Footer";
+import ConnectDetails from "../../components/ServiceDetail/ConnectDetails";
+import Footer from "../../components/Footer";
 
-
-
-
-
-const VoipPage = () => {
+const ConnectPage = () => {
     return(
         <Box>
             <Box>
-                <VoipDetails />
+                <ConnectDetails />
             </Box>
             <Box>
                 <Footer />
@@ -20,4 +16,4 @@ const VoipPage = () => {
     )
 }
 
-export default VoipPage;
+export default ConnectPage

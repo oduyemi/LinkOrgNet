@@ -2,17 +2,17 @@ import React from "react";
 import ServiceDetail from "../ServiceDetail";
 
 const serviceData = {
-  title: "VPN Solutions",
-  imageSrc: require("../../assets/images/services/vpn.jpg"),
-  imageAlt: "Secure VPN connections.",
-  description: " MPLS (Multiprotocol Label Switching) L3VPNs provide a scalable and secure way to interconnect multiple sites over a service provider's network using layer 3 routing. Each customer’s traffic is isolated within its own virtual private network, ensuring security and privacy.  MPLS L2VPNs extend layer 2 Ethernet or Frame Relay networks across a service provider’s MPLS network. This allows businesses to connect multiple locations as if they were on the same local network, maintaining layer 2 transparency. Leased lines are dedicated, point-to-point connections between two locations, offering consistent bandwidth and performance. They are not shared with other customers, providing a private and reliable connection.",
+  title: "Collocation & Datacenter Services",
+  imageSrc: require("../../assets/images/services/datacenter.jpg"),
+  imageAlt: " Datacenter or server racks",
+  description: "Virtual hosting, collocation, and backup services are essential for businesses seeking secure and scalable infrastructure. Virtual hosting allows companies to host their websites and applications on shared servers, reducing costs while maintaining performance and flexibility. Collocation offers businesses the ability to house their servers in a secure data center, ensuring high availability, better cooling, and physical security without the need for in-house infrastructure. Backup services provide critical data protection, offering regular, automated backups that safeguard against data loss, ensuring business continuity in the event of system failures or cyber threats. These solutions work together to provide reliability, security, and scalability for businesses of all sizes.",
   // subtitle: "Sed ut perspiciatis unde omnis iste natus et",
-  videoTitle: "VPN Solutions we offer",
-  videoContent: "Here are three key features of VPN Solutions we offer",
+  videoTitle: "Collocation & Datacenter Services we offer",
+  videoContent: "Reliable hosting, secure backup, and minimal downtime.",
   videoBenefits: [
-    "MPLS L3VPN: Secure your business with scalable private network solutions.",
-    "MPLS L2VPN: Connect multiple locations seamlessly and securely.",
-    "Leased Line: Dedicated high-speed internet for demanding businesses.",
+    "Virtual Servers: Scale your business with virtual hosting.",
+    "Collocation: Secure IT infrastructure in a state-of-the-art datacenter.",
+    "Data Backup: Comprehensive solutions for data protection and recovery.",
   ],
 //   carouselItems: [
 //     { imgSrc: require("../../assets/images/products/yealink0.png"), title: "Hotel Hilton", location: "Albufeira", reviews: "170", description: "For what reason would it be advisable for me to think about business content?" },
@@ -22,10 +22,10 @@ const serviceData = {
   sidebarItems: [
     { name: "Voip Solutions", link: "/services/voip-services", active: true },
     { name: "Satellite Solution", link: "/services/satellite" },
-    { name: "Connectivity Services", link: "/services/connectivity" },
+    { name: "VPN Solutions", link: "/services/vpn-solutions" },
     { name: "IT & Network Solutions", link: "/services/it-networks" },
     { name: "Storage Solutions", link: "/services/storage-solutions" },
-    { name: "Collocation $ Datacenter Services", link: "/services/collocation-and-data-center" },
+    { name: "Connectivity Services", link: "/services/connectivity" },
     { name: "Software Services", link: "/services/software-services" },
   ],
   // additionalImages: [

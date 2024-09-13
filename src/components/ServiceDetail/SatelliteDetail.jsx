@@ -5,9 +5,9 @@ const serviceData = {
   title: "Satellite Solutions",
   imageSrc: require("../../assets/images/services/satellite.jpg"),
   imageAlt: "Maritime or satellite infrastructure.",
-  description: "Discuss terrestrial, maritime, and broadcasting connectivity solutions.",
+  description: "Terrestrial connectivity solutions provide robust, high-speed internet and communication services via ground-based infrastructure like fiber optics, wireless networks, and microwave links. These solutions are ideal for urban and rural areas, ensuring reliable connections for businesses, homes, and large communities. Maritime connectivity caters specifically to ships, offshore platforms, and vessels, using satellite communication technologies like VSAT (Very Small Aperture Terminal) to deliver seamless internet and communication services even in remote oceanic locations. This ensures reliable connectivity for crew welfare, operational needs, and emergency services while at sea. Broadcasting connectivity solutions enable the transmission of audio and video content to wide audiences. Leveraging satellite, terrestrial, and IP-based technologies, these solutions support television, radio, and live streaming services, ensuring clear, real-time broadcasting with minimal latency across vast geographic regions. Together, these connectivity solutions cater to the unique needs of various industries, ensuring continuous, high-quality communication regardless of location.",
   // subtitle: "Sed ut perspiciatis unde omnis iste natus et",
-  videoTitle: "Satellite Solutions Benefits",
+  videoTitle: "Satellite Solutions we offer",
   videoContent: "Connectivity even in the remotest areas through satellite services.",
   videoBenefits: [
     "Terrestrial Satellite: Stay connected in remote locations",
