@@ -5,9 +5,9 @@ const serviceData = {
   title: "IT & Network Solutions",
   imageSrc: require("../../assets/images/services/it.jpg"),
   imageAlt: "A network architecture or security image",
-  description: "Cover security solutions, LAN/WAN management, and IT infrastructure.",
+  description: "Security solutions are critical for safeguarding business operations and data against cyber threats. These include firewalls, intrusion detection systems, VPNs (Virtual Private Networks), and encryption protocols designed to protect sensitive information and ensure secure access to networks. Alongside security, LAN (Local Area Network) and WAN (Wide Area Network) management are essential for optimizing the flow of information within and between office locations. Effective LAN/WAN management ensures high-performance networking, efficient data transmission, and reliable communication across geographically dispersed areas. IT infrastructure, which encompasses hardware, software, and networking resources, forms the backbone of business operations. Properly designed and maintained IT infrastructure allows companies to scale their operations, boost efficiency, and support innovation while ensuring resilience and continuity. Together, these elements create a secure, well-managed, and high-performance digital environment that meets modern business needs.",
   // subtitle: "Sed ut perspiciatis unde omnis iste natus et",
-  videoTitle: "IT & Network Solutions Benefits",
+  videoTitle: "IT & Network Solutions we offer",
   videoContent: "Highlight protection, performance, and tailored IT services.",
   videoBenefits: [
     "Application Security: Protect apps from cyber threats.",

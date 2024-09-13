@@ -1,13 +1,13 @@
 import React from "react";
 import { Box } from "@mui/material";
-import ConnectDetails from "../components/ServiceDetail/ConnectDetails";
-import Footer from "../components/Footer";
+import SoftwareDetails from "../../components/ServiceDetail/SoftwareDetails";
+import Footer from "../../components/Footer";
 
-const ConnectPage = () => {
+const SoftwarePage = () => {
     return(
         <Box>
             <Box>
-                <ConnectDetails />
+                <SoftwareDetails />
             </Box>
             <Box>
                 <Footer />
@@ -16,4 +16,4 @@ const ConnectPage = () => {
     )
 }
 
-export default ConnectPage
+export default SoftwarePage

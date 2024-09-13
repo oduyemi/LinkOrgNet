@@ -14,11 +14,14 @@ import { SendMail } from "../components/Admin/SendMail";
 import  AdminSentMails  from "../pages/AdminSentMails";
 import Error404 from "../pages/404";
 // import { ServiceDetail } from "../components/ServiceDetail";
-import VoipPage from "../pages/VoipPage";
-import ConnectPage from "../pages/ConnectPage";
-import SatellitePage from "../pages/SatellitePage";
-import VPNPage from "../pages/VPNPage";
-import ITNetworkPage from "../pages/ITNetworkPage";
+import VoipPage from "../pages/servicesDetails/VoipPage";
+import ConnectPage from "../pages/servicesDetails/ConnectPage";
+import SatellitePage from "../pages/servicesDetails/SatellitePage";
+import VPNPage from "../pages/servicesDetails/VPNPage";
+import ITNetworkPage from "../pages/servicesDetails/ITNetworkPage";
+import StoragePage from "../pages/servicesDetails/StoragePage";
+import CollocationPage from "../pages/servicesDetails/CollacationPage";
+import SoftwarePage from "../pages/servicesDetails/SoftwarePage";
 
 export const Navbar = () => {
     return (
@@ -34,6 +37,10 @@ export const Navbar = () => {
                 <Route path="/services/satellite" element={<SatellitePage />} />
                 <Route path="/services/vpn-solutions" element={<VPNPage />} />
                 <Route path="/services/it-networks" element={<ITNetworkPage />} />
+                <Route path="/services/storage-solutions" element={<StoragePage />} />
+                <Route path="/services/collocation-and-data-center" element={<CollocationPage />} />
+                <Route path="/services/software-services" element={<SoftwarePage />} />
+                
                 <Route path="/admin" element={<Admin />} />
                 <Route path="/admin/contacts" element={<AdminContactList/>} />
                 <Route path="/admin/profile" element={<AdminProfile/>} />

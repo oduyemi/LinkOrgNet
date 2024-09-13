@@ -2,17 +2,17 @@ import React from "react";
 import ServiceDetail from "../ServiceDetail";
 
 const serviceData = {
-  title: "VPN Solutions",
-  imageSrc: require("../../assets/images/services/vpn.jpg"),
-  imageAlt: "Secure VPN connections.",
-  description: " MPLS (Multiprotocol Label Switching) L3VPNs provide a scalable and secure way to interconnect multiple sites over a service provider's network using layer 3 routing. Each customer’s traffic is isolated within its own virtual private network, ensuring security and privacy.  MPLS L2VPNs extend layer 2 Ethernet or Frame Relay networks across a service provider’s MPLS network. This allows businesses to connect multiple locations as if they were on the same local network, maintaining layer 2 transparency. Leased lines are dedicated, point-to-point connections between two locations, offering consistent bandwidth and performance. They are not shared with other customers, providing a private and reliable connection.",
+  title: "Storage Solutions",
+  imageSrc: require("../../assets/images/services/storage.jpg"),
+  imageAlt: "Data storage or cloud infrastructure.",
+  description: "SAN (Storage Area Network), NAS (Network Attached Storage), and cloud storage are three key solutions for modern data management. SAN offers high-speed, block-level storage ideal for businesses with large-scale data transfer and performance demands, such as databases and virtualization. NAS provides file-based storage that's easy to access and share over a network, making it suitable for file sharing and backups in both home and business environments. Cloud storage delivers scalable, remote storage options, allowing businesses to pay for what they use while benefiting from easy access and disaster recovery capabilities. Together, these solutions cater to diverse storage needs, from high-performance to cost-effective scalability.",
   // subtitle: "Sed ut perspiciatis unde omnis iste natus et",
-  videoTitle: "VPN Solutions we offer",
-  videoContent: "Here are three key features of VPN Solutions we offer",
+  videoTitle: "Storage Solutions we offer",
+  videoContent: "Here are the three Storage Solutions we have for you:",
   videoBenefits: [
-    "MPLS L3VPN: Secure your business with scalable private network solutions.",
-    "MPLS L2VPN: Connect multiple locations seamlessly and securely.",
-    "Leased Line: Dedicated high-speed internet for demanding businesses.",
+    "SAN: High-performance on-premises storage.",
+    "NAS: Scalable, easy-to-use networked storage.",
+    "Cloud Storage: Secure, flexible access to data anytime, anywhere.",
   ],
 //   carouselItems: [
 //     { imgSrc: require("../../assets/images/products/yealink0.png"), title: "Hotel Hilton", location: "Albufeira", reviews: "170", description: "For what reason would it be advisable for me to think about business content?" },
@@ -22,9 +22,9 @@ const serviceData = {
   sidebarItems: [
     { name: "Voip Solutions", link: "/services/voip-services", active: true },
     { name: "Satellite Solution", link: "/services/satellite" },
-    { name: "Connectivity Services", link: "/services/connectivity" },
+    { name: "VPN Solutions", link: "/services/vpn-solutions" },
     { name: "IT & Network Solutions", link: "/services/it-networks" },
-    { name: "Storage Solutions", link: "/services/storage-solutions" },
+    { name: "Connectivity Services", link: "/services/connectivity" },
     { name: "Collocation $ Datacenter Services", link: "/services/collocation-and-data-center" },
     { name: "Software Services", link: "/services/software-services" },
   ],

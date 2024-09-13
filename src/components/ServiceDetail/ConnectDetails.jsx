@@ -5,10 +5,10 @@ const serviceData = {
   title: "Connectivity Services",
   imageSrc: require("../../assets/images/services/connectivity.jpg"),
   imageAlt: "Connectivity Service",
-  description: "Highlight benefits like high-speed wireless internet, fiber-optic speeds, and community connectivity for residential estates.",
+  description: "At LinkOrg Networks, we offer advanced connectivity solutions to enhance your digital experience. Our high-speed wireless internet delivers exceptional speed and reliability, eliminating slow connections. For even faster performance, our fiber-optic speeds provide ultra-fast data transmission suitable for both residential and business use. Additionally, our community connectivity solutions improve network access across residential estates, ensuring every household benefits from a strong, high-speed connection. Our services are designed to support seamless streaming, efficient work, and robust community connectivity. ",
   // subtitle: "Sed ut perspiciatis unde omnis iste natus et",
-  videoTitle: "Connectivity Services Benefits",
-  videoContent: "Here are three key benefits of Connectivity Services:",
+  videoTitle: "Connectivity Services we Offer",
+  videoContent: "Here are three areas in Connectivity Services:",
   videoBenefits: [
     "High-Speed Wireless: Stay connected with fast, reliable wireless internet.",
     "Fiber to Home: Ultra-fast fiber-optic speeds for seamless online activities.",

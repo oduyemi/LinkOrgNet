@@ -1,17 +1,14 @@
 import React from "react";
 import { Box } from "@mui/material";
-import VPNDetails from "../components/ServiceDetail/VPNDetails";
-import Footer from "../components/Footer";
+import VoipDetails from "../../components/ServiceDetail/VoipDetails";
+import Footer from "../../components/Footer";
 
 
-
-
-
-const VPNPage = () => {
+const VoipPage = () => {
     return(
         <Box>
             <Box>
-                <VPNDetails />
+                <VoipDetails />
             </Box>
             <Box>
                 <Footer />
@@ -20,4 +17,4 @@ const VPNPage = () => {
     )
 }
 
-export default VPNPage;
+export default VoipPage;

@@ -1,13 +1,13 @@
 import React from "react";
 import { Box } from "@mui/material";
-import ITNetworkDetails from "../components/ServiceDetail/ITNetworkDetails";
-import Footer from "../components/Footer";
+import StorageDetails from "../../components/ServiceDetail/StorageDetails";
+import Footer from "../../components/Footer";
 
-const ITNetworkPage = () => {
+const StoragePage = () => {
     return(
         <Box>
             <Box>
-                <ITNetworkDetails />
+                <StorageDetails />
             </Box>
             <Box>
                 <Footer />
@@ -16,4 +16,4 @@ const ITNetworkPage = () => {
     )
 }
 
-export default ITNetworkPage
+export default StoragePage
