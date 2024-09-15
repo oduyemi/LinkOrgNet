@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import aboutHero  from "../../assets/images/aboutHero.jpg";
-
+import RemoveIcon from '@mui/icons-material/Remove';
 
 
 export const Hero = () => {
@@ -28,7 +28,7 @@ export const Hero = () => {
                             </Link>
                         </li>
                         <li>
-                            <i className="fal fa-minus"></i>
+                            <RemoveIcon />
                         </li>
                         <li>
                             About Us

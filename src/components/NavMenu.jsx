@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import { Box, IconButton, Menu, MenuItem } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-
 
 export const NavMenu = ({ onOpenOffcanvas }) => {
   const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 768);
   const [servicesAnchorEl, setServicesAnchorEl] = useState(null);
   const [faqsAnchorEl, setFaqsAnchorEl] = useState(null);
+  const navigate = useNavigate();  // useNavigate hook to programmatically navigate
 
   const handleResize = () => {
     setIsMobileView(window.innerWidth <= 768);
@@ -39,6 +39,14 @@ export const NavMenu = ({ onOpenOffcanvas }) => {
 
   const isFaqsMenuOpen = Boolean(faqsAnchorEl);
   const isServicesMenuOpen = Boolean(servicesAnchorEl);
+
+  // Handle services link click
+  const handleServicesClick = (event) => {
+    // Check if the dropdown is open, if not, navigate to /services
+    if (!isServicesMenuOpen) {
+      navigate("/services");
+    }
+  };
 
   return (
     <>
@@ -87,6 +95,7 @@ export const NavMenu = ({ onOpenOffcanvas }) => {
                                   },
                                 }}
                               >
+                                {/* FAQs Dropdown Menu */}
                                 <MenuItem onClick={handleFaqsMenuClose}>
                                   <Link to="/faqs" className="text-black">
                                     General Questions
@@ -94,8 +103,10 @@ export const NavMenu = ({ onOpenOffcanvas }) => {
                                 </MenuItem>
                                 <MenuItem onClick={handleFaqsMenuClose}>
                                   <Link to="/faqs/collocation-data-center" className="text-black">
-                                    Collocation &amp; Data Center</Link>
+                                    Collocation &amp; Data Center
+                                  </Link>
                                 </MenuItem>
+
                                 <MenuItem onClick={handleFaqsMenuClose}>
                                   <Link to="/faqs/internet-connectivity" className="text-black">
                                     Internet Connectivity

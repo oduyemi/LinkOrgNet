@@ -22,6 +22,7 @@ import ITNetworkPage from "../pages/servicesDetails/ITNetworkPage";
 import StoragePage from "../pages/servicesDetails/StoragePage";
 import CollocationPage from "../pages/servicesDetails/CollacationPage";
 import SoftwarePage from "../pages/servicesDetails/SoftwarePage";
+import { GeneralQuestions } from "../components/FAQs/General";
 
 export const Navbar = () => {
     return (
@@ -40,6 +41,9 @@ export const Navbar = () => {
                 <Route path="/services/storage-solutions" element={<StoragePage />} />
                 <Route path="/services/collocation-and-data-center" element={<CollocationPage />} />
                 <Route path="/services/software-services" element={<SoftwarePage />} />
+
+                {/* FAQs */}
+                <Route path="/faqs" element={<GeneralQuestions />} />
                 
                 <Route path="/admin" element={<Admin />} />
                 <Route path="/admin/contacts" element={<AdminContactList/>} />
