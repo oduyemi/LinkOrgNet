@@ -4,11 +4,8 @@ import { Box, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import borderShape from "../../assets/images/borderShape.png";
-
-// Importing images
-import sysImage from "../../assets/images/sys.png";
+// import sysImage from "../../assets/images/sys.png";
 import fieldImage from "../../assets/images/field.png";
-import advisorImage from "../../assets/images/advisor.jpg";
 
 // Import slick carousel styles
 import "slick-carousel/slick/slick.css";
@@ -33,7 +30,7 @@ export const Intro = () => {
                         <Box className="col-lg-6">
                             <Box className="about-image-items">
                                 <Box className="border-shape">
-                                    <img src={sysImage} alt="shape-img" />
+                                    {/* <img src={sysImage} alt="shape-img" /> */}
                                 </Box>
                                 <Box
                                     className="about-image bg-cover wow fadeInLeft"
@@ -42,13 +39,22 @@ export const Intro = () => {
                                         backgroundImage: `url(${borderShape})`,
                                     }}
                                 >
-                                    <Box className="about-image-2 wow fadeInUp" data-wow-delay=".5s">
+                                    <Box className="wow fadeInUp" data-wow-delay=".5s">
                                         <Slider {...sliderSettings}>
                                             <Box>
-                                                <img src={fieldImage} alt="about-img"  />
+                                                <img src={fieldImage} alt="about-img" style={{ width: "100%"}} />
                                             </Box>
                                             <Box>
-                                                <img src={advisorImage} alt="about-img-2" />
+                                                <img src={fieldImage} alt="about-img-2" style={{ width: "100%"}} />
+                                            </Box>
+                                            <Box>
+                                                <img src={fieldImage} alt="about-img-2" style={{ width: "100%"}} />
+                                            </Box>
+                                            <Box>
+                                                <img src={fieldImage} alt="about-img-2" style={{ width: "100%"}} />
+                                            </Box>
+                                            <Box>
+                                                <img src={fieldImage} alt="about-img-2" style={{ width: "100%"}} />
                                             </Box>
                                         </Slider>
                                     </Box>
