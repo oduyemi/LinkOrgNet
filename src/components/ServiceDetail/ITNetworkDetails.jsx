@@ -20,7 +20,7 @@ const serviceData = {
 //     { imgSrc: require("../../assets/images/products/yealink2.png"), title: "Hotel Hilton", location: "Albufeira", reviews: "170", description: "For what reason would it be advisable for me to think about business content?" }
 // ],
   sidebarItems: [
-    { name: "Voip Solutions", link: "/services/voip-services", active: true },
+    { name: "VoIP Solutions", link: "/services/voip-services", active: true },
     { name: "Connectivity Services", link: "/services/connectivity"},
     { name: "VPN Solutions", link: "/services/vpn-solutions" },
     { name: "Satellite Solution", link: "/services/satellite"},

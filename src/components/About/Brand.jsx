@@ -39,11 +39,11 @@ const Brand = () => {
     };
 
   return (
-    <Box   sx={{height: "300px"}} className="brand-section-3 fix section-padding pt-0">
-    <Box  className="container"  sx={{ marginTop: "50px"}}>
+    <Box   sx={{height: "180px"}} className="brand-section-3 fix section-padding pt-0">
+    <Box  className="container"  sx={{ marginTop: "30px"}}>
     <Typography
           variant="h6" 
-          className="text-center pb-5"
+          className="text-center pb-2"
           sx={{ color: '#010156', zIndex: 1, position: 'relative', fontWeight: "800"}}
         >
          Our Partners

@@ -77,13 +77,13 @@ const ContactSection = () => {
                       <Typography
                         variant="h3"
                       >
-                          <Link to="tel: +01 368 567 894" style={{ color: "#4E4A59", fontSize: "14px"}}>
-                            +123456789
+                          <Link to="tel:+2348034060434" style={{ color: "#4E4A59", fontSize: "14px"}}>
+                            +234 803 406 0434
                           </Link>
                           <br/>
-                          <Link to="tel: +01 368 567 8942" style={{ color: "#4E4A59", fontSize: "14px"}}>
+                          {/* <Link to="tel: +01 368 567 8942" style={{ color: "#4E4A59", fontSize: "14px"}}>
                           +01 368 567 894
-                          </Link>
+                          </Link> */}
                        
                       </Typography>
                     </Box>
@@ -108,12 +108,12 @@ const ContactSection = () => {
                       Send Us Email
                     </Typography>
                       <h3>
-                      <Link to="mailto:info@linkorgnet.com" style={{ color: "#4E4A59", fontSize: "14px"}}>
-                      info@linkorgnet.com
+                      <Link to="mailto:info@linkorgnet.com.ng" style={{ color: "#4E4A59", fontSize: "14px"}}>
+                      info@linkorgnet.com.ng
                       </Link>
                       <br/>
-                      <Link to="mailto:support@linkorgnet.com" style={{ color: "#4E4A59", fontSize: "14px"}}>
-                      support@linkorgnet.com
+                      <Link to="mailto:support@linkorgnet.com.ng" style={{ color: "#4E4A59", fontSize: "14px"}}>
+                      support@linkorgnet.com.ng
                       </Link>
                       </h3>
                     </Box>

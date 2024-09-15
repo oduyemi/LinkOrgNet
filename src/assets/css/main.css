@@ -4096,7 +4096,7 @@ input.main-search-input::placeholder {
   content: "";
   height: 210px;
   width: 4px;
-  background-color: var(--theme);
+  background-color: #E65D0F;
   content: "";
 }
 .about-wrapper .about-image-items .border-shape {
@@ -4856,6 +4856,7 @@ input.main-search-input::placeholder {
 .about-wrapper-3 .about-content .icon-items .content p {
   color: var(--white);
 }
+
 
 .service-section {
   position: relative;
