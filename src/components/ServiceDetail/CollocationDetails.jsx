@@ -2,17 +2,17 @@ import React from "react";
 import ServiceDetail from "../ServiceDetail";
 
 const serviceData = {
-  title: "VOIP Solutions",
-  imageSrc: require("../../assets/images/callcentre.png"),
-  imageAlt: "VOIP Service",
-  description: "•	Cut down on communication costs without compromising quality. Linkorg Network’s VoIP solutions provide crystal-clear voice calls over the internet, ensuring you stay connected with clients and colleagues effortlessly",
+  title: "Collocation & Datacenter Services",
+  imageSrc: require("../../assets/images/services/datacenter.jpg"),
+  imageAlt: " Datacenter or server racks",
+  description: "Virtual hosting, collocation, and backup services are essential for businesses seeking secure and scalable infrastructure. Virtual hosting allows companies to host their websites and applications on shared servers, reducing costs while maintaining performance and flexibility. Collocation offers businesses the ability to house their servers in a secure data center, ensuring high availability, better cooling, and physical security without the need for in-house infrastructure. Backup services provide critical data protection, offering regular, automated backups that safeguard against data loss, ensuring business continuity in the event of system failures or cyber threats. These solutions work together to provide reliability, security, and scalability for businesses of all sizes.",
   // subtitle: "Sed ut perspiciatis unde omnis iste natus et",
-  videoTitle: "VOIP Benefits",
-  videoContent: "Here are three key benefits of VoIP (Voice over Internet Protocol):",
+  videoTitle: "Collocation & Datacenter Services we offer",
+  videoContent: "Reliable hosting, secure backup, and minimal downtime.",
   videoBenefits: [
-    "Cost Savings: Lower communication expenses, particularly for long-distance and international calls.",
-    "Scalability: Easily adjustable to add or remove lines and features without extensive infrastructure.",
-    "Flexibility and Mobility: Enables communication from any location with internet access, ideal for remote work.",
+    "Virtual Servers: Scale your business with virtual hosting.",
+    "Collocation: Secure IT infrastructure in a state-of-the-art datacenter.",
+    "Data Backup: Comprehensive solutions for data protection and recovery.",
   ],
 //   carouselItems: [
 //     { imgSrc: require("../../assets/images/products/yealink0.png"), title: "Hotel Hilton", location: "Albufeira", reviews: "170", description: "For what reason would it be advisable for me to think about business content?" },
@@ -20,12 +20,12 @@ const serviceData = {
 //     { imgSrc: require("../../assets/images/products/yealink2.png"), title: "Hotel Hilton", location: "Albufeira", reviews: "170", description: "For what reason would it be advisable for me to think about business content?" }
 // ],
   sidebarItems: [
-    { name: "Connectivity Services", link: "/services/connectivity", active: true },
+    { name: "Voip Solutions", link: "/services/voip-services", active: true },
     { name: "Satellite Solution", link: "/services/satellite" },
     { name: "VPN Solutions", link: "/services/vpn-solutions" },
     { name: "IT & Network Solutions", link: "/services/it-networks" },
     { name: "Storage Solutions", link: "/services/storage-solutions" },
-    { name: "Collocation $ Datacenter Services", link: "/services/collocation-and-data-center" },
+    { name: "Connectivity Services", link: "/services/connectivity" },
     { name: "Software Services", link: "/services/software-services" },
   ],
   // additionalImages: [

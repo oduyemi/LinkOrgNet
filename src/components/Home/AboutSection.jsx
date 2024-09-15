@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Box, Typography } from "@mui/material";
 import { Link } from 'react-router-dom';
 import hero0 from "../../assets/images/hero0.jpg";
-import ITSolution2 from "../../assets/images/ITSolution2.jpg";
+// import ITSolution2 from "../../assets/images/ITSolution2.jpg";
 import CheckIcon from '@mui/icons-material/Check';
 
 const AboutSection = () => {
@@ -137,12 +137,13 @@ const AboutSection = () => {
                   data-wow-delay=".3s"
                   style={{ 
                     backgroundImage: `url(${hero0})`,
-                    backgroundSize: "cover"
+                    backgroundSize: "cover",
+                    width: "100%"
                   }}
                 >
-                  <Box className="about-image-2 wow fadeInUp" data-wow-delay=".5s">
+                  {/* <Box className="about-image-2 wow fadeInUp" data-wow-delay=".5s">
                     <img src={ITSolution2} alt="about-img" />
-                  </Box>
+                  </Box> */}
                 </Box>
               </Box>
             </Box>

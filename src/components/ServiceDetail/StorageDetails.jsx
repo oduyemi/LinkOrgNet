@@ -2,17 +2,17 @@ import React from "react";
 import ServiceDetail from "../ServiceDetail";
 
 const serviceData = {
-  title: "VOIP Solutions",
-  imageSrc: require("../../assets/images/callcentre.png"),
-  imageAlt: "VOIP Service",
-  description: "•	Cut down on communication costs without compromising quality. Linkorg Network’s VoIP solutions provide crystal-clear voice calls over the internet, ensuring you stay connected with clients and colleagues effortlessly",
+  title: "Storage Solutions",
+  imageSrc: require("../../assets/images/services/storage.jpg"),
+  imageAlt: "Data storage or cloud infrastructure.",
+  description: "SAN (Storage Area Network), NAS (Network Attached Storage), and cloud storage are three key solutions for modern data management. SAN offers high-speed, block-level storage ideal for businesses with large-scale data transfer and performance demands, such as databases and virtualization. NAS provides file-based storage that's easy to access and share over a network, making it suitable for file sharing and backups in both home and business environments. Cloud storage delivers scalable, remote storage options, allowing businesses to pay for what they use while benefiting from easy access and disaster recovery capabilities. Together, these solutions cater to diverse storage needs, from high-performance to cost-effective scalability.",
   // subtitle: "Sed ut perspiciatis unde omnis iste natus et",
-  videoTitle: "VOIP Benefits",
-  videoContent: "Here are three key benefits of VoIP (Voice over Internet Protocol):",
+  videoTitle: "Storage Solutions we offer",
+  videoContent: "Here are the three Storage Solutions we have for you:",
   videoBenefits: [
-    "Cost Savings: Lower communication expenses, particularly for long-distance and international calls.",
-    "Scalability: Easily adjustable to add or remove lines and features without extensive infrastructure.",
-    "Flexibility and Mobility: Enables communication from any location with internet access, ideal for remote work.",
+    "SAN: High-performance on-premises storage.",
+    "NAS: Scalable, easy-to-use networked storage.",
+    "Cloud Storage: Secure, flexible access to data anytime, anywhere.",
   ],
 //   carouselItems: [
 //     { imgSrc: require("../../assets/images/products/yealink0.png"), title: "Hotel Hilton", location: "Albufeira", reviews: "170", description: "For what reason would it be advisable for me to think about business content?" },
@@ -20,11 +20,11 @@ const serviceData = {
 //     { imgSrc: require("../../assets/images/products/yealink2.png"), title: "Hotel Hilton", location: "Albufeira", reviews: "170", description: "For what reason would it be advisable for me to think about business content?" }
 // ],
   sidebarItems: [
-    { name: "Connectivity Services", link: "/services/connectivity", active: true },
+    { name: "Voip Solutions", link: "/services/voip-services", active: true },
     { name: "Satellite Solution", link: "/services/satellite" },
     { name: "VPN Solutions", link: "/services/vpn-solutions" },
     { name: "IT & Network Solutions", link: "/services/it-networks" },
-    { name: "Storage Solutions", link: "/services/storage-solutions" },
+    { name: "Connectivity Services", link: "/services/connectivity" },
     { name: "Collocation $ Datacenter Services", link: "/services/collocation-and-data-center" },
     { name: "Software Services", link: "/services/software-services" },
   ],

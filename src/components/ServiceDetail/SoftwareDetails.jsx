@@ -2,17 +2,17 @@ import React from "react";
 import ServiceDetail from "../ServiceDetail";
 
 const serviceData = {
-  title: "VOIP Solutions",
-  imageSrc: require("../../assets/images/callcentre.png"),
-  imageAlt: "VOIP Service",
-  description: "•	Cut down on communication costs without compromising quality. Linkorg Network’s VoIP solutions provide crystal-clear voice calls over the internet, ensuring you stay connected with clients and colleagues effortlessly",
+  title: "Software Services",
+  imageSrc: require("../../assets/images/services/software.jpg"),
+  imageAlt: "Custom software development or integration.",
+  description: "Custom development, integration, and maintenance services are vital for businesses looking to create tailored software solutions that meet their specific needs. Custom development ensures that software is built to match unique business processes, providing flexibility and functionality that off-the-shelf solutions cannot offer. Integration services connect disparate systems, allowing for seamless data flow and improving overall operational efficiency. Maintenance ensures that these solutions remain up-to-date, secure, and functioning optimally over time, with regular updates, bug fixes, and performance enhancements. Together, these services help businesses stay competitive and efficient in an ever-evolving digital landscape.",
   // subtitle: "Sed ut perspiciatis unde omnis iste natus et",
-  videoTitle: "VOIP Benefits",
-  videoContent: "Here are three key benefits of VoIP (Voice over Internet Protocol):",
+  videoTitle: "Software Service we offer",
+  videoContent: "Tailored software solutions for seamless business operations..",
   videoBenefits: [
-    "Cost Savings: Lower communication expenses, particularly for long-distance and international calls.",
-    "Scalability: Easily adjustable to add or remove lines and features without extensive infrastructure.",
-    "Flexibility and Mobility: Enables communication from any location with internet access, ideal for remote work.",
+    "Custom Development: Build software tailored to your specific needs.",
+    "Seamless Integration: Smooth integration with existing infrastructure.",
+    "Maintenance: Continuous support and improvements to keep systems running.",
   ],
 //   carouselItems: [
 //     { imgSrc: require("../../assets/images/products/yealink0.png"), title: "Hotel Hilton", location: "Albufeira", reviews: "170", description: "For what reason would it be advisable for me to think about business content?" },
@@ -20,13 +20,13 @@ const serviceData = {
 //     { imgSrc: require("../../assets/images/products/yealink2.png"), title: "Hotel Hilton", location: "Albufeira", reviews: "170", description: "For what reason would it be advisable for me to think about business content?" }
 // ],
   sidebarItems: [
-    { name: "Connectivity Services", link: "/services/connectivity", active: true },
+    { name: "Voip Solutions", link: "/services/voip-services", active: true },
     { name: "Satellite Solution", link: "/services/satellite" },
     { name: "VPN Solutions", link: "/services/vpn-solutions" },
     { name: "IT & Network Solutions", link: "/services/it-networks" },
     { name: "Storage Solutions", link: "/services/storage-solutions" },
+    { name: "Connectivity Services", link: "/services/connectivity" },
     { name: "Collocation $ Datacenter Services", link: "/services/collocation-and-data-center" },
-    { name: "Software Services", link: "/services/software-services" },
   ],
   // additionalImages: [
   //   { src: require("../../assets/images/products/Cisco-6841-sip.png"), alt: "Cisco 6841" },

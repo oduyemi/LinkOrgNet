@@ -40,7 +40,10 @@ const Footer = () => {
                 sx={{ color: "black", textAlign: 'left' }}
 
               >
-                Our operational history reflects a continuous pursuit of excellence, <br/> resulting in a wealth of industry experience.
+                Our operational history reflects a continuous pursuit of excellence, resulting in a wealth of industry experience.
+                <br/>
+                <br/>
+                Linkorgnet is the trading name for Linkorg Networks.
 
               </Typography>
             </Box>
@@ -157,9 +160,16 @@ const Footer = () => {
         <Box className="footer-bottom style-2">
           <Box className="container">
           <Box className="footer-wrapper d-flex align-items-center justify-content-between">
-            <p className="wow fadeInUp color-2" data-wow-delay=".4s">
-            Copyright © 2024 <Link to="index.html" className="text-black">Linkorg Networks</Link >. All Rights Reserved.
-            </p>
+          <Typography
+                  variant="p"
+                  sx={{
+                    color: "#010156"
+                  }}
+                  className="blutext"
+                >
+                 Copyright © 2024 <Link to="index.html" className="orangetext">Linkorg Networks</Link >. All Rights Reserved.
+            </Typography>
+
           </Box>
           </Box>
         </Box>

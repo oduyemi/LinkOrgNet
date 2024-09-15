@@ -2,17 +2,17 @@ import React from "react";
 import ServiceDetail from "../ServiceDetail";
 
 const serviceData = {
-  title: "VOIP Solutions",
-  imageSrc: require("../../assets/images/callcentre.png"),
-  imageAlt: "VOIP Service",
-  description: "•	Cut down on communication costs without compromising quality. Linkorg Network’s VoIP solutions provide crystal-clear voice calls over the internet, ensuring you stay connected with clients and colleagues effortlessly",
+  title: "VPN Solutions",
+  imageSrc: require("../../assets/images/services/vpn.jpg"),
+  imageAlt: "Secure VPN connections.",
+  description: " MPLS (Multiprotocol Label Switching) L3VPNs provide a scalable and secure way to interconnect multiple sites over a service provider's network using layer 3 routing. Each customer’s traffic is isolated within its own virtual private network, ensuring security and privacy.  MPLS L2VPNs extend layer 2 Ethernet or Frame Relay networks across a service provider’s MPLS network. This allows businesses to connect multiple locations as if they were on the same local network, maintaining layer 2 transparency. Leased lines are dedicated, point-to-point connections between two locations, offering consistent bandwidth and performance. They are not shared with other customers, providing a private and reliable connection.",
   // subtitle: "Sed ut perspiciatis unde omnis iste natus et",
-  videoTitle: "VOIP Benefits",
-  videoContent: "Here are three key benefits of VoIP (Voice over Internet Protocol):",
+  videoTitle: "VPN Solutions we offer",
+  videoContent: "Here are three key features of VPN Solutions we offer",
   videoBenefits: [
-    "Cost Savings: Lower communication expenses, particularly for long-distance and international calls.",
-    "Scalability: Easily adjustable to add or remove lines and features without extensive infrastructure.",
-    "Flexibility and Mobility: Enables communication from any location with internet access, ideal for remote work.",
+    "MPLS L3VPN: Secure your business with scalable private network solutions.",
+    "MPLS L2VPN: Connect multiple locations seamlessly and securely.",
+    "Leased Line: Dedicated high-speed internet for demanding businesses.",
   ],
 //   carouselItems: [
 //     { imgSrc: require("../../assets/images/products/yealink0.png"), title: "Hotel Hilton", location: "Albufeira", reviews: "170", description: "For what reason would it be advisable for me to think about business content?" },
@@ -20,9 +20,9 @@ const serviceData = {
 //     { imgSrc: require("../../assets/images/products/yealink2.png"), title: "Hotel Hilton", location: "Albufeira", reviews: "170", description: "For what reason would it be advisable for me to think about business content?" }
 // ],
   sidebarItems: [
-    { name: "Connectivity Services", link: "/services/connectivity", active: true },
+    { name: "Voip Solutions", link: "/services/voip-services", active: true },
     { name: "Satellite Solution", link: "/services/satellite" },
-    { name: "VPN Solutions", link: "/services/vpn-solutions" },
+    { name: "Connectivity Services", link: "/services/connectivity" },
     { name: "IT & Network Solutions", link: "/services/it-networks" },
     { name: "Storage Solutions", link: "/services/storage-solutions" },
     { name: "Collocation $ Datacenter Services", link: "/services/collocation-and-data-center" },
