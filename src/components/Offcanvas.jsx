@@ -51,7 +51,7 @@ export const Offcanvas = ({ onClose, isOpen }) => {
                 fontSize: "18px",
                 color: "#010156",
                 fontWeight: 200,
-                fontFamily: "Montesserat"
+                fontFamily: "montesserat"
               }}
               >
                 We would love to hear from you!
@@ -98,8 +98,8 @@ export const Offcanvas = ({ onClose, isOpen }) => {
                       />
                   </Box>
                   <Box className="offcanvas__contact-text">
-                    <Link href="mailto:info@linkorgnet.com" className="text-black" style={{ fontSize: "15px"}}>
-                      info@linkorgnet.com
+                    <Link href="mailto:info@linkorgnet.com.ng" className="text-black" style={{ fontSize: "15px"}}>
+                      info@linkorgnet.com.ng
                     </Link>
                   </Box>
                 </li>
@@ -132,7 +132,12 @@ export const Offcanvas = ({ onClose, isOpen }) => {
                       />
                   </Box>
                   <Box className="offcanvas__contact-text">
-                    <Link href="tel:+11002345909 " className="text-black" style={{ fontSize: "15px"}}>+123456789</Link>
+                    <Link href="tel:+2348034060434" 
+                      className="text-black" 
+                      style={{ fontSize: "15px"}}
+                    >
+                      +2348034060434
+                    </Link>
                   </Box>
                 </li>
               </ul>

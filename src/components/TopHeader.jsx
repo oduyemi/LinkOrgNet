@@ -12,7 +12,11 @@ export const TopHeader = () => {
           <Box className="top-left">
             <ul className="contact-list">
               <li>
-                <Typography component="span">Call</Typography>
+                <Link to="tel:+2349051187279">
+                  <Typography component="span">
+                    Call
+                  </Typography>
+                </Link>
                 Want to know more about us?{" "}
                 <Link to="/about" className="orangetext">Click Now</Link>
               </li>
@@ -22,8 +26,8 @@ export const TopHeader = () => {
               </li>
               <li>
                 <i className="fas fa-envelope"></i>
-                <Link href="mailto:info@linkorgnet.com" className="line-none">
-                  info@linkorgnet.com
+                <Link href="mailto:info@linkorgnet.com.ng" className="line-none">
+                  info@linkorgnet.com.ng
                 </Link>
               </li>
             </ul>

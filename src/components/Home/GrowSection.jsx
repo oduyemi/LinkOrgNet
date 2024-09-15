@@ -52,7 +52,7 @@ const GrowSection = () => {
               </Typography>
             </Box>
 
-            <Link to="/contact" className="theme-btn theme-btn-2 wow fadeInUp px-5 text-center mx-auto" data-wow-delay=".5s">
+            <Link to="tel:+2349051187279" className="theme-btn theme-btn-2 wow fadeInUp px-5 text-center mx-auto" data-wow-delay=".5s">
               <span className="">
                 Talk to an Expert
               </span>

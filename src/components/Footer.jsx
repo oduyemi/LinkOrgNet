@@ -144,9 +144,9 @@ const Footer = () => {
                 >
                   Contact
                 </Typography>
-                <Link to="mailto:info@example.com" className="text-black">info@linkorgnet.com</Link >
+                <Link to="mailto:info@linkorgnet.com.ng" className="text-black">info@linkorgnet.com.ng</Link >
                 <h5 className="pt-3">
-                  <Link to="tel:+88012345688" className="blutext">+09 354 587 874</Link >
+                  <Link to="tel:+2348034060434" className="blutext">+234 803 406 0434</Link >
                 </h5>
               </Box>
               </Box>
