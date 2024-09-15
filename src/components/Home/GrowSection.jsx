@@ -1,6 +1,6 @@
-import React from 'react';
-import { Box, Typography } from '@mui/material';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Box, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const GrowSection = () => {
   return (
@@ -40,12 +40,12 @@ const GrowSection = () => {
                   marginBottom: "20px", 
                 }}
               >
-                Whether you’re looking to upgrade your 
+                Whether you&apos;re looking to upgrade your 
                 internet connectivity, enhance your 
                 communication systems, or need a 
-                comprehensive IT solution, we’re here 
+                comprehensive IT solution, we&apos;re here 
                 to help. Reach out to us today, and 
-                let’s start a conversation about how we 
+                let&apos;s start a conversation about how we 
                 can empower your business with the latest 
                 in technology and telecom services. 
                 Your digital future starts here.

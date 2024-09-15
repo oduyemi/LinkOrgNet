@@ -40,11 +40,16 @@ const Footer = () => {
                 sx={{ color: "black", textAlign: 'left' }}
 
               >
-                Our operational history reflects a continuous pursuit of excellence, resulting in a wealth of industry experience.
-                <br/>
-                <br/>
-                Linkorgnet is the trading name for Linkorg Networks.
-
+                Our operational history reflects a continuous 
+                pursuit of excellence, resulting in a wealth 
+                of industry experience.
+                  <Typography
+                    variant="body2"
+                    className="blutext d-inline"
+                    sx={{ fontWeight: 600 }}
+                  >
+                    &nbsp; Linkorgnet is the trading name for Linkorg Networks.
+                  </Typography>
               </Typography>
             </Box>
             <ul className="wow fadeInUp" data-wow-delay=".5s">

@@ -98,7 +98,7 @@ export const Offcanvas = ({ onClose, isOpen }) => {
                       />
                   </Box>
                   <Box className="offcanvas__contact-text">
-                    <Link href="mailto:info@linkorgnet.com.ng" className="text-black" style={{ fontSize: "15px"}}>
+                    <Link href="mailto:info@linkorgnet.com.ng" className="text-black" style={{ fontSize: "15px", textTransform: "lowercase"}}>
                       info@linkorgnet.com.ng
                     </Link>
                   </Box>
