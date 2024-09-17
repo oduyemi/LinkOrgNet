@@ -167,7 +167,7 @@ export const Offcanvas = ({ onClose, isOpen }) => {
                   <RouterLink to="/about" className="blutext" style={{ fontSize: "15px"}}>About</RouterLink>
                 </li>
                 <li>
-                  <RouterLink to="/products" className="blutext" style={{ fontSize: "15px"}}>Products</RouterLink>
+                  <RouterLink to="/faqs" className="blutext" style={{ fontSize: "15px"}}>FAQs</RouterLink>
                 </li>
                 <li>
                   <RouterLink to="/services" className="blutext" style={{ fontSize: "15px"}}>Services</RouterLink>
