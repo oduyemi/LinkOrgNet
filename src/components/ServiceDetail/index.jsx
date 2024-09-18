@@ -8,13 +8,10 @@ const ServiceDetail = ({
   imageSrc,
   imageAlt,
   description,
-  // subtitle,
-  videoTitle,
-  videoContent,
-  videoBenefits,
-  // carouselItems,
+  subtitle,
+  carouselItems,
   sidebarItems,
-  // additionalImages
+
 }) => {
   return (
     <section className="service-details fix section-padding">
@@ -25,7 +22,7 @@ const ServiceDetail = ({
               <Box className="service-details-items">
                 {/* Image section */}
                 <Box className="details-image">
-                  <img src={imageSrc} alt={imageAlt} />
+                  <img src={imageSrc} alt={imageAlt}/>
                 </Box>
                 {/* Content section */}
                 <Box className="details-content">
@@ -36,106 +33,84 @@ const ServiceDetail = ({
                       fontSize: "30px",
                       fontWeight: "600",
                       lineHeight: "1.5",
-                      fontFamily: "montserrat",
+                      fontFamily: "montserrat"
                     }}
                   >
                     {title}
                   </Typography>
-                  <Typography variant="body1">{description}</Typography>
-                  {/* <Typography
-                    variant="h4"
+                  <Typography variant="body1" dangerouslySetInnerHTML={{ __html: description }} />
+                </Box>
+
+                <Typography
+                    variant="h3"
                     className="blutext"
                     sx={{
-                      fontSize: "20px",
+                      fontSize: "25px",
+                      marginTop: "30px",
                       fontWeight: "600",
                       lineHeight: "1.5",
-                      fontFamily: "montserrat",
+                      fontFamily: "montserrat"
                     }}
                   >
                     {subtitle}
-                  </Typography> */}
-                  {/* Video section */}
-                  <Box className="service-details-video">
-                    <Box className="row g-4 align-items-center">
-                      <Box className="col-lg-6">
-                        <Box className="details-video-content">
-                          <Typography
-                            variant="h3"
-                            className="blutext"
-                            sx={{
-                              fontSize: "20px",
-                              fontWeight: "600",
-                              lineHeight: "1.5",
-                              fontFamily: "montserrat",
-                            }}
-                          >
-                            {videoTitle}
-                          </Typography>
-                          <Typography variant="body1">{videoContent}</Typography>
-                          <ul>
-                            {videoBenefits.map((benefit, index) => (
-                              <li key={index}>
-                                <i className="far fa-check"></i> {benefit}
-                              </li>
-                            ))}
-                          </ul>
-                        </Box>
-                      </Box>
-                      <Box className="col-lg-6">
-                        <Box className="video-image">
-                          <Box className="video-box"></Box>
-                        </Box>
-                      </Box>
-                    </Box>
-                  </Box>
-                  {/* Additional description */}
-                  {/* <Typography variant="body1">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat qui ducimus illum modi? Perspiciatis accusamus soluta perferendis...
-                  </Typography> */}
-                  {/* Additional images */}
-                  <Box className="details-image-2">
-                    {/* <Box className="row g-4">
-                      {additionalImages.map((image, index) => (
-                        <Box className="col-lg-6" key={index}>
-                          <img src={image.src} alt={image.alt} />
-                        </Box>
-                      ))}
-                    </Box> */}
-                  </Box>
-                </Box>
+                  </Typography>
                 {/* Carousel section */}
                 <Box className="section">
                   <Box className="container">
-                    {/* <Typography variant="h2" className="blutext">
-                      VOIP Services
-                    </Typography> */}
                     <Box className="image-carousel style2">
-                      {/* <Box className="grid-container">
+                      <Box 
+                      className="grid-container"
+                      sx={{
+                        display: "flex",
+                        flexWrap: "wrap",
+                        justifyContent: "space-between",
+                        // Responsive behavior
+                        flexDirection: { xs: "column", md: "row" }, 
+                      }}
+                      >
                         {carouselItems.map((item, index) => (
-                          <Box className="grid-item" key={index}>
+                          <Box 
+                          className="grid-item" 
+                          key={index} 
+                          sx={{
+                            height: "445px",
+                            width: { xs: "100%", sm: "50%", md: "32%" }, 
+                          }}
+                          >
                             <article className="box">
                               <figure>
-                                <Link to="#" className="hover-effect popup-gallery">
-                                  <img src={item.imgSrc} alt={item.title} />
-                                </Link>
-                              </figure>
-                              <Box className="details">
-                                <span className="price">
-                                  <small>avg/night</small> $188
-                                </span>
-                                <h4 className="box-title">
-                                  {item.title} <small>{item.location}</small>
-                                </h4>
-                                <Box className="feedback">
-                                  <Box className="fa fa-star" style={{ width: "80%" }}></Box>
-                                  <span className="review">{item.reviews} reviews</span>
+                                <Box
+                               sx={{
+                                height: "230px",
+                              }}
+                              
+                                >
+                                  <img 
+                                  src={item.imgSrc} 
+                                  alt={item.title} 
+                                  style={{
+                                    height: "100%", 
+                                    width: "100%", 
+                                    objectFit: "contain" 
+                                    }} />
                                 </Box>
+                              </figure>
+                              <Box 
+                              className="details"
+                              sx={{
+                                height: "150px",
+                                marginTop: "30px"
+                              }}
+                              >
+                                <h4 className="box-title" style={{color: "#010156"}} >
+                                  {item.title} 
+                                </h4>
                                 <p className="description">{item.description}</p>
                               </Box>
                             </article>
                           </Box>
                         ))}
-                      </Box> */}
+                      </Box>
                     </Box>
                   </Box>
                 </Box>
@@ -167,8 +142,15 @@ const ServiceDetail = ({
                     ))}
                   </Box>
                 </Box>
-                <Box className="single-sidebar-widget">
-                  <img src={require("../../assets/images/why.jpg")} alt="why" width="90%" />
+                <Box 
+                className="single-sidebar-widget"
+                sx={{  
+                   height: "680px",
+                  }}
+                
+                >
+                  <img src={require("../../assets/images/services/telecom.jpg")} alt="why" width="100%" height="300px" style={{marginBottom: "20px"}} />
+                  <img src={require("../../assets/images/services/telecom2.jpg")} alt="why" width="100%" height="300px" />
                 </Box>
               </Box>
             </Box>
