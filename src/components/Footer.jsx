@@ -115,12 +115,17 @@ const Footer = () => {
                   Services
                 </Typography>
                 </Box>
-        
+
                 <ul className="list-items">
-                  <li><Link to="service-details" className="text-black">VSAT</Link ></li>
-                  <li><Link to="service-details" className="text-black">VOIP Services</Link ></li>
-                  <li><Link to="service-details" className="text-black">Marine VSAT</Link ></li>
-                  <li><Link to="service-details" className="text-black">Internet Services</Link ></li>
+                  <li><Link to="/services/connectivity" className="text-black">Connectivity Services</Link ></li>
+                  <li><Link to="/services/satellite" className="text-black">Satellite Solution</Link ></li>
+                  <li><Link to="/services/vpn-solutions" className="text-black">VPN Solutions</Link ></li>
+                  <li><Link to="/services/voip-services" className="text-black">VoIP Solutions</Link ></li>
+                  <li><Link to="/services/it-networks" className="text-black">IT & Network Solutions</Link ></li>
+                  <li><Link to="/services/storage-solutions" className="text-black">Storage Solutions</Link ></li>
+                  <li><Link to="/services/collocation-and-data-center" className="text-black">Collocation $ Datacenter Services</Link ></li>
+                  <li><Link to="/services/software-services" className="text-black">Software Services</Link ></li>
+                 
 
                 </ul>
               </Box>
