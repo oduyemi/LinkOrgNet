@@ -137,7 +137,7 @@ export const GeneralQuestions = () => {
                     textAlign="center"
                   >
                     {/* Custom Circle Progress with Value */}
-                    <CircularProgressWithLabel value={88} />
+                    <CircularProgressWithLabel value={95} />
                     <Box className="content" mt={2}>
                       <Typography 
                         variant="h6"
@@ -147,8 +147,8 @@ export const GeneralQuestions = () => {
                           fontFamily: "montserrat"
                         }}
                       >
-                        Organizations <br />
-                        work support
+                        Efficient <br />
+                        work delivery
                       </Typography>
                     </Box>
                   </Box>
