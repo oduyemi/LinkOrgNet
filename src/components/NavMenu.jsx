@@ -42,8 +42,11 @@ export const NavMenu = ({ onOpenOffcanvas }) => {
 
   // Handle services link click
   const handleServicesClick = (event) => {
-    // Check if the dropdown is open, if not, navigate to /services
-    if (!isServicesMenuOpen) {
+    // Prevent default navigation if the dropdown is open
+    if (isServicesMenuOpen) {
+      event.preventDefault();
+    } else {
+      // Navigate to /services if the dropdown is not open
       navigate("/services");
     }
   };
@@ -149,7 +152,7 @@ export const NavMenu = ({ onOpenOffcanvas }) => {
                               onMouseEnter={handleServicesMenuOpen}
                               onMouseLeave={handleServicesMenuClose}
                             >
-                              <Link to="/services">
+                              <Link to="/services" onClick={handleServicesClick}>
                                 Services
                                 <ExpandMoreIcon sx={{ fontSize: 30 }} />
                               </Link>
