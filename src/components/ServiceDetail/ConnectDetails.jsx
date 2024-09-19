@@ -7,7 +7,7 @@ const serviceData = {
   imageAlt: "Connectivity Service",
   description: `<p>At LinkOrg Networks, we offer advanced connectivity solutions to enhance your digital experience. Our high-speed wireless internet delivers exceptional speed and reliability, eliminating slow connections. For even faster performance, our fiber-optic speeds provide ultra-fast data transmission suitable for both residential and business use.</p>
   <p>Additionally, our community connectivity solutions improve network access across residential estates, ensuring every household benefits from a strong, high-speed connection. Our services are designed to support seamless streaming, efficient work, and robust community connectivity.</p>`,
-  
+
   subtitle: "Connectivity Services we Offer",
 
   carouselItems: [
@@ -22,7 +22,7 @@ const serviceData = {
     { name: "VPN Solutions", link: "/services/vpn-solutions" },
     { name: "IT & Network Solutions", link: "/services/it-networks" },
     { name: "Storage Solutions", link: "/services/storage-solutions" },
-    { name: "Collocation $ Datacenter Services", link: "/services/collocation-and-data-center" },
+    { name: "Collocation & Datacenter Services", link: "/services/collocation-and-data-center" },
     { name: "Software Services", link: "/services/software-services" },
   ],
 
