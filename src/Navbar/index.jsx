@@ -23,6 +23,14 @@ import StoragePage from "../pages/servicesDetails/StoragePage";
 import CollocationPage from "../pages/servicesDetails/CollacationPage";
 import SoftwarePage from "../pages/servicesDetails/SoftwarePage";
 import { GeneralQuestions } from "../components/FAQs/General";
+import { ItQuestions } from "../components/FAQs/ItQuestion";
+import { SoftwareQuestions } from "../components/FAQs/Software";
+import { StorageQuestions } from "../components/FAQs/Storage";
+import { InternetQuestions } from "../components/FAQs/Internet";
+import { VoipQuestions } from "../components/FAQs/Voip";
+import { VPNQuestions } from "../components/FAQs/VPN";
+import { CollationQuestions } from "../components/FAQs/Collation";
+import { VSATQuestions } from "../components/FAQs/VSAT";
 
 export const Navbar = () => {
     return (
@@ -44,6 +52,14 @@ export const Navbar = () => {
 
                 {/* FAQs */}
                 <Route path="/faqs" element={<GeneralQuestions />} />
+                <Route path="/faqs/it-networks" element={<ItQuestions />} />
+                <Route path="/faqs/software-services" element={<SoftwareQuestions />} />
+                <Route path="/faqs/storage-services" element={<StorageQuestions />} />
+                <Route path="/faqs/internet-services" element={<InternetQuestions />} />
+                <Route path="/faqs/voip-services" element={<VoipQuestions />} />
+                <Route path="/faqs/vpn-services" element={<VPNQuestions />} />
+                <Route path="/faqs/collocation-data-center" element={<CollationQuestions />} />
+                <Route path="/faqs/vsat-services" element={<VSATQuestions />} />
                 
                 <Route path="/admin" element={<Admin />} />
                 <Route path="/admin/contacts" element={<AdminContactList/>} />

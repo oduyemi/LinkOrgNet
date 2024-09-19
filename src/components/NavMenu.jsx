@@ -9,7 +9,7 @@ export const NavMenu = ({ onOpenOffcanvas }) => {
   const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 768);
   const [servicesAnchorEl, setServicesAnchorEl] = useState(null);
   const [faqsAnchorEl, setFaqsAnchorEl] = useState(null);
-  const navigate = useNavigate();  // useNavigate hook to programmatically navigate
+  const navigate = useNavigate(); 
 
   const handleResize = () => {
     setIsMobileView(window.innerWidth <= 768);
@@ -111,7 +111,7 @@ export const NavMenu = ({ onOpenOffcanvas }) => {
                                 </MenuItem>
 
                                 <MenuItem onClick={handleFaqsMenuClose}>
-                                  <Link to="/faqs/internet-connectivity" className="text-black">
+                                  <Link to="/faqs/internet-services" className="text-black">
                                     Internet Connectivity
                                   </Link>
                                 </MenuItem> 
@@ -131,17 +131,17 @@ export const NavMenu = ({ onOpenOffcanvas }) => {
                                   </Link>
                                 </MenuItem> 
                                 <MenuItem onClick={handleFaqsMenuClose}>
-                                  <Link to="/faqs/vpn" className="text-black">
+                                  <Link to="/faqs/vpn-services" className="text-black">
                                     VPN Solutions
                                   </Link>
                                 </MenuItem>
                                 <MenuItem onClick={handleFaqsMenuClose}>
-                                  <Link to="/faqs/voip" className="text-black">
+                                  <Link to="/faqs/voip-services" className="text-black">
                                     VOIP Solutions
                                   </Link>
                                 </MenuItem>  
                                 <MenuItem onClick={handleFaqsMenuClose}>
-                                  <Link to="/faqs/vsat-satelite" className="text-black">
+                                  <Link to="/faqs/vsat-services" className="text-black">
                                     VSAT/Satelite Services
                                   </Link>
                                 </MenuItem> 

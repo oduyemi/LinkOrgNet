@@ -123,7 +123,7 @@ const Footer = () => {
                   <li><Link to="/services/voip-services" className="text-black">VoIP Solutions</Link ></li>
                   <li><Link to="/services/it-networks" className="text-black">IT & Network Solutions</Link ></li>
                   <li><Link to="/services/storage-solutions" className="text-black">Storage Solutions</Link ></li>
-                  <li><Link to="/services/collocation-and-data-center" className="text-black">Collocation $ Datacenter Services</Link ></li>
+                  <li><Link to="/services/collocation-and-data-center" className="text-black">Collocation &amp; Datacenter Services</Link ></li>
                   <li><Link to="/services/software-services" className="text-black">Software Services</Link ></li>
                  
 
