@@ -21,7 +21,7 @@ const serviceData = {
     { name: "Connectivity Services", link: "/services/connectivity" },
     { name: "IT & Network Solutions", link: "/services/it-networks" },
     { name: "Storage Solutions", link: "/services/storage-solutions" },
-    { name: "Collocation $ Datacenter Services", link: "/services/collocation-and-data-center" },
+    { name: "Collocation & Datacenter Services", link: "/services/collocation-and-data-center" },
     { name: "Software Services", link: "/services/software-services" },
   ],
 
