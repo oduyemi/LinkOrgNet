@@ -11,32 +11,24 @@ import RemoveIcon from '@mui/icons-material/Remove';
 
 const faqData = [
     {
-        question: "What industries does LinkOrg Networks serve?",
-        answer: "LinkOrg Networks serves maritime and offshore industries, providing satellite communication services to ships, vessels, jack-up barges, and other offshore bases. We also offer IT and telecommunications solutions for businesses and individuals looking for secure and high-speed connectivity.",
+      question: "How can LinkOrg Networks help improve the security of my corporate network?",
+      answer: "We provide comprehensive network security solutions, including firewalls, intrusion detection systems, and encryption to protect your business from cyber threats.",
     },
     {
-        question: "What internet services does LinkOrg Networks offer?",
-        answer: "LinkOrg Networks provides a comprehensive range of internet services, which includes fixed connectivity (Fibre Optics), VSAT remote internet solutions, maritime and offshore internet solutions with high speed and low latency internet for individuals and businesses. Our services are designed to ensure reliable and seamless connectivity, even in the most challenging environments.",
+        question: "Do you offer managed IT services for small to medium-sized businesses?",
+        answer: "Yes, we provide managed IT services that cover everything from network maintenance to troubleshooting, ensuring your business runs smoothly without any IT interruptions.",
     },
     {
-        question: "How does LinkOrg Networks ensure reliable connectivity for offshore operations?",
-        answer: "We specialize in providing reliable communication solutions for offshore safety needs by combining LEO and GEO Satellite technology, IP-PBX, and VSAT technologies. Our expert engineers are skilled in installing and maintaining satellite systems, ensuring that your operations stay connected at all times.",
+        question: "Can you assist with setting up both wired and wireless networks for businesses?",
+        answer: "Absolutely! We specialize in designing and setting up wired and wireless networks tailored to your business needs, ensuring seamless connectivity across your office locations.",
     },
     {
-        question: "How does LinkOrg Networks prioritize customer satisfaction?",
-        answer: "Customer satisfaction is at the heart of everything we do. We strive to understand our clients' needs and exceed their expectations through exceptional service and 24/7 support. Our commitment to integrity, honesty, and continuous improvement ensures long-term customer relationships and a high level of satisfaction."
+        question: "What network infrastructure solutions do you provide for companies with multiple offices?",
+        answer: "We offer secure WAN setups, VPNs, and high-speed fiber optic solutions to connect multiple offices with reliable communication and data transfer.",
     },
     {
-        question: "What sets LinkOrg Networks apart from other service providers?",
-        answer: "What distinguishes LinkOrg Networks is our unwavering focus on utilizing state-of-the-art technology to provide seamless connectivity and IT solutions at affordable rates. Our internet service comes with VoIP solutions an addon. We also provide security solutions that meet the diverse requirements of our clients, both ashore and offshore environments."
-    },
-    {
-        question: "Does LinkOrg Networks offer customized solutions for businesses?",
-        answer: "Yes, we offer tailored IT and telecom solutions designed to meet the unique needs of businesses. Whether you need secure VPNs, advanced VoIP solutions, specialized satellite communication services, security and software solutions. LinkOrg Networks can customize our offerings to fit your specific requirements and ensure you stay ahead in a digital world."
-    },
-    {
-        question: "How does Linkorg Networks benefit me as an individual?",
-        answer: "LinkOrg Networks empowers you with blazing-fast broadband connectivity, ensuring seamless internet access while integrating advanced VoIP solutions for crystal-clear voice communication. With everything bundled in one, you enjoy uninterrupted browsing, streaming, and communication—all through a single, easy-to-use platform tailored to your needs."
+        question: "How do you ensure the reliability and performance of your network solutions?",
+        answer: "We conduct regular monitoring, maintenance, and performance optimization of your network to ensure reliable, high-speed, and uninterrupted connectivity."
     }
   ];
 

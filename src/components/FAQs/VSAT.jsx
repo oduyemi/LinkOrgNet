@@ -11,32 +11,44 @@ import RemoveIcon from '@mui/icons-material/Remove';
 
 const faqData = [
     {
-        question: "What industries does LinkOrg Networks serve?",
-        answer: "LinkOrg Networks serves maritime and offshore industries, providing satellite communication services to ships, vessels, jack-up barges, and other offshore bases. We also offer IT and telecommunications solutions for businesses and individuals looking for secure and high-speed connectivity.",
+      question: "What is VSAT and how does it work?",
+      answer: "VSAT (Very Small Aperture Terminal) is a satellite communication system that uses small dish antennas to provide reliable data, voice, and internet connectivity, especially in remote areas. It works by sending and receiving data via satellite, ensuring connectivity even in regions without traditional infrastructure."
     },
     {
-        question: "What internet services does LinkOrg Networks offer?",
-        answer: "LinkOrg Networks provides a comprehensive range of internet services, which includes fixed connectivity (Fibre Optics), VSAT remote internet solutions, maritime and offshore internet solutions with high speed and low latency internet for individuals and businesses. Our services are designed to ensure reliable and seamless connectivity, even in the most challenging environments.",
+        question: "What are the benefits of using VSAT solutions for offshore and remote locations?",
+        answer: "VSAT offers reliable, high-speed connectivity in areas where terrestrial networks are unavailable. It is ideal for maritime, offshore, and remote operations, providing uninterrupted communication for data, voice, and internet services."
     },
     {
-        question: "How does LinkOrg Networks ensure reliable connectivity for offshore operations?",
-        answer: "We specialize in providing reliable communication solutions for offshore safety needs by combining LEO and GEO Satellite technology, IP-PBX, and VSAT technologies. Our expert engineers are skilled in installing and maintaining satellite systems, ensuring that your operations stay connected at all times.",
+        question: "Can VSAT support high-speed internet for businesses and large operations?",
+        answer: "Yes, VSAT can support high-speed internet for both small and large-scale operations, providing low-latency connections and enough bandwidth for data-heavy applications like video conferencing, file transfers, and cloud services."
     },
     {
-        question: "How does LinkOrg Networks prioritize customer satisfaction?",
-        answer: "Customer satisfaction is at the heart of everything we do. We strive to understand our clients' needs and exceed their expectations through exceptional service and 24/7 support. Our commitment to integrity, honesty, and continuous improvement ensures long-term customer relationships and a high level of satisfaction."
+        question: "How do you ensure reliable satellite connectivity in harsh environments?",
+        answer: "Our VSAT solutions use advanced satellite technology (LEO and GEO satellites) combined with redundant systems to ensure continuous connectivity. Our equipment is also built to withstand extreme weather and environmental conditions, ensuring uninterrupted service."
     },
     {
-        question: "What sets LinkOrg Networks apart from other service providers?",
-        answer: "What distinguishes LinkOrg Networks is our unwavering focus on utilizing state-of-the-art technology to provide seamless connectivity and IT solutions at affordable rates. Our internet service comes with VoIP solutions an addon. We also provide security solutions that meet the diverse requirements of our clients, both ashore and offshore environments."
+        question: "Is VSAT suitable for mobile units like ships and vehicles?",
+        answer: "Yes, our VSAT solutions are specifically designed for mobility and are ideal for ships, offshore vessels, and other moving units. We provide stable satellite connections to ensure seamless communication even while on the move."
     },
     {
-        question: "Does LinkOrg Networks offer customized solutions for businesses?",
-        answer: "Yes, we offer tailored IT and telecom solutions designed to meet the unique needs of businesses. Whether you need secure VPNs, advanced VoIP solutions, specialized satellite communication services, security and software solutions. LinkOrg Networks can customize our offerings to fit your specific requirements and ensure you stay ahead in a digital world."
+        question: "What type of support and maintenance do you offer for VSAT installations?",
+        answer: "We provide 24/7 technical support and remote monitoring to ensure your VSAT system operates smoothly. Our team of engineers also offers regular maintenance and on-site support as needed to prevent and resolve any issues."
     },
     {
-        question: "How does Linkorg Networks benefit me as an individual?",
-        answer: "LinkOrg Networks empowers you with blazing-fast broadband connectivity, ensuring seamless internet access while integrating advanced VoIP solutions for crystal-clear voice communication. With everything bundled in one, you enjoy uninterrupted browsing, streaming, and communication—all through a single, easy-to-use platform tailored to your needs."
+        question: "How does LinkOrg Networks' VSAT solution compare to traditional internet services?",
+        answer: "VSAT solutions provide internet access in regions where traditional services like fiber or cable are unavailable. While traditional services may offer higher speeds in well-connected areas, VSAT excels in delivering reliable, low-latency internet to remote and offshore locations."
+    },
+    {
+        question: "What are the installation requirements for a VSAT system?",
+        answer: "Installing a VSAT system typically requires a small satellite dish, a modem, and clear line-of-sight to the satellite. Our team handles all aspects of installation, including site surveys, equipment setup, and network configuration."
+    },
+    {
+        question: "Can VSAT be used as a backup connection for terrestrial networks?",
+        answer: "Yes, VSAT can be configured as a reliable backup solution for terrestrial networks. In case of network outages or disruptions, the VSAT connection ensures continuous connectivity."
+    },
+    {
+        question: "Does LinkOrg Networks offer both LEO and GEO satellite solutions for VSAT?",
+        answer: "Yes, we offer both Low Earth Orbit (LEO) and Geostationary (GEO) satellite solutions for VSAT. LEO satellites provide lower latency, while GEO satellites cover a wider area. We tailor our solutions based on your specific needs."
     }
   ];
 

@@ -11,32 +11,24 @@ import RemoveIcon from '@mui/icons-material/Remove';
 
 const faqData = [
     {
-        question: "What industries does LinkOrg Networks serve?",
-        answer: "LinkOrg Networks serves maritime and offshore industries, providing satellite communication services to ships, vessels, jack-up barges, and other offshore bases. We also offer IT and telecommunications solutions for businesses and individuals looking for secure and high-speed connectivity.",
+      question: "What internet speed options does LinkOrg Networks offer for businesses and individuals?",
+      answer: "LinkOrg Networks provides a range of internet speeds to suit the needs of both businesses and individuals. Our offerings include high-speed broadband, with options for faster connections based on your requirements and location.",
     },
     {
-        question: "What internet services does LinkOrg Networks offer?",
-        answer: "LinkOrg Networks provides a comprehensive range of internet services, which includes fixed connectivity (Fibre Optics), VSAT remote internet solutions, maritime and offshore internet solutions with high speed and low latency internet for individuals and businesses. Our services are designed to ensure reliable and seamless connectivity, even in the most challenging environments.",
+        question: "How do you ensure reliable internet connectivity in remote areas?",
+        answer: "We use a combination of cutting-edge VSAT and LEO satellite technology to provide reliable internet services in remote areas. This ensures continuous connectivity even in challenging environments, such as offshore or rural locations.",
     },
     {
-        question: "How does LinkOrg Networks ensure reliable connectivity for offshore operations?",
-        answer: "We specialize in providing reliable communication solutions for offshore safety needs by combining LEO and GEO Satellite technology, IP-PBX, and VSAT technologies. Our expert engineers are skilled in installing and maintaining satellite systems, ensuring that your operations stay connected at all times.",
+        question: "Are there any data caps or limitations with your internet plans?",
+        answer: "No, our internet services come with unlimited data usage, ensuring that you have access to high-speed internet without worrying about exceeding any data limits.",
     },
     {
-        question: "How does LinkOrg Networks prioritize customer satisfaction?",
-        answer: "Customer satisfaction is at the heart of everything we do. We strive to understand our clients' needs and exceed their expectations through exceptional service and 24/7 support. Our commitment to integrity, honesty, and continuous improvement ensures long-term customer relationships and a high level of satisfaction."
+        question: "Can your internet services support heavy video conferencing and cloud usage?",
+        answer: "Yes, our internet services are designed to handle bandwidth-heavy tasks like video conferencing and cloud usage. We ensure high-speed, low-latency connectivity, even during peak usage times.",
     },
     {
-        question: "What sets LinkOrg Networks apart from other service providers?",
-        answer: "What distinguishes LinkOrg Networks is our unwavering focus on utilizing state-of-the-art technology to provide seamless connectivity and IT solutions at affordable rates. Our internet service comes with VoIP solutions an addon. We also provide security solutions that meet the diverse requirements of our clients, both ashore and offshore environments."
-    },
-    {
-        question: "Does LinkOrg Networks offer customized solutions for businesses?",
-        answer: "Yes, we offer tailored IT and telecom solutions designed to meet the unique needs of businesses. Whether you need secure VPNs, advanced VoIP solutions, specialized satellite communication services, security and software solutions. LinkOrg Networks can customize our offerings to fit your specific requirements and ensure you stay ahead in a digital world."
-    },
-    {
-        question: "How does Linkorg Networks benefit me as an individual?",
-        answer: "LinkOrg Networks empowers you with blazing-fast broadband connectivity, ensuring seamless internet access while integrating advanced VoIP solutions for crystal-clear voice communication. With everything bundled in one, you enjoy uninterrupted browsing, streaming, and communication—all through a single, easy-to-use platform tailored to your needs."
+        question: "Do you offer redundancy solutions to prevent internet downtime?",
+        answer: "Yes, we provide redundancy options through backup satellite connections and fiber-optic setups to ensure that your business stays connected in case of an internet outage."
     }
   ];
 
