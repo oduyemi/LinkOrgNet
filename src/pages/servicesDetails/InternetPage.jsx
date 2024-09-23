@@ -1,13 +1,13 @@
 import React from "react";
 import { Box } from "@mui/material";
-import ConnectDetails from "../../components/ServiceDetail/ConnectDetails";
+import InternetDetails from "../../components/ServiceDetail/InternetDetails";
 import Footer from "../../components/Footer";
 
 const ConnectPage = () => {
     return(
         <Box>
             <Box>
-                <ConnectDetails />
+                <InternetDetails />
             </Box>
             <Box>
                 <Footer />

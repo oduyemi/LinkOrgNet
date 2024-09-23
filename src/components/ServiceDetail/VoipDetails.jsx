@@ -15,7 +15,7 @@ const serviceData = {
 ],
 
   sidebarItems: [
-    { name: "Connectivity Services", link: "/services/connectivity", active: true },
+    { name: "Internet Services", link: "/services/internet_services", active: true },
     { name: "Satellite Solution", link: "/services/satellite" },
     { name: "VPN Solutions", link: "/services/vpn-solutions" },
     { name: "IT & Network Solutions", link: "/services/it-networks" },

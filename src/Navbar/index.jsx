@@ -15,7 +15,7 @@ import  AdminSentMails  from "../pages/AdminSentMails";
 import Error404 from "../pages/404";
 // import { ServiceDetail } from "../components/ServiceDetail";
 import VoipPage from "../pages/servicesDetails/VoipPage";
-import ConnectPage from "../pages/servicesDetails/ConnectPage";
+import InternetPage from "../pages/servicesDetails/InternetPage";
 import SatellitePage from "../pages/servicesDetails/SatellitePage";
 import VPNPage from "../pages/servicesDetails/VPNPage";
 import ITNetworkPage from "../pages/servicesDetails/ITNetworkPage";
@@ -42,7 +42,7 @@ export const Navbar = () => {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/services" element={<Services />} />
                 <Route path="/services/voip-services" element={<VoipPage />} />
-                <Route path="/services/connectivity" element={<ConnectPage />} />
+                <Route path="/services/internet_services" element={<InternetPage />} />
                 <Route path="/services/satellite" element={<SatellitePage />} />
                 <Route path="/services/vpn-solutions" element={<VPNPage />} />
                 <Route path="/services/it-networks" element={<ITNetworkPage />} />

@@ -167,8 +167,8 @@ export const NavMenu = ({ onOpenOffcanvas }) => {
                                 }}
                               >
                                 <MenuItem onClick={handleServicesMenuClose}>
-                                  <Link to="/services/connectivity" className="text-black">
-                                    Connectivity Services
+                                  <Link to="/services/internet_services" className="text-black">
+                                    Internet Services
                                   </Link>
                                 </MenuItem>
                                 <MenuItem onClick={handleServicesMenuClose}>
