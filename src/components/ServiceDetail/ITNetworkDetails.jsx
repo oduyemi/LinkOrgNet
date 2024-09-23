@@ -18,7 +18,7 @@ const serviceData = {
 
   sidebarItems: [
     { name: "VoIP Solutions", link: "/services/voip-services", active: true },
-    { name: "Internet Solutions", link: "/services/internet"},
+    { name: "Internet Services", link: "/services/internet_services" },
     { name: "VPN Solutions", link: "/services/vpn-solutions" },
     { name: "Satellite Solution", link: "/services/satellite"},
     { name: "Storage Solutions", link: "/services/storage-solutions" },

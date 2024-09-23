@@ -74,9 +74,10 @@ const ServiceSection = () => {
                             </Box>
                             <Box className="content">
                                 <h3>
-                                    <Link to="" className="blutext whitaker">
-                                        Connectivity Services
+                                    <Link to="/services/internet_services" className="blutext whitaker">
+                                        Internet Services
                                     </Link>
+                                    
                                 </h3>
                                 <Typography
                                 variant="body1" 
