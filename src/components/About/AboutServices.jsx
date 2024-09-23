@@ -50,7 +50,7 @@ export const AboutServices = () => {
                 <Box className="row">
                    
                    <Box className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                   <Link to='/services/connectivity'>
+                   <Link to='/services/internet_services'>
                        <Box className="service-box-items">
                            <Box className="icon">
                                <LanguageIcon
@@ -64,7 +64,7 @@ export const AboutServices = () => {
                            <Box className="content">
                                <h3>
                                    <Link to="" className="blutext whitaker">
-                                       Connectivity Services
+                                       Internet Services
                                    </Link>
                                </h3>
                                <Typography
