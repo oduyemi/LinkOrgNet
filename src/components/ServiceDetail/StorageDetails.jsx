@@ -20,7 +20,7 @@ const serviceData = {
     { name: "Satellite Solution", link: "/services/satellite" },
     { name: "VPN Solutions", link: "/services/vpn-solutions" },
     { name: "IT & Network Solutions", link: "/services/it-networks" },
-    { name: "Internet Solutions", link: "/services/internet" },
+    { name: "Internet Services", link: "/services/internet_services" },
     { name: "Collocation & Datacenter Services", link: "/services/collocation-and-data-center" },
     { name: "Software Services", link: "/services/software-services" },
   ],
