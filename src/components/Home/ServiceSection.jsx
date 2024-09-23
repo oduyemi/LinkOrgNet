@@ -61,7 +61,7 @@ const ServiceSection = () => {
         <Box className="row">
                    
                     <Box className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                    <Link to='/services/connectivity'>
+                    <Link to='/services/internet'>
                         <Box className="service-box-items">
                             <Box className="icon">
                                 <LanguageIcon
@@ -75,7 +75,7 @@ const ServiceSection = () => {
                             <Box className="content">
                                 <h3>
                                     <Link to="" className="blutext whitaker">
-                                        Connectivity Services
+                                        Internet Solutions
                                     </Link>
                                 </h3>
                                 <Typography
@@ -84,12 +84,12 @@ const ServiceSection = () => {
                                      fontSize: "14px",
                                      fontWeight: "300",
                                      lineHeight: "1.5", 
-                                     fontFamily: "Montserrat"    
+                                     fontFamily: "montserrat"    
                                 }}
                                 >
                                     Reliable Networks, Anywhere
                                 </Typography>
-                                <Link to="" className="arrow-icon">
+                                <Link to="/services/internet" className="arrow-icon">
                                     <ChevronRightIcon 
                                         sx={{
                                             fontSize: 70,
