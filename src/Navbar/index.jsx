@@ -42,7 +42,7 @@ export const Navbar = () => {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/services" element={<Services />} />
                 <Route path="/services/voip-services" element={<VoipPage />} />
-                <Route path="/services/connectivity" element={<ConnectPage />} />
+                <Route path="/services/internet" element={<ConnectPage />} />
                 <Route path="/services/satellite" element={<SatellitePage />} />
                 <Route path="/services/vpn-solutions" element={<VPNPage />} />
                 <Route path="/services/it-networks" element={<ITNetworkPage />} />

@@ -50,7 +50,7 @@ export const AboutServices = () => {
                 <Box className="row">
                    
                    <Box className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                   <Link to='/services/connectivity'>
+                   <Link to='/services/internet'>
                        <Box className="service-box-items">
                            <Box className="icon">
                                <LanguageIcon
@@ -64,7 +64,7 @@ export const AboutServices = () => {
                            <Box className="content">
                                <h3>
                                    <Link to="" className="blutext whitaker">
-                                       Connectivity Services
+                                       Internet Solutions
                                    </Link>
                                </h3>
                                <Typography
@@ -78,7 +78,7 @@ export const AboutServices = () => {
                                >
                                    Reliable Networks, Anywhere
                                </Typography>
-                               <Link to="" className="arrow-icon">
+                               <Link to="/services/internet" className="arrow-icon">
                                    <ChevronRightIcon 
                                        sx={{
                                            fontSize: 70,
@@ -106,7 +106,7 @@ export const AboutServices = () => {
                            </Box>
                            <Box className="content">
                                <h3>
-                                   <Link to="service-details">
+                                   <Link to="/services/vpn-solutions">
                                        VPN
                                    </Link>
                                </h3>
@@ -121,7 +121,7 @@ export const AboutServices = () => {
                                >
                                    Private &amp; Secure Internet Access
                                </Typography>
-                               <Link to="service-details" className="arrow-icon">
+                               <Link to="/services/vpn-solutions" className="arrow-icon">
                                    <ChevronRightIcon 
                                        sx={{
                                            fontSize: 70,
@@ -163,7 +163,7 @@ export const AboutServices = () => {
                                >
                                    Crystal Clear Calls, Anywhere
                                </Typography>
-                               <Link to="service-details" className="arrow-icon">
+                               <Link to="/services/voip-services" className="arrow-icon">
                                    <ChevronRightIcon 
                                        sx={{
                                            fontSize: 70,
@@ -190,7 +190,7 @@ export const AboutServices = () => {
                            </Box>
                            <Box className="content">
                                <h3>
-                                   <Link to="service-details" className="blutext whitaker">
+                                   <Link to="/services/satellite" className="blutext whitaker">
                                        Satellite Solution
                                    </Link>
                                </h3>
@@ -205,7 +205,7 @@ export const AboutServices = () => {
                                >
                                    Stay Connected, Even Off-Grid
                                </Typography>
-                               <Link to="service-details" className="arrow-icon">
+                               <Link to="/services/satellite" className="arrow-icon">
                                    <ChevronRightIcon 
                                        sx={{
                                            fontSize: 70,

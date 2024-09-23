@@ -2,13 +2,13 @@ import React from "react";
 import ServiceDetail from "../ServiceDetail";
 
 const serviceData = {
-  title: "Connectivity Services",
+  title: "Internet Services",
   imageSrc: require("../../assets/images/services/connectivity.jpg"),
-  imageAlt: "Connectivity Service",
-  description: `<p>At LinkOrg Networks, we offer advanced connectivity solutions to enhance your digital experience. Our high-speed wireless internet delivers exceptional speed and reliability, eliminating slow connections. For even faster performance, our fiber-optic speeds provide ultra-fast data transmission suitable for both residential and business use.</p>
-  <p>Additionally, our community connectivity solutions improve network access across residential estates, ensuring every household benefits from a strong, high-speed connection. Our services are designed to support seamless streaming, efficient work, and robust community connectivity.</p>`,
+  imageAlt: "Internet Service",
+  description: `<p>At LinkOrg Networks, we offer advanced internet solutions to enhance your digital experience. Our high-speed wireless internet delivers exceptional speed and reliability, eliminating slow connections. For even faster performance, our fiber-optic speeds provide ultra-fast data transmission suitable for both residential and business use.</p>
+  <p>Additionally, our community internet solutions improve network access across residential estates, ensuring every household benefits from a strong, high-speed connection. Our services are designed to support seamless streaming, efficient work, and robust community connectivity.</p>`,
 
-  subtitle: "Connectivity Services we Offer",
+  subtitle: "Internet Solutions we Offer",
 
   carouselItems: [
     { imgSrc: require("../../assets/images/services/connect1.jpg"), title: "High-Speed Wireless", description: "Stay connected with fast, reliable wireless internet." },
