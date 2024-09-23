@@ -44,7 +44,11 @@ const ServicesSection = () => {
                     </Typography>
                 </Box>
                 <Box className="row">
+<<<<<<< HEAD
                     <Link to="/services/internet_services" className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+=======
+                    <Link to="/services/internet" className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+>>>>>>> b72faa599968f8dc73362e0502e5a8a5bb1008ba
                         <Box className="service-box-items">
                             <Box className="icon">
                                 <LanguageIcon
@@ -56,7 +60,11 @@ const ServicesSection = () => {
                                 />
                             </Box>
                             <Box className="content">
+<<<<<<< HEAD
                                 <h3 className="blutext whitaker">Internet Services</h3>
+=======
+                                <h3 className="blutext whitaker">Internet Solutions</h3>
+>>>>>>> b72faa599968f8dc73362e0502e5a8a5bb1008ba
                                 <Typography
                                     variant="body1"
                                     sx={{

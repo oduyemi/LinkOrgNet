@@ -3,7 +3,7 @@ import { FAQ } from "../FAQ";
 import CircularProgressWithLabel from "../Services/CircularProgressWithLabel";
 import { Box, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import mainFaq  from "../../assets/images/mainFaq.jpg";
+import faq6  from "../../assets/images/faq6.jpg";
 import RemoveIcon from '@mui/icons-material/Remove';
 
 
@@ -37,7 +37,7 @@ export const VoipQuestions = () => {
         <Box>
             <Box className="breadcrumb-wrapper section-padding bg-cover" 
             style={{
-                backgroundImage: `url(${mainFaq}`
+                backgroundImage: `url(${faq6}`
             }}
         >
                 <Box className="container">

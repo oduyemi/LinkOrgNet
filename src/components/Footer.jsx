@@ -117,7 +117,7 @@ const Footer = () => {
                 </Box>
 
                 <ul className="list-items">
-                  <li><Link to="/services/connectivity" className="text-black">Connectivity Services</Link ></li>
+                  <li><Link to="/services/internet" className="text-black">Internet Solutions</Link ></li>
                   <li><Link to="/services/satellite" className="text-black">Satellite Solution</Link ></li>
                   <li><Link to="/services/vpn-solutions" className="text-black">VPN Solutions</Link ></li>
                   <li><Link to="/services/voip-services" className="text-black">VoIP Solutions</Link ></li>
