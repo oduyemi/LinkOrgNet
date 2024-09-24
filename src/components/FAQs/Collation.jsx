@@ -20,7 +20,7 @@ const faqData = [
     },
     {
         question: "Do you provide 24/7 monitoring and technical support for data center clients?",
-        answer: "Yes, we offer round-the-clock monitoring and technical support to ensure that your infrastructure remains operational and secure at all times.",
+        answer: "Yes, we offer round-the-clock monitoring and technical support from our network monitoring centre (NMC) to ensure that your infrastructure remains operational and secure at all times.",
     },
     {
         question: "Can I easily migrate my existing infrastructure into your data center?",
