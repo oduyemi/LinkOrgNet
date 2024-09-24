@@ -37,7 +37,7 @@ const ServicesSection = () => {
                         sx={{
                             fontSize: "18px",
                             fontWeight: "300",
-                            fontFamily: "Montserrat"
+                            fontFamily: "montserrat"
                         }}
                     >
                         Our wide range of services is designed to address the unique needs of both individuals and businesses. Whether you need high-speed internet, secure VPNs, or advanced VoIP solutions, LinkOrg Networks has you covered. We offer tailored services that not only meet but exceed industry standards, ensuring that you have the tools you need to stay ahead in a digital world.
@@ -98,7 +98,7 @@ const ServicesSection = () => {
                                         fontSize: "14px",
                                         fontWeight: "300",
                                         lineHeight: "1.5",
-                                        fontFamily: "Montserrat"
+                                        fontFamily: "montserrat"
                                     }}
                                 >
                                     Private & Secure Internet Access
@@ -133,7 +133,7 @@ const ServicesSection = () => {
                                         fontSize: "14px",
                                         fontWeight: "300",
                                         lineHeight: "1.5",
-                                        fontFamily: "Montserrat"
+                                        fontFamily: "montserrat"
                                     }}
                                 >
                                     Crystal Clear Calls, Anywhere
@@ -168,7 +168,7 @@ const ServicesSection = () => {
                                         fontSize: "14px",
                                         fontWeight: "300",
                                         lineHeight: "1.5",
-                                        fontFamily: "Montserrat"
+                                        fontFamily: "montserrat"
                                     }}
                                 >
                                     Stay Connected, Even Off-Grid
@@ -202,7 +202,7 @@ const ServicesSection = () => {
                                         fontSize: "14px",
                                         fontWeight: "300",
                                         lineHeight: "1.5",
-                                        fontFamily: "Montserrat"
+                                        fontFamily: "montserrat"
                                     }}
                                 >
                                     Seamless IT Infrastructure and Network Management
@@ -236,7 +236,7 @@ const ServicesSection = () => {
                                         fontSize: "14px",
                                         fontWeight: "300",
                                         lineHeight: "1.5",
-                                        fontFamily: "Montserrat"
+                                        fontFamily: "montserrat"
                                     }}
                                 >
                                     Secure and Scalable Data Storage
@@ -270,7 +270,7 @@ const ServicesSection = () => {
                                         fontSize: "14px",
                                         fontWeight: "300",
                                         lineHeight: "1.5",
-                                        fontFamily: "Montserrat"
+                                        fontFamily: "montserrat"
                                     }}
                                 >
                                     Secure, Reliable Hosting for Your Critical Data
@@ -304,7 +304,7 @@ const ServicesSection = () => {
                                         fontSize: "14px",
                                         fontWeight: "300",
                                         lineHeight: "1.5",
-                                        fontFamily: "Montserrat"
+                                        fontFamily: "montserrat"
                                     }}
                                 >
                                     Tailored Solutions for Your Unique Needs

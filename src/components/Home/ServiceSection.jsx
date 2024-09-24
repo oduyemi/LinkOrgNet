@@ -27,7 +27,7 @@ const ServiceSection = () => {
                   fontSize: "35px",
                   fontWeight: 800,
                   lineHeight: "1.3",
-                  fontFamily: "Montserrat",
+                  fontFamily: "montserrat",
                   color: "#010156"
                 }}
             >
@@ -41,7 +41,7 @@ const ServiceSection = () => {
             className="wow fadeInUp w-75" 
             data-wow-delay=".5s"
             sx={{
-              fontFamily: "Montserrat",
+              fontFamily: "montserrat",
               fontWeight: 300,
               fontSize: "18px",
             }}
@@ -118,7 +118,7 @@ const ServiceSection = () => {
                             </Box>
                             <Box className="content">
                                 <h3>
-                                    <Link to="service-details">
+                                    <Link to="/services/vpn-solutions">
                                         VPN
                                     </Link>
                                 </h3>
@@ -128,12 +128,12 @@ const ServiceSection = () => {
                                      fontSize: "14px",
                                      fontWeight: "300",
                                      lineHeight: "1.5", 
-                                     fontFamily: "Montserrat"    
+                                     fontFamily: "montserrat"    
                                 }}
                                 >
                                     Private &amp; Secure Internet Access
                                 </Typography>
-                                <Link to="service-details" className="arrow-icon">
+                                <Link to="/services/vpn-solutions" className="arrow-icon">
                                     <ChevronRightIcon 
                                         sx={{
                                             fontSize: 70,
@@ -170,12 +170,12 @@ const ServiceSection = () => {
                                      fontSize: "14px",
                                      fontWeight: "300",
                                      lineHeight: "1.5", 
-                                     fontFamily: "Montserrat"    
+                                     fontFamily: "montserrat"    
                                 }}
                                 >
                                     Crystal Clear Calls, Anywhere
                                 </Typography>
-                                <Link to="service-details" className="arrow-icon">
+                                <Link to="/services/voip-services" className="arrow-icon">
                                     <ChevronRightIcon 
                                         sx={{
                                             fontSize: 70,
@@ -202,7 +202,7 @@ const ServiceSection = () => {
                             </Box>
                             <Box className="content">
                                 <h3>
-                                    <Link to="service-details" className="blutext whitaker">
+                                    <Link to="/services/satellite" className="blutext whitaker">
                                         Satellite Solution
                                     </Link>
                                 </h3>
@@ -212,12 +212,12 @@ const ServiceSection = () => {
                                      fontSize: "14px",
                                      fontWeight: "300",
                                      lineHeight: "1.5", 
-                                     fontFamily: "Montserrat"    
+                                     fontFamily: "montserrat"    
                                 }}
                                 >
                                     Stay Connected, Even Off-Grid
                                 </Typography>
-                                <Link to="service-details" className="arrow-icon">
+                                <Link to="/services/satellite" className="arrow-icon">
                                     <ChevronRightIcon 
                                         sx={{
                                             fontSize: 70,
