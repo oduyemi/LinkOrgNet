@@ -2,7 +2,7 @@ import React from "react";
 import ServiceDetail from ".";
 
 const serviceData = {
-  title: "Internet Services",
+  title: "Internet Solutions",
   imageSrc: require("../../assets/images/services/internet.jpg"),
   imageAlt: "Internet Solutions",
   description: `<p>At LinkOrg Networks, we offer advanced Internet solutions to enhance your digital experience. Our high-speed wireless internet delivers exceptional speed and reliability, eliminating slow connections. For even faster performance, our fiber-optic speeds provide ultra-fast data transmission suitable for both residential and business use.</p>
