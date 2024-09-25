@@ -12,7 +12,7 @@ import RemoveIcon from '@mui/icons-material/Remove';
 const faqData = [
     {
       question: "What internet speed options does LinkOrg Networks offer for businesses and individuals?",
-      answer: "LinkOrg Networks provides a range of internet speeds to suit the needs of both businesses and individuals. Our offerings include high-speed broadband, with options for faster connections based on your requirements and location.",
+      answer: "LinkOrg Networks provide a range of internet speeds through our fiber, Radio Lastmile, and VSAT, to suit the needs of both businesses and individuals based on your requirements and location.",
     },
     {
         question: "How do you ensure reliable internet connectivity in remote areas?",
@@ -24,7 +24,7 @@ const faqData = [
     },
     {
         question: "Can your internet services support heavy video conferencing and cloud usage?",
-        answer: "Yes, our internet services are designed to handle bandwidth-heavy tasks like video conferencing and cloud usage. We ensure high-speed, low-latency connectivity, even during peak usage times.",
+        answer: "Yes, our internet services are designed to handle bandwidth-heavy tasks like video conferencing and cloud usage. We ensure high-speed, low-latency connectivity, even during peak hours.",
     },
     {
         question: "Do you offer redundancy solutions to prevent internet downtime?",
