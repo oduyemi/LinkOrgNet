@@ -111,7 +111,7 @@ export const NavMenu = ({ onOpenOffcanvas }) => {
                                 </MenuItem>
 
                                 <MenuItem onClick={handleFaqsMenuClose}>
-                                  <Link to="/faqs/internet-services" className="text-black">
+                                  <Link to="/faqs/internet" className="text-black">
                                     Internet Solutions
                                   </Link>
                                 </MenuItem> 
@@ -167,8 +167,8 @@ export const NavMenu = ({ onOpenOffcanvas }) => {
                                 }}
                               >
                                 <MenuItem onClick={handleServicesMenuClose}>
-                                  <Link to="/services/internet_services" className="text-black">
-                                    Internet Services
+                                  <Link to="/services/internet" className="text-black">
+                                    Internet Solutions
                                   </Link>
                                 </MenuItem>
                                 <MenuItem onClick={handleServicesMenuClose}>
