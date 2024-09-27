@@ -123,8 +123,8 @@ export const ContactForm = () => {
                                                 >
                                                     Email
                                                 </Typography>
-                                                <Link to="mailto:info@linkorgnet.com" className="link">info@linkorgnet.com</Link> <br />
-                                                <Link to="mailto:info@linkorgnet.com" className="link">support@linkorgnet.com</Link>
+                                                <Link to="mailto:info@linkorgnet.com.ng" className="link">info@linkorgnet.com.ng</Link> <br />
+                                                <Link to="mailto:info@linkorgnet.com.ng" className="link">support@linkorgnet.com.ng</Link>
                                             </Box>
                                         </Box>
                                     </Box>
