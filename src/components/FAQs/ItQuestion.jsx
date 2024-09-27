@@ -16,11 +16,11 @@ const faqData = [
     },
     {
         question: "Do you offer managed IT services for small to medium-sized businesses?",
-        answer: "Yes, we provide managed IT services that cover everything from network maintenance to troubleshooting, ensuring your business runs smoothly without any IT interruptions.",
+        answer: "Linkorg Network provides tailored managed IT services for small to medium-sized businesses, including: 24/7 IT support, network security,cloud solutions,data backup and recovery",
     },
     {
         question: "Can you assist with setting up both wired and wireless networks for businesses?",
-        answer: "Absolutely! We specialize in designing and setting up wired and wireless networks tailored to your business needs, ensuring seamless connectivity across your office locations.",
+        answer: " Absolutely! We specialize in designing and setting up wired and wireless networks tailored to your business needs, ensuring seamless connectivity across your office locations. We also can provide hybrid solution combining the best of both wired and wireless networks for optimal performance.",
     },
     {
         question: "What network infrastructure solutions do you provide for companies with multiple offices?",

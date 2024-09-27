@@ -20,7 +20,7 @@ const faqData = [
     },
     {
         question: "Can you assist with migrating my data to your storage solutions without downtime?",
-        answer: "Yes, we offer seamless data migration services to ensure that your data can be moved to our platform without any significant downtime or disruptions.",
+        answer: "Yes, we offer seamless data migration services to ensure that your data can be moved to our platform without any significant downtime or disruptions. observing change management process through assessment, preparation, data transfer, testing, cutover",
     },
     {
         question: "Do you offer disaster recovery services as part of your storage solutions?",
