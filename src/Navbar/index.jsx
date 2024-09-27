@@ -52,7 +52,7 @@ export const Navbar = () => {
                 <Route path="/services/software-services" element={<SoftwarePage />} />
 
                 {/* Subservices */}
-                <Route path="/services/vpn-services/mpls3" element={<Mpls3 />} />
+                <Route path="/services/vpn-solutions/mpls3" element={<Mpls3 />} />
 
                 {/* FAQs */}
                 <Route path="/faqs" element={<GeneralQuestions />} />
