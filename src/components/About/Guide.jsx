@@ -18,7 +18,7 @@ export const Guide = () => {
                                     sx={{
                                         fontSize: "14px",
                                         fontWeight: "300",
-                                        fontFamily: "Montserrat",
+                                        fontFamily: "montserrat",
                                         color: "#010156"
                                     }}
                                     gutterBottom

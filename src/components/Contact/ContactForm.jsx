@@ -43,7 +43,7 @@ export const ContactForm = () => {
                                     data-wow-delay=".4s"
                                 >
                                     We are here! Our door is open for a good
-                                    cup of coffe. Get the info you&apos;re
+                                    cup of coffee. Get the info you&apos;re
                                     looking for right now.
                                     
                                 </Typography>
@@ -97,8 +97,8 @@ export const ContactForm = () => {
                                                 >
                                                     Phone
                                                 </Typography>
-                                                <Link to="tel:+09354587874">+09 354 587 874 </Link> <br />
-                                                <Link to="tel:+01368567894">+01 368 567 894</Link>
+                                                <Link to="tel:+234803406 0434">+234 803 406 0434 </Link> <br />
+                                                {/* <Link to="tel:+01368567894">+01 368 567 894</Link> */}
                                             </Box>
                                         </Box>
                                     </Box>
@@ -178,7 +178,7 @@ export const ContactForm = () => {
                                             fontSize: "30px", 
                                         }}
                                     >
-                                        Fill Up The Form
+                                        Fill In The Form
                                     </Typography>
                                 </Box>
                                 <form action="contact.php" id="contact-form" method="POST">
