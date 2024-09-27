@@ -63,7 +63,6 @@ export const Ad = () => {
                             </p>
                         </Box>
                         <Box className="counter-items">
-                            {/* <h2><span className="count">991</span></h2> */}
                             <p>
                                 SATELLITE <br />
                                 CHANNELS

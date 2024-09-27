@@ -31,6 +31,7 @@ import { VoipQuestions } from "../components/FAQs/Voip";
 import { VPNQuestions } from "../components/FAQs/VPN";
 import { CollationQuestions } from "../components/FAQs/Collation";
 import { VSATQuestions } from "../components/FAQs/VSAT";
+import Mpls3 from "../pages/subServices/Mpls3";
 
 export const Navbar = () => {
     return (
@@ -50,12 +51,15 @@ export const Navbar = () => {
                 <Route path="/services/collocation-and-data-center" element={<CollocationPage />} />
                 <Route path="/services/software-services" element={<SoftwarePage />} />
 
+                {/* Subservices */}
+                <Route path="/services/vpn-services/mpls3" element={<Mpls3 />} />
+
                 {/* FAQs */}
                 <Route path="/faqs" element={<GeneralQuestions />} />
                 <Route path="/faqs/it-networks" element={<ItQuestions />} />
                 <Route path="/faqs/software-services" element={<SoftwareQuestions />} />
                 <Route path="/faqs/storage-services" element={<StorageQuestions />} />
-                <Route path="/faqs/internet-services" element={<InternetQuestions />} />
+                <Route path="/faqs/internet" element={<InternetQuestions />} />
                 <Route path="/faqs/voip-services" element={<VoipQuestions />} />
                 <Route path="/faqs/vpn-services" element={<VPNQuestions />} />
                 <Route path="/faqs/collocation-data-center" element={<CollationQuestions />} />
