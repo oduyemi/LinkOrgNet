@@ -11,6 +11,7 @@ import GrowSection from "../components/Home/GrowSection";
 import ContactSection from "../components/Home/ContactSection";
 import Brand from "../components/About/Brand";
 import FaqSection from "../components/Services/FaqSection";
+// import { ThreeDCard } from "../components/Home/ThreeDCard";
 
 
 
@@ -21,6 +22,7 @@ const Home = () => {
             <Box className="mt-5">
             <ServiceSection/>
             </Box>
+            {/* <ThreeDCard/> */}
             <AboutSection/>
             <FeatureIconSection/>
             <FaqSection />

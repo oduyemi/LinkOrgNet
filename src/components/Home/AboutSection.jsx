@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Box, Typography } from "@mui/material";
 import { Link } from 'react-router-dom';
 import hero0 from "../../assets/images/hero0.jpg";
+import "./Animation.css";
 // import ITSolution2 from "../../assets/images/ITSolution2.jpg";
 import CheckIcon from '@mui/icons-material/Check';
 
@@ -130,21 +131,25 @@ const AboutSection = () => {
       <Box className="container">
         <Box className="about-wrapper-2">
           <Box className="row">
-            <Box className="col-lg-6">
-              <Box className="about-image-items">
-                <Box
-                  className="about-image-1 bg-cover wow fadeInLeft"
-                  data-wow-delay=".3s"
-                  style={{ 
-                    backgroundImage: `url(${hero0})`,
-                    backgroundSize: "cover",
-                    width: "100%"
-                  }}
-                >
-                  {/* <Box className="about-image-2 wow fadeInUp" data-wow-delay=".5s">
-                    <img src={ITSolution2} alt="about-img" />
-                  </Box> */}
-                </Box>
+            <Box 
+            className="col-lg-6">
+              <Box 
+              className="about-image-items"
+              >
+           <Box
+                className="about-image-1 wow fadeInLeft"
+                data-wow-delay=".3s"
+                style={{
+                  backgroundImage: `url(${hero0})`, /* You already have this */
+                  backgroundSize: "cover", /* You already have this */
+                  width: "100%", /* You already have this */
+                  objectFit: "cover", /* Equivalent to object-cover */
+                  borderRadius: "0.75rem", /* Equivalent to rounded-xl */
+                  transition: "box-shadow 0.3s ease", /* Smooth transition for hover */
+                }}
+              >
+            </Box>
+
               </Box>
             </Box>
             <Box className="col-lg-6 mt-5 mt-lg-0">
