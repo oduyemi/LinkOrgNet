@@ -56,64 +56,77 @@ const ServiceDetail = ({
                   </Typography>
                 {/* Carousel section */}
                 <Box className="section">
-                  <Box className="container">
-                    <Box className="image-carousel style2">
-                      <Box 
+                <Box className="container">
+                  <Box className="image-carousel style2">
+                    <Box 
                       className="grid-container"
                       sx={{
                         display: "flex",
                         flexWrap: "wrap",
                         justifyContent: "space-between",
                         // Responsive behavior
-                        flexDirection: { xs: "column", md: "row" }, 
+                        flexDirection: { xs: "column", md: "row" },
                       }}
-                      >
-                        {carouselItems.map((item, index) => (
-                          <Box 
+                    >
+                      {carouselItems.map((item, index) => (
+                        <Box 
                           className="grid-item" 
                           key={index} 
                           sx={{
-                            height: "445px",
-                            width: { xs: "100%", sm: "50%", md: "32%" }, 
+                            width: { xs: "100%", sm: "48%", md: "32%" }, // Adjust width for responsiveness
+                            marginBottom: "20px", 
+                            height: "500px",
                           }}
-                          >
-                            <article className="box">
-                              <figure>
-                                <Box
-                               sx={{
-                                height: "230px",
-                              }}
-                              
-                                >
-                                  <img 
+                        >
+                          <article className="box">
+                            <figure>
+                              <Box
+                                sx={{
+                                  height: "250px",
+                                }}
+                              >
+                                <img 
                                   src={item.imgSrc} 
                                   alt={item.title} 
                                   style={{
                                     height: "100%", 
                                     width: "100%", 
                                     objectFit: "contain" 
-                                    }} />
-                                </Box>
-                              </figure>
-                              <Box 
+                                  }} 
+                                />
+                              </Box>
+                            </figure>
+                            <Box 
                               className="details"
                               sx={{
-                                height: "150px",
-                                marginTop: "30px"
+                                marginTop: "20px",
+                                height: "170px"
                               }}
-                              >
-                                <h4 className="box-title" style={{color: "#010156"}} >
-                                  {item.title} 
-                                </h4>
-                                <p className="description">{item.description}</p>
+                            >
+                              <h4 className="box-title" style={{ color: "#010156" }}>
+                                {item.title} 
+                              </h4>
+                              <p className="description">{item.description}</p>
+                            <Link key={index} to={item.link}>
+                            <Box className="col-lg-12 wow fadeInUp" data-wow-delay=".4s">
+                                <button type="submit" className="theme-btn theme-btn-2">
+                                  <span>Learn More <i className="fas fa-chevron-right"></i></span>
+                                </button>
                               </Box>
-                            </article>
-                          </Box>
-                        ))}
-                      </Box>
+                            </Link>
+                              
+                            </Box>
+                          </article>
+                        </Box>
+                      ))}
                     </Box>
                   </Box>
                 </Box>
+                </Box>
+
+
+
+
               </Box>
             </Box>
             {/* Sidebar section */}

@@ -10,7 +10,7 @@ const serviceData = {
   subtitle: "Collocation & Datacenter Services we offer",
 
   carouselItems: [
-    { imgSrc: require("../../assets/images/services/data1.jpg"), title: "Virtual Servers", description: "Scale your business with virtual hosting." },
+    { imgSrc: require("../../assets/images/services/data1.jpg"), title: "Virtual Servers", description: "Scale your business with virtual hosting.", link: "./about" },
     { imgSrc: require("../../assets/images/services/data2.jpg"), title: "Collocation", description: "Secure IT infrastructure in a state-of-the-art datacenter." },
     { imgSrc: require("../../assets/images/services/data3.jpg"), title: "Data Backup", description: "Comprehensive solutions for data protection and recovery." }
 ],
