@@ -3,6 +3,7 @@ import { Navbar } from "./Navbar";
 import "./App.css";
 import "animate.css";
 import TawkToChat from './components/TawkTo';
+import ConsentBanner from "./ConsentBanner";
 
 function App() {
   useEffect(() => {
@@ -16,11 +17,13 @@ function App() {
     };
 
     const handleMouseDown = () => {
-      cursorOuter.style.transform = `scale(0.8)`;
+      cursorOuter.style.width = '30px';
+      cursorOuter.style.height = '30px';
     };
 
     const handleMouseUp = () => {
-      cursorOuter.style.transform = `scale(1)`;
+      cursorOuter.style.width = '40px';
+      cursorOuter.style.height = '40px';
     };
 
     document.addEventListener("mousemove", moveCursor);
@@ -36,10 +39,14 @@ function App() {
 
   return (
     <div className="App">
+      {/* Custom cursor elements */}
       <div className="mouse-cursor cursor-outer"></div>
       <div className="mouse-cursor cursor-inner"></div>
+      
+      {/* Navbar and other components */}
       <Navbar />
-      <TawkToChat/>
+      <ConsentBanner />
+      <TawkToChat />
     </div>
   );
 }

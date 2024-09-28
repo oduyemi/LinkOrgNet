@@ -215,6 +215,7 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+  /* cursor: none; */
 }
 
 ul {
@@ -11470,3 +11471,34 @@ p.sticky-label {
   background: #fff;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+
+
+
+
+
+.mouse-cursor {
+  position: absolute !important;
+  pointer-events: none !important;
+  z-index: 9999 !important;
+}
+
+.cursor-outer {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  border: 2px solid #010156 !important;
+  transform: translate(-50%, -50%) !important;
+  transition: transform 0.15s ease-out !important;
+}
+
+.cursor-inner {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  background-color: #E65D0F !important; 
+  transform: translate(-50%, -50%) !important;
+  transition: transform 0.1s ease-out !important;
+}
+
+
+
