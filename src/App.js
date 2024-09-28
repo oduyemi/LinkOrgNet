@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Navbar } from "./Navbar";
 import "./App.css";
 import "animate.css";
+import { Box } from "@mui/material";
 import TawkToChat from './components/TawkTo';
 import ConsentBanner from "./ConsentBanner";
 
@@ -38,16 +39,13 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      {/* Custom cursor elements */}
-      <div className="mouse-cursor cursor-outer"></div>
-      <div className="mouse-cursor cursor-inner"></div>
-      
-      {/* Navbar and other components */}
+    <Box className="App">
+      <Box className="mouse-cursor cursor-outer"></Box>
+      <Box className="mouse-cursor cursor-inner"></Box>
       <Navbar />
       <ConsentBanner />
       <TawkToChat />
-    </div>
+    </Box>
   );
 }
 

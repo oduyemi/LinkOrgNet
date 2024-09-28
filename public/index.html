@@ -5,13 +5,14 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Get Connected. Feel Connected"
-    />
+    <meta name="description" content="Get Connected. Feel Connected" />
+    
+    <!-- Favicons and Assets -->
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="shortcut icon" href="%PUBLIC_URL%/assets/img/favicon.svg">
+    
+    <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/font-awesome.css">
     <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/animate.css">
@@ -22,21 +23,32 @@
     <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/nice-select.css">
     <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/main.css">
     <link rel="stylesheet" href="%PUBLIC_URL%/style.css">
+    
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VVZEL3WEX0"></script>
     <script>
+      // Define dataLayer and the gtag function
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() { dataLayer.push(arguments); }
 
+      // Initialize gtag with your tag ID
+      gtag('js', new Date());
       gtag('config', 'G-VVZEL3WEX0');
+
+      // Set default consent to 'denied'
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'analytics_storage': 'denied'
+      });
     </script>
+    
     <title>Linkorg Networks</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-      
-     
 
   </body>
 </html>
