@@ -62,7 +62,7 @@ export const Intro = () => {
                             </Box>
                         </Box>
 
-                        <Box className="col-lg-6 mt-5 mt-lg-0">
+                        <Box className="col-lg-6 mt-3 mt-lg-0">
                             <Box className="about-content">
                                 <Box className="section-title">
                                     <span
@@ -88,38 +88,23 @@ export const Intro = () => {
                                 </Box>
                                 <Typography
                                     variant="body1"
-                                    className=" mt-4 mt-md-0 wow fadeInUp"
+                                    className="wow fadeInUp"
                                     data-wow-delay=".5s"
                                     sx={{
                                         fontFamily: "Montserrat",
+                                        lineHeight: "1.5",
+                                        fontWeight: 400,
                                     }}
                                     gutterBottom
-                                >
-                                    LinkOrg Networks, founded in 2009, is an Engineering Solution
-                                    company dedicated to offering satellite communication services to
-                                    ships, vessels, jack-up barges, and other offshore bases from our
-                                    collocated teleport infrastructure with one of our partners.
-                                    Our expertise includes Fixed VSAT remote internet solutions,
-                                    Marine/offshore internet services, Video broadcasting,
-                                    Information Technology, and Telecommunications.
-                                    <br />
-                                    <br />
-                                    What distinguishes us is our unwavering focus on utilizing
-                                    state-of-the-art technology to provide seamless connectivity
-                                    solutions. Combining LEO and GEO Satellite technology, Fibre
-                                    Optics, IP-PBX and Terrestrial technologies to deliver tailored
-                                    professional solutions that meet the diverse requirements of our
-                                    valued clients in Africa and beyond.
-                                    <br />
-                                    <br />
-                                    Our focus is on delivering reliable communication solutions,
-                                    particularly for clients with offshore safety needs. Our engineers
-                                    are proficient in installing and maintaining various satellite
-                                    systems and have expertise in design, implementation, and customer
-                                    service. We operate with a team of engineers in Lagos,
-                                    Port-Harcourt, and the United Kingdom, and our main operations and
-                                    business development are located in the UK.
-                                </Typography>
+                                    >
+                                    LinkOrg Networks, established in 2009, is a leading provider of satellite communication services, specializing in connecting ships, vessels, jack-up barges, and offshore bases. Leveraging our advanced teleport infrastructure in collaboration with trusted partners, we offer cutting-edge remote internet solutions via Fixed VSAT, as well as Marine/offshore internet services, video broadcasting, IT, and telecommunications.
+                                    <br /><br />
+                                    What sets us apart is our commitment to deploying the latest technologies, including LEO and GEO satellites, Fibre Optics, IP-PBX, and Terrestrial solutions, ensuring that our clients receive tailored, reliable communication systems to meet their diverse needs across Africa and beyond.
+                                    <br /><br />
+                                    Our mission is to provide dependable communication solutions, especially for clients in offshore industries, where safety and reliability are paramount. Our team of engineers, located in Lagos, Port-Harcourt, and the UK, are highly skilled in the design, installation, and maintenance of various satellite and communication systems.
+                                    <br /><br />
+                                    Let us help you stay connected and productive, no matter where you are. Choose LinkOrg Networks for the best internet and communication experience, where reliability meets excellence!
+                                    </Typography>
 
                                 <Box className="about-author">
                                     <Box className="">

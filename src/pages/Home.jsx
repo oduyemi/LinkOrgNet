@@ -22,13 +22,11 @@ const Home = () => {
             <Box className="mt-5">
             <ServiceSection/>
             </Box>
-            {/* <ThreeDCard/> */}
             <AboutSection/>
             <FeatureIconSection/>
             <FaqSection />
             <CounterSection/>
             <GrowSection/>
-            {/* <ProductSection/> */}
             <ContactSection/>
             <Brand/>
             <Footer />

@@ -18,21 +18,34 @@ const ServiceSection = () => {
             <span className="wow fadeInUp"  
               style={{ textDecoration: "none" }}>
               Your IT & Telecom Partner
-            </span> 
+            </span> <br/>
             <Typography
                 variant="h2" 
-                className="wow fadeInUp" 
+                // className="wow fadeInUp d-inline" 
                 data-wow-delay=".3s"
                 sx={{
-                  fontSize: "35px",
+                  fontSize: "36px",
                   fontWeight: 800,
                   lineHeight: "1.3",
                   fontFamily: "montserrat",
                   color: "#010156"
                 }}
             >
-                 Unlock Seamless<br />
-                 Connectivity and Innovation
+                Unlock Seamless {" "}
+                <Typography
+                    className="d-inline"
+                    variant="h2" 
+                    sx={{
+                    fontSize: "36px",
+                    fontWeight: 800,
+                    fontFamily: "montserrat",
+                    color: "#E65D0F",
+                    }}
+                >
+                    Connectivity
+                </Typography>{" "}<br/>
+                with Nigeria's Top <br/>
+                IT and Networks Provider
             </Typography> 
              
           </Box>
@@ -44,18 +57,24 @@ const ServiceSection = () => {
               fontFamily: "montserrat",
               fontWeight: 300,
               fontSize: "18px",
+              maxWidth: '680px', 
+              margin: '0 auto', 
             }}
           >
-            We don't just provide IT and telecom solutions — we 
-            revolutionize your digital experience. Whether 
-            you&apos;re an individual or a business, our 
-            cutting-edge services, from ultra-fast internet to 
-            secure VPNs and reliable VoIP, empower you to stay 
-            connected and thrive in a constantly evolving digital world. 
-            <br/><br/>With over a decade of expertise, we&apos;re 
-            committed to delivering flexible, scalable solutions 
-            that grow with you. Let us be your partner in 
-            driving your digital future.
+            Stay connected with Nigeria's leading 
+            connectivity provider. As a top IT and 
+            networks provider, we specialize in 
+            VoIP solutions that enhance your communication 
+            experience. Our expertise extends beyond VoIP; 
+            we offer comprehensive services including high-speed 
+            internet, VPN, and Maritime VSAT to ensure you 
+            stay connected no matter where you are.<br/><br/> 
+            Whether you're streaming, working, or gaming, our 
+            high-speed internet solutions guarantee seamless 
+            connectivity to the world. Enjoy lightning-fast 
+            and dependable service designed to meet your unique 
+            needs, ensuring that your online activities are smooth 
+            and uninterrupted.<br/>
           </Typography>
         </Box>
         <Box className="row">
