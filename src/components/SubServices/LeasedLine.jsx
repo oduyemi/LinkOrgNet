@@ -9,7 +9,7 @@ import VpnKeyIcon from '@mui/icons-material/VpnKey';
 import PhoneCallbackIcon from '@mui/icons-material/PhoneCallback';
 import LeasedLineIcon from '@mui/icons-material/SettingsInputHdmi';
 
-export const VpnMpls3 = () => {
+export const VpnLeasedLine = () => {
     return (
         <Box>      
             <Box className="container-xxl py-5">
@@ -32,7 +32,7 @@ export const VpnMpls3 = () => {
                                         fontWeight: 700
                                     }}
                                 > 
-                                    MPLS L3VPN
+                                  Leased Line
                                 </Typography>
                                 <Typography 
                                     variant="body1" 
@@ -41,19 +41,20 @@ export const VpnMpls3 = () => {
                                         fontFamily: "montserrat"
                                     }}
                                 >
-                                    MPLS L3VPN (Multiprotocol Label Switching Layer 3 Virtual Private Network) 
-                                    is a technology that enables service providers to create secure and scalable 
-                                    IP-based networks for multiple customers over a shared MPLS backbone
+                                   A leased line in relation to a VPN (Virtual Private Network) is a private, 
+                                   dedicated circuit that provides a direct, secure connection between two or more locations.
                                     <br/><br/>
-                                    It uses MPLS for efficient packet forwarding and Virtual Routing and Forwarding (VRF) 
-                                    to isolate customer traffic.
+                                    When combined with a VPN, a leased line enhances security and performance for businesses
+                                    needing to transmit sensitive data across geographically distributed offices. 
                                     <br/><br/>
-                                    Key features of MPLS L3VPN include:
+                                    Key features of Leased include:
                                 </Typography>
-                                <p className="fw-medium blutext"><CheckIcon /> Efficient Routing</p>
-                                <p className="fw-medium blutext"><CheckIcon /> Traffic Isolation</p>
-                                <p className="fw-medium blutext"><CheckIcon /> Scalability</p>
-                                <p className="fw-medium blutext"><CheckIcon /> Traffic Optimization</p>
+                                <p className="fw-medium blutext"><CheckIcon /> Dedicated Connection: Provides a private, exclusive link for one user or organization</p>
+                                <p className="fw-medium blutext"><CheckIcon /> High-Speed Connectivity: Offers symmetrical upload and download speeds.</p>
+                                <p className="fw-medium blutext"><CheckIcon /> Reliability: Ensures minimal downtime with high availability.</p>
+                                <p className="fw-medium blutext"><CheckIcon /> Low Latency: Guarantees fast data transmission with reduced delays.</p>
+                                <p className="fw-medium blutext"><CheckIcon /> Enhanced Security: Offers greater protection against unauthorized access..</p>
+                                <p className="fw-medium blutext"><CheckIcon /> Scalability: Easily upgradeable to meet growing business demands.</p>
                                 <Box className="blu d-flex align-items-center p-4 mt-5">
                                     <Box className="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style={{width: "60px", height: "60px"}}>
                                         <PhoneCallbackIcon className="blutext" />
@@ -234,7 +235,6 @@ export const VpnMpls3 = () => {
                     </Box>
                 </Box>
             </Box>
-
 
             <ServiceForm />
         </Box>
