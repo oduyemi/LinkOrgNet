@@ -81,7 +81,7 @@ export const VpnMpls2 = () => {
                                 height: "fitContent"
                             }}
                             >
-                                <img className="position-absolute img-fluid" src={require("../../assets/images/subservice/mplsL3vpn.png")} style={{width: "100%", objectFit: "contain", paddingTop: "50px"}} alt="" />
+                                <img className="position-absolute img-fluid" src={require("../../assets/images/subservice/mplsL2vpn.png")} style={{width: "100%", objectFit: "contain", paddingTop: "50px"}} alt="" />
                             </Box>
                         </Box>
                     </Box>
