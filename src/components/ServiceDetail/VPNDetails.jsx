@@ -10,9 +10,9 @@ const serviceData = {
   subtitle: "VPN Solutions we offer",
 
   carouselItems: [
-    { imgSrc: require("../../assets/images/services/vpn1.png"), title: "MPLS L3VPN", description: "Secure your business with scalable private network solutions." },
-    { imgSrc: require("../../assets/images/services/vpn2.png"), title: "MPLS L2VPN", description: "Connect multiple locations seamlessly and securely." },
-    { imgSrc: require("../../assets/images/services/vpn3.png"), title: "Leased Line", description: " Dedicated high-speed internet for demanding businesses." }
+    { imgSrc: require("../../assets/images/services/vpn1.png"), title: "MPLS L3VPN", description: "Secure your business with scalable private network solutions.", link: "/services/vpn-solutions/mpls3" },
+    { imgSrc: require("../../assets/images/services/vpn2.png"), title: "MPLS L2VPN", description: "Connect multiple locations seamlessly and securely.",  link: "/services/vpn-solutions/mpls2" },
+    { imgSrc: require("../../assets/images/services/vpn3.png"), title: "Leased Line", description: " Dedicated high-speed internet for demanding businesses.",  link: "/services/vpn-solutions/leased" }
 ],
 
   sidebarItems: [

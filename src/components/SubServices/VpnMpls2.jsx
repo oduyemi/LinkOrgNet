@@ -9,7 +9,7 @@ import VpnKeyIcon from '@mui/icons-material/VpnKey';
 import PhoneCallbackIcon from '@mui/icons-material/PhoneCallback';
 import LeasedLineIcon from '@mui/icons-material/SettingsInputHdmi';
 
-export const VpnMpls3 = () => {
+export const VpnMpls2 = () => {
     return (
         <Box>      
             <Box className="container-xxl py-5">
@@ -32,7 +32,7 @@ export const VpnMpls3 = () => {
                                         fontWeight: 700
                                     }}
                                 > 
-                                    MPLS L3VPN
+                                    MPLS L2VPN
                                 </Typography>
                                 <Typography 
                                     variant="body1" 
@@ -41,19 +41,18 @@ export const VpnMpls3 = () => {
                                         fontFamily: "montserrat"
                                     }}
                                 >
-                                    MPLS L3VPN (Multiprotocol Label Switching Layer 3 Virtual Private Network) 
-                                    is a technology that enables service providers to create secure and scalable 
-                                    IP-based networks for multiple customers over a shared MPLS backbone
+                                    MPLS L2VPN (Multiprotocol Label Switching Layer 2 Virtual Private Network) 
+                                    is a service that provides Layer 2 connectivity over a shared MPLS backbone
                                     <br/><br/>
-                                    It uses MPLS for efficient packet forwarding and Virtual Routing and Forwarding (VRF) 
-                                    to isolate customer traffic.
+                                    frames, allowing businesses to connect geographically dispersed locations while 
+                                    maintaining their existing Layer 2 protocols.
                                     <br/><br/>
-                                    Key features of MPLS L3VPN include:
+                                    Key features of MPLS L2VPN include:
                                 </Typography>
-                                <p className="fw-medium blutext"><CheckIcon /> Efficient Routing</p>
-                                <p className="fw-medium blutext"><CheckIcon /> Traffic Isolation</p>
-                                <p className="fw-medium blutext"><CheckIcon /> Scalability</p>
-                                <p className="fw-medium blutext"><CheckIcon /> Traffic Optimization</p>
+                                <p className="fw-medium blutext"><CheckIcon /> Layer 2 transparency, maintaining customer network architecture</p>
+                                <p className="fw-medium blutext"><CheckIcon /> Pseudowires for point-to-point or multipoint connections</p>
+                                <p className="fw-medium blutext"><CheckIcon /> Support for flexible topologies (e.g., E-Line, E-LAN)</p>
+                                <p className="fw-medium blutext"><CheckIcon /> Scalability and efficient traffic engineering with QoS</p>
                                 <Box className="blu d-flex align-items-center p-4 mt-5">
                                     <Box className="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style={{width: "60px", height: "60px"}}>
                                         <PhoneCallbackIcon className="blutext" />
@@ -82,7 +81,7 @@ export const VpnMpls3 = () => {
                                 height: "fitContent"
                             }}
                             >
-                                <img className="position-absolute img-fluid" src={require("../../assets/images/subservice/mplsL3vpn.png")} style={{width: "100%", objectFit: "contain", paddingTop: "50px"}} alt="" />
+                                <img className="position-absolute img-fluid" src={require("../../assets/images/subservice/mplsL2vpn.png")} style={{width: "100%", objectFit: "contain", paddingTop: "50px"}} alt="" />
                             </Box>
                         </Box>
                     </Box>

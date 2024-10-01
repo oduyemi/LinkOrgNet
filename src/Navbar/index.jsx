@@ -33,6 +33,9 @@ import { CollationQuestions } from "../components/FAQs/Collation";
 import { VSATQuestions } from "../components/FAQs/VSAT";
 import Mpls3 from "../pages/subServices/Mpls3";
 import Mpls2 from "../pages/subServices/Mpls2";
+import LeasedLine from "../pages/subServices/LeasedLine";
+
+
 
 export const Navbar = () => {
     return (
@@ -53,8 +56,10 @@ export const Navbar = () => {
                 <Route path="/services/software-services" element={<SoftwarePage />} />
 
                 {/* Subservices */}
+                <Route path="/services/internet/highspeed" element={<InternetPage />} />
                 <Route path="/services/vpn-solutions/mpls3" element={<Mpls3 />} />
                 <Route path="/services/vpn-solutions/mpls2" element={<Mpls2 />} />
+                <Route path="/services/vpn-solutions/leased" element={<LeasedLine />} />
 
                 {/* FAQs */}
                 <Route path="/faqs" element={<GeneralQuestions />} />

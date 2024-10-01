@@ -9,7 +9,7 @@ import VpnKeyIcon from '@mui/icons-material/VpnKey';
 import PhoneCallbackIcon from '@mui/icons-material/PhoneCallback';
 import LeasedLineIcon from '@mui/icons-material/SettingsInputHdmi';
 
-export const VpnMpls3 = () => {
+export const HighspeedWireless = () => {
     return (
         <Box>      
             <Box className="container-xxl py-5">
@@ -21,7 +21,7 @@ export const VpnMpls3 = () => {
                                     className="wow fadeInUp" 
                                     style={{textDecoration: "none"}}
                                 >
-                                    VPN Solutions
+                                    Internet Solutions
                                 </span>
                                 <Typography 
                                     variant="h1" 
@@ -32,7 +32,7 @@ export const VpnMpls3 = () => {
                                         fontWeight: 700
                                     }}
                                 > 
-                                    MPLS L3VPN
+                                    High Speed Wireless
                                 </Typography>
                                 <Typography 
                                     variant="body1" 
@@ -41,19 +41,33 @@ export const VpnMpls3 = () => {
                                         fontFamily: "montserrat"
                                     }}
                                 >
-                                    MPLS L3VPN (Multiprotocol Label Switching Layer 3 Virtual Private Network) 
-                                    is a technology that enables service providers to create secure and scalable 
-                                    IP-based networks for multiple customers over a shared MPLS backbone
+                                    High-speed wireless refers to fast data transmission over wireless networks, 
+                                    enabling activities like streaming, online gaming, and 
+                                    video conferencing without physical cables.
                                     <br/><br/>
-                                    It uses MPLS for efficient packet forwarding and Virtual Routing and Forwarding (VRF) 
-                                    to isolate customer traffic.
+                                    Wi-Fi, 4G, 5G, and satellite communication. 
+                                    It offers high speeds (measured in Mbps or Gbps), low latency, and flexibility for mobile devices.
                                     <br/><br/>
-                                    Key features of MPLS L3VPN include:
+                                    Applications of High-Speed Wireless includes
                                 </Typography>
-                                <p className="fw-medium blutext"><CheckIcon /> Efficient Routing</p>
-                                <p className="fw-medium blutext"><CheckIcon /> Traffic Isolation</p>
-                                <p className="fw-medium blutext"><CheckIcon /> Scalability</p>
-                                <p className="fw-medium blutext"><CheckIcon /> Traffic Optimization</p>
+                                <p className="fw-medium blutext"><CheckIcon /> Mobile Internet:</p>
+                                <p className="fw-medium blutext"><CheckIcon /> Fixed Wireless Broadband</p>
+                                <p className="fw-medium blutext"><CheckIcon /> Streaming and Cloud Services</p>
+                                <p className="fw-medium blutext"><CheckIcon /> IoT (Internet of Things)</p>
+
+                                <Typography 
+                                    variant="body1" 
+                                    className="mb-4"
+                                    sx={{
+                                        fontFamily: "montserrat"
+                                    }}
+                                >
+                                    Benefits includes
+                                </Typography>
+                                <p className="fw-medium blutext"><CheckIcon /> Mobility: Unlike wired connections, high-speed wireless allows users to move freely while maintaining a strong internet connection.</p>
+                                <p className="fw-medium blutext"><CheckIcon /> Convenience: No need for physical cables, making it easy to set up and use.</p>
+                                <p className="fw-medium blutext"><CheckIcon /> Scalability: Wireless networks can be scaled more easily to accommodate more devices, especially in large areas or dense environments.</p>
+
                                 <Box className="blu d-flex align-items-center p-4 mt-5">
                                     <Box className="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style={{width: "60px", height: "60px"}}>
                                         <PhoneCallbackIcon className="blutext" />
@@ -172,14 +186,14 @@ export const VpnMpls3 = () => {
                                     >
                                         MPLS L3VPN
                                     </Typography>
-                                    <p>MPLS L3VPN is ideal for businesses needing reliable, private, and scalable connectivity across multiple locations.</p>
+                                    <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam justo.</p>
                                     <p className="orangetext fw-medium"><CheckIcon className="me-2 orangetext" /> Quality Service</p>
                                     <p className="orangetext fw-medium"><CheckIcon className="me-2 orangetext" /> Customer Satisfaction</p>
                                     <p className="orangetext fw-medium"><CheckIcon className="me-2 orangetext" /> Support 24/7</p>
-                                    <Link to="/services/vpn-solutions/mpls3" className="theme-btn theme-btn-2 mt-2">
+                                    {/* <Link to="" className="theme-btn theme-btn-2 mt-2">
                                         Learn More
                                         <ChevronRightIcon className="ms-2 text-light" />
-                                    </Link>
+                                    </Link> */}
                                 </Box>
                                 <Box className="bg-light p-4">
                                     <Box className="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style={{width: "75px", height: "75px"}}>
@@ -196,14 +210,14 @@ export const VpnMpls3 = () => {
                                     >
                                         MPLS L2VPN
                                     </Typography>
-                                    <p>It’s commonly used for carrier Ethernet services, data center interconnection, and secure wide-area networking.</p>
+                                    <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam justo.</p>
                                     <p className="orangetext fw-medium"><CheckIcon className="me-2 orangetext" /> Quality Service</p>
                                     <p className="orangetext fw-medium"><CheckIcon className="me-2 orangetext" /> Customer Satisfaction</p>
                                     <p className="orangetext fw-medium"><CheckIcon className="me-2 orangetext" /> Support 24/7</p>
-                                    <Link to="/services/vpn-solutions/mpls2" className="theme-btn theme-btn-2 mt-2">
+                                    {/* <Link to="" className="theme-btn theme-btn-2 mt-2">
                                         Learn More
                                         <ChevronRightIcon className="ms-2 text-light" />
-                                    </Link>
+                                    </Link> */}
                                 </Box>
                                 <Box className="bg-light p-4">
                                     <Box className="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style={{width: "75px", height: "75px"}}>
@@ -220,21 +234,20 @@ export const VpnMpls3 = () => {
                                     >
                                         Leased Line
                                     </Typography>
-                                    <p>The combination of a leased line and VPN ensures high-speed, secure, and reliable data transmission, making it an ideal solution for businesses with critical communication needs..</p>
+                                    <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam justo.</p>
                                     <p className="orangetext fw-medium"><CheckIcon className="me-2 orangetext" /> Quality Service</p>
                                     <p className="orangetext fw-medium"><CheckIcon className="me-2 orangetext" /> Customer Satisfaction</p>
                                     <p className="orangetext fw-medium"><CheckIcon className="me-2 orangetext" /> Support 24/7</p>
-                                    <Link to="/services/vpn-solutions/leased" className="theme-btn theme-btn-2 mt-2">
+                                    {/* <Link to="" className="theme-btn theme-btn-2 mt-2">
                                         Learn More
                                         <ChevronRightIcon className="ms-2 text-light" />
-                                    </Link>
+                                    </Link> */}
                                 </Box>
                             </Box>
                         </Box>
                     </Box>
                 </Box>
             </Box>
-
 
             <ServiceForm />
         </Box>
