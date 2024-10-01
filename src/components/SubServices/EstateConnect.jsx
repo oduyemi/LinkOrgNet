@@ -9,7 +9,7 @@ import VpnKeyIcon from '@mui/icons-material/VpnKey';
 import PhoneCallbackIcon from '@mui/icons-material/PhoneCallback';
 import LeasedLineIcon from '@mui/icons-material/SettingsInputHdmi';
 
-export const HighspeedWireless = () => {
+export const EstateConnect = () => {
     return (
         <Box>      
             <Box className="container-xxl py-5">
@@ -32,7 +32,7 @@ export const HighspeedWireless = () => {
                                         fontWeight: 700
                                     }}
                                 > 
-                                  High Speed Wireless
+                                  Estate Connect
                                 </Typography>
                                 <Typography 
                                     variant="body1" 
@@ -41,19 +41,20 @@ export const HighspeedWireless = () => {
                                         fontFamily: "montserrat"
                                     }}
                                 >
-                                   High-Speed Wireless Internet refers to a type of broadband internet service that uses radio waves or other wireless technologies to 
-                                   provide fast internet access without relying on physical cables, such as fiber optics or telephone lines
+                                   Estate Connect Internet refers to a dedicated internet service specifically 
+                                   designed for residential estates or gated communities.
                                     <br/><br/>
-                                    It delivers data at high speeds over the air, connecting devices like computers, smartphones, and tablets to the internet.
+                                    It provides high-speed, reliable internet connectivity to multiple homes or 
+                                    apartments within an estate through a centralized network infrastructure. 
                                     <br/><br/>
-                                    Key Features of High-Speed Wireless Internet:
+                                    Key Features of Estate Connect Internet:
                                 </Typography>
-                                <p className="fw-medium blutext"><CheckIcon /> Wireless Transmission: Uses radio waves or microwaves for data transmission without physical cables.</p>
-                                <p className="fw-medium blutext"><CheckIcon /> High Speeds: Ranges from 25 Mbps to over 1 Gbps, depending on the technology (Wi-Fi, 4G, 5G)</p>
-                                <p className="fw-medium blutext"><CheckIcon /> Various Technologies: Includes Wi-Fi, 4G LTE, 5G, and fixed wireless.</p>
-                                <p className="fw-medium blutext"><CheckIcon /> Mobility and Flexibility: Offers internet access in multiple locations without being tethered by cables.</p>
-                                <p className="fw-medium blutext"><CheckIcon /> Cost-Effective: Especially useful in areas where laying cables is difficult.</p>
-                                <p className="fw-medium blutext"><CheckIcon /> Challenges: May face signal interference, limited coverage in remote areas, and slower speeds due to network congestion.</p>
+                                <p className="fw-medium blutext"><CheckIcon /> Centralized Network: A single ISP sets up a network for the entire estate, providing consistent coverage and speed across all homes.</p>
+                                <p className="fw-medium blutext"><CheckIcon /> High-Speed Connectivity: Delivers fast internet for activities like streaming, gaming, and remote work.</p>
+                                <p className="fw-medium blutext"><CheckIcon /> Shared Infrastructure: A shared backbone network connects all homes, reducing installation needs and costs.</p>
+                                <p className="fw-medium blutext"><CheckIcon /> Customizable Plans: Offers flexible internet plans based on residents' usage, from basic to high-speed options.</p>
+                                <p className="fw-medium blutext"><CheckIcon /> Enhanced Security: Features centralized security measures like firewalls and secure access points to protect the network.</p>
+                                <p className="fw-medium blutext"><CheckIcon /> Convenience: Includes professional network management and support, minimizing downtime and ensuring quick issue resolution.</p>
                                 <Box className="blu d-flex align-items-center p-4 mt-5">
                                     <Box className="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style={{width: "60px", height: "60px"}}>
                                         <PhoneCallbackIcon className="blutext" />
@@ -82,7 +83,7 @@ export const HighspeedWireless = () => {
                                 height: "fitContent"
                             }}
                             >
-                                <img className="position-absolute img-fluid" src={require("../../assets/images/subservice/highspeed.gif")} style={{width: "100%", objectFit: "contain", paddingTop: "50px"}} alt="" />
+                                <img className="position-absolute img-fluid" src={require("../../assets/images/subservice/estate.jpg")} style={{width: "100%", objectFit: "contain", paddingTop: "50px"}} alt="" />
                             </Box>
                         </Box>
                     </Box>
@@ -125,7 +126,7 @@ export const HighspeedWireless = () => {
                     </Box>
                 </Box>
             </Box>
-     
+            
             <Box className="container-fluid py-5 px-4 px-lg-0">
                 <Box className="row g-0">
                     <Box className="col-lg-3 d-none d-lg-flex">

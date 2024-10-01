@@ -9,7 +9,7 @@ import VpnKeyIcon from '@mui/icons-material/VpnKey';
 import PhoneCallbackIcon from '@mui/icons-material/PhoneCallback';
 import LeasedLineIcon from '@mui/icons-material/SettingsInputHdmi';
 
-export const HighspeedWireless = () => {
+export const FiberToHome = () => {
     return (
         <Box>      
             <Box className="container-xxl py-5">
@@ -32,7 +32,7 @@ export const HighspeedWireless = () => {
                                         fontWeight: 700
                                     }}
                                 > 
-                                  High Speed Wireless
+                                 Fiber To Home
                                 </Typography>
                                 <Typography 
                                     variant="body1" 
@@ -41,19 +41,23 @@ export const HighspeedWireless = () => {
                                         fontFamily: "montserrat"
                                     }}
                                 >
-                                   High-Speed Wireless Internet refers to a type of broadband internet service that uses radio waves or other wireless technologies to 
-                                   provide fast internet access without relying on physical cables, such as fiber optics or telephone lines
+                                   Fiber to the Home (FTTH) internet refers to a broadband network architecture where optical
+                                   fiber cables are used to deliver internet directly to a user's residence.
                                     <br/><br/>
-                                    It delivers data at high speeds over the air, connecting devices like computers, smartphones, and tablets to the internet.
+                                    This contrasts with traditional internet delivery methods like DSL or cable, where data is transmitted
+                                    over copper lines or coaxial cables for part of the journey.
                                     <br/><br/>
-                                    Key Features of High-Speed Wireless Internet:
+                                    Fiber optic technology enables the transmission of data as light through 
+                                    ultra-thin glass fibers, offering several advantages.
+                                    <br/><br/>
+                                    Key Aspects of Fiber to the Home (FTTH):
                                 </Typography>
-                                <p className="fw-medium blutext"><CheckIcon /> Wireless Transmission: Uses radio waves or microwaves for data transmission without physical cables.</p>
-                                <p className="fw-medium blutext"><CheckIcon /> High Speeds: Ranges from 25 Mbps to over 1 Gbps, depending on the technology (Wi-Fi, 4G, 5G)</p>
-                                <p className="fw-medium blutext"><CheckIcon /> Various Technologies: Includes Wi-Fi, 4G LTE, 5G, and fixed wireless.</p>
-                                <p className="fw-medium blutext"><CheckIcon /> Mobility and Flexibility: Offers internet access in multiple locations without being tethered by cables.</p>
-                                <p className="fw-medium blutext"><CheckIcon /> Cost-Effective: Especially useful in areas where laying cables is difficult.</p>
-                                <p className="fw-medium blutext"><CheckIcon /> Challenges: May face signal interference, limited coverage in remote areas, and slower speeds due to network congestion.</p>
+                                <p className="fw-medium blutext"><CheckIcon /> High-Speed Data Transfer: Provides gigabit-level internet speeds for fast downloads and uploads.</p>
+                                <p className="fw-medium blutext"><CheckIcon /> Increased Bandwidth: Supports multiple devices and high-demand applications without slowdowns.</p>
+                                <p className="fw-medium blutext"><CheckIcon /> Reliable Connectivity: Less affected by weather or electrical interference compared to copper or coaxial lines.</p>
+                                <p className="fw-medium blutext"><CheckIcon /> Future-Proof: Scalable to meet future internet speed and bandwidth demands.</p>
+                                <p className="fw-medium blutext"><CheckIcon /> Symmetrical Speeds: Equal upload and download speeds, ideal for activities like video conferencing and cloud computing.</p>
+                                <p className="fw-medium blutext"><CheckIcon /> Low Latency: Faster data transmission with minimal delays, perfect for real-time applications.</p>
                                 <Box className="blu d-flex align-items-center p-4 mt-5">
                                     <Box className="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style={{width: "60px", height: "60px"}}>
                                         <PhoneCallbackIcon className="blutext" />
@@ -82,7 +86,7 @@ export const HighspeedWireless = () => {
                                 height: "fitContent"
                             }}
                             >
-                                <img className="position-absolute img-fluid" src={require("../../assets/images/subservice/highspeed.gif")} style={{width: "100%", objectFit: "contain", paddingTop: "50px"}} alt="" />
+                                <img className="position-absolute img-fluid" src={require("../../assets/images/subservice/fiber.gif")} style={{width: "100%", objectFit: "contain", paddingTop: "50px"}} alt="" />
                             </Box>
                         </Box>
                     </Box>
