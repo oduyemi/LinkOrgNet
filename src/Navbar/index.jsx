@@ -34,6 +34,10 @@ import { VSATQuestions } from "../components/FAQs/VSAT";
 import Mpls3 from "../pages/subServices/Mpls3";
 import Mpls2 from "../pages/subServices/Mpls2";
 import LeasedLine from "../pages/subServices/LeasedLine";
+import HighSpeed from "../pages/subServices/HighSpeed";
+import Fiber from "../pages/subServices/Fiber";
+import EstateConnectInternet from "../pages/subServices/EstateConnect";
+
 
 
 
@@ -56,10 +60,13 @@ export const Navbar = () => {
                 <Route path="/services/software-services" element={<SoftwarePage />} />
 
                 {/* Subservices */}
-                <Route path="/services/internet/highspeed" element={<InternetPage />} />
+                <Route path="/services/internet/highspeed" element={<HighSpeed />} />
+                <Route path="/services/internet/fiber" element={<Fiber />} />
+                <Route path="/services/internet/estate_connect" element={<EstateConnectInternet />} />
                 <Route path="/services/vpn-solutions/mpls3" element={<Mpls3 />} />
                 <Route path="/services/vpn-solutions/mpls2" element={<Mpls2 />} />
                 <Route path="/services/vpn-solutions/leased" element={<LeasedLine />} />
+
 
                 {/* FAQs */}
                 <Route path="/faqs" element={<GeneralQuestions />} />
