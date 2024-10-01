@@ -53,6 +53,7 @@ export const Navbar = () => {
                 <Route path="/services/software-services" element={<SoftwarePage />} />
 
                 {/* Subservices */}
+                <Route path="/services/internet/highspeed" element={<InternetPage />} />
                 <Route path="/services/vpn-solutions/mpls3" element={<Mpls3 />} />
                 <Route path="/services/vpn-solutions/mpls2" element={<Mpls2 />} />
 

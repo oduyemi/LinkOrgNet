@@ -9,7 +9,7 @@ import VpnKeyIcon from '@mui/icons-material/VpnKey';
 import PhoneCallbackIcon from '@mui/icons-material/PhoneCallback';
 import LeasedLineIcon from '@mui/icons-material/SettingsInputHdmi';
 
-export const VpnMpls3 = () => {
+export const HighspeedWireless = () => {
     return (
         <Box>      
             <Box className="container-xxl py-5">
@@ -21,7 +21,7 @@ export const VpnMpls3 = () => {
                                     className="wow fadeInUp" 
                                     style={{textDecoration: "none"}}
                                 >
-                                    VPN Solutions
+                                    Internet Solutions
                                 </span>
                                 <Typography 
                                     variant="h1" 
@@ -32,7 +32,7 @@ export const VpnMpls3 = () => {
                                         fontWeight: 700
                                     }}
                                 > 
-                                    MPLS L3VPN
+                                    High Speed Wireless
                                 </Typography>
                                 <Typography 
                                     variant="body1" 
@@ -41,20 +41,33 @@ export const VpnMpls3 = () => {
                                         fontFamily: "montserrat"
                                     }}
                                 >
-                                    MPLS L3VPN is a type of PE-based L3VPN technology 
-                                    for service provider VPN solutions. It uses BGP 
-                                    to advertise VPN routes and uses MPLS to forward 
-                                    VPN packets on service provider backbones.
+                                    High-speed wireless refers to fast data transmission over wireless networks, 
+                                    enabling activities like streaming, online gaming, and 
+                                    video conferencing without physical cables.
                                     <br/><br/>
-                                    MPLS L3VPN provides flexible networking modes, 
-                                    excellent scalability, and convenient support 
-                                    for MPLS QoS and MPLS TE.
+                                    Wi-Fi, 4G, 5G, and satellite communication. 
+                                    It offers high speeds (measured in Mbps or Gbps), low latency, and flexibility for mobile devices.
                                     <br/><br/>
-                                    The MPLS L3VPN model consists of the following types of devices:
+                                    Applications of High-Speed Wireless includes
                                 </Typography>
-                                <p className="fw-medium blutext"><CheckIcon /> Customer edge (CE) device</p>
-                                <p className="fw-medium blutext"><CheckIcon /> Provider edge (PE) device</p>
-                                <p className="fw-medium blutext"><CheckIcon /> Provider (P) device</p>
+                                <p className="fw-medium blutext"><CheckIcon /> Mobile Internet:</p>
+                                <p className="fw-medium blutext"><CheckIcon /> Fixed Wireless Broadband</p>
+                                <p className="fw-medium blutext"><CheckIcon /> Streaming and Cloud Services</p>
+                                <p className="fw-medium blutext"><CheckIcon /> IoT (Internet of Things)</p>
+
+                                <Typography 
+                                    variant="body1" 
+                                    className="mb-4"
+                                    sx={{
+                                        fontFamily: "montserrat"
+                                    }}
+                                >
+                                    Benefits includes
+                                </Typography>
+                                <p className="fw-medium blutext"><CheckIcon /> Mobility: Unlike wired connections, high-speed wireless allows users to move freely while maintaining a strong internet connection.</p>
+                                <p className="fw-medium blutext"><CheckIcon /> Convenience: No need for physical cables, making it easy to set up and use.</p>
+                                <p className="fw-medium blutext"><CheckIcon /> Scalability: Wireless networks can be scaled more easily to accommodate more devices, especially in large areas or dense environments.</p>
+
                                 <Box className="blu d-flex align-items-center p-4 mt-5">
                                     <Box className="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style={{width: "60px", height: "60px"}}>
                                         <PhoneCallbackIcon className="blutext" />

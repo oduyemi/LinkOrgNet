@@ -62,6 +62,7 @@ const ConsentBanner = () => {
       }
       action={
         <Box>
+
           <Button 
             className="theme-btn theme-btn-2" 
             onClick={handleAccept} 
