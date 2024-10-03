@@ -18,7 +18,7 @@ const TawkToChat = () => {
     };
   }, []);
 
-  return null; // No UI required
+  return null; 
 };
 
 export default TawkToChat;
