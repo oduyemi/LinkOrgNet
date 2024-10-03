@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box } from "@mui/material";
-import { Sidebar } from "../components/Admin/Sidebar";
-import { Profile } from "../components/Admin/Profile";
+import { Sidebar } from "../../components/Admin/Sidebar";
+import { Profile } from "../../components/Admin/Profile";
 
 const AdminProfile = () => {
   return (

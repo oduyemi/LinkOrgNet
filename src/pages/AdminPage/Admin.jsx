@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Box } from "@mui/material";
-import { Sidebar } from "../components/Admin/Sidebar";
-import { Inbox } from "../components/Admin/Inbox";
+import { Sidebar } from "../../components/Admin/Sidebar";
+import { Inbox } from "../../components/Admin/Inbox";
 
 
 

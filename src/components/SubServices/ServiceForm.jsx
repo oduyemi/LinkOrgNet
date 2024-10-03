@@ -17,7 +17,7 @@ export const ServiceForm = () => {
                                 fontFamily: "montserrat"
                             }}
                         >
-                            Book For A Service
+                            Book Our Services
                         </Typography>
                         <form>
                             <Box className="row g-3">

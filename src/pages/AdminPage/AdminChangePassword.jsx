@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box } from "@mui/material";
-import { Sidebar } from "../components/Admin/Sidebar";
-import { ChangePassword } from "../components/Admin/ChangePassword";
+import { Sidebar } from "../../components/Admin/Sidebar";
+import { ChangePassword } from "../../components/Admin/ChangePassword";
 
 const AdminChangePassword = () => {
     return (

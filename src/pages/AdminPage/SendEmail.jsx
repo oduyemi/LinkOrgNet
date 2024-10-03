@@ -1,7 +1,7 @@
 import React from "react";
 import { Box } from "@mui/material";
-import { Sidebar } from "../components/Admin/Sidebar";
-import { SendMail } from "../components/Admin/SendMail";
+import { Sidebar } from "../../components/Admin/Sidebar";
+import { SendMail } from "../../components/Admin/SendMail";
 
 
 

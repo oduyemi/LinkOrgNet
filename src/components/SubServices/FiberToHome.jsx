@@ -1,245 +1,440 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import CheckIcon from '@mui/icons-material/Check';
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import CheckIcon from "@mui/icons-material/Check";
 import { ServiceForm } from "./ServiceForm";
-import VpnLockIcon from '@mui/icons-material/VpnLock';
-import VpnKeyIcon from '@mui/icons-material/VpnKey';
-import PhoneCallbackIcon from '@mui/icons-material/PhoneCallback';
-import LeasedLineIcon from '@mui/icons-material/SettingsInputHdmi';
+import PhoneCallbackIcon from "@mui/icons-material/PhoneCallback";
 
 export const FiberToHome = () => {
-    return (
-        <Box>      
-            <Box className="container-xxl py-5">
-                <Box className="container">
-                    <Box className="row g-5">
-                        <Box className="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                            <Box className="section-title">
-                                <span 
-                                    className="wow fadeInUp" 
-                                    style={{textDecoration: "none"}}
-                                >
-                                    Internet Solutions
-                                </span>
-                                <Typography 
-                                    variant="h1" 
-                                    className="mb-4 blutext"
-                                    sx={{
-                                        fontFamily: "montserrat",
-                                        fontSize: "32px",
-                                        fontWeight: 700
-                                    }}
-                                > 
-                                 Fiber To Home
-                                </Typography>
-                                <Typography 
-                                    variant="body1" 
-                                    className="mb-4"
-                                    sx={{
-                                        fontFamily: "montserrat"
-                                    }}
-                                >
-                                   Fiber to the Home (FTTH) internet refers to a broadband network architecture where optical
-                                   fiber cables are used to deliver internet directly to a user's residence.
-                                    <br/><br/>
-                                    This contrasts with traditional internet delivery methods like DSL or cable, where data is transmitted
-                                    over copper lines or coaxial cables for part of the journey.
-                                    <br/><br/>
-                                    Fiber optic technology enables the transmission of data as light through 
-                                    ultra-thin glass fibers, offering several advantages.
-                                    <br/><br/>
-                                    Key Aspects of Fiber to the Home (FTTH):
-                                </Typography>
-                                <p className="fw-medium blutext"><CheckIcon /> High-Speed Data Transfer: Provides gigabit-level internet speeds for fast downloads and uploads.</p>
-                                <p className="fw-medium blutext"><CheckIcon /> Increased Bandwidth: Supports multiple devices and high-demand applications without slowdowns.</p>
-                                <p className="fw-medium blutext"><CheckIcon /> Reliable Connectivity: Less affected by weather or electrical interference compared to copper or coaxial lines.</p>
-                                <p className="fw-medium blutext"><CheckIcon /> Future-Proof: Scalable to meet future internet speed and bandwidth demands.</p>
-                                <p className="fw-medium blutext"><CheckIcon /> Symmetrical Speeds: Equal upload and download speeds, ideal for activities like video conferencing and cloud computing.</p>
-                                <p className="fw-medium blutext"><CheckIcon /> Low Latency: Faster data transmission with minimal delays, perfect for real-time applications.</p>
-                                <Box className="blu d-flex align-items-center p-4 mt-5">
-                                    <Box className="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style={{width: "60px", height: "60px"}}>
-                                        <PhoneCallbackIcon className="blutext" />
-                                    </Box>
-                                    <Box className="ms-3">
-                                        <p className="fs-5 fw-medium mb-2 text-secondary">Got Questions? </p>
-                                        <Typography
-                                            variant="h3" 
-                                            className="m-0 text-light"
-                                            sx={{
-                                                fontSize: "20px"
-                                            }}
-                                        >
-                                            +234 803 406 0434
-                                        </Typography>
-                                    </Box>
-                                </Box>
-                            </Box>
-                        </Box>
-                        <Box className="col-lg-6 pt-4" style={{minHeight: "300px"}}>
-                            <Box 
-                            className="position-relative h-100 wow fadeInUp" 
-                            data-wow-delay="0.5s"
-                            sx={{
-                                width: "100%",
-                                height: "fitContent"
-                            }}
-                            >
-                                <img className="position-absolute img-fluid" src={require("../../assets/images/subservice/fiber.gif")} style={{width: "100%", objectFit: "contain", paddingTop: "50px"}} alt="" />
-                            </Box>
-                        </Box>
-                    </Box>
+  return (
+    <Box>
+      <Box className="container-xxl py-5">
+        <Box className="container">
+          <Box className="row g-5">
+            <Box className="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+              <Box className="section-title">
+                <span
+                  className="wow fadeInUp"
+                  style={{ textDecoration: "none" }}
+                >
+                  Internet Solutions
+                </span>
+                <Typography
+                  variant="h1"
+                  className="mb-4 blutext"
+                  sx={{
+                    fontFamily: "montserrat",
+                    fontSize: "32px",
+                    fontWeight: 700,
+                  }}
+                >
+                  Fiber To Home
+                </Typography>
+                <Typography
+                  variant="body1"
+                  className="mb-4"
+                  sx={{
+                    fontFamily: "montserrat",
+                  }}
+                >
+                  Fiber to the Home (FTTH) internet refers to a broadband
+                  network architecture where optical fiber cables are used to
+                  deliver internet directly to a user's residence.
+                  <br />
+                  <br />
+                  This contrasts with traditional internet delivery methods like
+                  DSL or cable, where data is transmitted over copper lines or
+                  coaxial cables for part of the journey.
+                  <br />
+                  <br />
+                  Fiber optic technology enables the transmission of data as
+                  light through ultra-thin glass fibers, offering several
+                  advantages.
+                  <br />
+                  <br />
+                  Key Aspects of Fiber to the Home (FTTH):
+                </Typography>
+                <p className="fw-medium blutext">
+                  <CheckIcon /> High-Speed Data Transfer
+                </p>
+                <p className="fw-medium blutext">
+                  <CheckIcon /> Increased Bandwidth
+                </p>
+                <p className="fw-medium blutext">
+                  <CheckIcon /> Reliable Connectivity
+                </p>
+                <p className="fw-medium blutext">
+                  <CheckIcon /> Future-Proof
+                </p>
+                <p className="fw-medium blutext">
+                  <CheckIcon /> Symmetrical Speeds
+                </p>
+                <p className="fw-medium blutext">
+                  <CheckIcon /> Low Latency
+                </p>
+                <Box className="blu d-flex align-items-center p-4 mt-5">
+                  <Box
+                    className="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
+                    style={{ width: "60px", height: "60px" }}
+                  >
+                    <PhoneCallbackIcon className="blutext" />
+                  </Box>
+                  <Box className="ms-3">
+                    <p className="fs-5 fw-medium mb-2 text-secondary">
+                      Got Questions?{" "}
+                    </p>
+                    <Typography
+                      variant="h3"
+                      className="m-0 text-light"
+                      sx={{
+                        fontSize: "20px",
+                      }}
+                    >
+                      +234 803 406 0434
+                    </Typography>
+                  </Box>
                 </Box>
+              </Box>
             </Box>
-   
-            <Box className="container-fluid fact orange my-5 py-5">
-                <Box className="container">
-                    <Box className="row g-4">
-                        <Box className="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
-                            <Box className="counter-items text-light">
-                                <h2><span className="count">50</span>+</h2>
-                                <p>
-                                    YEARS OF <br />
-                                    <span className="d-inline" style={{ fontSize: "10px" }}>combined<br/></span>EXPERIENCE
-                                </p>
-                            </Box>
-                        </Box>
-                        <Box className="col-md-6 col-lg-3 text-center wow fadeIn text-light" data-wow-delay="0.3s">
-                            <h2><span className="count">30</span>+</h2>
-                            <p>
-                                GLOBAL  <br />
-                                CLIENTS
-                            </p>
-                        </Box>
-                        <Box className="col-md-6 col-lg-3 text-center wow fadeIn text-light" data-wow-delay="0.5s">
-                            <h2><span className="count">2.5</span>k</h2>
-                            <p>
-                                KILOMETERS <br />
-                                OF FIBERS
-                            </p>
-                        </Box>
-                        <Box className="col-md-6 col-lg-3 text-center wow fadeIn text-light" data-wow-delay="0.7s">
-                            <p>
-                                <br/>
-                                SATELLITE <br />
-                                CHANNELS
-                            </p>
-                        </Box>
-                    </Box>
-                </Box>
+            <Box className="col-lg-6 pt-4" style={{ minHeight: "300px" }}>
+              <Box
+                className="position-relative h-100 wow fadeInUp"
+                data-wow-delay="0.5s"
+                sx={{
+                  width: "100%",
+                  height: "fitContent",
+                }}
+              >
+                <img
+                  className="position-absolute img-fluid"
+                  src={require("../../assets/images/subservice/fiber.gif")}
+                  style={{
+                    width: "100%",
+                    objectFit: "contain",
+                    paddingTop: "50px",
+                  }}
+                  alt=""
+                />
+              </Box>
             </Box>
-     
-            <Box className="container-fluid py-5 px-4 px-lg-0">
-                <Box className="row g-0">
-                    <Box className="col-lg-3 d-none d-lg-flex">
-                        <Box className="d-flex align-items-center justify-content-center blu w-100 h-100">
-                            <h1 className="display-3 text-white m-0" style={{transform: "rotate(-90deg)"}}>Feel Connected</h1>
-                        </Box>
-                    </Box>
-                    <Box className="col-md-12 col-lg-9">
-                        <Box className="ms-lg-5 ps-lg-5">
-                            <Box className="text-center text-lg-start wow fadeInUp" data-wow-delay="0.1s">
-                                <Box className="section-title">
-                                    <span 
-                                        className="wow fadeInUp" 
-                                        style={{textDecoration: "none"}}
-                                    >
-                                        specialized services
-                                    </span>
-                                    <Typography
-                                        variant="h1" 
-                                        className="mb-4 blutext"
-                                        sx={{
-                                            fontFamily: "montserrat",
-                                            fontSize: "32px",
-                                            fontWeight: 700
-                                        }}
-                                    >
-                                        Internet
-                                    </Typography>
-                                </Box>
-                            </Box>
-                            <Box className="owl-carousel service-carousel position-relative wow fadeInUp" data-wow-delay="0.1s">
-                                <Box className="bg-light p-4">
-                                    <Box className="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style={{width: "75px", height: "75px"}}>
-                                        <VpnLockIcon className="blutext" />
-                                    </Box>
-                                    <Typography
-                                        variant="h3"
-                                        className="mb-3 blutext"
-                                        sx={{
-                                            fontFamily: "montserrat",
-                                            fontSize: "24px",
-                                            fontWeight: 600
-                                        }}
-                                    >
-                                        Hign Speed Wireless
-                                    </Typography>
-                                    <p>High-speed wireless internet is an essential technology for modern internet connectivity, supporting mobile users, home networks, and underserved areas without wired infrastructure.</p>
-                                    <p className="orangetext fw-medium"><CheckIcon className="me-2 orangetext" /> Quality Service</p>
-                                    <p className="orangetext fw-medium"><CheckIcon className="me-2 orangetext" /> Customer Satisfaction</p>
-                                    <p className="orangetext fw-medium"><CheckIcon className="me-2 orangetext" /> Support 24/7</p>
-                                    <Link to="/services/internet/highspeed" className="theme-btn theme-btn-2 mt-2">
-                                        Learn More
-                                        <ChevronRightIcon className="ms-2 text-light" />
-                                    </Link>
-                                </Box>
-                                <Box className="bg-light p-4">
-                                    <Box className="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style={{width: "75px", height: "75px"}}>
-                                        <VpnKeyIcon className="blutext" />
-                                    </Box>
-                                    <Typography
-                                        variant="h3"
-                                        className="mb-3 blutext"
-                                        sx={{
-                                            fontFamily: "montserrat",
-                                            fontSize: "24px",
-                                            fontWeight: 600
-                                        }}
-                                    >
-                                       Fiber To Home
-                                    </Typography>
-                                    <p>FTTH delivers cutting-edge internet performance directly to homes, making it one of the most advanced and reliable options for residential internet access.</p>
-                                    <p className="orangetext fw-medium"><CheckIcon className="me-2 orangetext" /> Quality Service</p>
-                                    <p className="orangetext fw-medium"><CheckIcon className="me-2 orangetext" /> Customer Satisfaction</p>
-                                    <p className="orangetext fw-medium"><CheckIcon className="me-2 orangetext" /> Support 24/7</p>
-                                    <Link to="/services/internet/fiber" className="theme-btn theme-btn-2 mt-2">
-                                        Learn More
-                                        <ChevronRightIcon className="ms-2 text-light" />
-                                    </Link>
-                                </Box>
-                                <Box className="bg-light p-4">
-                                    <Box className="d-flex align-items-center justify-content-center border border-5 border-white mb-4" style={{width: "75px", height: "75px"}}>
-                                        <LeasedLineIcon className="blutext" />
-                                    </Box>
-                                    <Typography
-                                        variant="h3"
-                                        className="mb-3 blutext"
-                                        sx={{
-                                            fontFamily: "montserrat",
-                                            fontSize: "24px",
-                                            fontWeight: 600
-                                        }}
-                                    >
-                                        Estate Connect
-                                    </Typography>
-                                    <p>This type of service is ideal for estates or gated communities looking to provide seamless, high-quality internet access to residents without each household requiring individual ISP contracts or setups.</p>
-                                    <p className="orangetext fw-medium"><CheckIcon className="me-2 orangetext" /> Quality Service</p>
-                                    <p className="orangetext fw-medium"><CheckIcon className="me-2 orangetext" /> Customer Satisfaction</p>
-                                    <p className="orangetext fw-medium"><CheckIcon className="me-2 orangetext" /> Support 24/7</p>
-                                    <Link to="/services/internet/estate_connect" className="theme-btn theme-btn-2 mt-2">
-                                        Learn More
-                                        <ChevronRightIcon className="ms-2 text-light" />
-                                    </Link>
-                                </Box>
-                            </Box>
-                        </Box>
-                    </Box>
-                </Box>
-            </Box>
-
-            <ServiceForm />
+          </Box>
         </Box>
-    );
+      </Box>
+
+      <Box className="container-fluid fact orange my-5 py-5">
+        <Box className="container">
+          <Box className="row g-4">
+            <Box
+              className="col-md-6 col-lg-3 text-center wow fadeIn"
+              data-wow-delay="0.1s"
+            >
+              <Box className="counter-items text-light">
+                <h2>
+                  <span className="count">50</span>+
+                </h2>
+                <p>
+                  YEARS OF <br />
+                  <span className="d-inline" style={{ fontSize: "10px" }}>
+                    combined
+                    <br />
+                  </span>
+                  EXPERIENCE
+                </p>
+              </Box>
+            </Box>
+            <Box
+              className="col-md-6 col-lg-3 text-center wow fadeIn text-light"
+              data-wow-delay="0.3s"
+            >
+              <h2>
+                <span className="count">30</span>+
+              </h2>
+              <p>
+                GLOBAL <br />
+                CLIENTS
+              </p>
+            </Box>
+            <Box
+              className="col-md-6 col-lg-3 text-center wow fadeIn text-light"
+              data-wow-delay="0.5s"
+            >
+              <h2>
+                <span className="count">2.5</span>k
+              </h2>
+              <p>
+                KILOMETERS <br />
+                OF FIBERS
+              </p>
+            </Box>
+            <Box
+              className="col-md-6 col-lg-3 text-center wow fadeIn text-light"
+              data-wow-delay="0.7s"
+            >
+              <p>
+                <br />
+                SATELLITE <br />
+                CHANNELS
+              </p>
+            </Box>
+          </Box>
+        </Box>
+      </Box>
+
+      <Box className="container-fluid py-5 px-4 px-lg-0">
+        <Box className="row g-0">
+          <Box className="col-lg-3 d-none d-lg-flex">
+            <Box className="d-flex align-items-center justify-content-center blu w-100 h-100">
+              <h1
+                className="display-3 text-white m-0"
+                style={{ transform: "rotate(-90deg)" }}
+              >
+                Feel Connected
+              </h1>
+            </Box>
+          </Box>
+          <Box className="col-md-12 col-lg-9">
+            <Box className="ms-lg-5 ps-lg-5">
+              <Box
+                className="text-center text-lg-start wow fadeInUp"
+                data-wow-delay="0.1s"
+              >
+                <Box className="section-title">
+                  <span
+                    className="wow fadeInUp"
+                    style={{ textDecoration: "none" }}
+                  >
+                    specialized services
+                  </span>
+                  <Typography
+                    variant="h1"
+                    className="mb-4 blutext"
+                    sx={{
+                      fontFamily: "montserrat",
+                      fontSize: "32px",
+                      fontWeight: 700,
+                    }}
+                  >
+                    Internet
+                  </Typography>
+                </Box>
+              </Box>
+              {/* Carousel section */}
+              <Box className="section">
+                <Box className="container">
+                  <Box className="image-carousel style2">
+                    <Box
+                      className="grid-container"
+                      sx={{
+                        display: "flex",
+                        flexWrap: "wrap",
+                        justifyContent: "space-between",
+                        // Responsive behavior
+                        flexDirection: { xs: "column", md: "row" },
+                      }}
+                    >
+                      {/* Static grid item 1 */}
+                      <Box
+                        className="grid-item"
+                        sx={{
+                          width: { xs: "100%", sm: "48%", md: "32%" },
+                          marginBottom: "20px",
+                          height: "500px",
+                        }}
+                      >
+                        <article className="box">
+                          <figure>
+                            <Box
+                              sx={{
+                                height: "250px",
+                              }}
+                            >
+                              <img
+                                src={require("../../assets/images/subservice/highspeed.gif")}
+                                alt="Title 1"
+                                style={{
+                                  height: "100%",
+                                  width: "100%",
+                                  objectFit: "contain",
+                                }}
+                              />
+                            </Box>
+                          </figure>
+                          <Box
+                            className="details"
+                            sx={{
+                              marginTop: "20px",
+                              height: "170px",
+                            }}
+                          >
+                            <h4
+                              className="box-title"
+                              style={{ color: "#010156" }}
+                            >
+                              High Speed Internet
+                            </h4>
+                            <p className="description">
+                              Stay connected with fast, reliable wireless
+                              internet.
+                            </p>
+
+                            <Box
+                              className="col-lg-12 wow fadeInUp"
+                              data-wow-delay=".4s"
+                            >
+                              <Link to="/services/internet/highspeed">
+                                <button
+                                  type="submit"
+                                  className="theme-btn theme-btn-2"
+                                >
+                                  <span>
+                                    Learn More
+                                    <i className="fas fa-chevron-right"></i>
+                                  </span>
+                                </button>
+                              </Link>
+                            </Box>
+                          </Box>
+                        </article>
+                      </Box>
+
+                      {/* Static grid item 2 */}
+                      <Box
+                        className="grid-item"
+                        sx={{
+                          width: { xs: "100%", sm: "48%", md: "32%" },
+                          marginBottom: "20px",
+                          height: "500px",
+                        }}
+                      >
+                        <article className="box">
+                          <figure>
+                            <Box
+                              sx={{
+                                height: "250px",
+                              }}
+                            >
+                              <img
+                                src={require("../../assets/images/subservice/fiber.gif")}
+                                alt="Title 2"
+                                style={{
+                                  height: "100%",
+                                  width: "100%",
+                                  objectFit: "contain",
+                                }}
+                              />
+                            </Box>
+                          </figure>
+                          <Box
+                            className="details"
+                            sx={{
+                              marginTop: "20px",
+                              height: "170px",
+                            }}
+                          >
+                            <h4
+                              className="box-title"
+                              style={{ color: "#010156" }}
+                            >
+                              Fiber to Home
+                            </h4>
+                            <p className="description">
+                              Ultra-fast fiber-optic speeds for seamless online
+                              activities.
+                            </p>
+                            <Box
+                              className="col-lg-12 wow fadeInUp"
+                              data-wow-delay=".4s"
+                            >
+                              <Link to="/services/internet/fiber">
+                                <button
+                                  type="submit"
+                                  className="theme-btn theme-btn-2"
+                                >
+                                  <span>
+                                    Learn More
+                                    <i className="fas fa-chevron-right"></i>
+                                  </span>
+                                </button>
+                              </Link>
+                            </Box>
+                          </Box>
+                        </article>
+                      </Box>
+
+                      {/* Static grid item 3 */}
+                      <Box
+                        className="grid-item"
+                        sx={{
+                          width: { xs: "100%", sm: "48%", md: "32%" },
+                          marginBottom: "20px",
+                          height: "500px",
+                        }}
+                      >
+                        <article className="box">
+                          <figure>
+                            <Box
+                              sx={{
+                                height: "250px",
+                              }}
+                            >
+                              <img
+                                src={require("../../assets/images/subservice/estate.jpg")}
+                                alt="Title 3"
+                                style={{
+                                  height: "100%",
+                                  width: "100%",
+                                  objectFit: "contain",
+                                }}
+                              />
+                            </Box>
+                          </figure>
+                          <Box
+                            className="details"
+                            sx={{
+                              marginTop: "20px",
+                              height: "170px",
+                            }}
+                          >
+                            <h4
+                              className="box-title"
+                              style={{ color: "#010156" }}
+                            >
+                              Estate Connect
+                            </h4>
+                            <p className="description">
+                              Connect entire residential communities with
+                              high-speed internet access.
+                            </p>
+
+                            <Box
+                              className="col-lg-12 wow fadeInUp"
+                              data-wow-delay=".4s"
+                            >
+                              <Link to="/services/internet/estate_connect">
+                                <button
+                                  type="submit"
+                                  className="theme-btn theme-btn-2"
+                                >
+                                  <span>
+                                    Learn More
+                                    <i className="fas fa-chevron-right"></i>
+                                  </span>
+                                </button>
+                              </Link>
+                            </Box>
+                          </Box>
+                        </article>
+                      </Box>
+                    </Box>
+                  </Box>
+                </Box>
+              </Box>
+            </Box>
+          </Box>
+        </Box>
+      </Box>
+
+      <ServiceForm />
+    </Box>
+  );
 };
