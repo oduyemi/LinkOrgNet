@@ -76,7 +76,7 @@ export const EstateConnect = () => {
                   </Box>
                   <Box className="ms-3">
                     <p className="fs-5 fw-medium mb-2 text-secondary">
-                      Got Questions?{" "}
+                      Call Us Today{" "}
                     </p>
                     <Typography
                       variant="h3"
@@ -218,11 +218,13 @@ export const EstateConnect = () => {
                 <Box className="container">
                   <Box className="image-carousel style2">
                     <Box
-                      className="grid-container"
+                      className="grid-container box"
                       sx={{
+                        // border: "1px solid #010156",
                         display: "flex",
                         flexWrap: "wrap",
                         justifyContent: "space-between",
+                        paddingBottom: "0px",
                         // Responsive behavior
                         flexDirection: { xs: "column", md: "row" },
                       }}
@@ -240,7 +242,7 @@ export const EstateConnect = () => {
                           <figure>
                             <Box
                               sx={{
-                                height: "250px",
+                                height: "270px",
                               }}
                             >
                               <img
@@ -305,7 +307,7 @@ export const EstateConnect = () => {
                           <figure>
                             <Box
                               sx={{
-                                height: "250px",
+                                height: "270px",
                               }}
                             >
                               <img
@@ -369,7 +371,7 @@ export const EstateConnect = () => {
                           <figure>
                             <Box
                               sx={{
-                                height: "250px",
+                                height: "270px",
                               }}
                             >
                               <img
