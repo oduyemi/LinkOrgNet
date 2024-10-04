@@ -28,7 +28,7 @@ const serviceData = {
 };
 
 const App = () => (
-  <ServiceDetail {...serviceData} />
+  <ServiceDetail {...serviceData} isVoipPage={true}/>
 );
 
 export default App;
