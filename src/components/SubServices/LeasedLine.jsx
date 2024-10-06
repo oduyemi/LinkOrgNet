@@ -54,28 +54,22 @@ export const VpnLeasedLine = () => {
                   Key features of Leased include:
                 </Typography>
                 <p className="fw-medium blutext">
-                  <CheckIcon /> Dedicated Connection: Provides a private,
-                  exclusive link for one user or organization
+                  <CheckIcon /> Dedicated Connection
                 </p>
                 <p className="fw-medium blutext">
-                  <CheckIcon /> High-Speed Connectivity: Offers symmetrical
-                  upload and download speeds.
+                  <CheckIcon /> High-Speed Connectivity
                 </p>
                 <p className="fw-medium blutext">
-                  <CheckIcon /> Reliability: Ensures minimal downtime with high
-                  availability.
+                  <CheckIcon /> Reliability
                 </p>
                 <p className="fw-medium blutext">
-                  <CheckIcon /> Low Latency: Guarantees fast data transmission
-                  with reduced delays.
+                  <CheckIcon /> Low Latency
                 </p>
                 <p className="fw-medium blutext">
-                  <CheckIcon /> Enhanced Security: Offers greater protection
-                  against unauthorized access..
+                  <CheckIcon /> Enhanced Security
                 </p>
                 <p className="fw-medium blutext">
-                  <CheckIcon /> Scalability: Easily upgradeable to meet growing
-                  business demands.
+                  <CheckIcon /> Scalability
                 </p>
                 <Box className="blu d-flex align-items-center p-4 mt-5">
                   <Box
