@@ -203,7 +203,7 @@ export const FiberToHome = () => {
                     className="wow fadeInUp"
                     style={{ textDecoration: "none" }}
                   >
-                    specialized services
+                    specialised services
                   </span>
                   <Typography
                     variant="h1"
