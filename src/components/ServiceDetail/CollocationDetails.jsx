@@ -20,14 +20,14 @@ const serviceData = {
     { name: "VPN Solutions", link: "/services/vpn-solutions" },
     { name: "IT & Network Solutions", link: "/services/it-networks" },
     { name: "Storage Solutions", link: "/services/storage-solutions" },
-    { name: "Internet Solutions", link: "/services/internets" },
+    { name: "Internet Solutions", link: "/services/internet" },
     { name: "Software Services", link: "/services/software-services" },
   ],
 
 };
 
 const App = () => (
-  <ServiceDetail {...serviceData} />
+  <ServiceDetail {...serviceData} isVoipPage={true}/>
 );
 
 export default App;

@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 import {VpnMpls3} from "../../components/SubServices/VpnMpls3";
 import { Link } from "react-router-dom";
-import Engineer from "../../assets/images/engineer.png"
+import VPNImage from "../../assets/images/subservice/vpn.png"
 import RemoveIcon from '@mui/icons-material/Remove';
 import Footer from "../../components/Footer";
 
@@ -13,7 +13,7 @@ const Mpls3 = () => {
             <Box>
             <Box className="breadcrumb-wrapper section-padding bg-cover" 
             style={{
-                backgroundImage: `url(${Engineer}`
+                backgroundImage: `url(${VPNImage}`
             }}
         >
             <Box className="container">
@@ -37,8 +37,8 @@ const Mpls3 = () => {
                             <RemoveIcon />
                         </li>
                         <li>
-                            <Link to="/services/vpn-services">
-                                MPLS L3VPN
+                            <Link to="/services/vpn-solutions">
+                               VPN Solutions
                             </Link>
                         </li>
                         <li>

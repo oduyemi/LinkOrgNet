@@ -177,7 +177,7 @@ const Footer = () => {
                   }}
                   className="blutext"
                 >
-                 Copyright © 2024 <Link to="index.html" className="orangetext">Linkorg Networks</Link >. All Rights Reserved.
+                 Copyright © 2024 <Link to="/" className="orangetext">Linkorg Networks</Link >. All Rights Reserved.
             </Typography>
 
           </Box>
