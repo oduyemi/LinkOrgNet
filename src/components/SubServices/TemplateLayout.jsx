@@ -59,7 +59,7 @@ export const VpnMpls3 = () => {
                                         <PhoneCallbackIcon className="blutext" />
                                     </Box>
                                     <Box className="ms-3">
-                                        <p className="fs-5 fw-medium mb-2 text-secondary">Got Questions? </p>
+                                        <p className="fs-5 fw-medium mb-2 text-secondary">Speak To Our Team Now </p>
                                         <Typography
                                             variant="h3" 
                                             className="m-0 text-light"
