@@ -172,9 +172,7 @@ const AboutSection = () => {
       <Box className="container">
         <Box className="about-wrapper-2">
           <Box className="row">
-            <Box
-              className="col-lg-6"
-            >
+            <Box className="col-lg-6">
               <Box
                 className="about-image-1 wow fadeInLeft"
                 data-wow-delay=".3s"
@@ -182,35 +180,13 @@ const AboutSection = () => {
                   backgroundImage: `url(${hero0})`,
                   backgroundSize: "cover",
                   width: "100%",
-                  height: "50vh", // Responsive height based on the viewport height
-                  maxWidth: "100%", // Ensure it doesn't exceed the parent's width
+                  height: "50vh",
+                  maxWidth: "100%",
                   objectFit: "cover",
                   borderRadius: "0.75rem",
                   transition: "box-shadow 0.3s ease",
                 }}
               ></Box>
-              {/* <Box 
-              className="about-image-items"
-              style={{
-                background: "red",
-                width: "100%",
-              }}
-              >
-           <Box
-                className="about-image-1 wow fadeInLeft"
-                data-wow-delay=".3s"
-                style={{
-                  backgroundImage: `url(${hero0})`, 
-                  backgroundSize: "cover", 
-                  width: "100%",
-                  objectFit: "contain", 
-                  borderRadius: "0.75rem", 
-                  transition: "box-shadow 0.3s ease", 
-                }}
-              >
-            </Box>
-
-              </Box> */}
             </Box>
             <Box className="col-lg-6 mt-5 mt-lg-0">
               <Box className="about-content">
