@@ -202,7 +202,7 @@ export const VpnLeasedLine = () => {
                     className="wow fadeInUp"
                     style={{ textDecoration: "none" }}
                   >
-                    specialised services
+                    Specialised services
                   </span>
                   <Typography
                     variant="h1"

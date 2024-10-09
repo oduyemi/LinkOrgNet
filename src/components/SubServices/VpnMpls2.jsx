@@ -200,7 +200,7 @@ export const VpnMpls2 = () => {
                     className="wow fadeInUp"
                     style={{ textDecoration: "none" }}
                   >
-                    specialised services
+                    Specialised services
                   </span>
                   <Typography
                     variant="h1"
