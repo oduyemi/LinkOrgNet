@@ -197,7 +197,7 @@ export const HighspeedWireless = () => {
                     className="wow fadeInUp"
                     style={{ textDecoration: "none" }}
                   >
-                    specialized services
+                    Specialised services
                   </span>
                   <Typography
                     variant="h1"
