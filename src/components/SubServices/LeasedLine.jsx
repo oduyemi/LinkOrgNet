@@ -80,7 +80,7 @@ export const VpnLeasedLine = () => {
                   </Box>
                   <Box className="ms-3">
                     <p className="fs-5 fw-medium mb-2 text-secondary">
-                      Got Questions?{" "}
+                      Speak To Our Team Now{" "}
                     </p>
                     <Typography
                       variant="h3"
