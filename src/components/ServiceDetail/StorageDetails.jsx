@@ -10,9 +10,9 @@ const serviceData = {
   subtitle: "Storage Solutions we offer",
 
   carouselItems: [
-    { imgSrc: require("../../assets/images/services/store1.jpg"), title: "SAN", description: "High-performance on-premises storage." },
-    { imgSrc: require("../../assets/images/services/store2.jpg"), title: "NAS", description: "Scalable, easy-to-use networked storage." },
-    { imgSrc: require("../../assets/images/services/store3.png"), title: "Cloud Storage", description: "Secure, flexible access to data anytime, anywhere." }
+    { imgSrc: require("../../assets/images/services/store1.jpg"), title: "SAN", description: "High-performance on-premises storage.", link: "/services/storage-solutions/san" },
+    { imgSrc: require("../../assets/images/services/store2.jpg"), title: "NAS", description: "Scalable, easy-to-use networked storage.", link: "/services/storage-solutions/nas"  },
+    { imgSrc: require("../../assets/images/services/store3.png"), title: "Cloud Storage", description: "Secure, flexible access to data anytime, anywhere.", link: "/services/storage-solutions/cloud_storage"  }
 ],
 
   sidebarItems: [

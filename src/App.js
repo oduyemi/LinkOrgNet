@@ -44,6 +44,12 @@ import AdminSentMails from "./pages/AdminPage/AdminSentMails";
 import MaritimePage from "./pages/subServices/MaritimePage";
 import TerrestrialPage from "./pages/subServices/TerrestrialPage";
 import BackhaulingPage from "./pages/subServices/BackhaulingPage";
+import AppSecurePage from "./pages/subServices/AppSecurePage";
+import WanAndLanPage from "./pages/subServices/WanAndLanPage";
+import EndSecurePage from "./pages/subServices/EndSecurePage";
+import SanPage from "./pages/subServices/SanPage";
+import NasPage from "./pages/subServices/NasPage";
+import CloudStoragePage from "./pages/subServices/CloudStoragePage";
 
 function App() {
   const location = useLocation();
@@ -88,8 +94,12 @@ function App() {
         <Route path="/services/satellite/terrestrial" element={<TerrestrialPage/>} />
         <Route path="/services/satellite/maritime" element={<MaritimePage/>} />
         <Route path="/services/satellite/backhauling" element={<BackhaulingPage/>} />
-        
-
+        <Route path="/services/it-networks/app_security" element={<AppSecurePage/>} />
+        <Route path="/services/it-networks/wan_lan" element={<WanAndLanPage/>} />
+        <Route path="/services/it-networks/endpoint" element={<EndSecurePage/>} />
+        <Route path="/services/storage-solutions/san" element={<SanPage/>} />
+        <Route path="/services/storage-solutions/nas" element={<NasPage/>} />
+        <Route path="/services/storage-solutions/cloud_storage" element={<CloudStoragePage/>} />
 
         {/* FAQs */}
         <Route path="/faqs" element={<GeneralQuestions />} />
