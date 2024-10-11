@@ -14,9 +14,9 @@ const serviceData = {
   subtitle: "Satellite Solutions we offer",
 
   carouselItems: [
-    { imgSrc: require("../../assets/images/services/sat1.jpg"), title: "Terrestrial Satellite", description: "Stay connected in remote locations" },
-    { imgSrc: require("../../assets/images/services/sat2.jpg"), title: "Maritime Internet", description: "Reliable connection for offshore platforms and ships." },
-    { imgSrc: require("../../assets/images/services/sat3.jpg"), title: "Cellular Backhauling", description: "Expand mobile coverage to remote areas with satellite." }
+    { imgSrc: require("../../assets/images/services/sat1.jpg"), title: "Terrestrial Satellite", description: "Stay connected in remote locations", link: "/services/satellite/terrestrial"},
+    { imgSrc: require("../../assets/images/services/sat2.jpg"), title: "Maritime Internet", description: "Reliable connection for offshore platforms and ships.", link: "/services/satellite/maritime" },
+    { imgSrc: require("../../assets/images/services/sat3.jpg"), title: "Cellular Backhauling", description: "Expand mobile coverage to remote areas with satellite.", link: "/services/satellite/backhauling" }
 ],
 
   sidebarItems: [

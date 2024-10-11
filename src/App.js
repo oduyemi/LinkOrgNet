@@ -41,6 +41,9 @@ import AdminProfile from "./pages/AdminPage/AdminProfile";
 import AdminChangePassword from "./pages/AdminPage/AdminChangePassword";
 import { SendMail } from "./components/Admin/SendMail";
 import AdminSentMails from "./pages/AdminPage/AdminSentMails";
+import MaritimePage from "./pages/subServices/MaritimePage";
+import TerrestrialPage from "./pages/subServices/TerrestrialPage";
+import BackhaulingPage from "./pages/subServices/BackhaulingPage";
 
 function App() {
   const location = useLocation();
@@ -82,6 +85,11 @@ function App() {
         <Route path="/services/vpn-solutions/mpls3" element={<Mpls3 />} />
         <Route path="/services/vpn-solutions/mpls2" element={<Mpls2 />} />
         <Route path="/services/vpn-solutions/leased" element={<LeasedLine />} />
+        <Route path="/services/satellite/terrestrial" element={<TerrestrialPage/>} />
+        <Route path="/services/satellite/maritime" element={<MaritimePage/>} />
+        <Route path="/services/satellite/backhauling" element={<BackhaulingPage/>} />
+        
+
 
         {/* FAQs */}
         <Route path="/faqs" element={<GeneralQuestions />} />

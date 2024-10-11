@@ -51,19 +51,20 @@ export const HighspeedWireless = () => {
                   Key Features of High-Speed Wireless Internet:
                 </Typography>
                 <p className="fw-medium blutext">
-                  <CheckIcon /> Wireless Transmission
+                  <CheckIcon /> High Capacity for Data Transmission
                 </p>
                 <p className="fw-medium blutext">
-                  <CheckIcon /> High Speeds
+                  <CheckIcon /> Low Latency for Real-Time Services
                 </p>
                 <p className="fw-medium blutext">
-                  <CheckIcon /> Various Technologies
+                  <CheckIcon /> Supports Multiple Technologies (Fiber,
+                  Microwave, Satellite)
                 </p>
                 <p className="fw-medium blutext">
-                  <CheckIcon /> Mobility and Flexibility
+                  <CheckIcon /> Scalability for Expanding Networks
                 </p>
                 <p className="fw-medium blutext">
-                  <CheckIcon /> Cost-Effective
+                  <CheckIcon /> Ensures Reliable Mobile Connectivity
                 </p>
 
                 <Box className="blu d-flex align-items-center p-4 mt-5">
@@ -101,7 +102,7 @@ export const HighspeedWireless = () => {
               >
                 <img
                   className="position-absolute img-fluid"
-                  src={require("../../assets/images/subservice/highspeed.gif")}
+                  src={require("../../assets/images/subservice/Backhauling.jpg")}
                   style={{
                     width: "100%",
                     objectFit: "contain",
