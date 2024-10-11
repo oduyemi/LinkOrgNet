@@ -5,7 +5,7 @@ import CheckIcon from "@mui/icons-material/Check";
 import { ServiceForm } from "./ServiceForm";
 import PhoneCallbackIcon from "@mui/icons-material/PhoneCallback";
 
-export const Maritime = () => {
+export const Backhauling = () => {
   return (
     <Box>
       <Box className="container-xxl py-5">
@@ -28,7 +28,7 @@ export const Maritime = () => {
                     fontWeight: 700,
                   }}
                 >
-                  Maritime Internet
+                  Cellular Backhauling
                 </Typography>
                 <Typography
                   variant="body1"
@@ -37,14 +37,14 @@ export const Maritime = () => {
                     fontFamily: "montserrat",
                   }}
                 >
-                  Maritime Internet refers to internet services provided to
-                  ships, vessels, and offshore platforms while they are at sea
+                  Cellular backhauling refers to the process of transporting
+                  data from cell sites (such as cell towers or base stations)
+                  back to a core network.
                   <br />
                   <br />
-                  Because traditional terrestrial internet infrastructure like
-                  fiber optics or mobile towers cannot reach vessels in the open
-                  ocean, maritime internet relies on satellite technology for
-                  connectivity.
+                  It serves as the backbone that connects the access points
+                  where users connect their devices (like smartphones) to the
+                  broader internet or telecommunications network
                   <br />
                   <br />
                 </Typography>
@@ -100,7 +100,7 @@ export const Maritime = () => {
               >
                 <img
                   className="position-absolute img-fluid"
-                  src={require("../../assets/images/subservice/maritime.jpeg")}
+                  src={require("../../assets/images/subservice/cellular.png")}
                   style={{
                     width: "100%",
                     objectFit: "contain",

@@ -5,7 +5,7 @@ import CheckIcon from "@mui/icons-material/Check";
 import { ServiceForm } from "./ServiceForm";
 import PhoneCallbackIcon from "@mui/icons-material/PhoneCallback";
 
-export const Maritime = () => {
+export const Terrestrial = () => {
   return (
     <Box>
       <Box className="container-xxl py-5">
@@ -28,7 +28,7 @@ export const Maritime = () => {
                     fontWeight: 700,
                   }}
                 >
-                  Maritime Internet
+                  Terrestrial Satellite
                 </Typography>
                 <Typography
                   variant="body1"
@@ -37,33 +37,35 @@ export const Maritime = () => {
                     fontFamily: "montserrat",
                   }}
                 >
-                  Maritime Internet refers to internet services provided to
-                  ships, vessels, and offshore platforms while they are at sea
+                 A terrestrial satellite, often referred to as a geostationary 
+                 satellite or simply a satellite, is an artificial object placed 
+                 in orbit around the Earth to provide communication, navigation, and observation services.
                   <br />
                   <br />
-                  Because traditional terrestrial internet infrastructure like
-                  fiber optics or mobile towers cannot reach vessels in the open
-                  ocean, maritime internet relies on satellite technology for
-                  connectivity.
+                  terrestrial satellites are essential for ensuring global communication, navigation, and 
+                  observation services, particularly in areas without traditional infrastructure.
                   <br />
                   <br />
-                </Typography>
-                <Typography>Key Features of Terrestrial Satellites:</Typography>
-                <p className="fw-medium blutext">
-                  <CheckIcon /> Geostationary and Low-Earth Orbits
-                </p>
-                <p className="fw-medium blutext">
-                  <CheckIcon /> Telecommunications and Navigation
-                </p>
-                <p className="fw-medium blutext">
-                  <CheckIcon /> Earth Observation Capabilities
-                </p>
-                <p className="fw-medium blutext">
-                  <CheckIcon /> Transponders, Antennas, and Solar Panels
-                </p>
-                <p className="fw-medium blutext">
-                  <CheckIcon /> Global and Remote Connectivity
-                </p>
+                  </Typography>
+                  <Typography>
+                    Key Features of Terrestrial Satellites:
+                  </Typography>
+                  <p className="fw-medium blutext">
+                    <CheckIcon /> Geostationary and Low-Earth Orbits
+                  </p>
+                  <p className="fw-medium blutext">
+                    <CheckIcon /> Telecommunications and Navigation
+                  </p>
+                  <p className="fw-medium blutext">
+                    <CheckIcon /> Earth Observation Capabilities
+                  </p>
+                  <p className="fw-medium blutext">
+                    <CheckIcon /> Transponders, Antennas, and Solar Panels
+                  </p>
+                  <p className="fw-medium blutext">
+                    <CheckIcon /> Global and Remote Connectivity
+                  </p>
+
 
                 <Box className="blu d-flex align-items-center p-4 mt-5">
                   <Box
@@ -100,7 +102,7 @@ export const Maritime = () => {
               >
                 <img
                   className="position-absolute img-fluid"
-                  src={require("../../assets/images/subservice/maritime.jpeg")}
+                  src={require("../../assets/images/subservice/terrestrial.gif")}
                   style={{
                     width: "100%",
                     objectFit: "contain",
@@ -172,6 +174,7 @@ export const Maritime = () => {
           </Box>
         </Box>
       </Box>
+
 
       <Box className="container-fluid py-5 px-4 px-lg-0">
         <Box className="row g-0">
