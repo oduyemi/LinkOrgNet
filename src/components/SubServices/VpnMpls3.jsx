@@ -74,7 +74,7 @@ export const VpnMpls3 = () => {
                   </Box>
                   <Box className="ms-3">
                     <p className="fs-5 fw-medium mb-2 text-secondary">
-                      Speak To Our Team Now {" "}
+                      Call Us Today{" "}
                     </p>
                     <Typography
                       variant="h3"

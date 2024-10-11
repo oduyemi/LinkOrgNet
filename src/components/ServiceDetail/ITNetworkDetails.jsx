@@ -10,10 +10,10 @@ const serviceData = {
                 <p> IT infrastructure, which encompasses hardware, software, and networking resources, forms the backbone of business operations. Properly designed and maintained IT infrastructure allows companies to scale their operations, boost efficiency, and support innovation while ensuring resilience and continuity. Together, these elements create a secure, well-managed, and high-performance digital environment that meets modern business needs.</p>`,
   subtitle: "IT & Network Solutions we offer",
 
-  carouselItems: [
-    { imgSrc: require("../../assets/images/services/it1.png"), title: "Application Security", description: "Protect apps from cyber threats." },
-    { imgSrc: require("../../assets/images/services/it2.png"), title: "Managed LAN/WAN", description: "Comprehensive management ensures optimal performance." },
-    { imgSrc: require("../../assets/images/services/it3.jpg"), title: "Endpoint Security", description: "Safeguard network devices across your business." }
+  carouselItems: [ 
+    { imgSrc: require("../../assets/images/services/it1.png"), title: "Application Security", description: "Protect apps from cyber threats.", link: "/services/it-networks/app_security" },
+    { imgSrc: require("../../assets/images/services/it2.png"), title: "Managed LAN/WAN", description: "Comprehensive management ensures optimal performance.", link: "/services/it-networks/wan_lan" },
+    { imgSrc: require("../../assets/images/services/it3.jpg"), title: "Endpoint Security", description: "Safeguard network devices across your business.", link: "/services/it-networks/endpoint" }
 ],
 
   sidebarItems: [

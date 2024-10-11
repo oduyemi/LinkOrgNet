@@ -5,7 +5,7 @@ import CheckIcon from "@mui/icons-material/Check";
 import { ServiceForm } from "./ServiceForm";
 import PhoneCallbackIcon from "@mui/icons-material/PhoneCallback";
 
-export const VpnLeasedLine = () => {
+export const EndpointSecure = () => {
   return (
     <Box>
       <Box className="container-xxl py-5">
@@ -17,7 +17,7 @@ export const VpnLeasedLine = () => {
                   className="wow fadeInUp"
                   style={{ textDecoration: "none" }}
                 >
-                  VPN Solutions
+                  IT and Network Solotions
                 </span>
                 <Typography
                   variant="h1"
@@ -28,7 +28,7 @@ export const VpnLeasedLine = () => {
                     fontWeight: 700,
                   }}
                 >
-                  Leased Line
+                  Endpoint Security
                 </Typography>
                 <Typography
                   variant="body1"
@@ -37,36 +37,45 @@ export const VpnLeasedLine = () => {
                     fontFamily: "montserrat",
                   }}
                 >
-                  A leased line in relation to a VPN (Virtual Private Network)
-                  is a private, dedicated circuit that provides a direct, secure
-                  connection between two or more locations.
+                  Endpoint Security refers to the protection of individual
+                  devices, or endpoints, such as laptops, desktops, smartphones,
+                  tablets, and other internet-connected devices that are part of
+                  a business network.
                   <br />
                   <br />
-                  When combined with a VPN, a leased line enhances security and
-                  performance for businesses needing to transmit sensitive data
-                  across geographically distributed offices.
+                  It involves securing these devices from potential cyber
+                  threats, unauthorized access, malware, and data breaches,
+                  ensuring the integrity and security of the entire network.
                   <br />
                   <br />
-                  Key features of Leased include:
+                  Key Components of Endpoint Security:
                 </Typography>
                 <p className="fw-medium blutext">
-                  <CheckIcon /> Dedicated Connection
+                  <CheckIcon /> Antivirus and Antimalware
                 </p>
                 <p className="fw-medium blutext">
-                  <CheckIcon /> High-Speed Connectivity
+                  <CheckIcon /> AEndpoint Detection and Response (EDR)
                 </p>
                 <p className="fw-medium blutext">
-                  <CheckIcon /> Reliability
+                  <CheckIcon /> Firewall Protection
                 </p>
                 <p className="fw-medium blutext">
-                  <CheckIcon /> Low Latency
+                  <CheckIcon /> Data Encryption
                 </p>
                 <p className="fw-medium blutext">
-                  <CheckIcon /> Enhanced Security
+                  <CheckIcon /> Access Control and Multi-Factor Authentication
+                  (MFA)
                 </p>
                 <p className="fw-medium blutext">
-                  <CheckIcon /> Scalability
+                  <CheckIcon /> Patch Management
                 </p>
+                <p className="fw-medium blutext">
+                  <CheckIcon /> Device Control
+                </p>
+                <p className="fw-medium blutext">
+                  <CheckIcon /> VPN (Virtual Private Network)
+                </p>
+
                 <Box className="blu d-flex align-items-center p-4 mt-5">
                   <Box
                     className="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
@@ -102,7 +111,7 @@ export const VpnLeasedLine = () => {
               >
                 <img
                   className="position-absolute img-fluid"
-                  src={require("../../assets/images/subservice/leased-line.jpg")}
+                  src={require("../../assets/images/subservice/endpoint.gif")}
                   style={{
                     width: "100%",
                     objectFit: "contain",
@@ -209,7 +218,7 @@ export const VpnLeasedLine = () => {
                       fontWeight: 700,
                     }}
                   >
-                    VPN
+                    IT & Network Solutions
                   </Typography>
                 </Box>
               </Box>
@@ -246,7 +255,7 @@ export const VpnLeasedLine = () => {
                               }}
                             >
                               <img
-                                src={require("../../assets/images/subservice/mplsL3vpn.png")}
+                                src={require("../../assets/images/subservice/app-seccure.jpg")}
                                 alt="Title 1"
                                 style={{
                                   height: "100%",
@@ -267,18 +276,17 @@ export const VpnLeasedLine = () => {
                               className="box-title"
                               style={{ color: "#010156" }}
                             >
-                              MPLS L3VPN
+                              Application Security
                             </h4>
                             <p className="description">
-                              Secure your business with scalable private network
-                              solutions.
+                              Protect apps from cyber threats.
                             </p>
 
                             <Box
                               className="col-lg-12 wow fadeInUp"
                               data-wow-delay=".4s"
                             >
-                              <Link to="/services/vpn-solutions/mpls3">
+                              <Link to="/services/it-networks/app_security">
                                 <button
                                   type="submit"
                                   className="theme-btn theme-btn-2"
@@ -311,7 +319,7 @@ export const VpnLeasedLine = () => {
                               }}
                             >
                               <img
-                                src={require("../../assets/images/subservice/mplsL2vpn.png")}
+                                src={require("../../assets/images/subservice/wan.png")}
                                 alt="Title 2"
                                 style={{
                                   height: "100%",
@@ -332,17 +340,17 @@ export const VpnLeasedLine = () => {
                               className="box-title"
                               style={{ color: "#010156" }}
                             >
-                              MPLS L2VPN
+                              Managed LAN/WAN
                             </h4>
                             <p className="description">
-                              Connect multiple locations seamlessly and
-                              securely.
+                              Comprehensive management ensures optimal
+                              performance.
                             </p>
                             <Box
                               className="col-lg-12 wow fadeInUp"
                               data-wow-delay=".4s"
                             >
-                              <Link to="/services/vpn-solutions/mpls2">
+                              <Link to="/services/it-networks/wan_lan">
                                 <button
                                   type="submit"
                                   className="theme-btn theme-btn-2"
@@ -375,7 +383,7 @@ export const VpnLeasedLine = () => {
                               }}
                             >
                               <img
-                                src={require("../../assets/images/subservice/leased-line.jpg")}
+                                src={require("../../assets/images/subservice/endpoint.gif")}
                                 alt="Title 3"
                                 style={{
                                   height: "100%",
@@ -396,18 +404,17 @@ export const VpnLeasedLine = () => {
                               className="box-title"
                               style={{ color: "#010156" }}
                             >
-                              Leased Line{" "}
+                              Endpoint Security
                             </h4>
                             <p className="description">
-                              Dedicated high-speed internet for demanding
-                              businesses.
+                              Safeguard network devices across your business.
                             </p>
 
                             <Box
                               className="col-lg-12 wow fadeInUp"
                               data-wow-delay=".4s"
                             >
-                              <Link to="/services/vpn-solutions/leased">
+                              <Link to="/services/it-networks/endpoint">
                                 <button
                                   type="submit"
                                   className="theme-btn theme-btn-2"

@@ -5,7 +5,7 @@ import CheckIcon from "@mui/icons-material/Check";
 import { ServiceForm } from "./ServiceForm";
 import PhoneCallbackIcon from "@mui/icons-material/PhoneCallback";
 
-export const VpnLeasedLine = () => {
+export const NasComp = () => {
   return (
     <Box>
       <Box className="container-xxl py-5">
@@ -17,7 +17,7 @@ export const VpnLeasedLine = () => {
                   className="wow fadeInUp"
                   style={{ textDecoration: "none" }}
                 >
-                  VPN Solutions
+                  Storage Solutions
                 </span>
                 <Typography
                   variant="h1"
@@ -28,7 +28,7 @@ export const VpnLeasedLine = () => {
                     fontWeight: 700,
                   }}
                 >
-                  Leased Line
+                  NAS
                 </Typography>
                 <Typography
                   variant="body1"
@@ -37,36 +37,45 @@ export const VpnLeasedLine = () => {
                     fontFamily: "montserrat",
                   }}
                 >
-                  A leased line in relation to a VPN (Virtual Private Network)
-                  is a private, dedicated circuit that provides a direct, secure
-                  connection between two or more locations.
+                  NAS (Network Attached Storage) is a type of dedicated file
+                  storage device that provides centralized and shared access to
+                  files over a network.
                   <br />
                   <br />
-                  When combined with a VPN, a leased line enhances security and
-                  performance for businesses needing to transmit sensitive data
-                  across geographically distributed offices.
+                  Unlike SAN (Storage Area Network), which operates at the block
+                  level, NAS functions at the file level, allowing multiple
+                  users and devices to access the same set of files
+                  simultaneously through a standard network interface (typically
+                  Ethernet).
                   <br />
                   <br />
-                  Key features of Leased include:
+                  Key Features of NAS:
                 </Typography>
                 <p className="fw-medium blutext">
-                  <CheckIcon /> Dedicated Connection
+                  <CheckIcon /> File-Level Storage
                 </p>
                 <p className="fw-medium blutext">
-                  <CheckIcon /> High-Speed Connectivity
+                  <CheckIcon /> Centralized Storage
                 </p>
                 <p className="fw-medium blutext">
-                  <CheckIcon /> Reliability
+                  <CheckIcon /> Network-Based Access
                 </p>
                 <p className="fw-medium blutext">
-                  <CheckIcon /> Low Latency
-                </p>
-                <p className="fw-medium blutext">
-                  <CheckIcon /> Enhanced Security
+                  <CheckIcon /> Ease of Use
                 </p>
                 <p className="fw-medium blutext">
                   <CheckIcon /> Scalability
                 </p>
+                <p className="fw-medium blutext">
+                  <CheckIcon /> Data Redundancy and RAID Support
+                </p>
+                <p className="fw-medium blutext">
+                  <CheckIcon /> Backup and Recovery
+                </p>
+                <p className="fw-medium blutext">
+                  <CheckIcon /> Energy-Efficient
+                </p>
+
                 <Box className="blu d-flex align-items-center p-4 mt-5">
                   <Box
                     className="d-flex flex-shrink-0 align-items-center justify-content-center bg-white"
@@ -102,7 +111,7 @@ export const VpnLeasedLine = () => {
               >
                 <img
                   className="position-absolute img-fluid"
-                  src={require("../../assets/images/subservice/leased-line.jpg")}
+                  src={require("../../assets/images/subservice/nas.jpg")}
                   style={{
                     width: "100%",
                     objectFit: "contain",
@@ -209,7 +218,7 @@ export const VpnLeasedLine = () => {
                       fontWeight: 700,
                     }}
                   >
-                    VPN
+                    Storage Solutions
                   </Typography>
                 </Box>
               </Box>
@@ -246,7 +255,7 @@ export const VpnLeasedLine = () => {
                               }}
                             >
                               <img
-                                src={require("../../assets/images/subservice/mplsL3vpn.png")}
+                                src={require("../../assets/images/subservice/san.jpg")}
                                 alt="Title 1"
                                 style={{
                                   height: "100%",
@@ -267,18 +276,17 @@ export const VpnLeasedLine = () => {
                               className="box-title"
                               style={{ color: "#010156" }}
                             >
-                              MPLS L3VPN
+                              SAN
                             </h4>
                             <p className="description">
-                              Secure your business with scalable private network
-                              solutions.
+                              High-performance on-premises storage.
                             </p>
 
                             <Box
                               className="col-lg-12 wow fadeInUp"
                               data-wow-delay=".4s"
                             >
-                              <Link to="/services/vpn-solutions/mpls3">
+                              <Link to="/services/storage-solutions/san">
                                 <button
                                   type="submit"
                                   className="theme-btn theme-btn-2"
@@ -311,7 +319,7 @@ export const VpnLeasedLine = () => {
                               }}
                             >
                               <img
-                                src={require("../../assets/images/subservice/mplsL2vpn.png")}
+                                src={require("../../assets/images/subservice/nas.jpg")}
                                 alt="Title 2"
                                 style={{
                                   height: "100%",
@@ -332,17 +340,16 @@ export const VpnLeasedLine = () => {
                               className="box-title"
                               style={{ color: "#010156" }}
                             >
-                              MPLS L2VPN
+                              NAS
                             </h4>
                             <p className="description">
-                              Connect multiple locations seamlessly and
-                              securely.
+                              Scalable, easy-to-use networked storage.
                             </p>
                             <Box
                               className="col-lg-12 wow fadeInUp"
                               data-wow-delay=".4s"
                             >
-                              <Link to="/services/vpn-solutions/mpls2">
+                              <Link to="/services/storage-solutions/nas">
                                 <button
                                   type="submit"
                                   className="theme-btn theme-btn-2"
@@ -375,7 +382,7 @@ export const VpnLeasedLine = () => {
                               }}
                             >
                               <img
-                                src={require("../../assets/images/subservice/leased-line.jpg")}
+                                src={require("../../assets/images/subservice/cloud_storage.gif")}
                                 alt="Title 3"
                                 style={{
                                   height: "100%",
@@ -396,18 +403,17 @@ export const VpnLeasedLine = () => {
                               className="box-title"
                               style={{ color: "#010156" }}
                             >
-                              Leased Line{" "}
+                              Cloud Storage
                             </h4>
                             <p className="description">
-                              Dedicated high-speed internet for demanding
-                              businesses.
+                              Secure, flexible access to data anytime, anywhere.
                             </p>
 
                             <Box
                               className="col-lg-12 wow fadeInUp"
                               data-wow-delay=".4s"
                             >
-                              <Link to="/services/vpn-solutions/leased">
+                              <Link to="/services/storage-solutions/cloud_storage">
                                 <button
                                   type="submit"
                                   className="theme-btn theme-btn-2"
