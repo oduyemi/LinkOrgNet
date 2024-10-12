@@ -102,7 +102,7 @@ export const HighspeedWireless = () => {
               >
                 <img
                   className="position-absolute img-fluid"
-                  src={require("../../assets/images/subservice/Backhauling.jpg")}
+                  src={require("../../assets/images/subservice/highspeed.gif")}
                   style={{
                     width: "100%",
                     objectFit: "contain",
