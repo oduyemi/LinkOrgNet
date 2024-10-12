@@ -10,10 +10,26 @@ const serviceData = {
   subtitle: "Software Service we offer",
 
   carouselItems: [
-    { imgSrc: require("../../assets/images/services/soft1.jpg"), title: "Custom Development", description: "Build software tailored to your specific needs." },
-    { imgSrc: require("../../assets/images/services/soft2.jpg"), title: "Seamless Integration", description: "Smooth integration with existing infrastructure." },
-    { imgSrc: require("../../assets/images/services/soft3.jpg"), title: "Maintenance", description: "Continuous support and improvements to keep systems running." }
-],
+    {
+      imgSrc: require("../../assets/images/services/soft1.jpg"),
+      title: "Custom Development",
+      description: "Build software tailored to your specific needs.",
+      link: "/services/software-services/custom_develop",
+    },
+    {
+      imgSrc: require("../../assets/images/services/soft2.jpg"),
+      title: "Seamless Integration",
+      description: "Smooth integration with existing infrastructure.",
+      link: "/services/software-services/seemless_integrate",
+    },
+    {
+      imgSrc: require("../../assets/images/services/soft3.jpg"),
+      title: "Maintenance",
+      description:
+        "Continuous support and improvements to keep systems running.",
+      link: "/services/software-services/maintenance",
+    },
+  ],
 
   sidebarItems: [
     { name: "VoIP Solutions", link: "/services/voip-services", active: true },
@@ -22,13 +38,13 @@ const serviceData = {
     { name: "IT & Network Solutions", link: "/services/it-networks" },
     { name: "Storage Solutions", link: "/services/storage-solutions" },
     { name: "Internet Solutions", link: "/services/internet" },
-    { name: "Collocation & Datacenter Services", link: "/services/collocation-and-data-center" },
+    {
+      name: "Collocation & Datacenter Services",
+      link: "/services/collocation-and-data-center",
+    },
   ],
-
 };
 
-const App = () => (
-  <ServiceDetail {...serviceData} isVoipPage={true}/>
-);
+const App = () => <ServiceDetail {...serviceData} isVoipPage={true} />;
 
 export default App;

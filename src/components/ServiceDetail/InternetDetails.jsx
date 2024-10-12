@@ -11,10 +11,27 @@ const serviceData = {
   subtitle: "Internet Solutions we Offer",
 
   carouselItems: [
-    { imgSrc: require("../../assets/images/services/connect1.jpg"), title: "High-Speed Wireless", description: "Stay connected with fast, reliable wireless internet.", link: "/services/internet/highspeed" },
-    { imgSrc: require("../../assets/images/services/connect2.jpg"), title: "Fiber to Home", description: "Ultra-fast fiber-optic speeds for seamless online activities.", link: "/services/internet/fiber" },
-    { imgSrc: require("../../assets/images/services/connect3.png"), title: "Estate Connect", description: "Connect entire residential communities with high-speed internet access.", link: "/services/internet/estate_connect" }
-],
+    {
+      imgSrc: require("../../assets/images/services/connect1.jpg"),
+      title: "High-Speed Wireless",
+      description: "Stay connected with fast, reliable wireless internet.",
+      link: "/services/internet/highspeed",
+    },
+    {
+      imgSrc: require("../../assets/images/services/connect2.jpg"),
+      title: "Fiber to Home",
+      description:
+        "Ultra-fast fiber-optic speeds for seamless online activities.",
+      link: "/services/internet/fiber",
+    },
+    {
+      imgSrc: require("../../assets/images/services/connect3.png"),
+      title: "Estate Connect",
+      description:
+        "Connect entire residential communities with high-speed internet access.",
+      link: "/services/internet/estate_connect",
+    },
+  ],
 
   sidebarItems: [
     { name: "VoIP Solutions", link: "/services/voip-services", active: true },
@@ -22,14 +39,14 @@ const serviceData = {
     { name: "VPN Solutions", link: "/services/vpn-solutions" },
     { name: "IT & Network Solutions", link: "/services/it-networks" },
     { name: "Storage Solutions", link: "/services/storage-solutions" },
-    { name: "Collocation & Datacenter Services", link: "/services/collocation-and-data-center" },
+    {
+      name: "Collocation & Datacenter Services",
+      link: "/services/collocation-and-data-center",
+    },
     { name: "Software Services", link: "/services/software-services" },
   ],
-
 };
 
-const App = () => (
-  <ServiceDetail {...serviceData} isVoipPage={true}/>
-);
+const App = () => <ServiceDetail {...serviceData} isVoipPage={true} />;
 
 export default App;

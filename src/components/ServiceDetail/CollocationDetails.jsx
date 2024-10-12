@@ -10,10 +10,25 @@ const serviceData = {
   subtitle: "Collocation & Datacenter Services we offer",
 
   carouselItems: [
-    { imgSrc: require("../../assets/images/services/data1.jpg"), title: "Virtual Servers", description: "Scale your business with virtual hosting.", link: "./about" },
-    { imgSrc: require("../../assets/images/services/data2.jpg"), title: "Collocation", description: "Secure IT infrastructure in a state-of-the-art datacenter." },
-    { imgSrc: require("../../assets/images/services/data3.jpg"), title: "Data Backup", description: "Comprehensive solutions for data protection and recovery." }
-],
+    {
+      imgSrc: require("../../assets/images/services/data1.jpg"),
+      title: "Virtual Servers",
+      description: "Scale your business with virtual hosting.",
+      link: "/services/collocation-and-data-center/virtual_server",
+    },
+    {
+      imgSrc: require("../../assets/images/services/data2.jpg"),
+      title: "Collocation",
+      description: "Secure IT infrastructure in a state-of-the-art datacenter.",
+      link: "/services/collocation-and-data-center/collocate",
+    },
+    {
+      imgSrc: require("../../assets/images/services/data3.jpg"),
+      title: "Data Backup",
+      description: "Comprehensive solutions for data protection and recovery.",
+      link: "/services/collocation-and-data-center/data_backup",
+    },
+  ],
   sidebarItems: [
     { name: "VoIP Solutions", link: "/services/voip-services", active: true },
     { name: "Satellite Solution", link: "/services/satellite" },
@@ -23,11 +38,8 @@ const serviceData = {
     { name: "Internet Solutions", link: "/services/internet" },
     { name: "Software Services", link: "/services/software-services" },
   ],
-
 };
 
-const App = () => (
-  <ServiceDetail {...serviceData} isVoipPage={true}/>
-);
+const App = () => <ServiceDetail {...serviceData} isVoipPage={true} />;
 
 export default App;
