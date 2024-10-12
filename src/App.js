@@ -50,6 +50,9 @@ import EndSecurePage from "./pages/subServices/EndSecurePage";
 import SanPage from "./pages/subServices/SanPage";
 import NasPage from "./pages/subServices/NasPage";
 import CloudStoragePage from "./pages/subServices/CloudStoragePage";
+import VirtualServerPage from "./pages/subServices/VirtualServerPage";
+import DataBackupPage from "./pages/subServices/DataBackupPage";
+import CollocationSubPage from "./pages/subServices/CollocationPage";
 
 function App() {
   const location = useLocation();
@@ -100,6 +103,13 @@ function App() {
         <Route path="/services/storage-solutions/san" element={<SanPage/>} />
         <Route path="/services/storage-solutions/nas" element={<NasPage/>} />
         <Route path="/services/storage-solutions/cloud_storage" element={<CloudStoragePage/>} />
+        <Route path="/services/collocation-and-data-center/virtual_server" element={<VirtualServerPage/>} />
+        <Route path="/services/collocation-and-data-center/collocate" element={<CollocationSubPage/>} />
+        <Route path="/services/collocation-and-data-center/data_backup" element={<DataBackupPage/>} />
+
+        {/* /services/software-services/custom_develop */}
+        {/* /services/software-services/seemless_integrate */}
+
 
         {/* FAQs */}
         <Route path="/faqs" element={<GeneralQuestions />} />

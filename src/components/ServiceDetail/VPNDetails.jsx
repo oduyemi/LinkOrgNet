@@ -10,10 +10,26 @@ const serviceData = {
   subtitle: "VPN Solutions we offer",
 
   carouselItems: [
-    { imgSrc: require("../../assets/images/services/vpn1.png"), title: "MPLS L3VPN", description: "Secure your business with scalable private network solutions.", link: "/services/vpn-solutions/mpls3" },
-    { imgSrc: require("../../assets/images/services/vpn2.png"), title: "MPLS L2VPN", description: "Connect multiple locations seamlessly and securely.",  link: "/services/vpn-solutions/mpls2" },
-    { imgSrc: require("../../assets/images/services/vpn3.png"), title: "Leased Line", description: " Dedicated high-speed internet for demanding businesses.",  link: "/services/vpn-solutions/leased" }
-],
+    {
+      imgSrc: require("../../assets/images/services/vpn1.png"),
+      title: "MPLS L3VPN",
+      description:
+        "Secure your business with scalable private network solutions.",
+      link: "/services/vpn-solutions/mpls3",
+    },
+    {
+      imgSrc: require("../../assets/images/services/vpn2.png"),
+      title: "MPLS L2VPN",
+      description: "Connect multiple locations seamlessly and securely.",
+      link: "/services/vpn-solutions/mpls2",
+    },
+    {
+      imgSrc: require("../../assets/images/services/vpn3.png"),
+      title: "Leased Line",
+      description: " Dedicated high-speed internet for demanding businesses.",
+      link: "/services/vpn-solutions/leased",
+    },
+  ],
 
   sidebarItems: [
     { name: "VoIP Solutions", link: "/services/voip-services", active: true },
@@ -21,14 +37,14 @@ const serviceData = {
     { name: "Internet Solutions", link: "/services/internet" },
     { name: "IT & Network Solutions", link: "/services/it-networks" },
     { name: "Storage Solutions", link: "/services/storage-solutions" },
-    { name: "Collocation & Datacenter Services", link: "/services/collocation-and-data-center" },
+    {
+      name: "Collocation & Datacenter Services",
+      link: "/services/collocation-and-data-center",
+    },
     { name: "Software Services", link: "/services/software-services" },
   ],
-
 };
 
-const App = () => (
-  <ServiceDetail {...serviceData} isVoipPage={true}/>
-);
+const App = () => <ServiceDetail {...serviceData} isVoipPage={true} />;
 
 export default App;

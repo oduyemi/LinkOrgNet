@@ -10,10 +10,25 @@ const serviceData = {
   subtitle: "Storage Solutions we offer",
 
   carouselItems: [
-    { imgSrc: require("../../assets/images/services/store1.jpg"), title: "SAN", description: "High-performance on-premises storage.", link: "/services/storage-solutions/san" },
-    { imgSrc: require("../../assets/images/services/store2.jpg"), title: "NAS", description: "Scalable, easy-to-use networked storage.", link: "/services/storage-solutions/nas"  },
-    { imgSrc: require("../../assets/images/services/store3.png"), title: "Cloud Storage", description: "Secure, flexible access to data anytime, anywhere.", link: "/services/storage-solutions/cloud_storage"  }
-],
+    {
+      imgSrc: require("../../assets/images/services/store1.jpg"),
+      title: "SAN",
+      description: "High-performance on-premises storage.",
+      link: "/services/storage-solutions/san",
+    },
+    {
+      imgSrc: require("../../assets/images/services/store2.jpg"),
+      title: "NAS",
+      description: "Scalable, easy-to-use networked storage.",
+      link: "/services/storage-solutions/nas",
+    },
+    {
+      imgSrc: require("../../assets/images/services/store3.png"),
+      title: "Cloud Storage",
+      description: "Secure, flexible access to data anytime, anywhere.",
+      link: "/services/storage-solutions/cloud_storage",
+    },
+  ],
 
   sidebarItems: [
     { name: "VoIP Solutions", link: "/services/voip-services", active: true },
@@ -21,14 +36,14 @@ const serviceData = {
     { name: "VPN Solutions", link: "/services/vpn-solutions" },
     { name: "IT & Network Solutions", link: "/services/it-networks" },
     { name: "Internet Solutions", link: "/services/internet" },
-    { name: "Collocation & Datacenter Services", link: "/services/collocation-and-data-center" },
+    {
+      name: "Collocation & Datacenter Services",
+      link: "/services/collocation-and-data-center",
+    },
     { name: "Software Services", link: "/services/software-services" },
   ],
-
 };
 
-const App = () => (
-  <ServiceDetail {...serviceData} isVoipPage={true}/>
-);
+const App = () => <ServiceDetail {...serviceData} isVoipPage={true} />;
 
 export default App;
