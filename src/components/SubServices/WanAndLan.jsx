@@ -17,7 +17,7 @@ export const WanAndLanNetwork = () => {
                   className="wow fadeInUp"
                   style={{ textDecoration: "none" }}
                 >
-                  IT and Network Solotions
+                  IT and Network Solutions
                 </span>
                 <Typography
                   variant="h1"
