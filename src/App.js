@@ -53,6 +53,9 @@ import CloudStoragePage from "./pages/subServices/CloudStoragePage";
 import VirtualServerPage from "./pages/subServices/VirtualServerPage";
 import DataBackupPage from "./pages/subServices/DataBackupPage";
 import CollocationSubPage from "./pages/subServices/CollocationPage";
+import CustomDevelopPage from "./pages/subServices/CustomDevelopPage";
+import SeemlessIntegratePage from "./pages/subServices/SeemlessIntegratePage";
+import MaintenancePage from "./pages/subServices/MaintenancePage";
 
 function App() {
   const location = useLocation();
@@ -106,9 +109,9 @@ function App() {
         <Route path="/services/collocation-and-data-center/virtual_server" element={<VirtualServerPage/>} />
         <Route path="/services/collocation-and-data-center/collocate" element={<CollocationSubPage/>} />
         <Route path="/services/collocation-and-data-center/data_backup" element={<DataBackupPage/>} />
-
-        {/* /services/software-services/custom_develop */}
-        {/* /services/software-services/seemless_integrate */}
+        <Route path="/services/software-services/custom_develop" element={<CustomDevelopPage/>} />
+        <Route path="/services/software-services/seemless_integrate" element={<SeemlessIntegratePage/>} />
+        <Route path="/services/software-services/maintenance" element={<MaintenancePage/>} />
 
 
         {/* FAQs */}
