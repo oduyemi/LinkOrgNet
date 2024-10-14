@@ -44,7 +44,7 @@ const ServiceSection = () => {
                 >
                     Connectivity
                 </Typography>{" "}<br/>
-                with Nigeria's Top <br/>
+                with Nigeria&apos;s Leading <br/>
                 IT and Networks Provider
             </Typography> 
              
@@ -61,7 +61,7 @@ const ServiceSection = () => {
               margin: '0 auto', 
             }}
           >
-            Stay connected with Nigeria's leading 
+            {/* Stay connected with Nigeria's leading 
             connectivity provider. As a top IT and 
             networks provider, we specialize in 
             VoIP solutions that enhance your communication 
@@ -74,7 +74,16 @@ const ServiceSection = () => {
             connectivity to the world. Enjoy lightning-fast 
             and dependable service designed to meet your unique 
             needs, ensuring that your online activities are smooth 
-            and uninterrupted.<br/>
+            and uninterrupted.<br/> */}
+            We are your trusted partner for all things IT and 
+            telecommunications. From VoIP and VPN services to ISP 
+            solutions, VSAT hardware for both terrestrial and maritime 
+            needs, and robust terrestrial communications, we provide 
+            the technology and expertise you need to succeed. Our 
+            dedicated team delivers reliable and efficient Field 
+            Telecommunication Engineering Support Services, ensuring 
+            your operations run smoothly, no matter the scale. Let 
+            us transform your ideas into powerful digital experiences.
           </Typography>
         </Box>
         <Box className="row">

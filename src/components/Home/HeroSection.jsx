@@ -4,7 +4,7 @@ import { Box, Typography } from "@mui/material";
 import Slider from "react-slick";
 import techy from "../../assets/images/techy.jpg";
 import connected from "../../assets/images/homeHero1.jpg";
-import future from "../../assets/images/future.jpg";
+import int from "../../assets/images/int.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -86,7 +86,7 @@ const HeroSection = () => {
         <Box className="swiper-slide">
           <Box
             className="hero-image bg-cover"
-            style={{ backgroundImage: `url(${future})` }} 
+            style={{ backgroundImage: `url(${int})` }} 
           ></Box>
           <Box className="container">
             <Box className="row justify-content-between align-items-center">

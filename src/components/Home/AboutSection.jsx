@@ -137,10 +137,18 @@ const AboutSection = () => {
                 fontFamily: "Montserrat",
               }}
             >
-              Stay connected no matter where you are with our cutting-edge VSAT
+              {/* Stay connected no matter where you are with our cutting-edge VSAT
               services. Perfect for remote and maritime locations, our satellite
               solutions ensure uninterrupted internet and communication, even in
-              the most challenging environments.
+              the most challenging environments. */}
+              Stay connected with Nigeria's leading connectivity provider. As a top 
+              IT and networks provider, we offer comprehensive services including 
+              high-speed internet, VPN, and Maritime VSAT to ensure you stay 
+              connected no matter where you are. Whether you're streaming, working, 
+              or gaming, our high-speed internet solutions guarantee seamless 
+              connectivity to the world. Enjoy lightning-fast and dependable service 
+              designed to meet your unique needs, ensuring that your online 
+              activities are smooth and uninterrupted.
             </Typography>
             <ul>
               <li>
