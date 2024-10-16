@@ -142,19 +142,19 @@ export const Offcanvas = ({ onClose, isOpen }) => {
                 </li>
               </ul>
               <Box className="header-button mt-4">
-                <RouterLink to="/contact" className="theme-btn text-center">
+                <RouterLink to="/contact" onClick={handleMenuItemClick} className="theme-btn text-center">
                     Contact Us
                     <ChevronRightIcon />
                 </RouterLink>
               </Box>
               <Box className="social-icon d-flex align-items-center">
-                <Link href="">
+                <Link href="" target="_blank">
                   <FacebookIcon sx={{ fontSize: 20, color: "#000" }} />
                 </Link>
-                <Link href="">
+                <Link href="https://instagram.com/linkorgnet" target="blank">
                   <InstagramIcon sx={{ fontSize: 20, color: "#000" }} />
                 </Link>
-                <Link href="">
+                <Link href="" target="blank">
                   <PinterestIcon sx={{ fontSize: 20, color: "#000" }} />
                 </Link>
               </Box>
