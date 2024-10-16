@@ -34,13 +34,13 @@ export const TopHeader = () => {
           </Box>
           <Box className="top-right">
             <Box className="social-icon d-flex align-items-center">
-                <Link to="">
+                <Link to="" target="_blank">
                     <FacebookIcon sx={{ fontSize: 20, color: "#fff" }} />
                 </Link>
-                <Link to="">
+                <Link to="https://instagram.com/linkorgnet" target="_blank">
                     <InstagramIcon sx={{ fontSize: 20, color: "#fff" }} />
                 </Link>
-                <Link to="">
+                <Link to="" target="_blank">
                     <PinterestIcon sx={{ fontSize: 20, color: "#fff" }} />
                 </Link>
             </Box>

@@ -150,9 +150,9 @@ export const ContactForm = () => {
                                                     Social
                                                 </Typography>
                                                 <Box className="social-icon d-flex align-items-center">
-                                                    <Link to=""><FacebookIcon /></Link>
-                                                    <Link to=""><InstagramIcon /></Link>
-                                                    <Link to=""><PinterestIcon /></Link>
+                                                    <Link to="" target="_blank"><FacebookIcon /></Link>
+                                                    <Link to="https://instagram.com/linkorgnet" target="_blank"><InstagramIcon /></Link>
+                                                    <Link to="" target="_blank"><PinterestIcon /></Link>
                                                 </Box>
                                             </Box>
                                         </Box>

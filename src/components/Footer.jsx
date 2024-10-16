@@ -56,15 +56,15 @@ const Footer = () => {
 
             <li>
               <FacebookIcon sx={{ color: "#E65D0F", fontSize: 20}}/>
-              <Link to=""className="blutext" > Facebook</Link>
+              <Link to=""className="blutext" target="_blank"> Facebook</Link>
             </li>
               <li>
                 <InstagramIcon sx={{ color: "#E65D0F", fontSize: 20}}/>
-                <Link to="" className="blutext"> Instagram</Link>
+                <Link to="https://instagram.com/linkorgnet" target="_blank" className="blutext"> Instagram</Link>
               </li>
               <li>
                 <PinterestIcon sx={{ color: "#E65D0F", fontSize: 20}}/>
-                <Link to="" className="blutext"> Pinterest</Link>
+                <Link to="" className="blutext" target="_blank"> Pinterest</Link>
               </li>
             </ul>
           </Box>

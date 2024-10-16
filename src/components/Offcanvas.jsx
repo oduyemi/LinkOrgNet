@@ -151,10 +151,10 @@ export const Offcanvas = ({ onClose, isOpen }) => {
                 <Link href="" target="_blank">
                   <FacebookIcon sx={{ fontSize: 20, color: "#000" }} />
                 </Link>
-                <Link href="https://instagram.com/linkorgnet" target="blank">
+                <Link href="https://instagram.com/linkorgnet" target="_blank">
                   <InstagramIcon sx={{ fontSize: 20, color: "#000" }} />
                 </Link>
-                <Link href="" target="blank">
+                <Link href="" target="_blank">
                   <PinterestIcon sx={{ fontSize: 20, color: "#000" }} />
                 </Link>
               </Box>
