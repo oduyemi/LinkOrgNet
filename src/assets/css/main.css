@@ -2142,7 +2142,11 @@ input.main-search-input::placeholder {
   text-align: center;
   border: 1px solid var(--border);
 }
-.offcanvas__wrapper .offcanvas__content .offcanvas__contact .social-icon a:hover {
+.offcanvas__wrapper 
+.offcanvas__content
+.offcanvas__contact 
+.social-icon 
+a:hover {
   background-color: var(--theme);
   color: var(--white);
 }
@@ -2159,7 +2163,8 @@ input.main-search-input::placeholder {
   right: 0;
 }
 
-.offcanvas__overlay.overlay-open {
+.offcanvas__overlay
+.overlay-open {
   opacity: 0.8;
   visibility: visible;
 }
@@ -2718,7 +2723,7 @@ input.main-search-input::placeholder {
   width: 100%;
   height: 100%;
   content: "";
-  background: #000;
+  /* background: #000; */
   transform: matrix(-1, 0, 0, 1, 0, 0);
   opacity: 0.65;
   filter: blur(40px);
