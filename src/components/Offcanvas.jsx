@@ -11,10 +11,11 @@ import MailIcon from '@mui/icons-material/Mail';
 import ShareLocationIcon from '@mui/icons-material/ShareLocation';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 
-
-
-
 export const Offcanvas = ({ onClose, isOpen }) => {
+  const handleMenuItemClick = () => {
+    onClose(); 
+  };
+
   return (
     <Box className={`offcanvas__info ${isOpen ? "info-open" : ""}`}>
       <Box className="offcanvas__overlay" onClick={onClose} />
@@ -39,11 +40,10 @@ export const Offcanvas = ({ onClose, isOpen }) => {
                       fontSize: 30
                     }}
                     className="me-4"
-                 />
+                  />
                 </Button>
               </Box>
             </Box>
-            {/* </Box> */}
             <Typography 
               variant="body1" 
               className="d-none d-xl-block"
@@ -53,8 +53,8 @@ export const Offcanvas = ({ onClose, isOpen }) => {
                 fontWeight: 200,
                 fontFamily: "montesserat"
               }}
-              >
-                We would love to hear from you!
+            >
+              We would love to hear from you!
             </Typography>
             <Box className="mobile-menu fix mb-3"></Box>
             <Box className="offcanvas__contact">
@@ -159,24 +159,24 @@ export const Offcanvas = ({ onClose, isOpen }) => {
                 </Link>
               </Box>
               <Box className="mobile-menu d-md-none">
-              <ul>
-                <li>
-                  <RouterLink to="/" className="blutext" style={{ fontSize: "15px"}}>Home</RouterLink>
-                </li>
-                <li>
-                  <RouterLink to="/about" className="blutext" style={{ fontSize: "15px"}}>About</RouterLink>
-                </li>
-                <li>
-                  <RouterLink to="/faqs" className="blutext" style={{ fontSize: "15px"}}>FAQs</RouterLink>
-                </li>
-                <li>
-                  <RouterLink to="/services" className="blutext" style={{ fontSize: "15px"}}>Services</RouterLink>
-                </li>
-                <li>
-                  <RouterLink to="/contact" className="blutext" style={{ fontSize: "15px"}}>Contact</RouterLink>
-                </li>
-              </ul>
-            </Box>
+                <ul>
+                  <li>
+                    <RouterLink to="/" className="blutext" style={{ fontSize: "15px"}} onClick={handleMenuItemClick}>Home</RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink to="/about" className="blutext" style={{ fontSize: "15px"}} onClick={handleMenuItemClick}>About</RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink to="/faqs" className="blutext" style={{ fontSize: "15px"}} onClick={handleMenuItemClick}>FAQs</RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink to="/services" className="blutext" style={{ fontSize: "15px"}} onClick={handleMenuItemClick}>Services</RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink to="/contact" className="blutext" style={{ fontSize: "15px"}} onClick={handleMenuItemClick}>Contact</RouterLink>
+                  </li>
+                </ul>
+              </Box>
             </Box>
           </Box>
         </Box>
