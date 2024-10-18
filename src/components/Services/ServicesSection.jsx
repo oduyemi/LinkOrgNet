@@ -80,14 +80,15 @@ const ServicesSection = () => {
                     </Link>
 
                     <Link to="/services/vpn-solutions" className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                        <Box className="service-box-items">
-                            <Box className="icon">
+                        <Box className="service-box-items active">
+                            <Box className="icon d-inline">
                                 <VpnLockIcon
                                     sx={{
                                         fontSize: 70,
                                         color: "#ffffff"
                                     }}
-                                    className="d-inline"
+                                    // className="d-inline"
+                                    className="d-inline whitaker"
                                 />
                             </Box>
                             <Box className="content">
