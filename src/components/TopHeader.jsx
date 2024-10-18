@@ -12,7 +12,7 @@ export const TopHeader = () => {
           <Box className="top-left">
             <ul className="contact-list">
               <li>
-                <Link to="tel:+2349051187279">
+                <Link to="tel:+2349041423631">
                   <Typography component="span">
                     Call
                   </Typography>

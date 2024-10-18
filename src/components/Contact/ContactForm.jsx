@@ -97,8 +97,8 @@ export const ContactForm = () => {
                                                 >
                                                     Phone
                                                 </Typography>
-                                                <Link to="tel:+234803406 0434">+234 803 406 0434 </Link> <br />
-                                                {/* <Link to="tel:+01368567894">+01 368 567 894</Link> */}
+                                                <Link to="tel:+2349160005465)">+234 916 000 LINK (5465)</Link > <br />
+                                                <Link to="tel:tel:+2349041423631">+234 904 142 3631</Link>
                                             </Box>
                                         </Box>
                                     </Box>

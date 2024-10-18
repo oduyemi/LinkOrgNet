@@ -87,7 +87,7 @@ export const VpnMpls2 = () => {
                         fontSize: "20px",
                       }}
                     >
-                      +234 803 406 0434
+                      +234 916 000 LINK (5465)
                     </Typography>
                   </Box>
                 </Box>

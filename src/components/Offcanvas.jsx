@@ -132,12 +132,15 @@ export const Offcanvas = ({ onClose, isOpen }) => {
                       />
                   </Box>
                   <Box className="offcanvas__contact-text">
-                    <Link href="tel:+2348034060434" 
-                      className="text-black" 
-                      style={{ fontSize: "15px"}}
-                    >
-                      +2348034060434
-                    </Link>
+                  <Link to="tel:+2349160005465)" style={{ fontSize: "15px"}}>
+                    +234 916 000 LINK (5465)
+                  </Link ><br/>
+                  <Link href="tel:+2349041423631" 
+                    className="text-black" 
+                    style={{ fontSize: "15px"}}
+                  >
+                    +234 904 142 3631
+                  </Link>
                   </Box>
                 </li>
               </ul>

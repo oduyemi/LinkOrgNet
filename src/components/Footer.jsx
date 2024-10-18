@@ -159,7 +159,10 @@ const Footer = () => {
                 </Typography>
                 <Link to="mailto:info@linkorgnet.com.ng" className="text-black">info@linkorgnet.com.ng</Link >
                 <h5 className="pt-3">
-                  <Link to="tel:+2348034060434" className="blutext">+234 803 406 0434</Link >
+                  <Link to="tel:+2349160005465)" className="blutext">+234 916 000 LINK (5465)</Link >
+                </h5>
+                <h5 style={{ marginTop: "-40px"}}>
+                  <Link to="tel:+2349041423631" className="blutext">+234 904 1423 631</Link >
                 </h5>
               </Box>
               </Box>
