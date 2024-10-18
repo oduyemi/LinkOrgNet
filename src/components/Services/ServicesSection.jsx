@@ -205,7 +205,7 @@ const ServicesSection = () => {
                                         fontFamily: "montserrat"
                                     }}
                                 >
-                                    Seamless IT Infrastructure and Network Management
+                                    Seamless IT Infrastructure and Network 
                                 </Typography>
                                 <ChevronRightIcon
                                     sx={{
@@ -263,7 +263,7 @@ const ServicesSection = () => {
                                 />
                             </Box>
                             <Box className="content">
-                                <h3 className="blutext whitaker">Colocation & Datacenter Services</h3>
+                                <h3 className="blutext whitaker">Colocation & Datacenter</h3>
                                 <Typography
                                     variant="body1"
                                     sx={{
@@ -273,7 +273,7 @@ const ServicesSection = () => {
                                         fontFamily: "montserrat"
                                     }}
                                 >
-                                    Secure, Reliable Hosting for Your Critical Data
+                                    Secure, Reliable Hosting for Your Data
                                 </Typography>
                                 <ChevronRightIcon
                                     sx={{
@@ -307,7 +307,7 @@ const ServicesSection = () => {
                                         fontFamily: "montserrat"
                                     }}
                                 >
-                                    Tailored Solutions for Your Unique Needs
+                                    Tailored Solutions for Your Needs
                                 </Typography>
                                 <ChevronRightIcon
                                     sx={{
