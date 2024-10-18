@@ -1,18 +1,16 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import PinterestIcon from '@mui/icons-material/Pinterest';
-import CallIcon from '@mui/icons-material/Call';
-import MailIcon from '@mui/icons-material/Mail';
-import ShareLocationIcon from '@mui/icons-material/ShareLocation';
-import Person2Icon from '@mui/icons-material/Person2';
-import TopicIcon from '@mui/icons-material/Topic';
-import UpcomingIcon from '@mui/icons-material/Upcoming';
-import PublicIcon from '@mui/icons-material/Public';
-
-
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import PinterestIcon from "@mui/icons-material/Pinterest";
+import CallIcon from "@mui/icons-material/Call";
+import MailIcon from "@mui/icons-material/Mail";
+import ShareLocationIcon from "@mui/icons-material/ShareLocation";
+import Person2Icon from "@mui/icons-material/Person2";
+import TopicIcon from "@mui/icons-material/Topic";
+import UpcomingIcon from "@mui/icons-material/Upcoming";
+import PublicIcon from "@mui/icons-material/Public";
 
 export const ContactForm = () => {
     return(

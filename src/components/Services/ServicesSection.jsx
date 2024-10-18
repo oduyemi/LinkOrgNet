@@ -80,14 +80,15 @@ const ServicesSection = () => {
                     </Link>
 
                     <Link to="/services/vpn-solutions" className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                        <Box className="service-box-items">
-                            <Box className="icon">
+                        <Box className="service-box-items active">
+                            <Box className="icon d-inline">
                                 <VpnLockIcon
                                     sx={{
                                         fontSize: 70,
                                         color: "#ffffff"
                                     }}
-                                    className="d-inline"
+                                    // className="d-inline"
+                                    className="d-inline whitaker"
                                 />
                             </Box>
                             <Box className="content">
@@ -205,7 +206,7 @@ const ServicesSection = () => {
                                         fontFamily: "montserrat"
                                     }}
                                 >
-                                    Seamless IT Infrastructure and Network Management
+                                    Seamless IT Infrastructure and Network 
                                 </Typography>
                                 <ChevronRightIcon
                                     sx={{
@@ -263,7 +264,7 @@ const ServicesSection = () => {
                                 />
                             </Box>
                             <Box className="content">
-                                <h3 className="blutext whitaker">Colocation & Datacenter Services</h3>
+                                <h3 className="blutext whitaker">Colocation & Datacenter</h3>
                                 <Typography
                                     variant="body1"
                                     sx={{
@@ -273,7 +274,7 @@ const ServicesSection = () => {
                                         fontFamily: "montserrat"
                                     }}
                                 >
-                                    Secure, Reliable Hosting for Your Critical Data
+                                    Secure, Reliable Hosting for Your Data
                                 </Typography>
                                 <ChevronRightIcon
                                     sx={{
@@ -307,7 +308,7 @@ const ServicesSection = () => {
                                         fontFamily: "montserrat"
                                     }}
                                 >
-                                    Tailored Solutions for Your Unique Needs
+                                    Tailored Solutions for Your Needs
                                 </Typography>
                                 <ChevronRightIcon
                                     sx={{
