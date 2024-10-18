@@ -12,8 +12,12 @@ const NeedAdvisor = () => {
           <div className="section-title mb-0">
             <h2 className="blutext" data-wow-delay=".3s">
               Call Us Today <br/>
-              <a href="tel:123884400" className="theme-color-1">
-                (+234) 803 406 0434
+              <a href="tel:+2349160005465" className="theme-color-1">
+                 MTN: 091-6000-5465
+              </a>
+              <br/>
+              <a href="tel:+2349160005465" className="theme-color-1">
+              Airtel: 090-4142-3631
               </a>
             </h2>
           </div>
