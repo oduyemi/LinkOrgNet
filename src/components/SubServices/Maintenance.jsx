@@ -193,7 +193,7 @@ export const Maintenance = () => {
                     className="wow fadeInUp"
                     style={{ textDecoration: "none" }}
                   >
-                    Software Services
+                    Specialised services
                   </span>
                   <Typography
                     variant="h1"
@@ -204,7 +204,7 @@ export const Maintenance = () => {
                       fontWeight: 700,
                     }}
                   >
-                    Collocation & Datacenter Services
+                    Software Services
                   </Typography>
                 </Box>
               </Box>
