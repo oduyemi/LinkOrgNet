@@ -204,7 +204,7 @@ export const CustomDevelop = () => {
                     className="wow fadeInUp"
                     style={{ textDecoration: "none" }}
                   >
-                   Software Services
+                    Specialised services
                   </span>
                   <Typography
                     variant="h1"
@@ -215,7 +215,7 @@ export const CustomDevelop = () => {
                       fontWeight: 700,
                     }}
                   >
-                    Collocation & Datacenter Services
+                    Software Services
                   </Typography>
                 </Box>
               </Box>
@@ -276,7 +276,7 @@ export const CustomDevelop = () => {
                               Custom Development
                             </h4>
                             <p className="description">
-                            Build software tailored to your specific needs.
+                              Build software tailored to your specific needs.
                             </p>
 
                             <Box
@@ -340,7 +340,7 @@ export const CustomDevelop = () => {
                               Seamless Integration
                             </h4>
                             <p className="description">
-                            Smooth integration with existing infrastructure.
+                              Smooth integration with existing infrastructure.
                             </p>
                             <Box
                               className="col-lg-12 wow fadeInUp"
@@ -403,7 +403,8 @@ export const CustomDevelop = () => {
                               Maintenance
                             </h4>
                             <p className="description">
-                            Continuous support and improvements to keep systems running.
+                              Continuous support and improvements to keep
+                              systems running.
                             </p>
 
                             <Box
