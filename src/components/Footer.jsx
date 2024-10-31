@@ -78,7 +78,7 @@ const Footer = () => {
               </li>
             </ul>
           </Box>
-          <Box className="footer-widgets-wrapper">
+          <Box className="footer-widgets-wrapper" style={{marginTop: "0px", marginBottom: "50px", paddingTop: "0px", paddingBottom: "0px", height: "fitContent"}}>
             <Box className="row">
               <Box
                 className="col-xl-6 col-sm-12 col-md-8 col-lg-6 wow fadeInUp"
@@ -192,8 +192,8 @@ const Footer = () => {
           </Box>
         </Box>
         </Box>
-        <Box className="footer-bottom style-2">
-          <Box className="container">
+        <Box className="footer-bottom style-2" >
+          <Box className="container" >
             <Box className="footer-wrapper d-flex align-items-center justify-content-between">
               <Typography
                 variant="p"
