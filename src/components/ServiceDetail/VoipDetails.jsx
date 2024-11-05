@@ -6,7 +6,7 @@ const serviceData = {
   imageSrc: require("../../assets/images/services/voip_image.jpg"),
   imageAlt: "VOIP Service",
   description: `<p> Cut down on communication costs without compromising quality. Linkorg Network’s VoIP solutions provide crystal-clear voice calls over the internet, ensuring you stay connected with clients and colleagues effortlessly. </p> 
-                <p>Visit our VoIP website for more details and to make a purchase at <a href="https://linkorgvoip.com"> https://linkorgvoip.com/</a>.</p>`,
+                <p>Visit our dedicated VoIP website for exclusive deals and everything you need to make your VoIP purchase today! <a href="https://linkorgvoip.com">linkorgvoip.com</a>.</p>`,
   subtitle: "VOIP Benefits",
   carouselItems: [
     {
@@ -42,6 +42,8 @@ const serviceData = {
   ],
 };
 
-const App = () => <ServiceDetail {...serviceData} isVoipPage={false} />;
+const App = () => (
+  <ServiceDetail {...serviceData} isVoipPage={false} isVoipLink={true} />
+);
 
 export default App;
