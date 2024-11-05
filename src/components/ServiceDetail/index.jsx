@@ -11,7 +11,8 @@ const ServiceDetail = ({
   subtitle,
   carouselItems,
   sidebarItems,
-  isVoipPage,  
+  isVoipPage,
+  isVoipLink,
 }) => {
   return (
     <section className="service-details fix section-padding">
@@ -22,10 +23,7 @@ const ServiceDetail = ({
               <Box className="service-details-items">
                 {/* Image section */}
                 <Box className="details-image">
-                  <img 
-                  src={imageSrc} 
-                  alt={imageAlt} 
-                  />
+                  <img src={imageSrc} alt={imageAlt} />
                 </Box>
                 {/* Content section */}
                 <Box className="details-content">
@@ -116,7 +114,9 @@ const ServiceDetail = ({
                                 >
                                   {item.title}
                                 </h4>
-                                <p className="description">{item.description}</p>
+                                <p className="description">
+                                  {item.description}
+                                </p>
                                 <Link key={index} to={item.link}>
                                   {/* Conditionally render this button */}
                                   {isVoipPage && (
@@ -144,6 +144,26 @@ const ServiceDetail = ({
                     </Box>
                   </Box>
                 </Box>
+
+                {isVoipLink && (
+                  <Box
+                    className="col-lg-12 wow fadeInUp text-center"
+                    data-wow-delay=".4s"
+                  >
+                    <a
+                      href="https://linkorgvoip.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button type="submit" className="theme-btn theme-btn-2">
+                        <span>
+                          Visit VoIP Website{" "}
+                          <i className="fas fa-chevron-right"></i>
+                        </span>
+                      </button>
+                    </a>
+                  </Box>
+                )}
               </Box>
             </Box>
 
@@ -207,4 +227,3 @@ const ServiceDetail = ({
 };
 
 export default ServiceDetail;
-
