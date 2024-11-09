@@ -1,128 +1,95 @@
-// import React from "react";
-// import { Box, Typography } from "@mui/material";
-
-// export const ServiceForm = () => {
-//     return(
-//         <Box className="container position-relative wow fadeInUp" data-wow-delay="0.1s" style={{marginTop: "4rem"}}>
-//             <Box className="row justify-content-center">
-//                 <Box className="col-lg-8">
-//                     <Box className="bg-light text-center p-5">
-//                         <Typography
-//                             variant="h1"
-//                             className="mb-4 blutext"
-//                             sx={{
-//                                 fontSize: "36px",
-//                                 fontWeight: 800,
-//                                 fontFamily: "montserrat"
-//                             }}
-//                         >
-//                             Book Our Services
-//                         </Typography>
-//                         <form>
-//                             <Box className="row g-3">
-//                                 <Box className="col-12 col-sm-6">
-//                                     <input
-//                                         type="text"
-//                                         className="form-control border-0"
-//                                         placeholder="Your Name"
-//                                         style={{height: "55px"}}
-//                                     />
-//                                 </Box>
-//                                 <Box className="col-12 col-sm-6">
-//                                     <input
-//                                         type="text"
-//                                         className="form-control border-0"
-//                                         placeholder="Company Name"
-//                                         style={{height: "55px"}}
-//                                     />
-//                                 </Box>
-//                                 <Box className="col-12 col-sm-6">
-//                                     <input
-//                                         type="email"
-//                                         className="form-control border-0"
-//                                         placeholder="Your Email"
-//                                         style={{height: "55px"}}
-//                                     />
-//                                 </Box>
-//                                 <Box className="col-12 col-sm-6">
-//                                     <input
-//                                         type="text"
-//                                         className="form-control border-0"
-//                                         placeholder="Full Address"
-//                                         style={{height: "55px"}}
-//                                     />
-//                                 </Box>
-//                                 <Box className="col-12 col-sm-6">
-//                                     <select className="form-select border-0" style={{height: "55px"}}>
-//                                         <option selected>Select A Service</option>
-//                                         <option value="1">VPN MPLS L2VPN</option>
-//                                         <option value="2">VPN MPLS L3VPN</option>
-//                                         <option value="3">Internet Enterprise</option>
-//                                         <option value="3">Internet Retail</option>
-//                                         <option value="3">VOIP</option>
-//                                         <option value="3">Application Security</option>
-//                                     </select>
-//                                 </Box>
-//                                 <Box className="col-12 col-sm-6">
-//                                     <Box className="date" id="date1" data-target-input="nearest">
-//                                         <input
-//                                             type="text"
-//                                             className="form-control border-0 datetimepicker-input"
-//                                             placeholder="How did you hear about us?"
-//                                             data-target="#date1"
-//                                             style={{height: "55px"}}
-//                                         />
-//                                     </Box>
-//                                 </Box>
-//                                 <Box className="col-12">
-//                                     <textarea className="form-control border-0" placeholder="Special Request"></textarea>
-//                                 </Box>
-//                                 <Box className="col-12">
-//                                     <button className="theme-btn w-100 py-3" type="submit">Book Now</button>
-//                                 </Box>
-//                             </Box>
-//                         </form>
-//                     </Box>
-//                 </Box>
-//             </Box>
-//         </Box>
-//     )
-// }
-import React from "react";
-import { Box, Typography, Grid } from "@mui/material";
+import React, { useState } from "react";
+import {
+  Box,
+  Typography,
+  Grid,
+  TextField,
+  MenuItem,
+  Button,
+  CircularProgress,
+} from "@mui/material";
+import axios from "axios";
 
 export const ServiceForm = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    company: "",
+    email: "",
+    address: "",
+    service: "",
+    how: "",
+    phone: "",
+    state: "",
+    lga: "",
+    specialRequest: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    try {
+      const response = await axios.post(
+        "https://linkorgnet.vercel.app/api/v1/bookings/booking",
+        formData
+      );
+      alert(response.data.message || "Message sent successfully!");
+
+      setFormData({
+        name: "",
+        company: "",
+        email: "",
+        address: "",
+        service: "",
+        how: "",
+        phone: "",
+        state: "",
+        lga: "",
+        specialRequest: "",
+      });
+    } catch (error) {
+      alert(
+        error.response?.data?.message ||
+          "An error occurred while sending the message."
+      );
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <Box
       className="position-relative wow fadeInUp"
       data-wow-delay="0.1s"
       sx={{
         marginTop: "4rem",
-        width: "100%", // Full width of the page
-        backgroundColor: "#f9f9f9", // Adjust background as needed
+        width: "100%",
+        backgroundColor: "#f9f9f9",
       }}
     >
       <Grid container justifyContent="center" spacing={4}>
-        {/* Adjust the width to cover the entire page */}
         <Grid item xs={12}>
           <Box className="bg-light p-5">
             <Grid container spacing={4}>
-              {/* Left column for image or GIF */}
               <Grid item xs={12} md={6}>
-                <Box  sx={{marginTop:"70px"}}>
+                <Box sx={{ marginTop: "70px" }}>
                   <img
                     src={require("../../assets/images/subservice/form.jpg")}
                     alt="Service Illustration"
                     style={{
-                      width: "100%", // Ensures the image takes full width
+                      width: "100%",
                       height: "auto",
                       borderRadius: "8px",
                     }}
                   />
                 </Box>
               </Grid>
-
-              {/* Right column for form */}
               <Grid item xs={12} md={6}>
                 <Typography
                   variant="h1"
@@ -135,97 +102,149 @@ export const ServiceForm = () => {
                 >
                   Book Our Services
                 </Typography>
-                <form>
+                <form onSubmit={handleSubmit}>
                   <Grid container spacing={3}>
                     <Grid item xs={12} sm={6}>
-                      <input
-                        type="text"
-                        className="form-control border-0"
+                      <TextField
+                       type="text"
+                        variant="outlined"
+                        fullWidth
                         placeholder="Your Name"
-                        style={{ height: "55px" }}
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
                       />
                     </Grid>
                     <Grid item xs={12} sm={6}>
-                      <input
-                        type="text"
-                        className="form-control border-0"
+                      <TextField
+                       type="text"
+                        variant="outlined"
+                        fullWidth
                         placeholder="Company Name"
-                        style={{ height: "55px" }}
+                        name="company"
+                        value={formData.company}
+                        onChange={handleChange}
                       />
                     </Grid>
                     <Grid item xs={12} sm={6}>
-                      <input
+                      <TextField
                         type="email"
-                        className="form-control border-0"
+                        variant="outlined"
+                        fullWidth
                         placeholder="Your Email"
-                        style={{ height: "55px" }}
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
                       />
                     </Grid>
                     <Grid item xs={12} sm={6}>
-                      <input
-                        type="text"
-                        className="form-control border-0"
+                      <TextField
+                       type="text"
+                        variant="outlined"
+                        fullWidth
                         placeholder="Full Address"
-                        style={{ height: "55px" }}
+                        name="address"
+                        value={formData.address}
+                        onChange={handleChange}
                       />
                     </Grid>
                     <Grid item xs={12} sm={6}>
-                      <select
-                        className="form-select border-0"
-                        style={{ height: "55px" }}
+                      <TextField
+                        select
+                        fullWidth
+                        name="service"
+                        label="Select A Service" 
+                        value={formData.service}
+                        onChange={handleChange}
+                        variant="outlined"
+                        placeholder="Select A Service"
+                        sx={{
+                          color: "#010156",
+                        }}
                       >
-                        <option selected>Select A Service</option>
-                        <option value="1">VPN MPLS L2VPN</option>
-                        <option value="2">VPN MPLS L3VPN</option>
-                        <option value="3">Internet Enterprise</option>
-                        <option value="4">Internet Retail</option>
-                        <option value="5">VOIP</option>
-                        <option value="6">Application Security</option>
-                      </select>
+                        <MenuItem value="">Select A Service</MenuItem>
+                        <MenuItem value="1">VPN MPLS L2VPN</MenuItem>
+                        <MenuItem value="2">VPN MPLS L3VPN</MenuItem>
+                        <MenuItem value="3">Internet Enterprise</MenuItem>
+                        <MenuItem value="4">Internet Retail</MenuItem>
+                        <MenuItem value="5">VOIP</MenuItem>
+                        <MenuItem value="6">Application Security</MenuItem>
+                      </TextField>
                     </Grid>
                     <Grid item xs={12} sm={6}>
-                      <input
-                        type="text"
-                        className="form-control border-0"
+                      <TextField
+                        select
+                        fullWidth
+                        name="how"
+                        label="How did you hear about us" 
+                        value={formData.how}
+                        onChange={handleChange}
+                        variant="outlined"
                         placeholder="How did you hear about us?"
-                        style={{ height: "55px" }}
-                      />
+                      >
+                        <MenuItem value="" disabled>
+                          How did you hear about us?
+                        </MenuItem>
+                        <MenuItem value="Search Engine">Search Engine</MenuItem>
+                        <MenuItem value="Website">Website</MenuItem>
+                        <MenuItem value="Social Media">Social Media</MenuItem>
+                        <MenuItem value="Email">Email</MenuItem>
+                        <MenuItem value="Friend">Friend</MenuItem>
+                      </TextField>
                     </Grid>
                     <Grid item xs={12} sm={6}>
-                      <input
-                        type="text"
-                        className="form-control border-0"
+                      <TextField
+                        variant="outlined"
+                        fullWidth
                         placeholder="Phone Number"
-                        style={{ height: "55px" }}
+                        name="phone"
+                        value={formData.phone}
+                        onChange={handleChange}
                       />
                     </Grid>
                     <Grid item xs={12} sm={6}>
-                      <input
-                        type="text"
-                        className="form-control border-0"
+                      <TextField
+                        variant="outlined"
+                        fullWidth
                         placeholder="State"
-                        style={{ height: "55px" }}
+                        name="state"
+                        value={formData.state}
+                        onChange={handleChange}
                       />
                     </Grid>
                     <Grid item xs={12} sm={6}>
-                      <input
-                        type="text"
-                        className="form-control border-0"
+                      <TextField
+                        variant="outlined"
+                        fullWidth
                         placeholder="Local Government"
-                        style={{ height: "55px" }}
+                        name="lga"
+                        value={formData.lga}
+                        onChange={handleChange}
                       />
                     </Grid>
                     <Grid item xs={12}>
-                      <textarea
-                        className="form-control border-0"
+                      <TextField
+                        variant="outlined"
+                        fullWidth
                         placeholder="Special Request"
-                        style={{ height: "80px" }}
+                        name="specialRequest"
+                        value={formData.specialRequest}
+                        onChange={handleChange}
+                        multiline
+                        minRows={3}
                       />
                     </Grid>
                     <Grid item xs={12}>
-                      <button className="theme-btn w-100 py-3" type="submit">
-                        Book Now
-                      </button>
+                      <Button
+                        variant="contained"
+                        color="primary"
+                        type="submit"
+                        fullWidth
+                        disabled={loading}
+                        startIcon={loading && <CircularProgress size={20} />}
+                      >
+                        {loading ? "Booking..." : "Book Now"}
+                      </Button>
                     </Grid>
                   </Grid>
                 </form>

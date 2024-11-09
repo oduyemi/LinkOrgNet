@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, } from "@mui/material";
 import CallIcon from "@mui/icons-material/Call";
 import MailIcon from "@mui/icons-material/Mail";
 import ShareLocationIcon from "@mui/icons-material/ShareLocation";
-import { ContactForm } from "../ContactForm";
+import { EnquiryForm } from "../EnquiryForm";
 
 const ContactSection = () => {
   return (
@@ -86,7 +86,7 @@ const ContactSection = () => {
                         >
                           MTN: 091-6000-5465
                         </Link>
-                        <br/>
+                        <br />
                         <Link
                           to="tel:+2349041423631"
                           style={{ color: "#4E4A59", fontSize: "14px" }}
@@ -94,9 +94,6 @@ const ContactSection = () => {
                           Airtel: 090-4142-3631
                         </Link>
                         <br />
-                        {/* <Link to="tel: +01 368 567 8942" style={{ color: "#4E4A59", fontSize: "14px"}}>
-                          +01 368 567 894
-                          </Link> */}
                       </Typography>
                     </Box>
                   </Box>
@@ -177,7 +174,7 @@ const ContactSection = () => {
               </Box>
             </Box>
             <Box className="col-lg-6 mt-5 mt-lg-0">
-              <ContactForm />
+              <EnquiryForm />
             </Box>
           </Box>
         </Box>

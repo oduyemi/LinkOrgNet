@@ -57,6 +57,7 @@ import CustomDevelopPage from "./pages/subServices/CustomDevelopPage";
 import SeemlessIntegratePage from "./pages/subServices/SeemlessIntegratePage";
 import MaintenancePage from "./pages/subServices/MaintenancePage";
 
+
 function App() {
   const location = useLocation();
 
@@ -65,7 +66,6 @@ function App() {
 
   return (
     <>
-      {/* Conditionally render Navbar, ConsentBanner, and TawkToChat only if not on an admin route */}
       {!adminRoutes.includes(location.pathname) && (
         <>
           <Navbar />
