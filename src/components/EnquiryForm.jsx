@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, CircularProgress, Button } from "@mui/material";
 import WOW from "wowjs";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import { LocationCity, Call, Mail, ShareLocation } from "@mui/icons-material";
 import axios from "axios";
-import { toast, ToastContainer } from "react-toastify";
+// import { toast, ToastContainer } from "react-toastify";
 
 export const EnquiryForm = () => {
   const [formData, setFormData] = useState({
@@ -19,6 +19,7 @@ export const EnquiryForm = () => {
     message: "",
   });
 
+  const [loading, setLoading] = useState(false);
   const [dropdowns, setDropdowns] = useState({
     state: false,
     topic: false,
@@ -94,12 +95,28 @@ export const EnquiryForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (
+      !formData.fname ||
+      !formData.lname ||
+      !formData.email ||
+      !formData.company ||
+      !formData.address ||
+      !formData.phone ||
+      !formData.state ||
+      !formData.topic ||
+      !formData.message
+    ) {
+      alert("Please fill in all required fields.");
+      return;
+    }
+    setLoading(true);
     try {
       const response = await axios.post(
         "https://linkorgnet.vercel.app/api/v1/enquiries/enquiry",
         formData
       );
-      toast.success(response.data.message || "Message sent successfully!");
+      alert(response.data.message || "Message sent successfully!");
+      // toast.success(response.data.message || "Message sent successfully!");
       setFormData({
         fname: "",
         lname: "",
@@ -112,8 +129,11 @@ export const EnquiryForm = () => {
         message: "",
       });
     } catch (error) {
-      const errorMessage = error.response?.data?.error || "An error occurred";
-      toast.error(errorMessage);
+      // const errorMessage = error.response?.data?.error || "An error occurred";
+      // toast.error(errorMessage);
+      alert("An error occurred while sending the message.");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -133,7 +153,7 @@ export const EnquiryForm = () => {
 
   return (
     <Box className="contact-box">
-      <ToastContainer />
+      {/* <ToastContainer /> */}
       <Box className="contact-title">
         <Typography
           variant="h3"
@@ -275,11 +295,16 @@ export const EnquiryForm = () => {
 
             {/* Submit Button */}
             <Box className="col-lg-12 wow fadeInUp" data-wow-delay=".4s">
-              <button type="submit" className="theme-btn theme-btn-2">
-                <span>
-                  Send Us a Message <i className="fas fa-chevron-right"></i>
-                </span>
-              </button>
+              <Button
+                variant="contained"
+                color="primary"
+                type="submit"
+                fullWidth
+                disabled={loading}
+                startIcon={loading && <CircularProgress size={20} />}
+              >
+                {loading ? "Sending..." : "Send a Message"}
+              </Button>
             </Box>
           </Box>
         </form>
