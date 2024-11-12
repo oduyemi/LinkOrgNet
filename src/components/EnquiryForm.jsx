@@ -170,9 +170,12 @@ export const EnquiryForm = () => {
             <Grid item xs={12} sm={6}>
               <TextField
                 type="text"
-                variant="outlined"
+                // variant="outlined"
                 fullWidth
                 placeholder="Your First Name"
+                sx={{
+                  input: { color: "black" },
+                }}
                 name="fname"
                 value={formData.fname}
                 onChange={handleChange}
@@ -189,6 +192,9 @@ export const EnquiryForm = () => {
                 variant="outlined"
                 fullWidth
                 placeholder="Your Last Name"
+                sx={{
+                  input: { color: "black" },
+                }}
                 name="lname"
                 value={formData.lname}
                 onChange={handleChange}
@@ -205,6 +211,9 @@ export const EnquiryForm = () => {
                 variant="outlined"
                 fullWidth
                 placeholder="Your Email"
+                sx={{
+                  input: { color: "black" },
+                }}
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
@@ -221,6 +230,9 @@ export const EnquiryForm = () => {
                 variant="outlined"
                 fullWidth
                 placeholder="Company Name"
+                sx={{
+                  input: { color: "black" },
+                }}
                 name="company"
                 value={formData.company}
                 onChange={handleChange}
@@ -237,6 +249,9 @@ export const EnquiryForm = () => {
                 variant="outlined"
                 fullWidth
                 placeholder="Full Address"
+                sx={{
+                  input: { color: "black" },
+                }}
                 name="address"
                 value={formData.address}
                 onChange={handleChange}
@@ -252,6 +267,9 @@ export const EnquiryForm = () => {
                 variant="outlined"
                 fullWidth
                 placeholder="Phone Number"
+                sx={{
+                  input: { color: "black" },
+                }}
                 name="phone"
                 value={formData.phone}
                 onChange={handleChange}

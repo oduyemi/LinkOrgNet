@@ -36,13 +36,13 @@ const schema = z.object({
     .string()
     .min(9, { message: "Phone number is required or too short" }),
   state: z.string().min(2, {
-    message: "State is required or should be at least 2 characters",
+    message: "State is required and should be at least 2 characters",
   }),
   lga: z
     .string()
-    .min(2, { message: "LGA is required or should be at least 2 characters" }),
+    .min(2, { message: "LGA is required and should be at least 2 characters" }),
   specialRequest: z.string().min(5, {
-    message: "Message is required or should be at least 5 characters",
+    message: "Message is required and should be at least 5 characters",
   }),
 });
 
@@ -190,6 +190,9 @@ export const ServiceForm = () => {
                         variant="outlined"
                         fullWidth
                         placeholder="Your Name"
+                        sx={{
+                          input: { color: "black" },
+                        }}
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
@@ -206,6 +209,9 @@ export const ServiceForm = () => {
                         variant="outlined"
                         fullWidth
                         placeholder="Company Name"
+                        sx={{
+                          input: { color: "black" },
+                        }}
                         name="company"
                         value={formData.company}
                         onChange={handleChange}
@@ -224,6 +230,9 @@ export const ServiceForm = () => {
                         variant="outlined"
                         fullWidth
                         placeholder="Your Email"
+                        sx={{
+                          input: { color: "black" },
+                        }}
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
@@ -240,6 +249,9 @@ export const ServiceForm = () => {
                         variant="outlined"
                         fullWidth
                         placeholder="Full Address"
+                        sx={{
+                          input: { color: "black" },
+                        }}
                         name="address"
                         value={formData.address}
                         onChange={handleChange}
@@ -258,11 +270,13 @@ export const ServiceForm = () => {
                         fullWidth
                         name="service"
                         label="Select A Service"
+                        sx={{
+                          input: { color: "black" },
+                        }}
                         value={formData.service}
                         onChange={handleChange}
                         variant="outlined"
                       >
-                        <MenuItem value="">Select A Service</MenuItem>
                         <MenuItem value="Internet Solution">
                           Internet Solution
                         </MenuItem>
@@ -298,9 +312,6 @@ export const ServiceForm = () => {
                         onChange={handleChange}
                         variant="outlined"
                       >
-                        <MenuItem value="" disabled>
-                          How did you hear about us?
-                        </MenuItem>
                         <MenuItem value="Search Engine">Search Engine</MenuItem>
                         <MenuItem value="Website">Website</MenuItem>
                         <MenuItem value="Social Media">Social Media</MenuItem>
@@ -320,6 +331,9 @@ export const ServiceForm = () => {
                         variant="outlined"
                         fullWidth
                         placeholder="Phone Number"
+                        sx={{
+                          input: { color: "black" },
+                        }}
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
@@ -358,6 +372,9 @@ export const ServiceForm = () => {
                         variant="outlined"
                         fullWidth
                         placeholder="Local Government"
+                        sx={{
+                          input: { color: "black" },
+                        }}
                         name="lga"
                         value={formData.lga}
                         onChange={handleChange}
@@ -375,6 +392,9 @@ export const ServiceForm = () => {
                         variant="outlined"
                         fullWidth
                         placeholder="Special Request"
+                        sx={{
+                          input: { color: "black" },
+                        }}
                         name="specialRequest"
                         value={formData.specialRequest}
                         onChange={handleChange}

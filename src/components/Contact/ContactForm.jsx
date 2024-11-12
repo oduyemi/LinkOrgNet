@@ -13,8 +13,8 @@ import UpcomingIcon from "@mui/icons-material/Upcoming";
 import PublicIcon from "@mui/icons-material/Public";
 import axios from "axios";
 import { z } from "zod";
-import { toast } from 'material-react-toastify';
-import '../../ReactToastify.css';
+import { toast } from "material-react-toastify";
+import "../../ReactToastify.css";
 
 const schema = z.object({
   name: z.string().min(3, {
@@ -27,10 +27,10 @@ const schema = z.object({
     .string()
     .min(9, { message: "Phone number is required or too short" }),
   subject: z.string().min(5, {
-    message: "Subject is required or should be at least 5 characters",
+    message: "Subject is required and should be at least 5 characters",
   }),
   message: z.string().min(5, {
-    message: "Message is required or should be at least 5 characters",
+    message: "Message is required and should be at least 5 characters",
   }),
 });
 
@@ -74,7 +74,7 @@ export const ContactForm = () => {
         "https://linkorgnet.vercel.app/api/v1/contacts/contact",
         formData
       );
-      toast.success('Your form has been successfully Submitted');
+      toast.success("Your form has been successfully Submitted");
 
       setFormData({
         name: "",
@@ -84,7 +84,7 @@ export const ContactForm = () => {
         message: "",
       });
     } catch (error) {
-      toast.error('An error occurred while Submitting the form');
+      toast.error("An error occurred while Submitting the form");
     } finally {
       setLoading(false);
     }
