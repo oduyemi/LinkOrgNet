@@ -1,10 +1,84 @@
 import React, { useEffect, useState } from "react";
-import { Box, Typography, CircularProgress, Button } from "@mui/material";
+import {
+  Box,
+  Typography,
+  CircularProgress,
+  Button,
+  Grid,
+  TextField,
+  MenuItem,
+} from "@mui/material";
 import WOW from "wowjs";
-import AccountBoxIcon from "@mui/icons-material/AccountBox";
-import { LocationCity, Call, Mail, ShareLocation } from "@mui/icons-material";
 import axios from "axios";
-// import { toast, ToastContainer } from "react-toastify";
+import { z } from "zod";
+import { toast } from "material-react-toastify";
+import "../ReactToastify.css";
+
+const schema = z.object({
+  fname: z.string().min(3, {
+    message: "First name is required and should be at least 3 characters",
+  }),
+  lname: z.string().min(3, {
+    message: "Last name is required and should be at least 3 characters",
+  }),
+  email: z
+    .string()
+    .email({ message: "Email is required or Invalid email address" }),
+  company: z.string().min(3, {
+    message: "Company name is required and should be at least 3 characters",
+  }),
+  address: z.string().min(3, {
+    message: "Address is required and should be at least 3 characters",
+  }),
+  phone: z
+    .string()
+    .min(9, { message: "Phone number is required or is too short" }),
+  state: z.string().min(2, { message: "State is required" }),
+  topic: z.string().min(2, { message: "Topic is required" }),
+  message: z.string().min(5, {
+    message: "Message is required and should be at least 5 characters",
+  }),
+});
+
+const states = [
+  "Abia",
+  "Adamawa",
+  "AkwaIbom",
+  "Anambra",
+  "Bauchi",
+  "Bayelsa",
+  "Benue",
+  "Borno",
+  "Cross River",
+  "Delta",
+  "Ebonyi",
+  "Edo",
+  "Ekiti",
+  "Enugu",
+  "FCT",
+  "Gombe",
+  "Imo",
+  "Jigawa",
+  "Kaduna",
+  "Kano",
+  "Katsina",
+  "Kebbi",
+  "Kogi",
+  "Kwara",
+  "Lagos",
+  "Nasarawa",
+  "Niger",
+  "Ogun",
+  "Ondo",
+  "Osun",
+  "Oyo",
+  "Plateau",
+  "Rivers",
+  "Sokoto",
+  "Taraba",
+  "Yobe",
+  "Zamfara",
+];
 
 export const EnquiryForm = () => {
   const [formData, setFormData] = useState({
@@ -18,105 +92,36 @@ export const EnquiryForm = () => {
     topic: "",
     message: "",
   });
-
+  const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
-  const [dropdowns, setDropdowns] = useState({
-    state: false,
-    topic: false,
-  });
-
-  const [selectedOptions, setSelectedOptions] = useState({
-    state: "Select State",
-    topic: "Choose Topic",
-  });
-
-  const iconStyles = {
-    fontSize: 18,
-    color: "#010156",
-    marginLeft: "-14px",
-    marginTop: "-5px",
-  };
-
-  const states = [
-    "Abia",
-    "Adamawa",
-    "AkwaIbom",
-    "Anambra",
-    "Bauchi",
-    "Bayelsa",
-    "Benue",
-    "Borno",
-    "Cross River",
-    "Delta",
-    "Ebonyi",
-    "Edo",
-    "Ekiti",
-    "Enugu",
-    "FCT",
-    "Gombe",
-    "Imo",
-    "Jigawa",
-    "Kaduna",
-    "Kano",
-    "Katsina",
-    "Kebbi",
-    "Kogi",
-    "Kwara",
-    "Lagos",
-    "Nasarawa",
-    "Niger",
-    "Ogun",
-    "Ondo",
-    "Osun",
-    "Oyo",
-    "Plateau",
-    "Rivers",
-    "Sokoto",
-    "Taraba",
-    "Yobe",
-    "Zamfara",
-  ];
-
-  const topics = [
-    "Internet",
-    "Satellite",
-    "VPN",
-    "Voip",
-    "IT & Network",
-    "Storage Solution",
-    "Collocation & Datacenter",
-    "Software Solution",
-  ];
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
+    setErrors((prev) => ({ ...prev, [name]: undefined }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (
-      !formData.fname ||
-      !formData.lname ||
-      !formData.email ||
-      !formData.company ||
-      !formData.address ||
-      !formData.phone ||
-      !formData.state ||
-      !formData.topic ||
-      !formData.message
-    ) {
-      alert("Please fill in all required fields.");
+
+    const validation = schema.safeParse(formData);
+    if (!validation.success) {
+      const fieldErrors = {};
+      validation.error.errors.forEach((err) => {
+        fieldErrors[err.path[0]] = err.message;
+      });
+      setErrors(fieldErrors);
       return;
     }
+
     setLoading(true);
+    setErrors({});
     try {
       const response = await axios.post(
         "https://linkorgnet.vercel.app/api/v1/enquiries/enquiry",
         formData
       );
-      alert(response.data.message || "Message sent successfully!");
-      // toast.success(response.data.message || "Message sent successfully!");
+      toast.success("Your form has been successfully Submitted");
       setFormData({
         fname: "",
         lname: "",
@@ -129,9 +134,7 @@ export const EnquiryForm = () => {
         message: "",
       });
     } catch (error) {
-      // const errorMessage = error.response?.data?.error || "An error occurred";
-      // toast.error(errorMessage);
-      alert("An error occurred while sending the message.");
+      toast.error("An error occurred while Submitting the form");
     } finally {
       setLoading(false);
     }
@@ -141,19 +144,8 @@ export const EnquiryForm = () => {
     new WOW.WOW({ live: false }).init();
   }, []);
 
-  const toggleDropdown = (dropdown) => {
-    setDropdowns((prev) => ({ ...prev, [dropdown]: !prev[dropdown] }));
-  };
-
-  const selectOption = (option, dropdown) => {
-    setSelectedOptions((prev) => ({ ...prev, [dropdown]: option }));
-    setFormData((prevData) => ({ ...prevData, [dropdown]: option }));
-    setDropdowns((prev) => ({ ...prev, [dropdown]: false }));
-  };
-
   return (
     <Box className="contact-box">
-      {/* <ToastContainer /> */}
       <Box className="contact-title">
         <Typography
           variant="h3"
@@ -174,139 +166,202 @@ export const EnquiryForm = () => {
       </Box>
       <Box className="contact-form-items">
         <form onSubmit={handleSubmit}>
-          <Box className="row g-3">
-            {[
-              { name: "fname", placeholder: "Firstname", Icon: AccountBoxIcon },
-              { name: "lname", placeholder: "Lastname", Icon: AccountBoxIcon },
-              {
-                name: "email",
-                placeholder: "Email",
-                Icon: Mail,
-                type: "email",
-              },
-              {
-                name: "company",
-                placeholder: "Company Name",
-                Icon: LocationCity,
-              },
-              {
-                name: "address",
-                placeholder: "Address",
-                Icon: ShareLocation,
-              },
-              {
-                name: "phone",
-                placeholder: "Phone Number",
-                Icon: Call,
-                type: "tel",
-              },
-            ].map(({ name, placeholder, Icon, type = "text" }, index) => (
-              <Box
-                className="col-lg-6 wow fadeInUp"
-                data-wow-delay=".3s"
-                key={name}
+          <Grid container spacing={3}>
+            <Grid item xs={12} sm={6}>
+              <TextField
+                type="text"
+                // variant="outlined"
+                fullWidth
+                placeholder="Your First Name"
+                sx={{
+                  input: { color: "black" },
+                }}
+                name="fname"
+                value={formData.fname}
+                onChange={handleChange}
+              />
+              {errors.fname && (
+                <Typography variant="body2" color="error">
+                  {errors.fname}
+                </Typography>
+              )}
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <TextField
+                type="text"
+                variant="outlined"
+                fullWidth
+                placeholder="Your Last Name"
+                sx={{
+                  input: { color: "black" },
+                }}
+                name="lname"
+                value={formData.lname}
+                onChange={handleChange}
+              />
+              {errors.lname && (
+                <Typography variant="body2" color="error">
+                  {errors.lname}
+                </Typography>
+              )}
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <TextField
+                type="email"
+                variant="outlined"
+                fullWidth
+                placeholder="Your Email"
+                sx={{
+                  input: { color: "black" },
+                }}
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+              />
+              {errors.email && (
+                <Typography variant="body2" color="error">
+                  {errors.email}
+                </Typography>
+              )}
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <TextField
+                type="text"
+                variant="outlined"
+                fullWidth
+                placeholder="Company Name"
+                sx={{
+                  input: { color: "black" },
+                }}
+                name="company"
+                value={formData.company}
+                onChange={handleChange}
+              />
+              {errors.company && (
+                <Typography variant="body2" color="error">
+                  {errors.company}
+                </Typography>
+              )}
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <TextField
+                type="text"
+                variant="outlined"
+                fullWidth
+                placeholder="Full Address"
+                sx={{
+                  input: { color: "black" },
+                }}
+                name="address"
+                value={formData.address}
+                onChange={handleChange}
+              />
+              {errors.address && (
+                <Typography variant="body2" color="error">
+                  {errors.address}
+                </Typography>
+              )}
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <TextField
+                variant="outlined"
+                fullWidth
+                placeholder="Phone Number"
+                sx={{
+                  input: { color: "black" },
+                }}
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+              />
+              {errors.phone && (
+                <Typography variant="body2" color="error">
+                  {errors.phone}
+                </Typography>
+              )}
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <TextField
+                select
+                fullWidth
+                name="state"
+                label="Select State"
+                value={formData.state}
+                onChange={handleChange}
+                variant="outlined"
               >
-                <Box className="form-clt">
-                  <input
-                    type={type}
-                    name={name}
-                    value={formData[name]}
-                    onChange={handleChange}
-                    placeholder={placeholder}
-                    required
-                  />
-                  <Box className="icon">
-                    <Icon sx={iconStyles} />
-                  </Box>
-                </Box>
-              </Box>
-            ))}
-
-            {/* State Dropdown */}
-            <Box className="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
-              <Box className="form-clt">
-                <Box
-                  className={`nice-select ${dropdowns.state ? "open" : ""}`}
-                  tabIndex="0"
-                  aria-expanded={dropdowns.state}
-                  role="listbox"
-                  onClick={() => toggleDropdown("state")}
-                >
-                  <span className="current">{selectedOptions.state}</span>
-                  {dropdowns.state && (
-                    <ul className="list">
-                      {states.map((state, index) => (
-                        <li
-                          key={index}
-                          className="option"
-                          onClick={() => selectOption(state, "state")}
-                          role="option"
-                        >
-                          {state}
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </Box>
-              </Box>
-            </Box>
-
-            {/* Topic Dropdown */}
-            <Box className="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
-              <Box className="form-clt">
-                <Box
-                  className={`nice-select ${dropdowns.topic ? "open" : ""}`}
-                  tabIndex="0"
-                  aria-expanded={dropdowns.topic}
-                  role="listbox"
-                  onClick={() => toggleDropdown("topic")}
-                >
-                  <span className="current">{selectedOptions.topic}</span>
-                  {dropdowns.topic && (
-                    <ul className="list">
-                      {topics.map((topic, index) => (
-                        <li
-                          key={index}
-                          className="option"
-                          onClick={() => selectOption(topic, "topic")}
-                          role="option"
-                        >
-                          {topic}
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </Box>
-              </Box>
-            </Box>
-
-            {/* Message Box */}
-            <Box className="col-lg-12 wow fadeInUp" data-wow-delay=".5s">
-              <Box className="form-clt">
-                <textarea
-                  name="message"
-                  placeholder="Write Your Message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                ></textarea>
-              </Box>
-            </Box>
-
-            {/* Submit Button */}
-            <Box className="col-lg-12 wow fadeInUp" data-wow-delay=".4s">
+                <MenuItem value="">Select State</MenuItem>
+                {states.map((state, index) => (
+                  <MenuItem key={index} value={state}>
+                    {state}
+                  </MenuItem>
+                ))}
+              </TextField>
+              {errors.state && (
+                <Typography variant="body2" color="error">
+                  {errors.state}
+                </Typography>
+              )}
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <TextField
+                select
+                fullWidth
+                name="topic"
+                label="Choose a topic"
+                value={formData.topic}
+                onChange={handleChange}
+                variant="outlined"
+              >
+                <MenuItem value="">Select A Service</MenuItem>
+                <MenuItem value="Internet Solution">Internet Solution</MenuItem>
+                <MenuItem value="Satellite Solution">
+                  Satellite Solution
+                </MenuItem>
+                <MenuItem value="VPN">VPN</MenuItem>
+                <MenuItem value="VOIP">VOIP</MenuItem>
+                <MenuItem value="IT & Network">IT & Network</MenuItem>
+                <MenuItem value="Storage Solutions">Storage Solutions</MenuItem>
+                <MenuItem value="Collocation & Datacenter">
+                  Collocation & Datacenter
+                </MenuItem>
+                <MenuItem value="Software Solutions">
+                  Software Solutions
+                </MenuItem>
+              </TextField>
+              {errors.topic && (
+                <Typography variant="body2" color="error">
+                  {errors.topic}
+                </Typography>
+              )}
+            </Grid>
+            <Grid item xs={12} className="form-clt">
+              <textarea
+                variant="outlined"
+                fullWidth
+                placeholder="What can we do for you"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+              ></textarea>
+              {errors.message && (
+                <Typography variant="body2" color="error">
+                  {errors.message}
+                </Typography>
+              )}
+            </Grid>
+            <Grid item xs={12}>
               <Button
                 variant="contained"
                 color="primary"
                 type="submit"
                 fullWidth
                 disabled={loading}
-                startIcon={loading && <CircularProgress size={20} />}
               >
-                {loading ? "Sending..." : "Send a Message"}
+                {loading ? <CircularProgress size={24} /> : "Send Message"}
               </Button>
-            </Box>
-          </Box>
+            </Grid>
+          </Grid>
         </form>
       </Box>
     </Box>
