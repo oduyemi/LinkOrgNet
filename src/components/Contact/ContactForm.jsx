@@ -12,7 +12,27 @@ import TopicIcon from "@mui/icons-material/Topic";
 import UpcomingIcon from "@mui/icons-material/Upcoming";
 import PublicIcon from "@mui/icons-material/Public";
 import axios from "axios";
-// import { toast, ToastContainer } from "react-toastify";
+import { z } from "zod";
+import { toast } from 'material-react-toastify';
+import '../../ReactToastify.css';
+
+const schema = z.object({
+  name: z.string().min(3, {
+    message: "Name is required and should be at least 3 characters",
+  }),
+  email: z
+    .string()
+    .email({ message: "Email is required or Invalid email address" }),
+  phone: z
+    .string()
+    .min(9, { message: "Phone number is required or too short" }),
+  subject: z.string().min(5, {
+    message: "Subject is required or should be at least 5 characters",
+  }),
+  message: z.string().min(5, {
+    message: "Message is required or should be at least 5 characters",
+  }),
+});
 
 export const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -23,34 +43,39 @@ export const ContactForm = () => {
     message: "",
   });
 
+  const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
+    setErrors((prev) => ({ ...prev, [name]: undefined }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (
-      !formData.name ||
-      !formData.email ||
-      !formData.phone ||
-      !formData.subject ||
-      !formData.message
-    ) {
-      alert("Please fill in all required fields.");
+
+    const validation = schema.safeParse(formData);
+    if (!validation.success) {
+      // Map Zod errors to display below each input field
+      const fieldErrors = {};
+      validation.error.errors.forEach((err) => {
+        fieldErrors[err.path[0]] = err.message;
+      });
+      setErrors(fieldErrors);
       return;
     }
+
     setLoading(true);
+    setErrors({});
+
     try {
       const response = await axios.post(
         "https://linkorgnet.vercel.app/api/v1/contacts/contact",
         formData
       );
-      alert(response.data.message || "Message sent successfully!");
+      toast.success('Your form has been successfully Submitted');
 
-      // toast.success(response.data.message || "Message sent successfully!");
       setFormData({
         name: "",
         email: "",
@@ -59,9 +84,7 @@ export const ContactForm = () => {
         message: "",
       });
     } catch (error) {
-      // const errorMessage = error.response?.data?.error || "An error occurred";
-      // toast.error(errorMessage);
-      alert("An error occurred while sending the message.");
+      toast.error('An error occurred while Submitting the form');
     } finally {
       setLoading(false);
     }
@@ -287,8 +310,14 @@ export const ContactForm = () => {
                             }}
                           />
                         </Box>
+                        {errors.name && (
+                          <Typography variant="body2" color="error">
+                            {errors.name}
+                          </Typography>
+                        )}
                       </Box>
                     </Box>
+
                     <Box
                       className="col-lg-12 wow fadeInUp"
                       data-wow-delay=".5s"
@@ -305,6 +334,12 @@ export const ContactForm = () => {
                         <Box className="icon">
                           <MailIcon />
                         </Box>
+
+                        {errors.email && (
+                          <Typography variant="body2" color="error">
+                            {errors.email}
+                          </Typography>
+                        )}
                       </Box>
                     </Box>
                     <Box
@@ -327,6 +362,11 @@ export const ContactForm = () => {
                             }}
                           />
                         </Box>
+                        {errors.phone && (
+                          <Typography variant="body2" color="error">
+                            {errors.phone}
+                          </Typography>
+                        )}
                       </Box>
                     </Box>
                     <Box
@@ -349,6 +389,12 @@ export const ContactForm = () => {
                             }}
                           />
                         </Box>
+
+                        {errors.subject && (
+                          <Typography variant="body2" color="error">
+                            {errors.subject}
+                          </Typography>
+                        )}
                       </Box>
                     </Box>
                     <Box
@@ -370,10 +416,16 @@ export const ContactForm = () => {
                             }}
                           />
                         </Box>
+
+                        {errors.message && (
+                          <Typography variant="body2" color="error">
+                            {errors.message}
+                          </Typography>
+                        )}
                       </Box>
                     </Box>
                     <Box
-                      className="col-lg-6 wow fadeInUp mt-5"
+                      className="col-lg-12 wow fadeInUp"
                       data-wow-delay=".8s"
                     >
                       <Button
