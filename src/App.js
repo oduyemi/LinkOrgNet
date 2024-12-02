@@ -56,6 +56,8 @@ import CollocationSubPage from "./pages/subServices/CollocationPage";
 import CustomDevelopPage from "./pages/subServices/CustomDevelopPage";
 import SeemlessIntegratePage from "./pages/subServices/SeemlessIntegratePage";
 import MaintenancePage from "./pages/subServices/MaintenancePage";
+import { ToastContainer } from 'material-react-toastify';
+
 
 function App() {
   const location = useLocation();
@@ -65,7 +67,7 @@ function App() {
 
   return (
     <>
-      {/* Conditionally render Navbar, ConsentBanner, and TawkToChat only if not on an admin route */}
+          <ToastContainer />
       {!adminRoutes.includes(location.pathname) && (
         <>
           <Navbar />
