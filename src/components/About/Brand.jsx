@@ -69,9 +69,9 @@ const Brand = () => {
             </Box>
             <Box className="brand-image center">
                 <img src={require("../../assets/images/brands/microsoft.png")} 
-                    width="40%" 
+                    width="70%" 
                     alt="microsoft" 
-                    className="mt-2"
+                    style={{ marginTop: "-20px"}}
                 />
             </Box>
             <Box className="brand-image center">
