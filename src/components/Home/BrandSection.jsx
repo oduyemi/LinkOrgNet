@@ -37,7 +37,7 @@ const BrandSection = () => {
             color: "#010156"
           }}
         >
-          Trusted by the world’s best
+          Trusted by the world&apos;s best
         </Typography>
         <Brand />
       </Box>

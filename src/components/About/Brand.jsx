@@ -60,6 +60,13 @@ const Brand = () => {
                 />
             </Box>
             <Box className="brand-image center">
+                <img src={require("../../assets/images/brands/microsoft.png")} 
+                    width="40%" 
+                    alt="microsoft" 
+                    className="mt-2"
+                />
+            </Box>
+            <Box className="brand-image center">
                 <img src={require("../../assets/images/brands/cisco.png")} 
                     width="40%" 
                     alt="cisco" 
