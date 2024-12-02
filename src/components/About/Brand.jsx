@@ -56,53 +56,6 @@ const Brand = () => {
         >
           Our Partners
         </Typography>
-        <Slider {...brandSettings} className="brand-carousel-active">
-          <Box className="brand-image center">
-            <img
-              src={require("../../assets/images/brands/cambium.png")}
-              width="40%"
-              alt="cambium"
-              className="mt-4"
-            />
-          </Box>
-          <Box className="brand-image center">
-            <img
-              src={require("../../assets/images/brands/cisco.png")}
-              width="40%"
-              alt="cisco"
-              className="mt-2"
-            />
-          </Box>
-          <Box className="brand-image center">
-            <img
-              src={require("../../assets/images/brands/telesat.png")}
-              width="40%"
-              alt="telesat"
-              className="mt-4"
-            />
-          </Box>
-          <Box className="brand-image center">
-            <img
-              src={require("../../assets/images/brands/intellian.png")}
-              width="40%"
-              alt="intellian"
-            />
-          </Box>
-          <Box className="brand-image center">
-            <img
-              src={require("../../assets/images/brands/Fortinet.png")}
-              width="60%"
-              alt="fortnite"
-              style={{ marginTop: "-10px" }}
-            />
-          </Box>
-          <Box className="brand-image center">
-            <img
-              src={require("../../assets/images/brands/amos.png")}
-              width="50%"
-              alt="fortnite"
-            />
-          </Box>
     <Slider {...brandSettings} 
                     className="brand-carousel-active"
                    
