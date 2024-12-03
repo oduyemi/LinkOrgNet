@@ -1,9 +1,7 @@
 import React, { useEffect } from "react";
 import { Box } from "@mui/material";
 import { Sidebar } from "../../components/Admin/Sidebar";
-import { Inbox } from "../../components/Admin/Inbox";
-
-
+import { Dashboard } from "../../components/Admin/Dashboard";
 
 
 const Admin = () => {
@@ -16,7 +14,7 @@ const Admin = () => {
     return(
         <Box display="flex">
             <Sidebar />
-            <Inbox />
+            <Dashboard />
         </Box>
     )
 }

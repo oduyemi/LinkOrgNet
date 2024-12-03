@@ -1,47 +1,89 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { DashboardContent } from "./DashboardContent";
+import axios from "axios";
+import {
+  Box,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+  Paper,
+  TablePagination,
+} from "@mui/material";
 
 export const ContactList = () => {
-    return (
-        <DashboardContent title="Contact List">
-            <div className="d-flex flex-column">
-                <div className="table-responsive">
-                    <table className="table table-sm table-hover">
-                        <thead className="thead-light">
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First Name</th>
-                                <th scope="col">Last Name</th>
-                                <th scope="col">Email</th>
-                                <th scope="col">Phone Number</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td className="font-weight-bold">1</td>
-                                <td>John</td>
-                                <td>Doe</td>
-                                <td>@johndoe@yahoo.com</td>
-                                <td>12345678901</td>
-                            </tr>
-                            <tr>
-                                <td className="font-weight-bold">2</td>
-                                <td>Rita</td>
-                                <td>Foster</td>
-                                <td>rfoster@rocketmail.net</td>
-                                <td>3425674949</td>
-                            </tr>
-                            <tr>
-                                <td className="font-weight-bold">3</td>
-                                <td>Larry</td>
-                                <td>Gaga</td>
-                                <td>thegaga@gmail.com</td>
-                                <td>12345678901</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </DashboardContent>
-    );
+  const [contactRows, setContactRows] = useState([]);
+
+  const [pageContact, setPageContact] = useState(0);
+  const [rowsPerPageContact, setRowsPerPageContact] = useState(5);
+
+  useEffect(() => {
+    const fetchContacts = async () => {
+      try {
+        const response = await axios.get(
+          "https://linkorgnet.vercel.app/api/v1/contacts/"
+        );
+        setContactRows(response.data);
+      } catch (error) {
+        console.error("Error fetching contacts:", error);
+      }
+    };
+    fetchContacts();
+  }, []);
+
+  const handleChangePageContact = (event, newPage) => setPageContact(newPage);
+  const handleChangeRowsPerPageContact = (event) => {
+    setRowsPerPageContact(parseInt(event.target.value, 10));
+    setPageContact(0);
+  };
+
+  // Paginate data
+  const currentRowsContact = contactRows.slice(
+    pageContact * rowsPerPageContact,
+    pageContact * rowsPerPageContact + rowsPerPageContact
+  );
+  return (
+    <DashboardContent title="Contact List">
+      <div className="d-flex flex-column">
+        <div className="table-responsive">
+
+          <Table>
+            <TableHead>
+              <TableRow>
+                <TableCell>S/N</TableCell>
+                <TableCell>Full Name</TableCell>
+                <TableCell>Email</TableCell>
+                <TableCell>Phone Number</TableCell>
+                <TableCell>Subject</TableCell>
+                <TableCell>Message</TableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {currentRowsContact.map((row, index) => (
+                <TableRow key={row.id || index}>
+                  <TableCell>{index + 1}</TableCell>
+                  <TableCell>{row.name}</TableCell>
+                  <TableCell>{row.email}</TableCell>
+                  <TableCell>{row.phone}</TableCell>
+                  <TableCell>{row.subject}</TableCell>
+                  <TableCell>{row.message}</TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+          <TablePagination
+          rowsPerPageOptions={[5, 10, 25]}
+          component="div"
+          count={contactRows.length}
+          rowsPerPage={rowsPerPageContact}
+          page={pageContact}
+          onPageChange={handleChangePageContact}
+          onRowsPerPageChange={handleChangeRowsPerPageContact}
+        />
+        </div>
+      </div>
+    </DashboardContent>
+  );
 };

@@ -57,13 +57,15 @@ import CustomDevelopPage from "./pages/subServices/CustomDevelopPage";
 import SeemlessIntegratePage from "./pages/subServices/SeemlessIntegratePage";
 import MaintenancePage from "./pages/subServices/MaintenancePage";
 import { ToastContainer } from 'material-react-toastify';
+import AdminEnquiryList from "./pages/AdminPage/AdminEnquiryList";
+import AdminBookingList from "./pages/AdminPage/AdminBookingList";
 
 
 function App() {
   const location = useLocation();
 
   // List of admin routes
-  const adminRoutes = ["/admin", "/admin/contacts", "/admin/profile", "/update_profile", "/update-password", "/admin/send-email", "/admin/sent-mails"];
+  const adminRoutes = ["/admin", "/admin/contacts", "/admin/enquiries", "/admin/bookings", "/admin/profile", "/update_profile", "/update-password", "/admin/send-email", "/admin/sent-mails"];
 
   return (
     <>
@@ -130,11 +132,15 @@ function App() {
         {/* Admin Routes */}
         <Route path="/admin" element={<Admin />} />
         <Route path="/admin/contacts" element={<AdminContactList />} />
+        <Route path="/admin/enquiries" element={<AdminEnquiryList />} />
+        <Route path="/admin/bookings" element={<AdminBookingList />} />
         <Route path="/admin/profile" element={<AdminProfile />} />
         <Route path="/update_profile" element={<AdminUpdateProfile />} />
         <Route path="/update-password" element={<AdminChangePassword />} />
         <Route path="/admin/send-email" element={<SendMail />} />
         <Route path="/admin/sent-mails" element={<AdminSentMails />} />
+     
+        
 
         {/* Fallback route */}
         <Route path="*" element={<Error404 />} />

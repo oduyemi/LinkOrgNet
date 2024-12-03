@@ -103,6 +103,14 @@ const Brand = () => {
               alt="fortnite"
             />
           </Box>
+          <Box className="brand-image center">
+            <img
+              src={require("../../assets/images/brands/microsoft.png")}
+              width="50%"
+              alt="fortnite"
+              style={{ marginTop: "20px" }}
+            />
+          </Box>
         </Slider>
       </Box>
     </Box>
