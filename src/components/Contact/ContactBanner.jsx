@@ -2,7 +2,7 @@ import React from "react";
 import { Box } from "@mui/material";
 import { Link } from "react-router-dom";
 import contactHero from "../../assets/images/contacthero.jpg";
-
+import RemoveIcon from '@mui/icons-material/Remove';
 
 
 
@@ -23,7 +23,7 @@ export const ContactBanner = () => {
                             </Link>
                         </li>
                         <li>
-                            <i className="fal fa-minus"></i>
+                            <RemoveIcon />
                         </li>
                         <li>
                             Contact Us

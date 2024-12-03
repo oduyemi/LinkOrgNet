@@ -9,7 +9,7 @@ Version: 1.0.0
 /* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kode+Mono:wght@400..700&display=swap"); */
 /* @import url('https://fonts.cdnfonts.com/css/museo-slab');
 @import url("https://fonts.cdnfonts.com/css/museo-sans-rounded"); */
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=montserrat");
                 
 :root {
   --body: #fff;
@@ -206,7 +206,7 @@ Version: 1.0.0
     Template Default Fonts & Fonts Styles
  ---------------------------------------------- */
 body {
-  font-family: 'Montserrat', sans-serif;                                         
+  font-family: 'montserrat', sans-serif;                                         
   font-size: 17px;
   font-weight: 300;
   line-height: 28px;
@@ -215,6 +215,7 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+  /* cursor: none; */
 }
 
 ul {
@@ -244,7 +245,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat" !important;
+  font-family: "montserrat" !important;
   font-weight: 700;
   margin: 0px;
   padding: 0;
@@ -399,7 +400,7 @@ p {
   content: attr(data-text-preloader);
   left: 0;
   opacity: 0;
-  font-family: "Montserrat";
+  font-family: "montserrat";
   position: absolute;
   top: -3px;
   transform: rotateY(-90deg);
@@ -1587,7 +1588,7 @@ input.main-search-input::placeholder {
 .header-2 .header-main .header-right .menu-cart .cart-box ul li a::after {
   position: absolute;
   content: "\f00d";
-  font-family: "Montserrat";
+  font-family: "montserrat";
   font-weight: 600;
   top: 15px;
   right: -88px;
@@ -2141,7 +2142,11 @@ input.main-search-input::placeholder {
   text-align: center;
   border: 1px solid var(--border);
 }
-.offcanvas__wrapper .offcanvas__content .offcanvas__contact .social-icon a:hover {
+.offcanvas__wrapper 
+.offcanvas__content
+.offcanvas__contact 
+.social-icon 
+a:hover {
   background-color: var(--theme);
   color: var(--white);
 }
@@ -2158,10 +2163,12 @@ input.main-search-input::placeholder {
   right: 0;
 }
 
-.offcanvas__overlay.overlay-open {
+.offcanvas__overlay
+.overlay-open {
   opacity: 0.8;
   visibility: visible;
 }
+
 
 @media (max-width: 450px) {
   .offcanvas__info {
@@ -2173,6 +2180,7 @@ input.main-search-input::placeholder {
     padding: 20px;
   }
 }
+
 .breadcrumb-wrapper {
   position: relative;
   overflow: hidden;
@@ -2186,7 +2194,7 @@ input.main-search-input::placeholder {
   width: 100%;
   height: 100%;
   content: "";
-  background: rgba(16, 10, 47, 0.58);
+  /* background: rgba(16, 10, 47, 0.58); */
 }
 .breadcrumb-wrapper .layer-shape {
   position: absolute;
@@ -2715,7 +2723,7 @@ input.main-search-input::placeholder {
   width: 100%;
   height: 100%;
   content: "";
-  background: #000;
+  /* background: #000; */
   transform: matrix(-1, 0, 0, 1, 0, 0);
   opacity: 0.65;
   filter: blur(40px);
@@ -4094,7 +4102,7 @@ input.main-search-input::placeholder {
   content: "";
   height: 210px;
   width: 4px;
-  background-color: var(--theme);
+  background-color: #E65D0F;
   content: "";
 }
 .about-wrapper .about-image-items .border-shape {
@@ -4506,7 +4514,7 @@ input.main-search-input::placeholder {
   position: absolute;
   right: 4px;
   top: 0px;
-  font-family: "Montserrat";
+  font-family: "montserrat";
   content: "\f005";
   font-size: 14px;
   color: var(--theme);
@@ -4854,6 +4862,7 @@ input.main-search-input::placeholder {
 .about-wrapper-3 .about-content .icon-items .content p {
   color: var(--white);
 }
+
 
 .service-section {
   position: relative;
@@ -6814,7 +6823,7 @@ input.main-search-input::placeholder {
 .faq-content .accordion-item .accordion-header .accordion-button::after {
   content: "\f067";
   background: transparent;
-  font-family: "Montserrat";
+  font-family: "montserrat";
   font-weight: 300;
   transition: all 0.3s ease-in-out !important;
   color: var(--header);
@@ -6828,7 +6837,7 @@ input.main-search-input::placeholder {
 }
 .faq-content .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
   content: "\f068";
-  font-family: "Montserrat";
+  font-family: "montserrat";
   font-weight: 300;
 }
 .faq-content .accordion-item .accordion-collapse .accordion-body {
@@ -9776,7 +9785,7 @@ input.main-search-input::placeholder {
   color: var(--white);
   font-size: 26px;
   line-height: 1.4;
-  font-family: "Montserrat";
+  font-family: "montserrat";
   font-weight: 400;
   padding: 60px;
   text-align: center;
@@ -9801,7 +9810,7 @@ input.main-search-input::placeholder {
   right: 30px;
   font-size: 110px;
   line-height: 1;
-  font-family: "Montserrat";
+  font-family: "montserrat";
   position: absolute;
   content: "\f10d";
   bottom: -20px;
@@ -9980,7 +9989,7 @@ input.main-search-input::placeholder {
   transition: all 0.3s ease-in-out;
   margin-bottom: 20px;
   text-transform: capitalize;
-  font-family: "Montserrat";
+  font-family: "montserrat";
 }
 @media (max-width: 767px) {
   .blog-wrapper .single-blog-post .post-content .post-cat a {
@@ -10014,7 +10023,7 @@ input.main-search-input::placeholder {
   position: absolute;
   left: 0;
   top: 0;
-  font-family: "Montserrat";
+  font-family: "montserrat";
   content: "\f00c";
   color: var(--theme);
 }
@@ -11438,6 +11447,63 @@ p.sticky-label {
   color: var(--theme);
 }
 
+
+
+
+.image-carousel {
+  margin-top: 30px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.grid-item {
+  overflow: hidden;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.box {
+  border: 1px solid #ddd;
+  padding: 15px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+
+
+
+.mouse-cursor {
+  position: absolute !important;
+  pointer-events: none !important;
+  z-index: 9999 !important;
+}
+
+.cursor-outer {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  border: 2px solid #010156 !important;
+  transform: translate(-50%, -50%) !important;
+  transition: transform 0.15s ease-out !important;
+}
+
+.cursor-inner {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  background-color: #E65D0F !important; 
+  transform: translate(-50%, -50%) !important;
+  transition: transform 0.1s ease-out !important;
+}
 
 
 

@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { Box, Typography } from "@mui/material";
 import Slider from "react-slick";
 import techy from "../../assets/images/techy.jpg";
-import connected from "../../assets/images/connected.jpg";
-import future from "../../assets/images/future.jpg";
+import connected from "../../assets/images/homeHero1.jpg";
+import int from "../../assets/images/int.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -36,7 +36,7 @@ const HeroSection = () => {
                       fontSize: "24px",
                       fontWeight: 800
                     }}
-                    className="text-white"
+                    className="blutext"
                     data-animation="fadeInUp"
                     data-delay="1.5s"
                   >
@@ -53,20 +53,20 @@ const HeroSection = () => {
                     >
                       Connected
                     </Typography>
-                    <Typography
+                    {/* <Typography
                       variant="body1"
                       sx={{
                         fontSize: "14px",
                         color: "#fff",
-                        fontFamily: "Montserrat",
+                        fontFamily: "montserrat",
                       }}
-                      className="text-white fw-light w-75"
+                      className="text-dark fw-bold w-75"
                     >
                       Embrace the future with our cutting-edge 
                       technology designed to streamline your 
                       operations and enhance efficiency. Let 
                       us transform the way you do business.
-                    </Typography>
+                    </Typography> */}
                   </Typography>
                   <Link
                     to="/services"
@@ -86,7 +86,7 @@ const HeroSection = () => {
         <Box className="swiper-slide">
           <Box
             className="hero-image bg-cover"
-            style={{ backgroundImage: `url(${future})` }} 
+            style={{ backgroundImage: `url(${int})` }} 
           ></Box>
           <Box className="container">
             <Box className="row justify-content-between align-items-center">
@@ -115,12 +115,12 @@ const HeroSection = () => {
                     >
                       Success
                     </Typography>
-                    <Typography
+                    {/* <Typography
                       variant="body1"
                       sx={{
                         fontSize: "14px",
                         color: "#fff",
-                        fontFamily: "Montserrat",
+                        fontFamily: "montserrat",
                       }}
                       className="text-white fw-light w-75"
                     >
@@ -128,7 +128,7 @@ const HeroSection = () => {
                       our comprehensive IT and internet services 
                       are built to support growth and innovation 
                       across all industries.
-                    </Typography>
+                    </Typography> */}
                   </Typography>
                   <Link
                     to="/about"
@@ -158,38 +158,38 @@ const HeroSection = () => {
                     variant="h1"
                     sx={{
                       fontSize: "24px",
-                      color: "#E65D0F",
+                      color: "#fff",
                       fontWeight: 800
                     }}
                     data-animation="fadeInUp"
                     data-delay="1.5s"
                   >
-                    Where Technology Meets{" "}
+                    Where Technology{" "}
                     <Typography
                       variant="h1"
                       sx={{
                         color: "white",
                         fontWeight: 800
                       }}
-                      className="d-inline"
+                      className=""
                     >
-                      Excellence
+                      Meets Excellence
                     </Typography>
-                    <Typography
+                    {/* <Typography
                       variant="body1"
                       sx={{
                         fontSize: "14px",
                         color: "#fff",
-                        fontFamily: "Montserrat"
+                        fontFamily: "montserrat"
 
                       }}
-                      className="text-white fw-light w-75"
+                      className="text-white fw-light w-75 pee"
                     >
                       At the intersection of innovation and quality, 
                       our services deliver exceptional performance. 
                       Empower your business with technology that 
                       drives results.
-                    </Typography>
+                    </Typography> */}
                   </Typography>
                   <Link
                     to="/about"

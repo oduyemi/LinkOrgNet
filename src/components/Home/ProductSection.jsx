@@ -24,12 +24,9 @@ const ProductSection = () => {
             <Box className="product-card-items">
               <Box className="product-image"  sx={{ height: "400px" }}>
                 <img src={Voip} alt="Product" />
-                <Box className="product-badge">
-                  <span className="product-badge-item">sale</span>
-                </Box>
                 <Box className="product-content">
                   <h6>
-                    <Link to="/shop-details">Voip</Link>
+                    <Link to="/shop-details" className="blutext">Voip</Link>
                   </h6>
                 </Box>
               </Box>
@@ -39,13 +36,10 @@ const ProductSection = () => {
             <Box className="product-card-items">
               <Box className="product-image"  sx={{ height: "400px" }}>
               <img src={Package} alt="Product" />
-                <Box className="product-badge">
-                  <span className="product-badge-item">sale</span>
-                </Box>
               </Box>
               <Box className="product-content">
                 <h6>
-                  <Link to="/shop-details">Packages</Link>
+                  <Link to="/shop-details" className="blutext">Packages</Link>
                 </h6>
               </Box>
             </Box>

@@ -12,9 +12,13 @@ export const TopHeader = () => {
           <Box className="top-left">
             <ul className="contact-list">
               <li>
-                <Typography component="span">Call</Typography>
-                Consult With IT Advisor?{" "}
-                <Link to="/contact">Click Now</Link>
+                <Link to="tel:+2349041423631">
+                  <Typography component="span">
+                    Call
+                  </Typography>
+                </Link>
+                Want to know more about us?{" "}
+                <Link to="/about" className="orangetext">Click Now</Link>
               </li>
               <li>
                 <i className="fas fa-map-marker-alt"></i>
@@ -22,21 +26,21 @@ export const TopHeader = () => {
               </li>
               <li>
                 <i className="fas fa-envelope"></i>
-                <Link href="mailto:info@linkorgnet.com" className="line-none">
-                  info@linkorgnet.com
+                <Link href="mailto:info@linkorgnet.com.ng" className="line-none">
+                  info@linkorgnet.com.ng
                 </Link>
               </li>
             </ul>
           </Box>
           <Box className="top-right">
             <Box className="social-icon d-flex align-items-center">
-                <Link to="">
+                <Link to="" target="_blank">
                     <FacebookIcon sx={{ fontSize: 20, color: "#fff" }} />
                 </Link>
-                <Link to="">
+                <Link to="https://instagram.com/linkorgnet" target="_blank">
                     <InstagramIcon sx={{ fontSize: 20, color: "#fff" }} />
                 </Link>
-                <Link to="">
+                <Link to="" target="_blank">
                     <PinterestIcon sx={{ fontSize: 20, color: "#fff" }} />
                 </Link>
             </Box>

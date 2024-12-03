@@ -51,6 +51,11 @@ body{
   color: #fff;
 }
 
+.grey {
+  background-color: #96958fba !important;
+  color: #fff;
+}
+
 .blutext {
   color: #010156 !important;
 }
@@ -58,3 +63,28 @@ body{
 .orange {
   background-color: #E65D0F !important;
 }
+
+.orangetext{
+  color: #E65D0F !important;
+}
+
+.service-box-items {
+  transition: color 0.3s ease;
+}
+
+.service-box-items:hover .whitaker{
+  color: #ffffff !important;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-content h1{
+    font-size: large !important;
+  }
+  .hero-content p{
+    font-size: small !important;
+    margin: auto !important;
+    padding-top: 10px !important;
+  }
+}
+
+

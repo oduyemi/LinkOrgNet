@@ -1,0 +1,42 @@
+/* ANIMATION STYLES */
+
+.about-image-items {
+    background-color: #f9fafb; /* bg-gray-50 */
+    position: relative; /* relative */
+    width: auto; /* w-auto */
+    max-width: 30rem; /* sm:w-[30rem] */
+    height: auto; /* h-auto */
+    border-radius: 0.75rem; /* rounded-xl */
+    padding: 1.5rem; /* p-6 */
+    border: 1px solid rgba(0, 0, 0, 0.1); /* border-black/[0.1] */
+    transition: box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  .about-image-items:hover {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1); /* Basic hover shadow (not dark mode) */
+  }
+  
+  /* Dark Mode Styles */
+  .about-image-items.dark-mode {
+    background-color: #000; /* dark:bg-black */
+    border-color: rgba(255, 255, 255, 0.2); /* dark:border-white/[0.2] */
+  }
+  
+  .about-image-items.dark-mode:hover {
+    box-shadow: 0 25px 50px -12px rgba(16, 185, 129, 0.1); /* dark:hover:shadow-emerald-500/[0.1] */
+  }
+  
+  
+  .about-image-1 {
+    background-size: cover; /* bg-cover */
+    width: 100%; /* w-full */
+    height: 15rem; /* h-60 (15rem = 240px) */
+    object-fit: cover; /* object-cover */
+    border-radius: 0.75rem; /* rounded-xl */
+    transition: box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  .about-image-1:hover {
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1); /* group-hover/card:shadow-xl */
+  }
+  
