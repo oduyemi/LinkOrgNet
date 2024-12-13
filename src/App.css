@@ -51,6 +51,11 @@ body{
   color: #fff;
 }
 
+.grey {
+  background-color: #96958fba !important;
+  color: #fff;
+}
+
 .blutext {
   color: #010156 !important;
 }
