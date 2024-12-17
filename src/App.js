@@ -59,6 +59,10 @@ import MaintenancePage from "./pages/subServices/MaintenancePage";
 import { ToastContainer } from 'material-react-toastify';
 import AdminEnquiryList from "./pages/AdminPage/AdminEnquiryList";
 import AdminBookingList from "./pages/AdminPage/AdminBookingList";
+import RegisterPage from "./pages/Auth/RegisterPage";
+import LoginPage from "./pages/Auth/LoginPage";
+import { Navigate } from "react-router-dom";
+
 
 
 function App() {
@@ -66,6 +70,17 @@ function App() {
 
   // List of admin routes
   const adminRoutes = ["/admin", "/admin/contacts", "/admin/enquiries", "/admin/bookings", "/admin/profile", "/update_profile", "/update-password", "/admin/send-email", "/admin/sent-mails"];
+
+  const isAuthenticated = () => {
+    const token = localStorage.getItem("token");
+    return !!token; 
+  };
+
+  const PrivateRoute = ({ children }) => {
+    return isAuthenticated() ? children : <Navigate to="/login" />;
+  };
+  
+  
 
   return (
     <>
@@ -80,11 +95,16 @@ function App() {
 
       <ScrollToTop />
       <Routes>
-        {/* Define your routes here */}
+        {/* Basic Routes */}
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/login" element={<LoginPage />} />
+
+
+          {/* Services */}
         <Route path="/services/voip-services" element={<VoipPage />} />
         <Route path="/services/internet" element={<InternetPage />} />
         <Route path="/services/satellite" element={<SatellitePage />} />
@@ -130,18 +150,16 @@ function App() {
         <Route path="/faqs/vsat-services" element={<VSATQuestions />} />
 
         {/* Admin Routes */}
-        <Route path="/admin" element={<Admin />} />
-        <Route path="/admin/contacts" element={<AdminContactList />} />
-        <Route path="/admin/enquiries" element={<AdminEnquiryList />} />
-        <Route path="/admin/bookings" element={<AdminBookingList />} />
-        <Route path="/admin/profile" element={<AdminProfile />} />
-        <Route path="/update_profile" element={<AdminUpdateProfile />} />
-        <Route path="/update-password" element={<AdminChangePassword />} />
-        <Route path="/admin/send-email" element={<SendMail />} />
-        <Route path="/admin/sent-mails" element={<AdminSentMails />} />
+        <Route path="/admin" element={<PrivateRoute><Admin /></PrivateRoute>} />;
+        <Route path="/admin/contacts" element={<PrivateRoute><AdminContactList /></PrivateRoute>} />;
+        <Route path="/admin/enquiries" element={<PrivateRoute><AdminEnquiryList /></PrivateRoute>} />;
+        <Route path="/admin/bookings"  element={<PrivateRoute><AdminBookingList /></PrivateRoute>} />;
+        <Route path="/admin/profile" element={<PrivateRoute><AdminProfile /></PrivateRoute>} />;
+        <Route path="/update_profile" element={<PrivateRoute><AdminUpdateProfile /></PrivateRoute>} />;
+        <Route path="/update-password" element={<PrivateRoute><AdminChangePassword /></PrivateRoute>} />;
+        <Route path="/admin/send-email" element={<PrivateRoute><SendMail /></PrivateRoute>} />;
+        <Route path="/admin/sent-mails" element={<PrivateRoute><AdminSentMails /></PrivateRoute>} />;
      
-        
-
         {/* Fallback route */}
         <Route path="*" element={<Error404 />} />
       </Routes>
