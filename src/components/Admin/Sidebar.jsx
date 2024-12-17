@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { Offcanvas } from "react-bootstrap";
 import HomeIcon from "@mui/icons-material/Home";
 import EmailIcon from "@mui/icons-material/Email";
-import { Person2 } from "@mui/icons-material";
+import { EventAvailable, Person2, QuestionAnswer } from "@mui/icons-material";
 import SendIcon from "@mui/icons-material/Send";
 import HistoryIcon from "@mui/icons-material/History";
 import TuneIcon from "@mui/icons-material/Tune";
@@ -87,23 +87,7 @@ export const Sidebar = () => {
               </Link>
             </li>
             <li className="d-flex align-items-center mt-3 cursor-pointer">
-              <EmailIcon
-                sx={{
-                  fontSize: 50,
-                  color: "#100156",
-                  marginLeft: "5px",
-                }}
-              />
-              &emsp;
-              <Link
-                to="/admin/bookings"
-                className="text-dark text-decoration-none fw-semibold hover-text-danger"
-              >
-                Booking List
-              </Link>
-            </li>
-            <li className="d-flex align-items-center mt-3 cursor-pointer">
-              <EmailIcon
+              <QuestionAnswer
                 sx={{
                   fontSize: 50,
                   color: "#100156",
@@ -118,6 +102,23 @@ export const Sidebar = () => {
                 Enquiry List
               </Link>
             </li>
+            <li className="d-flex align-items-center mt-3 cursor-pointer">
+              <EventAvailable
+                sx={{
+                  fontSize: 50,
+                  color: "#100156",
+                  marginLeft: "5px",
+                }}
+              />
+              &emsp;
+              <Link
+                to="/admin/bookings"
+                className="text-dark text-decoration-none fw-semibold hover-text-danger"
+              >
+                Booking List
+              </Link>
+            </li>
+           
             <li className="d-flex align-items-center mt-3 pl-1 cursor-pointer">
               <Person2
                 sx={{
@@ -174,7 +175,7 @@ export const Sidebar = () => {
       </Offcanvas>
 
       {/* Sidebar for larger screens */}
-      <div className="d-none d-md-flex flex-column w-25 sidebar-full-height blu">
+      <div className="d-none d-md-flex flex-column w-20 sidebar-full-height blu">
         {/* Toggle button for small screens */}
         <div
           className="button"
@@ -228,7 +229,7 @@ export const Sidebar = () => {
               </Link>
             </li>
             <li className="d-flex align-items-center mt-3 cursor-pointer">
-              <EmailIcon
+            <QuestionAnswer
                 sx={{
                   fontSize: 50,
                   color: "#fff",
@@ -243,7 +244,7 @@ export const Sidebar = () => {
               </Link>
             </li>
             <li className="d-flex align-items-center mt-3 cursor-pointer">
-              <EmailIcon
+              <EventAvailable
                 sx={{
                   fontSize: 50,
                   color: "#fff",
