@@ -62,12 +62,6 @@ export const DashboardContent = ({ title, children }) => {
           </button>
         </div>
         <div className="d-flex align-items-center dashboardImg">
-          <img
-            className="rounded-circle me-2"
-            src={require("../../assets/images/defaultAvatar.png")}
-            alt="User"
-            width="60"
-          />
           <p className="mb-0">{userName}</p>
         </div>
       </nav>
