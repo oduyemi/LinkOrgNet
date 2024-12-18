@@ -20,7 +20,7 @@ export const Profile = () => {
         const fetchProfile = async () => {
           try {
             const response = await axios.get(`https://linkorgnet.vercel.app/api/v1/admin/${adminId}`);
-            setProfile(response.data.data); // Assuming the API response has a `data` object with profile details
+            setProfile(response.data.data); 
             setLoading(false);
           } catch (error) {
             console.error("Error fetching profile data:", error);

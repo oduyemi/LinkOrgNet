@@ -1,43 +1,54 @@
 import React, { useState, useEffect } from 'react';
 import { Box, Typography, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
-import { DashboardContent } from './DashboardContent'; // Adjust import based on your file structure
-
-const dummyEmails = [
-  { id: 1, recipient: 'john.doe@example.com', subject: 'Meeting Reminder', dateSent: '2024-08-01T10:00:00Z' },
-  { id: 2, recipient: 'rita.foster@example.com', subject: 'Project Update', dateSent: '2024-08-02T12:00:00Z' },
-  { id: 3, recipient: 'larry.gaga@example.com', subject: 'Newsletter Subscription', dateSent: '2024-08-03T15:00:00Z' },
-];
+import { DashboardContent } from './DashboardContent'; 
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; 
 
 export const SentEmail = () => {
   const [emails, setEmails] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+  const [page, setPage] = useState(0); 
+  const [rowsPerPage, setRowsPerPage] = useState(10);
 
   useEffect(() => {
-    // Simulate a delay for fetching data
-    const fetchSentEmails = () => {
+    const fetchSentEmails = async () => {
       try {
-        // Use dummy data instead of an API call
-        setTimeout(() => {
-          setEmails(dummyEmails);
-          setLoading(false);
-        }, 500); // Simulate network delay
+        const response = await fetch('https://linkorgnet.vercel.app/api/v1/email/sent');
+        if (!response.ok) {
+          throw new Error('Failed to fetch emails');
+        }
+        const data = await response.json();
+        setEmails(data);
+        setLoading(false);
+        toast.success('Emails loaded successfully!'); 
       } catch (err) {
         setError('Failed to fetch emails');
         setLoading(false);
+        toast.error('Failed to load emails!');
       }
     };
 
     fetchSentEmails();
   }, []);
 
+  const handleChangePage = (event, newPage) => {
+    setPage(newPage);
+  };
+
+  const handleChangeRowsPerPage = (event) => {
+    setRowsPerPage(parseInt(event.target.value, 10));
+    setPage(0); 
+  };
+
   if (loading) return <Typography>Loading...</Typography>;
   if (error) return <Typography color="error">{error}</Typography>;
+
+  const visibleEmails = emails.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage);
 
   return (
     <DashboardContent title="Sent Emails">
       <Box sx={{ padding: '2rem' }}>
-        
         {emails.length === 0 ? (
           <Typography>No emails found.</Typography>
         ) : (
@@ -45,26 +56,32 @@ export const SentEmail = () => {
             <Table>
               <TableHead>
                 <TableRow>
-                  <TableCell>#</TableCell>
-                  <TableCell>Recipient</TableCell>
+                  <TableCell>S/N</TableCell>
+                  <TableCell>Email</TableCell>
+                  <TableCell>Name</TableCell>
                   <TableCell>Subject</TableCell>
-                  <TableCell>Date Sent</TableCell>
+                  <TableCell>Message</TableCell>
+                  <TableCell>Date And Time Sent</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
-                {emails.map((email, index) => (
-                  <TableRow key={email.id}>
-                    <TableCell>{index + 1}</TableCell>
-                    <TableCell>{email.recipient}</TableCell>
-                    <TableCell>{email.subject}</TableCell>
-                    <TableCell>{new Date(email.dateSent).toLocaleDateString()}</TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
+                  {visibleEmails.map((email, index) => (
+                    <TableRow key={email.id}>
+                      <TableCell>{page * rowsPerPage + index + 1}</TableCell>
+                      <TableCell>{email.email}</TableCell>
+                      <TableCell>{email.name}</TableCell>
+                      <TableCell>{email.subject}</TableCell>
+                      <TableCell>{email.message}</TableCell>
+                      <TableCell>{new Date(email.sentAt).toLocaleString()}</TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
             </Table>
           </TableContainer>
         )}
       </Box>
+      {/* Toast Container to display toast notifications */}
+      <ToastContainer />
     </DashboardContent>
   );
 };
