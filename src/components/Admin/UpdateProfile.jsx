@@ -4,6 +4,7 @@ import { DashboardContent } from "./DashboardContent";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { toast } from "material-react-toastify";
+import "../../ReactToastify.css";
 import {jwtDecode} from "jwt-decode";
 
 export const UpdateProfile = () => {
@@ -22,7 +23,7 @@ export const UpdateProfile = () => {
         const decoded = jwtDecode(token);
         setAdminId(decoded.adminId);
 
-        // Fetch user details to prefill the form
+      
         const fetchUserDetails = async () => {
           try {
             const response = await axios.get(
