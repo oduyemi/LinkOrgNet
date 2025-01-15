@@ -1,7 +1,43 @@
-import React, { useState } from "react";
-
+import React, { useState, useEffect } from "react";
+import { jwtDecode } from "jwt-decode";
+import axios from "axios";
 
 export const DashboardContent = ({ title, children }) => {
+  const [userName, setUserName] = useState("Loading...");
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+
+    if (token) {
+      try {
+        const decoded = jwtDecode(token);
+        console.log("Decoded Token:", decoded);
+        const decodedToken = jwtDecode(token);
+        const adminId = decodedToken.adminId;
+        console.log("Admin ID:", adminId);
+
+        const fetchUserDetails = async () => {
+          try {
+            const response = await axios.get(`https://linkorgnet.vercel.app/api/v1/admin/${adminId}`);
+            console.log("API Response:", response.data);
+            const { fname, lname } = response.data.data; 
+            console.log("Setting user name:", `${fname} ${lname}`); 
+            setUserName(`${fname} ${lname}`);
+          } catch (error) {
+            console.error("Error fetching user details:", error);
+            setUserName("User");
+          }
+        };
+
+        fetchUserDetails();
+      } catch (error) {
+        console.error("Error decoding token:", error);
+        setUserName("User");
+      }
+    } else {
+      setUserName("Guest");
+    }
+  }, []);
 
   return (
     <main className="min-h-screen w-100 ">
@@ -26,13 +62,7 @@ export const DashboardContent = ({ title, children }) => {
           </button>
         </div>
         <div className="d-flex align-items-center dashboardImg">
-          <img
-            className="rounded-circle me-2"
-            src={require("../../assets/images/defaultAvatar.png")}
-            alt="User"
-            width="60"
-          />
-          <p className="mb-0">FirstName LastName</p>
+          <p className="mb-0">{userName}</p>
         </div>
       </nav>
       <div className="container-fluid">
