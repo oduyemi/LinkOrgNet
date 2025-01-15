@@ -3,9 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import WOW from "wowjs";
 import { Link } from "react-router-dom";
 import { Box, Typography } from "@mui/material";
-import FacebookIcon from "@mui/icons-material/Facebook";
+import XIcon from '@mui/icons-material/X';
 import InstagramIcon from "@mui/icons-material/Instagram";
-import PinterestIcon from "@mui/icons-material/Pinterest";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const Footer = () => {
   useEffect(() => {
@@ -52,14 +52,14 @@ const Footer = () => {
             </Box>
             <ul className="wow fadeInUp" data-wow-delay=".5s">
               <li>
-                <FacebookIcon sx={{ color: "#E65D0F", fontSize: 20 }} />
+              <Link to="https://www.x.com/linkorgnet" target="_blank"><XIcon sx={{ color: "#E65D0F", fontSize: 17, marginTop: "2px" }} /></Link>
                 <Link to="" className="blutext" target="_blank">
                   {" "}
-                  Facebook
+                  X
                 </Link>
               </li>
               <li>
-                <InstagramIcon sx={{ color: "#E65D0F", fontSize: 20 }} />
+              <Link to="https://www.instagram.com/linkorgnet" target="_blank>"><InstagramIcon sx={{ color: "#E65D0F", fontSize: 20 }} /></Link>
                 <Link
                   to="https://instagram.com/linkorgnet"
                   target="_blank"
@@ -70,10 +70,10 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <PinterestIcon sx={{ color: "#E65D0F", fontSize: 20 }} />
-                <Link to="" className="blutext" target="_blank">
+              <Link to="https://www.linkedin.com/company/linkorgnet" target="_blank"><LinkedInIcon sx={{ color: "#E65D0F", fontSize: 22 }} /></Link>
+                <Link to="https://www.linkedin.com/company/linkorgnet" className="blutext" target="_blank">
                   {" "}
-                  Pinterest
+                  LinkedIn
                 </Link>
               </li>
             </ul>
