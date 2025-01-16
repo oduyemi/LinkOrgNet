@@ -44,8 +44,8 @@ const FaqSection = () => {
           <Box className="row">
             <Box className="col-lg-6">
               <Box className="about-content">
-                <Box className="section-title">
-                  <span className="wow fadeInUp" style={{ textDecoration: "none"}}>Frequently Asked Questions</span>
+                <Box className="section-title" style={{ marginTop: "-32px"}}>
+                  <span className="wow fadeInUp" style={{ textDecoration: "none" }}>Frequently Asked Questions</span>
                   <Typography 
                     variant="h2" 
                     className="wow fadeInUp blutext" 
@@ -55,6 +55,7 @@ const FaqSection = () => {
                       fontWeight: 800,
                       color: "#010156",
                       fontFamily: "montserrat",
+                      marginTop: "-5px"
                     }}
                   >
                     Have a question in <br />
