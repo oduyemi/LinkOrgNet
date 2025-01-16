@@ -22,7 +22,7 @@ const Home = () => {
     return(
         <Box>
             <HomeBanner/>
-            <HomeIntro/>
+            {/* <HomeIntro/> */}
             <DataPlan />
             <Box className="mt-5">
                 <ServiceSection/>
