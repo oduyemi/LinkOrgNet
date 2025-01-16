@@ -2,7 +2,7 @@ import React from "react";
 import { Box} from "@mui/material"
 import Footer from "../components/Footer"
 import ServiceSection from "../components/Home/ServiceSection"
-import HeroSection from "../components/Home/HeroSection";
+// import HeroSection from "../components/Home/HeroSection";
 import AboutSection from "../components/Home/AboutSection"
 import FeatureIconSection from "../components/Home/FeatureIconSection";
 import CounterSection from "../components/Home/CounterSection";
@@ -11,6 +11,9 @@ import GrowSection from "../components/Home/GrowSection";
 import ContactSection from "../components/Home/ContactSection";
 import Brand from "../components/About/Brand";
 import FaqSection from "../components/Services/FaqSection";
+import { HomeBanner } from "../components/Home/Banner";
+import { HomeIntro } from "../components/Home/Intro";
+import { DataPlan } from "../components/Home/DataPlan";
 // import { ThreeDCard } from "../components/Home/ThreeDCard";
 
 
@@ -18,15 +21,16 @@ import FaqSection from "../components/Services/FaqSection";
 const Home = () => {
     return(
         <Box>
-            <HeroSection/>
+            <HomeBanner/>
+            <HomeIntro/>
+            <DataPlan />
             <Box className="mt-5">
-            <ServiceSection/>
+                <ServiceSection/>
             </Box>
-            <AboutSection/>
-            <FeatureIconSection/>
             <FaqSection />
+            <AboutSection/>
             <CounterSection/>
-            <GrowSection/>
+            {/* <GrowSection/> */}
             <ContactSection/>
             <Brand/>
             <Footer />

@@ -60,19 +60,14 @@ const ServiceSection = () => {
               margin: "0 auto",
             }}
           >
-            Stay connected with one of Nigeria's leading Internet provider.
-            As a top IT and networks provider, we specialize in Internet
-            services. Our expertise extends beyond Internet service; we offer
-            comprehensive services including Satellite , VPN, Voip, IT & Network
-            Solutions, Storage Solutions, Collocation & Datacenter, and Software
-            services to ensure you stay connected no matter where you are.
-            <br />
-            <br />
-            Whether you're streaming, working, or gaming, our high-speed
-            internet solutions guarantee seamless connectivity to the world.
-            Enjoy lightning-fast and dependable service designed to meet your
-            unique needs, ensuring that your online activities are smooth and
-            uninterrupted.
+            LinkOrg Networks is an engineering solution company providing 
+            advanced internet solutions, including Fiber to the Home (FTTH), 
+            Fiber to the Office (FTTO), wireless internet, and rural 
+            telephony. We also offer a range of value-added services such as 
+            VoIP solutions, Enterprise VPN, data storage and collocation, 
+            IT and network services, and software solutions. Our mission is 
+            to deliver reliable, cutting-edge communication services that 
+            meet the evolving needs of our clients.
             <br />
           </Typography>
         </Box>

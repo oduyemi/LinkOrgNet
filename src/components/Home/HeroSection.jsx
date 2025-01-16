@@ -7,6 +7,7 @@ import connected from "../../assets/images/homeHero1.jpg";
 import int from "../../assets/images/int.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Search } from '../Search';
 
 const HeroSection = () => {
   const settings = {
@@ -207,6 +208,7 @@ const HeroSection = () => {
           </Box>
         </Box>
       </Slider>
+      <Search />
     </Box>
   );
 };
