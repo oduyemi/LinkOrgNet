@@ -149,12 +149,19 @@ Version: 1.0.0
   background-color: #e65d0f;
 }
 
+.theme-btn-3:hover {
+  transform: translate(5px);
+  background-color: #010156;
+}
+
+
+
 .theme-btn-3 {
   display: inherit;
   text-align: center;
   line-height: 1.3;
   margin: 0 auto;
-  padding: 0 5px;
+  padding: 0 2px;
 }
 
 .theme-btn-3 li a {
@@ -1854,7 +1861,7 @@ input.main-search-input::placeholder {
 }
 
 .header-3 .container-fluid {
-  padding: 0 70px;
+  padding: 0 50px;
 }
 @media (max-width: 1399px) {
   .header-3 .container-fluid {
