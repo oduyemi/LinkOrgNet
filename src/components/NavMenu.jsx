@@ -305,7 +305,7 @@ export const NavMenu = ({ onOpenOffcanvas }) => {
                     </Link>
                   </Box>
                   <Box className="header-button">
-                    <Link to="/contact" className="theme-btn theme-btn-3">
+                    <Link to="/services/internet" className="theme-btn theme-btn-3">
                     <ul>
                   <li
                               className="has-dropdown"
@@ -314,12 +314,12 @@ export const NavMenu = ({ onOpenOffcanvas }) => {
                               disableAutoFocus
                             >
                               <Link
-                                to="/services"
+                                to="/services/internet"
                                 onClick={handleInternetClick}
                                 className=""
                               >
                                 <br/>
-                                Internet 
+                                Internet Services 
                                 <ExpandMoreIcon sx={{ fontSize: 30 }} />
                               </Link>
                               <Menu
