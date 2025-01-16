@@ -36,7 +36,7 @@ const plans = [
 
 export const DataPlan = () => {
   return (
-    <Box margin="20px" maxWidth="xl" sx={{ py: 5, backgroundColor: "#f5f5f5", overflowX: "auto" }}>
+    <Box margin="10px"  sx={{ py: 5, backgroundColor: "#f5f5f5", overflowX: "auto" }}>
       <Grid container spacing={4} justifyContent="center">
         {plans.map((plan, index) => (
           <Grid item key={index} xs={12} sm={6} md={2.4} lg={2.4} sx={{ display: "flex", justifyContent: "center" }}>
