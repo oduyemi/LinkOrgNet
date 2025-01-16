@@ -15,10 +15,6 @@ const faqData = [
       answer: "VSAT (Very Small Aperture Terminal) is a satellite communication system that uses small dish antennas to provide reliable data, voice, and internet connectivity, especially in remote areas. It works by sending and receiving data via satellite, ensuring connectivity even in regions without traditional infrastructure."
     },
     {
-        question: "What are the benefits of using VSAT solutions for offshore and remote locations?",
-        answer: "VSAT offers reliable, high-speed connectivity in areas where terrestrial networks are unavailable. It is ideal for maritime, offshore, and remote operations, providing uninterrupted communication for data, voice, and internet services."
-    },
-    {
         question: "Can VSAT support high-speed internet for businesses and large operations?",
         answer: "Yes, VSAT can support high-speed internet for both small and large-scale operations, providing low-latency connections and enough bandwidth for data-heavy applications like video conferencing, file transfers, and cloud services."
     },
@@ -27,16 +23,12 @@ const faqData = [
         answer: "Our VSAT solutions use advanced satellite technology (LEO and GEO satellites) combined with redundant systems to ensure continuous connectivity. Our equipment is also built to withstand extreme weather and environmental conditions, ensuring uninterrupted service."
     },
     {
-        question: "Is VSAT suitable for mobile units like ships and vehicles?",
-        answer: "Yes, our VSAT solutions are specifically designed for mobility and are ideal for ships, offshore vessels, and other moving units. We provide stable satellite connections to ensure seamless communication even while on the move."
-    },
-    {
         question: "What type of support and maintenance do you offer for VSAT installations?",
         answer: "We provide 24/7 technical support and remote monitoring to ensure your VSAT system operates smoothly. Our team of engineers also offers regular maintenance and on-site support as needed to prevent and resolve any issues."
     },
     {
         question: "How does LinkOrg Networks' VSAT solution compare to traditional internet services?",
-        answer: "VSAT solutions provide internet access in regions where traditional services like fiber or cable are unavailable. While traditional services may offer higher speeds in well-connected areas, VSAT excels in delivering reliable, low-latency internet to remote and offshore locations."
+        answer: "VSAT solutions provide internet access in regions where traditional services like fiber or cable are unavailable. While traditional services may offer higher speeds in well-connected areas, VSAT excels in delivering reliable, low-latency internet."
     },
     {
         question: "What are the installation requirements for a VSAT system?",

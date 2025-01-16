@@ -11,16 +11,12 @@ import RemoveIcon from '@mui/icons-material/Remove';
 
 const faqData = [
     {
-        question: "What industries does LinkOrg Networks serve?",
-        answer: "LinkOrg Networks serves maritime and offshore industries, providing satellite communication services to ships, vessels, jack-up barges, and other offshore bases. We also offer IT and telecommunications solutions for businesses and individuals looking for secure and high-speed connectivity.",
+        question: "Who does LinkOrg Networks serve?",
+        answer: "LinkOrg Networks serves businesses and individuals, providing reliable internet services. We also offer IT and telecommunications, Voice over Internet Protocol (VoIP), storage solutions, and Enterprise VPN. solutions for businesses and individuals looking for secure and high-speed connectivity.",
     },
     {
         question: "What internet services does LinkOrg Networks offer?",
-        answer: "LinkOrg Networks provides a comprehensive range of internet services, which includes fixed connectivity (Fibre Optics), VSAT remote internet solutions, maritime and offshore internet solutions with high speed and low latency internet for individuals and businesses. Our services are designed to ensure reliable and seamless connectivity, even in the most challenging environments.",
-    },
-    {
-        question: "How does LinkOrg Networks ensure reliable connectivity for offshore operations?",
-        answer: "We specialize in providing reliable communication solutions for offshore safety needs by combining LEO and GEO Satellite technology, IP-PBX, and VSAT technologies. Our expert engineers are skilled in installing and maintaining satellite systems, ensuring that your operations stay connected at all times.",
+        answer: "LinkOrg Networks provides a comprehensive range of internet services, which includes fixed connectivity (Fibre Optics), VSAT remote internet solutions, with high speed and low latency internet for individuals and businesses. Our services are designed to ensure reliable and seamless connectivity, even in the most challenging environments.",
     },
     {
         question: "How does LinkOrg Networks prioritize customer satisfaction?",
@@ -28,11 +24,11 @@ const faqData = [
     },
     {
         question: "What sets LinkOrg Networks apart from other service providers?",
-        answer: "What distinguishes LinkOrg Networks is our unwavering focus on utilizing state-of-the-art technology to provide seamless connectivity and IT solutions at affordable rates. Our internet service comes with VoIP solutions an addon. We also provide security solutions that meet the diverse requirements of our clients, both ashore and offshore environments."
+        answer: "What sets LinkOrg Networks apart is our commitment to leveraging cutting-edge technology to deliver seamless connectivity and IT solutions at competitive prices. Our internet services include VoIP solutions as an added feature, providing extra value to our offerings. We also provide security solutions that meet the diverse requirements of our clients."
     },
     {
         question: "Does LinkOrg Networks offer customized solutions for businesses?",
-        answer: "Yes, we offer tailored IT and telecom solutions designed to meet the unique needs of businesses. Whether you need secure VPNs, advanced VoIP solutions, specialized satellite communication services, security and software solutions. LinkOrg Networks can customize our offerings to fit your specific requirements and ensure you stay ahead in a digital world."
+        answer: "Yes, we offer tailored IT and telecom solutions designed to meet the unique needs of businesses. Whether you need enterprise VPN for your organization, advanced VoIP solutions, specialized satellite communication services, security and software solutions. LinkOrg Networks can customize our offerings to fit your specific requirements and ensure you stay ahead in a digital world."
     },
     {
         question: "How does Linkorg Networks benefit me as an individual?",

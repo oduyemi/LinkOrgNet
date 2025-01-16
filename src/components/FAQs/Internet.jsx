@@ -16,7 +16,7 @@ const faqData = [
     },
     {
         question: "How do you ensure reliable internet connectivity in remote areas?",
-        answer: "We use a combination of cutting-edge VSAT and LEO satellite technology to provide reliable internet services in remote areas. This ensures continuous connectivity even in challenging environments, such as offshore or rural locations.",
+        answer: "We use a combination of cutting-edge VSAT and LEO satellite technology to provide reliable internet services in remote areas. This ensures continuous connectivity even in challenging environments, such as rural locations.",
     },
     {
         question: "Are there any data caps or limitations with your internet plans?",

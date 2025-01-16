@@ -207,17 +207,17 @@ export const ContactForm = () => {
                           Email
                         </Typography>
                         <Link
-                          to="mailto:info@linkorgnet.com.ng"
+                          to="mailto:hello@linkorgnet.com"
                           className="link"
                         >
-                          info@linkorgnet.com.ng
+                          hello@linkorgnet.com
                         </Link>{" "}
                         <br />
                         <Link
-                          to="mailto:info@linkorgnet.com.ng"
+                          to="mailto:noc@linkorgnet.com"
                           className="link"
                         >
-                          support@linkorgnet.com.ng
+                          noc@linkorgnet.com
                         </Link>
                       </Box>
                     </Box>

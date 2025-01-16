@@ -23,12 +23,12 @@ const CounterSection = () => {
               <p> Stay safe online comfortably</p>
             </div>
           </div>
-          <div className="counter-items wow fadeInUp" data-wow-delay=".9s">
+          {/* <div className="counter-items wow fadeInUp" data-wow-delay=".9s">
             <div className="content">
               <h2><span className="count">Offshore Platforms</span>+</h2>
               <p>Fixed and stabilized antennae.</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

@@ -24,8 +24,9 @@ export const AboutServices = () => {
                             color: "#010156"
                         }}
                     >
-                        Comprehensive IT And  <br />
-                        Telecom Solutions
+                        Our integrated product 
+                        <br />
+                        and services solution
                     </Typography> 
                     <Typography
                         variant="body1"
@@ -107,7 +108,7 @@ export const AboutServices = () => {
                            <Box className="content">
                                <h3>
                                    <Link to="/services/vpn-solutions">
-                                       VPN
+                                       Enterprise VPN
                                    </Link>
                                </h3>
                                <Typography
@@ -119,7 +120,7 @@ export const AboutServices = () => {
                                     fontFamily: "Montserrat"    
                                }}
                                >
-                                   Private &amp; Secure Internet Access
+                                   Choose Reliability &amp; Security
                                </Typography>
                                <Link to="/services/vpn-solutions" className="arrow-icon">
                                    <ChevronRightIcon 

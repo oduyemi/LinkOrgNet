@@ -144,6 +144,22 @@ Version: 1.0.0
 .theme-btn.theme-btn-2 {
   background-color: var(--theme2);
 }
+
+.theme-btn-3 {
+  background-color: #e65d0f;
+}
+
+.theme-btn-3 {
+  display: inherit;
+  text-align: center;
+  line-height: 1.3;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+.theme-btn-3 li a {
+  color: #fff;
+}
 .theme-btn.line-height {
   line-height: 1.3;
 }
@@ -1838,7 +1854,7 @@ input.main-search-input::placeholder {
 }
 
 .header-3 .container-fluid {
-  padding: 0 100px;
+  padding: 0 70px;
 }
 @media (max-width: 1399px) {
   .header-3 .container-fluid {
@@ -11503,6 +11519,44 @@ p.sticky-label {
   background-color: #E65D0F !important; 
   transform: translate(-50%, -50%) !important;
   transition: transform 0.1s ease-out !important;
+}
+
+
+
+.menu-thumb a:hover,
+.menu-thumb a:focus,
+.menu-thumb a.active {
+  color: #0056b3;
+  transition: color 0.3s ease;
+}
+
+
+.MuiMenu-paper {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: top center;
+  opacity: 0;
+}
+.MuiMenu-paper.Mui-open {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+.MuiMenu-paper {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.offcanvas__info li {
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.mobile-menu {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+.mobile-menu.open {
+  transform: translateX(0);
 }
 
 

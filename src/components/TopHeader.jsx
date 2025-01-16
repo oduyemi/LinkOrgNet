@@ -2,7 +2,9 @@ import React from "react";
 import { Box, Link, Typography } from "@mui/material";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import PinterestIcon from '@mui/icons-material/Pinterest';
+import XIcon from '@mui/icons-material/X';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+
 
 export const TopHeader = () => {
   return (
@@ -12,7 +14,7 @@ export const TopHeader = () => {
           <Box className="top-left">
             <ul className="contact-list">
               <li>
-                <Link to="tel:+2349041423631">
+                <Link to="tel:+2349160005465">
                   <Typography component="span">
                     Call
                   </Typography>
@@ -26,22 +28,25 @@ export const TopHeader = () => {
               </li>
               <li>
                 <i className="fas fa-envelope"></i>
-                <Link href="mailto:info@linkorgnet.com.ng" className="line-none">
-                  info@linkorgnet.com.ng
+                <Link href="mailto:hello@linkorgnet.com" className="line-none">
+                  hello@linkorgnet.com
                 </Link>
               </li>
             </ul>
           </Box>
           <Box className="top-right">
             <Box className="social-icon d-flex align-items-center">
-                <Link to="" target="_blank">
+                <Link to="https://www.facebook.com/profile.php?id=61568155119100" target="_blank">
                     <FacebookIcon sx={{ fontSize: 20, color: "#fff" }} />
+                </Link>
+                <Link to="https://twitter.com/linkorgnet" target="_blank">
+                    <XIcon sx={{ fontSize: 20, color: "#fff" }} />
                 </Link>
                 <Link to="https://instagram.com/linkorgnet" target="_blank">
                     <InstagramIcon sx={{ fontSize: 20, color: "#fff" }} />
                 </Link>
-                <Link to="" target="_blank">
-                    <PinterestIcon sx={{ fontSize: 20, color: "#fff" }} />
+                <Link to="https://www.linkedin.com/company/linkorgnet/" target="_blank">
+                    <LinkedInIcon sx={{ fontSize: 20, color: "#fff" }} />
                 </Link>
             </Box>
           </Box>

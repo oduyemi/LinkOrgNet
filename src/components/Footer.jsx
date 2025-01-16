@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import WOW from "wowjs";
 import { Link } from "react-router-dom";
 import { Box, Typography } from "@mui/material";
+import FacebookIcon from '@mui/icons-material/Facebook';
 import XIcon from '@mui/icons-material/X';
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -52,14 +53,23 @@ const Footer = () => {
             </Box>
             <ul className="wow fadeInUp" data-wow-delay=".5s">
               <li>
-              <Link to="https://www.x.com/linkorgnet" target="_blank"><XIcon sx={{ color: "#E65D0F", fontSize: 17, marginTop: "2px" }} /></Link>
+              <Link to="https://www.facebook.com/profile.php?id=61568155119100" target="_blank">
+                    <FacebookIcon sx={{ color: "#010156", fontSize: "24px", marginTop: "8px" }}  />
+                    <Link to="" className="blutext" target="_blank">
+                      {" "}
+                      Facebook
+                    </Link>
+                </Link>
+              </li>
+              <li>
+              <Link to="https://www.x.com/linkorgnet" target="_blank"><XIcon sx={{ color: "#010156", fontSize: 17, marginTop: "2px" }} /></Link>
                 <Link to="" className="blutext" target="_blank">
                   {" "}
                   X
                 </Link>
               </li>
               <li>
-              <Link to="https://www.instagram.com/linkorgnet" target="_blank>"><InstagramIcon sx={{ color: "#E65D0F", fontSize: 20 }} /></Link>
+              <Link to="https://www.instagram.com/linkorgnet" target="_blank>"><InstagramIcon sx={{ color: "#010156", fontSize: 20 }} /></Link>
                 <Link
                   to="https://instagram.com/linkorgnet"
                   target="_blank"
@@ -70,7 +80,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-              <Link to="https://www.linkedin.com/company/linkorgnet" target="_blank"><LinkedInIcon sx={{ color: "#E65D0F", fontSize: 22 }} /></Link>
+              <Link to="https://www.linkedin.com/company/linkorgnet" target="_blank"><LinkedInIcon sx={{ color: "#010156", fontSize: 22 }} /></Link>
                 <Link to="https://www.linkedin.com/company/linkorgnet" className="blutext" target="_blank">
                   {" "}
                   LinkedIn

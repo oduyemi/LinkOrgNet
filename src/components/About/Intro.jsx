@@ -97,11 +97,11 @@ export const Intro = () => {
                                     }}
                                     gutterBottom
                                     >
-                                    LinkOrg Networks, established in 2009, is a leading provider of satellite communication services, specializing in connecting ships, vessels, jack-up barges, and offshore bases. Leveraging our advanced teleport infrastructure in collaboration with trusted partners, we offer cutting-edge remote internet solutions via Fixed VSAT, as well as Marine/offshore internet services, video broadcasting, IT, and telecommunications.
+                                    LinkOrg Networks, established in 2009, is a leading provider of satellite communication services. Leveraging our advanced teleport infrastructure in collaboration with trusted partners, we offer cutting-edge remote internet solutions via Fixed VSAT, video broadcasting, IT, and telecommunications.
                                     <br /><br />
                                     What sets us apart is our commitment to deploying the latest technologies, including LEO and GEO satellites, Fibre Optics, IP-PBX, and Terrestrial solutions, ensuring that our clients receive tailored, reliable communication systems to meet their diverse needs across Africa and beyond.
                                     <br /><br />
-                                    Our mission is to provide dependable communication solutions, especially for clients in offshore industries, where safety and reliability are paramount. Our team of engineers, located in Lagos, Port-Harcourt, and the UK, are highly skilled in the design, installation, and maintenance of various satellite and communication systems.
+                                    Our mission is to provide dependable communication solutions where safety and reliability are paramount. Our team of engineers, located in Lagos, Port-Harcourt, and the UK, are highly skilled in the design, installation, and maintenance of various satellite and communication systems.
                                     <br /><br />
                                     Let us help you stay connected and productive, no matter where you are. Choose LinkOrg Networks for the best internet and communication experience, where reliability meets excellence!
                                     </Typography>

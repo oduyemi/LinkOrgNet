@@ -9,6 +9,7 @@ export const NavMenu = ({ onOpenOffcanvas }) => {
   const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 768);
   const [servicesAnchorEl, setServicesAnchorEl] = useState(null);
   const [faqsAnchorEl, setFaqsAnchorEl] = useState(null);
+  const [internetAnchor, setInternetAnchor] = useState(null);
   
   const navigate = useNavigate();
 
@@ -38,11 +39,28 @@ export const NavMenu = ({ onOpenOffcanvas }) => {
     setServicesAnchorEl(null);
   };
 
+  const handleInternetMenuOpen = (event) => {
+    setInternetAnchor(event.currentTarget);
+  };
+
+  const handleInternetMenuClose = () => {
+    setInternetAnchor(null);
+  };
+
   const isFaqsMenuOpen = Boolean(faqsAnchorEl);
   const isServicesMenuOpen = Boolean(servicesAnchorEl);
+  const isInternetMenuOpen = Boolean(internetAnchor);
 
   const handleServicesClick = (event) => {
     if (isServicesMenuOpen) {
+      event.preventDefault();
+    } else {
+      navigate("/services");
+    }
+  };
+
+  const handleInternetClick = (event) => {
+    if (isInternetMenuOpen) {
       event.preventDefault();
     } else {
       navigate("/services");
@@ -266,6 +284,7 @@ export const NavMenu = ({ onOpenOffcanvas }) => {
                                 </MenuItem>
                               </Menu>
                             </li>
+                            
                           </ul>
                         </nav>
                       </Box>
@@ -285,7 +304,68 @@ export const NavMenu = ({ onOpenOffcanvas }) => {
                       </span>
                     </Link>
                   </Box>
-                  <IconButton
+                  <Box className="header-button">
+                    <Link to="/contact" className="theme-btn theme-btn-3">
+                    <ul>
+                  <li
+                              className="has-dropdown"
+                              onMouseEnter={handleInternetMenuOpen}
+                              onMouseLeave={handleInternetMenuClose}
+                              disableAutoFocus
+                            >
+                              <Link
+                                to="/services"
+                                onClick={handleInternetClick}
+                                className=""
+                              >
+                                <br/>
+                                Internet 
+                                <ExpandMoreIcon sx={{ fontSize: 30 }} />
+                              </Link>
+                              <Menu
+                                anchorEl={internetAnchor}
+                                open={isInternetMenuOpen}
+                                onClose={handleInternetMenuClose}
+                                PaperProps={{
+                                  style: {
+                                    width: 240,
+                                  },
+                                }}
+                                MenuListProps={{
+                                  onMouseLeave: handleInternetMenuClose,
+                                }}
+                              >
+                                <MenuItem onClick={handleInternetMenuClose}>
+                                  <Link
+                                    to="/services/internet/fiber"
+                                    className="text-black"
+                                  >
+                                    Fiber-to-Home
+                                  </Link>
+                                </MenuItem>
+                                <MenuItem onClick={handleInternetMenuClose}>
+                                  <Link
+                                    to="services/internet/estate_connect"
+                                    className="text-black"
+                                  >
+                                    Fiber to Office
+                                  </Link>
+                                </MenuItem>
+                                <MenuItem onClick={handleInternetMenuClose}>
+                                  <Link
+                                    to="services/internet/highspeed"
+                                    className="text-black"
+                                  >
+                                    Wireless Connection
+                                  </Link>
+                                </MenuItem>
+                                
+                              </Menu>
+                            </li>
+                  </ul>
+                    </Link>
+                  </Box>
+                  {/* <IconButton
                     edge="end"
                     color="inherit"
                     aria-label="menu"
@@ -293,7 +373,20 @@ export const NavMenu = ({ onOpenOffcanvas }) => {
                     className="header__hamburger d-xl-block my-auto"
                   >
                     <MenuIcon sx={{ fontSize: 30 }} />
-                  </IconButton>
+                  </IconButton> */}
+                  <IconButton
+  edge="end"
+  color="inherit"
+  aria-label="menu"
+  onClick={onOpenOffcanvas}
+  sx={{ padding: 1, marginLeft: 2 }}
+>
+  <MenuIcon sx={{ fontSize: 30 }} />
+</IconButton>
+
+                  
+
+                  
                 </Box>
               </Box>
             </Box>

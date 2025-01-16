@@ -84,14 +84,14 @@ const ContactSection = () => {
                           to="tel:+2349160005465"
                           style={{ color: "#4E4A59", fontSize: "14px" }}
                         >
-                          MTN: 091-6000-5465
+                          +234 916 000 LINK (5465)
                         </Link>
                         <br />
                         <Link
                           to="tel:+2349041423631"
                           style={{ color: "#4E4A59", fontSize: "14px" }}
                         >
-                          Airtel: 090-4142-3631
+                          +234 904 1423 631
                         </Link>
                         <br />
                       </Typography>
@@ -121,17 +121,17 @@ const ContactSection = () => {
                       </Typography>
                       <h3>
                         <Link
-                          to="mailto:info@linkorgnet.com.ng"
+                          to="mailto:hello@linkorgnet.com"
                           style={{ color: "#4E4A59", fontSize: "14px" }}
                         >
-                          info@linkorgnet.com.ng
+                          hello@linkorgnet.com
                         </Link>
                         <br />
                         <Link
-                          to="mailto:support@linkorgnet.com.ng"
+                          to="mailto:noc@linkorgnet.com"
                           style={{ color: "#4E4A59", fontSize: "14px" }}
                         >
-                          support@linkorgnet.com.ng
+                          noc@linkorgnet.com
                         </Link>
                       </h3>
                     </Box>
