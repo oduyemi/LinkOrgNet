@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Box, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import hero0 from "../../assets/images/hero0.jpg";
+import rest from "../../assets/images/rest.jpg";
 import "./Animation.css";
 // import ITSolution2 from "../../assets/images/ITSolution2.jpg";
 import CheckIcon from "@mui/icons-material/Check";
@@ -185,7 +185,7 @@ const AboutSection = () => {
                 className="about-image-1 wow fadeInLeft"
                 data-wow-delay=".3s"
                 style={{
-                  backgroundImage: `url(${hero0})`,
+                  backgroundImage: `url(${rest})`,
                   backgroundSize: "cover",
                   width: "100%",
                   height: "80vh",
@@ -236,7 +236,7 @@ const AboutSection = () => {
                   We are your trusted partner for all things IT
                   and telecommunications. As a leading Internet 
                   Service Provider (ISP), we specialize in 
-                  Fiber-to-the-Home (FTTH), Fiber-to-the-Office (FTTO), 
+                  Fiber-to-the-Home (FTTH), Fiber-to-the-rest (FTTO), 
                   Estate Connect solutions, and wireless connectivity. 
                   Our services extend to IT and network management, 
                   storage solutions, enterprise VPNs, VoIP solutions, 
