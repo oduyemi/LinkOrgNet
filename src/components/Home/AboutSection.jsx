@@ -180,7 +180,7 @@ const AboutSection = () => {
       <Box className="container">
         <Box className="about-wrapper-2">
           <Box className="row">
-            <Box className="col-lg-6">
+            <Box className="col-lg-6 d-md-block d-none">
               <Box
                 className="about-image-1 wow fadeInLeft"
                 data-wow-delay=".3s"
