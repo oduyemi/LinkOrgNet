@@ -44,7 +44,7 @@ const InternetDetail = () => {
                       fontFamily: "montserrat",
                     }}
                   >
-                    Internet Solutions for Your Business
+                    Internet Solutions
                   </Typography>
                   <Typography variant="body1" sx={{ lineHeight: "1.8" }}>
                     At LinkOrg Networks, we offer advanced Internet solutions 
