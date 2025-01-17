@@ -14,6 +14,7 @@ import FaqSection from "../components/Services/FaqSection";
 import { HomeBanner } from "../components/Home/Banner";
 import { HomeIntro } from "../components/Home/Intro";
 import { DataPlan } from "../components/Home/DataPlan";
+import { InternetServices } from "../components/Home/InternetServices";
 // import { ThreeDCard } from "../components/Home/ThreeDCard";
 
 
@@ -22,12 +23,9 @@ const Home = () => {
     return(
         <Box>
             <HomeBanner/>
-            <Box className="mt-5">
-                <ServiceSection/>
-            </Box>
-            <DataPlan />
-            <FaqSection />
+                <InternetServices />
             <AboutSection/>
+            <FaqSection />
             <CounterSection/>
             {/* <GrowSection/> */}
             <ContactSection/>

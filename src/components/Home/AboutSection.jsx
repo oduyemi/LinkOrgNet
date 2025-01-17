@@ -176,7 +176,7 @@ const AboutSection = () => {
   };
 
   return (
-    <Box className="about-section section-padding">
+    <Box className="about-section section-padding" style={{ marginTop: "-50px"}}>
       <Box className="container">
         <Box className="about-wrapper-2">
           <Box className="row">
@@ -188,7 +188,7 @@ const AboutSection = () => {
                   backgroundImage: `url(${hero0})`,
                   backgroundSize: "cover",
                   width: "100%",
-                  height: "50vh",
+                  height: "80vh",
                   maxWidth: "100%",
                   objectFit: "cover",
                   borderRadius: "0.75rem",
@@ -196,7 +196,7 @@ const AboutSection = () => {
                 }}
               ></Box>
             </Box>
-            <Box className="col-lg-6 mt-5 mt-lg-0">
+            <Box className="col-lg-6 mt-2 mt-lg-0">
               <Box className="about-content">
                 <Box className="section-title">
                   <span
@@ -233,15 +233,22 @@ const AboutSection = () => {
                     fontSize: "17px",
                   }}
                 >
-                  We are your trusted partner for all things IT and
-                  telecommunications. From VoIP and VPN services to ISP
-                  solutions, VSAT hardware for both terrestrial and maritime
-                  needs, and robust terrestrial communications, we provide the
-                  technology and expertise you need to succeed. Our dedicated
-                  team delivers reliable and efficient Field Telecommunication
-                  Engineering Support Services, ensuring your operations run
-                  smoothly, no matter the scale. Let us transform your ideas
-                  into powerful digital experiences.
+                  We are your trusted partner for all things IT
+                  and telecommunications. As a leading Internet 
+                  Service Provider (ISP), we specialize in 
+                  Fiber-to-the-Home (FTTH), Fiber-to-the-Office (FTTO), 
+                  Estate Connect solutions, and wireless connectivity. 
+                  Our services extend to IT and network management, 
+                  storage solutions, enterprise VPNs, VoIP solutions, 
+                  collocation, and comprehensive software services. 
+                  We also offer VSAT hardware for both terrestrial 
+                  and maritime needs, ensuring robust and reliable 
+                  communication channels. Our dedicated team delivers 
+                  efficient Field Telecommunication Engineering Support 
+                  Services, helping your operations run smoothly, 
+                  regardless of scale. Let us transform your ideas into 
+                  powerful digital experiences with cutting-edge 
+                  technology and unparalleled expertise.
                 </Typography>
                 <Box className="single-tab-items">
                   <ul className="nav mb-4" role="tablist">

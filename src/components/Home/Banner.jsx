@@ -41,7 +41,7 @@ export const HomeBanner = () => {
                         tablet and hotspot devices. 
                         No annual contracts. No credit checks. 
                     </Typography>
-                    <Link to="" className="theme-btn theme-btn-3 py-3 px-2 me-3 animated fadeIn">Get Started</Link>
+                    <Link to="/services/internet" className="theme-btn theme-btn-3 py-3 px-2 me-3 animated fadeIn">Get Started</Link>
                 </Box>
                 <Box className="col-md-6 animated fadeIn">
                     <Slider {...settings}>
