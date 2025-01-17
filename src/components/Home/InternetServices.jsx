@@ -105,7 +105,7 @@ export const InternetServices = () => {
                 </Box>
                 <Box className="content">
                   <h3>
-                    <Link to="" className="blutext whitaker">
+                    <Link to="/services/internet/retail" className="blutext whitaker">
                       Retail &amp; SME
                     </Link>
                   </h3>
