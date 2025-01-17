@@ -353,7 +353,7 @@ export const EnquiryForm = () => {
             <Grid item xs={12}>
               <Button
                 variant="contained"
-                color="primary"
+                className="blu"
                 type="submit"
                 fullWidth
                 disabled={loading}
