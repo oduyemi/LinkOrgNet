@@ -209,14 +209,14 @@ const InternetDetail = () => {
                   }}
                 >
                   <img
-                    src={require("../../assets/images/services/connect1.jpg")}
+                    src={require("../../assets/images/services/telecom.jpg")}
                     alt="why"
                     width="100%"
                     height="300px"
                     style={{ marginBottom: "20px" }}
                   />
                   <img
-                    src={require("../../assets/images/services/connect2.jpg")}
+                    src={require("../../assets/images/services/telecom2.jpg")}
                     alt="why"
                     width="100%"
                     height="300px"
