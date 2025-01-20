@@ -307,82 +307,73 @@ export const NavMenu = ({ onOpenOffcanvas }) => {
                   <Box className="header-button">
                     <Link to="/services/internet" className="theme-btn theme-btn-3">
                     <ul>
-                  <li
-                              className="has-dropdown"
-                              onMouseEnter={handleInternetMenuOpen}
-                              onMouseLeave={handleInternetMenuClose}
-                              disableAutoFocus
+                      <li
+                            className="has-dropdown"
+                            onMouseEnter={handleInternetMenuOpen}
+                            onMouseLeave={handleInternetMenuClose}
+                            disableAutoFocus
+                          >
+                            <Link
+                              to="/services/internet"
+                              onClick={handleInternetClick}
+                              className=""
                             >
-                              <Link
-                                to="/services/internet"
-                                onClick={handleInternetClick}
-                                className=""
-                              >
-                                <br/>
-                                Internet Services 
-                                <ExpandMoreIcon sx={{ fontSize: 30 }} />
-                              </Link>
-                              <Menu
-                                anchorEl={internetAnchor}
-                                open={isInternetMenuOpen}
-                                onClose={handleInternetMenuClose}
-                                PaperProps={{
-                                  style: {
-                                    width: 240,
-                                  },
-                                }}
-                                MenuListProps={{
-                                  onMouseLeave: handleInternetMenuClose,
-                                }}
-                              >
-                                <MenuItem onClick={handleInternetMenuClose}>
-                                  <Link
-                                    to="/services/internet/fiber"
-                                    className="text-black"
-                                  >
-                                    Fiber-to-Home
-                                  </Link>
-                                </MenuItem>
-                                <MenuItem onClick={handleInternetMenuClose}>
-                                  <Link
-                                    to="services/internet/estate_connect"
-                                    className="text-black"
-                                  >
-                                    Fiber to Office
-                                  </Link>
-                                </MenuItem>
-                                <MenuItem onClick={handleInternetMenuClose}>
-                                  <Link
-                                    to="services/internet/highspeed"
-                                    className="text-black"
-                                  >
-                                    Wireless Connection
-                                  </Link>
-                                </MenuItem>
-                                
-                              </Menu>
-                            </li>
-                  </ul>
-                    </Link>
-                  </Box>
-                  {/* <IconButton
-                    edge="end"
-                    color="inherit"
-                    aria-label="menu"
-                    onClick={onOpenOffcanvas}
-                    className="header__hamburger d-xl-block my-auto"
-                  >
-                    <MenuIcon sx={{ fontSize: 30 }} />
-                  </IconButton> */}
-                  <IconButton
-  edge="end"
-  color="inherit"
-  aria-label="menu"
-  onClick={onOpenOffcanvas}
-  sx={{ padding: 1, marginLeft: 2 }}
->
-  <MenuIcon sx={{ fontSize: 30 }} />
-</IconButton>
+                              <br/>
+                              Internet Services 
+                              <ExpandMoreIcon sx={{ fontSize: 30 }} />
+                            </Link>
+                            <Menu
+                              anchorEl={internetAnchor}
+                              open={isInternetMenuOpen}
+                              onClose={handleInternetMenuClose}
+                              PaperProps={{
+                                style: {
+                                  width: 240,
+                                },
+                              }}
+                              MenuListProps={{
+                                onMouseLeave: handleInternetMenuClose,
+                              }}
+                            >
+                              <MenuItem onClick={handleInternetMenuClose}>
+                                <Link
+                                  to="/services/internet/retail"
+                                  className="text-black"
+                                >
+                                  Retail &amp; SME
+                                </Link>
+                              </MenuItem>
+                              <MenuItem onClick={handleInternetMenuClose}>
+                                <Link
+                                  to="services/internet/enterprise"
+                                  className="text-black"
+                                >
+                                  Enterprise
+                                </Link>
+                              </MenuItem>                              
+                            </Menu>
+                          </li>
+                      </ul>
+                        </Link>
+                      </Box>
+                      {/* <IconButton
+                        edge="end"
+                        color="inherit"
+                        aria-label="menu"
+                        onClick={onOpenOffcanvas}
+                        className="header__hamburger d-xl-block my-auto"
+                      >
+                        <MenuIcon sx={{ fontSize: 30 }} />
+                      </IconButton> */}
+                      <IconButton
+      edge="end"
+      color="inherit"
+      aria-label="menu"
+      onClick={onOpenOffcanvas}
+      sx={{ padding: 1, marginLeft: 2 }}
+    >
+      <MenuIcon sx={{ fontSize: 30 }} />
+    </IconButton>
 
                   
 

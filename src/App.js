@@ -62,6 +62,7 @@ import AdminBookingList from "./pages/AdminPage/AdminBookingList";
 import RegisterPage from "./pages/Auth/RegisterPage";
 import LoginPage from "./pages/Auth/LoginPage";
 import { Navigate } from "react-router-dom";
+import Retail from "./pages/Internet/Retail";
 
 
 
@@ -113,6 +114,7 @@ function App() {
         <Route path="/services/storage-solutions" element={<StoragePage />} />
         <Route path="/services/collocation-and-data-center" element={<CollocationPage />} />
         <Route path="/services/software-services" element={<SoftwarePage />} />
+        <Route path="/services/internet/retail" element={<Retail />} />
 
         {/* Subservices */}
         <Route path="/services/internet/highspeed" element={<HighSpeed />} />
