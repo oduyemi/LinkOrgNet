@@ -5,6 +5,7 @@ import "../../../assets/css/table.css";
 export const RetailPricingTable = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [selectedPlan, setSelectedPlan] = useState("");
+    const [selectedPrice, setSelectedPrice] = useState("");
     const [formValues, setFormValues] = useState({
         fullName: "",
         company: "",
@@ -16,8 +17,9 @@ export const RetailPricingTable = () => {
         additionalNote: "",
     });
 
-    const openModal = (planName) => {
+    const openModal = (planName, planPrice) => {
         setSelectedPlan(planName);
+        setSelectedPrice(planPrice);  
         setModalIsOpen(true);
     };
 
@@ -67,7 +69,7 @@ export const RetailPricingTable = () => {
                                         </li>
                                     ))}
                                 </ul>
-                                <Button variant="contained" className="blu px-5" onClick={() => openModal(plan.name)}>
+                                <Button variant="contained" className="blu px-5" onClick={() => openModal(plan.name, plan.price)}>
                                     Buy Now
                                 </Button>
                             </Box>
@@ -83,12 +85,12 @@ export const RetailPricingTable = () => {
             borderRadius: 2,
             maxWidth: 500,
             maxHeight: '80vh', 
-            overflowY: 'auto',
+            overflowY: 'auto', 
             margin: 'auto',
             mt: '5%',
         }}
     >
-        <Typography variant="h6" sx={{ fontWeight: "600" }} component="h2" className="blutext" gutterBottom>
+        <Typography variant="h6" sx={{ fontWeight: "500" }} component="h2" className="blutext" gutterBottom>
             Buy {selectedPlan}
         </Typography>
         <form onSubmit={handleSubmit}>
@@ -97,7 +99,8 @@ export const RetailPricingTable = () => {
             <TextField label="Email" name="email" value={formValues.email} onChange={handleChange} fullWidth required margin="normal" />
             <TextField label="Phone" name="phone" value={formValues.phone} onChange={handleChange} fullWidth required margin="normal" />
             <TextField label="Full Address" name="address" value={formValues.address} onChange={handleChange} fullWidth required multiline rows={4} margin="normal" />
-            <TextField label="Internet Plan" value={selectedPlan} fullWidth InputProps={{ readOnly: true }} margin="normal" />
+            <TextField label="Internet Plan" name="plan" value={selectedPlan} fullWidth InputProps={{ readOnly: true }} margin="normal" />
+            <TextField label="Price" name="price" value={`₦ ${selectedPrice}`} fullWidth InputProps={{ readOnly: true }} margin="normal" />
             <FormControl fullWidth margin="normal">
                 <InputLabel>How did you hear about us?</InputLabel>
                 <Select name="heardFrom" value={formValues.heardFrom} onChange={handleChange}>
@@ -122,6 +125,7 @@ export const RetailPricingTable = () => {
         </form>
     </Box>
 </Modal>
+
         </Box>
     );
 };
