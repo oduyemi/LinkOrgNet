@@ -1,0 +1,172 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border:"2px solid blue";
+}
+
+body, html{
+  overflow-x: hidden !important;
+  scroll-behavior: smooth;
+  background-color: #fff !important;
+}
+
+.headings{
+  font-family: "Museo Slab", sans-serif;
+}
+
+.circular{
+  background-image: url(/images/bgcircles.png);
+  background-size: cover;
+}
+
+.lefty{
+  text-align: left !important;
+}
+
+.godown{
+  position: relative;
+  top: 20%;
+}
+
+
+
+.mobileSuccess{
+  width: 50%;
+  margin: auto;
+}
+
+.badge{
+  position: relative;
+  right: 48%;
+  bottom: 30%;
+}
+
+.footer_subscribe{
+  background-image: url(/src/assets/images/fshape1.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position-x: -40%;
+}
+
+.footer_subscribe{
+  background-image: url(/images/shape.png) !important;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position-x: -40%;
+}
+.shapen {
+  background-image: url(/images/shapen.png) !important;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 96% !important;
+}
+
+.footer_line{
+  height: 2px;
+  border-color: #E65D0F;
+  width: 30px;
+}
+
+.tiktok-icon {
+  transition: 0.3s;
+}
+
+.tiktok-icon:hover {
+  filter: brightness(0) saturate(100%) invert(43%) sepia(77%) saturate(2447%) hue-rotate(359deg) brightness(92%) contrast(93%);
+}
+
+
+.service {
+  position: relative;
+  left: 17%;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #E65D0F !important; 
+}
+
+/* .swiper-pagination{
+  bottom: -10px !important;
+} */
+
+
+@media (max-width: 768px) {
+  body{
+    overflow-x: hidden !important;
+  }
+  .moveright{
+    margin-left: 4%;
+  }
+  .centy{
+    text-align: center !important;
+  }
+  
+  .remove{
+    display:none !important;
+  }
+  .mobileheading{
+    font-size: 22px !important;
+  }
+  .smallText{
+    font-size: smaller !important;
+  }
+  .smallerIcons{
+    width: 30px
+  }
+  .tiny{
+    width: 10px;
+    height: 10px;
+  }
+  .bigger{
+    width:60%
+  }
+  .searches{
+    position: relative !important;
+    width: 340px !important;
+    top: 10%;
+    left: 50% !important;
+    background-image: url(/images/BG.png);
+  }
+  .searches a{
+    text-decoration: underline;
+    color: #010156;
+  }
+  .mobileSuccess{
+    width: 100%;
+  }
+ 
+  .smallerBadge{
+    width: 70%
+  }.moveleft{
+    text-align: left;
+  }
+
+  .quest{
+    max-width: 240px !important;
+  }
+  .homeHero {
+    width: 100% !important;
+    height: 90% !important;
+    margin-top: -6% !important;
+  }
+  .hero img{
+   margin-top: -15% !important;
+
+  }
+
+  .footsocials{
+    margin-right: 90px !important;
+  }
+  .valuegrid img{
+    max-width: 200% !important;
+    margin-top: -8px;
+  }
+  .badge{
+    position: relative;
+    left: 40%;
+    bottom: 5%;
+  }
+  
+}
